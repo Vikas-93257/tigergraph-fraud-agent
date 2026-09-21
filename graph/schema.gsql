@@ -1,0 +1,52 @@
+// TigerGraph schema for the HHGOA fraud investigation graph
+// Run: gsql graph/schema.gsql   (or paste into GSQL shell / Savanna GSQL editor)
+
+CREATE GRAPH FraudGraph()
+
+USE GRAPH FraudGraph
+
+CREATE SCHEMA_CHANGE JOB fraud_schema FOR GRAPH FraudGraph {
+  ADD VERTEX Customer      (PRIMARY_ID customer_id STRING) WITH primary_id_as_attribute="true";
+  ADD VERTEX Card          (PRIMARY_ID card_id STRING, customer_id STRING, network STRING, card_type STRING) WITH primary_id_as_attribute="true";
+  ADD VERTEX Transaction   (PRIMARY_ID txn_id STRING, ts DATETIME, amount DOUBLE, product STRING, channel STRING,
+                            region STRING, country STRING, dist1 DOUBLE, p_email STRING, r_email STRING,
+                            risk_score DOUBLE, device_status STRING, proxy STRING, device_type STRING,
+                            m4 STRING, m5 STRING, m6 STRING, c1 DOUBLE, c13 DOUBLE, c14 DOUBLE, d1 DOUBLE) WITH primary_id_as_attribute="true";
+  ADD VERTEX DeviceProfile (PRIMARY_ID device_id STRING, device_info STRING, os STRING, browser STRING, screen STRING) WITH primary_id_as_attribute="true";
+  ADD VERTEX EmailDomain   (PRIMARY_ID domain STRING) WITH primary_id_as_attribute="true";
+  ADD VERTEX BillingRegion (PRIMARY_ID region STRING) WITH primary_id_as_attribute="true";
+  ADD VERTEX ClosedCase    (PRIMARY_ID case_id STRING, customer_id STRING, card_id STRING, opened_at DATETIME, closed_at DATETIME,
+                            outcome STRING, pattern STRING, first_fraud_txn_id STRING, n_txns INT, exposure_usd DOUBLE,
+                            actions_taken STRING, report_filed BOOL, analyst_notes STRING) WITH primary_id_as_attribute="true";
+  // Cases written by the agent = case memory
+  ADD VERTEX AgentCase     (PRIMARY_ID case_id STRING, customer_id STRING, card_id STRING, opened_at DATETIME, status STRING,
+                            verdict STRING, fraud_probability DOUBLE, pattern STRING, pattern_description STRING,
+                            exposure_usd DOUBLE, sar_filed BOOL, final_actions STRING, summary STRING) WITH primary_id_as_attribute="true";
+  ADD VERTEX PolicyChunk   (PRIMARY_ID chunk_id STRING, title STRING, text STRING) WITH primary_id_as_attribute="true";
+
+  ADD DIRECTED EDGE OWNS            (FROM Customer, TO Card) WITH REVERSE_EDGE="OWNED_BY";
+  ADD DIRECTED EDGE MADE            (FROM Card, TO Transaction) WITH REVERSE_EDGE="MADE_BY";
+  ADD DIRECTED EDGE FROM_DEVICE     (FROM Transaction, TO DeviceProfile) WITH REVERSE_EDGE="DEVICE_OF";
+  ADD DIRECTED EDGE PURCHASER_EMAIL (FROM Transaction, TO EmailDomain) WITH REVERSE_EDGE="PURCHASER_EMAIL_OF";
+  ADD DIRECTED EDGE RECIPIENT_EMAIL (FROM Transaction, TO EmailDomain) WITH REVERSE_EDGE="RECIPIENT_EMAIL_OF";
+  ADD DIRECTED EDGE BILLED_IN       (FROM Transaction, TO BillingRegion) WITH REVERSE_EDGE="BILLED_IN_OF";
+  ADD DIRECTED EDGE NEXT            (FROM Transaction, TO Transaction, gap_seconds INT) WITH REVERSE_EDGE="PREV";
+  ADD DIRECTED EDGE INVOLVES        (FROM ClosedCase, TO Transaction) WITH REVERSE_EDGE="INVOLVED_IN";
+  ADD DIRECTED EDGE ON_CARD         (FROM ClosedCase, TO Card) WITH REVERSE_EDGE="HAS_CLOSED_CASE";
+  ADD DIRECTED EDGE CONNECTED_TO    (FROM ClosedCase, TO Card) WITH REVERSE_EDGE="CONNECTED_FROM";
+  ADD DIRECTED EDGE AC_INVOLVES     (FROM AgentCase, TO Transaction) WITH REVERSE_EDGE="AC_INVOLVED_IN";
+  ADD DIRECTED EDGE AC_ON_CARD      (FROM AgentCase, TO Card) WITH REVERSE_EDGE="HAS_AGENT_CASE";
+  ADD DIRECTED EDGE AC_CONNECTED_TO (FROM AgentCase, TO Card) WITH REVERSE_EDGE="AC_CONNECTED_FROM";
+  ADD DIRECTED EDGE AC_USED_DEVICE  (FROM AgentCase, TO DeviceProfile) WITH REVERSE_EDGE="AC_DEVICE_OF";
+  ADD DIRECTED EDGE AC_SIMILAR_TO   (FROM AgentCase, TO ClosedCase, score DOUBLE);
+}
+RUN SCHEMA_CHANGE JOB fraud_schema
+
+// TigerVector (TigerGraph >= 4.2). On builds without vector support skip this job; the stores detect the missing
+// similar_cases query and fall back to the TF-IDF retriever over the same vertices.
+CREATE SCHEMA_CHANGE JOB fraud_vectors FOR GRAPH FraudGraph {
+  ADD VECTOR ATTRIBUTE embedding(DIMENSION=384, METRIC="COSINE") ON VERTEX ClosedCase;
+  ADD VECTOR ATTRIBUTE embedding(DIMENSION=384, METRIC="COSINE") ON VERTEX AgentCase;
+  ADD VECTOR ATTRIBUTE embedding(DIMENSION=384, METRIC="COSINE") ON VERTEX PolicyChunk;
+}
+RUN SCHEMA_CHANGE JOB fraud_vectors

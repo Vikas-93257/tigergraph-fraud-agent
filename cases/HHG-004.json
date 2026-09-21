@@ -1,0 +1,136 @@
+{
+  "case_id": "HHG-004",
+  "case": {
+    "status": "closed_fraud",
+    "verdict": "fraud",
+    "fraud_probability": 0.95,
+    "pattern": "card_not_present_new_device",
+    "pattern_description": "",
+    "affected_txn_ids": [
+      "3583227"
+    ],
+    "first_suspicious_txn_id": "3583227",
+    "connected_card_ids": [],
+    "connected_device_profiles": [],
+    "exposure_usd": 128.33,
+    "evidence": [
+      {
+        "claim": "Cardholder reports they did not make the $128.33 purchase (customer disputes are right about 84% of the time in closed cases, but recurring charges are the usual exception)",
+        "source": "customer",
+        "ref": "trigger:customer_report",
+        "entity_ids": [
+          "3583227"
+        ]
+      },
+      {
+        "claim": "$128.33 is above the card's 95th percentile ($96.39; median $27.73)",
+        "source": "graph",
+        "ref": "query:card_profile(card_id=C08106-K1)",
+        "entity_ids": [
+          "3583227"
+        ]
+      },
+      {
+        "claim": "Device is marked New, but 41% of this account's online history comes from New devices \u2014 a new device is normal here",
+        "source": "graph",
+        "ref": "query:card_profile(card_id=C08106-K1)",
+        "entity_ids": [
+          "3583227"
+        ]
+      },
+      {
+        "claim": "Customer has 3 confirmed fraud cases since July (mostly card_not_present_fraud) and 1 cleared alert(s) \u2014 a repeat target",
+        "source": "graph",
+        "ref": "query:prior_cases_for_customer(customer_id=C08106)",
+        "entity_ids": [
+          "CC-1736",
+          "CC-2121",
+          "CC-3778"
+        ]
+      },
+      {
+        "claim": "Customer response: Customer confirms they did not make the purchase, did not authorise anyone else, and still holds the physical card; asks for a new card",
+        "source": "customer",
+        "ref": "evidence_request:1",
+        "entity_ids": []
+      },
+      {
+        "claim": "Similar cases retrieved from case memory: CC-3193 (confirmed_fraud, card_not_present_new_device); CC-3430 (confirmed_fraud, card_not_present_fraud); CC-3280 (confirmed_fraud, card_not_present_fraud)",
+        "source": "graph",
+        "ref": "query:similar_cases",
+        "entity_ids": [
+          "CC-3193",
+          "CC-3430",
+          "CC-3280"
+        ]
+      },
+      {
+        "claim": "Policy sections applied: Fraud Policy R1 \u2013 verify before you block on a weak signal, Fraud Policy 3a \u2013 a case is not a report, Fraud Policy R2 \u2013 customer denies the transaction",
+        "source": "document",
+        "ref": "policy:R1, policy:3a, policy:R2",
+        "entity_ids": []
+      }
+    ],
+    "similar_prior_cases": [
+      "CC-3193",
+      "CC-3430",
+      "CC-3280",
+      "CC-4992",
+      "CC-2064"
+    ],
+    "summary": "Assessed as fraud (probability 0.95, card not present new device). Flagged online C transaction 3583227 of $128.33 on card C08106-K1 at 2016-12-29 01:53:54. Customer response: Customer confirms they did not make the purchase, did not authorise anyone else, and still holds the physical card; asks for a new card. $128.33 is above the card's 95th percentile ($96.39; median $27.73). Evidence requested (customer validation); assumed response: Customer confirms they did not make the purchase, did not authorise anyone else, and still holds the physical card; asks for a new card. Exposure $128.33 across 1 transaction(s). Final actions: CREATE_CASE, BLOCK_CARD.",
+    "written_to_graph": true,
+    "graph_case_id": "CASE-2016-1004"
+  },
+  "evidence_requests": [
+    {
+      "type": "customer_validation",
+      "asked_after_step": 5,
+      "assumed_response": "Customer confirms they did not make the purchase, did not authorise anyone else, and still holds the physical card; asks for a new card"
+    }
+  ],
+  "next_best_actions": {
+    "initial": [
+      {
+        "action": "VERIFY_WITH_CUSTOMER",
+        "route": "auto",
+        "reason": "R2 pre-check: confirm the cardholder still holds the card and did not authorise anyone before blocking"
+      },
+      {
+        "action": "CREATE_CASE",
+        "route": "auto",
+        "reason": "3a: fraud probability 0.79 \u2265 0.30; open the internal case"
+      },
+      {
+        "action": "MONITOR_CARD",
+        "route": "auto",
+        "reason": "72h heightened monitoring pending reply"
+      }
+    ],
+    "final": [
+      {
+        "action": "CREATE_CASE",
+        "route": "auto",
+        "reason": "R2"
+      },
+      {
+        "action": "BLOCK_CARD",
+        "route": "L1",
+        "reason": "R2: customer denied; exposure $128.33"
+      }
+    ],
+    "what_changed": "Customer denial (R2) raised probability from 0.79 to 0.95; verification is replaced by BLOCK_CARD and the case record."
+  },
+  "sar": {
+    "file": false,
+    "reason": "3a: fraud confirmed but exposure $128.33 is under $1,000, no shared origin and a documented pattern; case only, no report",
+    "narrative": "",
+    "subjects": [],
+    "total_amount_usd": 0,
+    "activity_dates": []
+  },
+  "stop_reason": "Verification response settled the question (customer denied); probability 0.95. Further graph queries would not change the actions.",
+  "tool_calls": 14,
+  "tokens": 0,
+  "latency_s": 0.88
+}

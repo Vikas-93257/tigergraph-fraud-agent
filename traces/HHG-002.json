@@ -1,0 +1,352 @@
+{
+ "case_id": "HHG-002",
+ "trigger": {
+  "case_id": "HHG-002",
+  "opened_at": "2016-11-22 23:27:07",
+  "trigger_type": "risk_score",
+  "trigger_text": "Real-time model scored transaction 3478782 ($292.36, online) at 0.79. Review and decide.",
+  "flagged_txn_id": 3478782,
+  "card_id": "C11891-K1",
+  "customer_id": "C11891",
+  "risk_score": 0.79
+ },
+ "txn": {
+  "txn_id": "3478782",
+  "ts": "2016-11-22 17:27:07",
+  "amount": 292.36,
+  "product": "C",
+  "channel": "online",
+  "region": null,
+  "country": null,
+  "dist1": null,
+  "p_email": "hotmail.com",
+  "r_email": "hotmail.com",
+  "risk_score": 0.79,
+  "device_profile": null,
+  "device_status": null,
+  "proxy": null,
+  "device_type": null,
+  "match_flags": {
+   "M1": null,
+   "M2": null,
+   "M3": null,
+   "M4": "M2",
+   "M5": null,
+   "M6": null,
+   "M7": null,
+   "M8": null,
+   "M9": null
+  },
+  "counts": {
+   "C1": 1.0,
+   "C13": 3.0,
+   "C14": 1.0
+  },
+  "days_since_prev": 448.0,
+  "customer_id": "C11891",
+  "card_id": "C11891-K1",
+  "card_network": "mastercard",
+  "card_type": "credit"
+ },
+ "window": [
+  {
+   "txn_id": "3478782",
+   "ts": "2016-11-22 17:27:07",
+   "amount": 292.36,
+   "product": "C",
+   "channel": "online",
+   "region": null,
+   "country": null,
+   "dist1": null,
+   "p_email": "hotmail.com",
+   "r_email": "hotmail.com",
+   "risk_score": 0.79,
+   "device_profile": null,
+   "device_status": null,
+   "proxy": null,
+   "device_type": null,
+   "match_flags": {
+    "M1": null,
+    "M2": null,
+    "M3": null,
+    "M4": "M2",
+    "M5": null,
+    "M6": null,
+    "M7": null,
+    "M8": null,
+    "M9": null
+   },
+   "counts": {
+    "C1": 1.0,
+    "C13": 3.0,
+    "C14": 1.0
+   },
+   "days_since_prev": 448.0
+  }
+ ],
+ "profile": {
+  "card_id": "C11891-K1",
+  "customer_id": "C11891",
+  "n_txns": 35,
+  "first_seen": "2016-07-03 19:00:17",
+  "n_online": 35,
+  "n_in_person": 0,
+  "products": {
+   "C": 35
+  },
+  "regions_top": {
+   "375.0": 1
+  },
+  "n_regions": 1,
+  "amount_median": 47.29,
+  "amount_p95": 91.407,
+  "amount_max": 121.32,
+  "known_devices": {
+   "Windows | ? | chrome 63.0 | ?": 8,
+   "Trident/7.0 | ? | ie 11.0 for tablet | ?": 8,
+   "Trident/7.0 | ? | ie 11.0 for desktop | ?": 3,
+   "? | ? | mobile safari generic | ?": 2,
+   "? | ? | chrome 63.0 | ?": 2,
+   "Windows | ? | chrome 62.0 | ?": 1,
+   "SAMSUNG SM-T810 Build/NRD90M | ? | samsung browser 6.2 | ?": 1,
+   "Windows | ? | firefox 58.0 | ?": 1,
+   "SM-G531H Build/LMY48B | ? | chrome 63.0 for android | ?": 1,
+   "Windows | ? | chrome 55.0 | ?": 1
+  },
+  "new_device_share": 0.22857142857142856,
+  "n_known_devices": 13,
+  "p_email_top": {
+   "anonymous.com": 23,
+   "hotmail.com": 7,
+   "gmail.com": 4
+  },
+  "proxy_history": 0,
+  "flagged": {
+   "amount_percentile": 1.0,
+   "amount_z": 9.661924196646432,
+   "product_seen_before": 35,
+   "region_seen_before": null,
+   "device_seen_before": null,
+   "channel_share_online": 1.0
+  }
+ },
+ "device": null,
+ "peers": null,
+ "signals": [
+  {
+   "claim": "Bank model risk score 0.79 on the flagged transaction (an input, not a verdict)",
+   "source": "graph",
+   "ref": "query:get_transaction(txn_id=3478782)",
+   "entity_ids": [
+    "3478782"
+   ],
+   "weight": 0.23,
+   "key": "risk_score"
+  },
+  {
+   "claim": "$292.36 exceeds every prior amount on this card (previous max $121.32, median $47.29)",
+   "source": "graph",
+   "ref": "query:card_profile(card_id=C11891-K1)",
+   "entity_ids": [
+    "3478782"
+   ],
+   "weight": 1.2,
+   "key": "amount_above_max"
+  },
+  {
+   "claim": "No device fingerprint captured for this online transaction",
+   "source": "graph",
+   "ref": "query:card_profile(card_id=C11891-K1)",
+   "entity_ids": [
+    "3478782"
+   ],
+   "weight": 0.0,
+   "key": "device_unknown"
+  },
+  {
+   "claim": "Customer response: Customer states they did not make this purchase and still has the card",
+   "source": "customer",
+   "ref": "evidence_request:1",
+   "entity_ids": [],
+   "weight": 2.4,
+   "key": "evidence_denied"
+  }
+ ],
+ "initial_prob": 0.54,
+ "tool_log": [
+  {
+   "step": 1,
+   "tool": "get_transaction",
+   "args": {
+    "txn_id": 3478782
+   },
+   "ms": 0.4,
+   "result_preview": "{'txn_id': '3478782', 'ts': '2016-11-22 17:27:07', 'amount': 292.36, 'product': 'C', 'channel': 'online', 'region': None, 'country': None, 'dist1': None, 'p_email': 'hotmail.com', 'r_email': 'hotmail.com', 'risk_score': 0.79, 'device_profil\u2026"
+  },
+  {
+   "step": 2,
+   "tool": "card_profile",
+   "args": {
+    "card_id": "C11891-K1",
+    "before_txn_id": 3478782
+   },
+   "ms": 4.3,
+   "result_preview": "{'card_id': 'C11891-K1', 'customer_id': 'C11891', 'n_txns': 35, 'first_seen': '2016-07-03 19:00:17', 'n_online': 35, 'n_in_person': 0, 'products': {'C': 35}, 'regions_top': {'375.0': 1}, 'n_regions': 1, 'amount_median': 47.29, 'amount_p95':\u2026"
+  },
+  {
+   "step": 3,
+   "tool": "card_window",
+   "args": {
+    "card_id": "C11891-K1",
+    "center_txn_id": 3478782,
+    "hours_before": 48,
+    "hours_after": 48,
+    "as_of": "2016-11-22 23:27:07"
+   },
+   "ms": 1.4,
+   "result_preview": "[{'txn_id': '3478782', 'ts': '2016-11-22 17:27:07', 'amount': 292.36, 'product': 'C', 'channel': 'online', 'region': None, 'country': None, 'dist1': None, 'p_email': 'hotmail.com', 'r_email': 'hotmail.com', 'risk_score': 0.79, 'device_profi\u2026"
+  },
+  {
+   "step": 4,
+   "tool": "recurring_match",
+   "args": {
+    "card_id": "C11891-K1",
+    "txn_id": 3478782,
+    "as_of": "2016-11-22 23:27:07"
+   },
+   "ms": 2.2,
+   "result_preview": "{'amount': 292.36, 'product': 'C', 'n_matches': 1, 'months_with_match': ['2016-11'], 'n_months': 1, 'n_same_region': 0, 'share_of_card_txns': 0.0278, 'n_same_amount_within_1h': 1, 'same_amount_burst_ids': [], 'is_recurring': False, 'sample_\u2026"
+  },
+  {
+   "step": 5,
+   "tool": "small_auth_run",
+   "args": {
+    "card_id": "C11891-K1",
+    "txn_id": 3478782,
+    "as_of": "2016-11-22 23:27:07"
+   },
+   "ms": 1.7,
+   "result_preview": "{'n_small_auths': 0, 'small_txn_ids': [], 'larger_after': [], 'testing_sequence': False, 'cleared_over_100': False}"
+  },
+  {
+   "step": 6,
+   "tool": "customer_fraud_rate",
+   "args": {
+    "customer_id": "C11891",
+    "as_of": "2016-11-22 23:27:07"
+   },
+   "ms": 1.6,
+   "result_preview": "{'customer_id': 'C11891', 'n': 34, 'fraud_rate': 0.0294, 'global_rate': 0.0337, 'fraud_rate_online': 0.0294, 'n_online': 34}"
+  },
+  {
+   "step": 7,
+   "tool": "prior_cases_for_customer",
+   "args": {
+    "customer_id": "C11891"
+   },
+   "ms": 1.0,
+   "result_preview": "[{'case_id': 'CC-4160', 'outcome': 'confirmed_fraud', 'pattern': 'card_not_present_fraud', 'opened_at': '2016-09-30 08:59:51', 'exposure_usd': 90.54, 'report_filed': 'No', 'notes': \"Case CC-4160: cardholder C11891 reported unrecognized acti\u2026"
+  },
+  {
+   "step": 8,
+   "tool": "similar_cases",
+   "args": {
+    "query_text": "online product C risk score",
+    "pattern_hint": "card_not_present_fraud card_testing",
+    "customer_id": "C11891",
+    "k": 5
+   },
+   "ms": 7.7,
+   "result_preview": "[{'case_id': 'HHG-001', 'kind': 'agent_case', 'score': 0.055, 'customer_id': 'C12382', 'card_id': 'C12382-K1', 'opened_at': '2016-12-05 01:55:28', 'status': 'closed_legitimate', 'verdict': 'legitimate', 'fraud_probability': 0.05, 'pattern':\u2026"
+  },
+  {
+   "step": 9,
+   "tool": "retrieve_policy",
+   "args": {
+    "query_text": "card_not_present_fraud card_testing risk_score verify block report shared device",
+    "k": 4
+   },
+   "ms": 6.2,
+   "result_preview": "[{'doc_id': 'policy:R1', 'title': 'Fraud Policy R1 \u2013 verify before you block on a weak signal', 'score': 0.198, 'text': 'R1. Verify before you block on a weak signal. If the case rests on a single signal (including a risk score alone) and t\u2026"
+  },
+  {
+   "step": 10,
+   "tool": "evidence_request:customer_validation",
+   "args": {
+    "kind": "customer_validation",
+    "prompt": "Did you make the $292.36 C purchase on 2016-11-22?",
+    "assumed_response": "Customer states they did not make this purchase and still has the card"
+   },
+   "ms": 0.0,
+   "result_preview": "{'type': 'customer_validation', 'prompt': 'Did you make the $292.36 C purchase on 2016-11-22?', 'assumed_response': 'Customer states they did not make this purchase and still has the card'}"
+  },
+  {
+   "step": 11,
+   "tool": "write_case",
+   "args": {
+    "case": {
+     "case_id": "HHG-002",
+     "customer_id": "C11891",
+     "card_id": "C11891-K1",
+     "opened_at": "2016-11-22 23:27:07",
+     "status": "closed_fraud",
+     "verdict": "fraud",
+     "fraud_probability": 0.93,
+     "pattern": "card_not_present_fraud",
+     "exposure_usd": 292.36,
+     "affected_txn_ids": [
+      "3478782"
+     ],
+     "connected_card_ids": [],
+     "connected_device_profiles": [],
+     "sar_filed": false,
+     "final_actions": [
+      "CREATE_CASE",
+      "BLOCK_CARD"
+     ],
+     "summary": "Assessed as fraud (probability 0.93, card not present fraud). Flagged online C transaction 3478782 of $292.36 on card C11891-K1 at 2016-11-22 17:27:07. Customer response: Customer states they did not make this purchase and still has the card. $292.36 exceeds every prior amount on this card (previous max $121.32, median $47.29). Evidence requested (customer validation); assumed response: Customer states they did not make this purchase and still has the card. Exposure $292.36 across 1 transaction(s). Final actions: CREATE_CASE, BLOCK_CARD.",
+     "similar_prior_cases": [
+      "HHG-001",
+      "CC-4940",
+      "CC-0137",
+      "CC-0290",
+      "CC-1242"
+     ],
+     "graph_case_id": "CASE-2016-1002"
+    }
+   },
+   "ms": 812.5,
+   "result_preview": "CASE-2016-1002"
+  },
+  {
+   "step": 12,
+   "tool": "execute_action",
+   "args": {
+    "action": "CREATE_CASE",
+    "route": "auto",
+    "payload": {
+     "case_id": "HHG-002",
+     "card_id": "C11891-K1",
+     "txn_id": "3478782"
+    }
+   },
+   "ms": 0.0,
+   "result_preview": "{'action': 'CREATE_CASE', 'route': 'auto', 'status': 'executed', 'payload': {'case_id': 'HHG-002', 'card_id': 'C11891-K1', 'txn_id': '3478782'}}"
+  },
+  {
+   "step": 13,
+   "tool": "execute_action",
+   "args": {
+    "action": "BLOCK_CARD",
+    "route": "L1",
+    "payload": {
+     "case_id": "HHG-002",
+     "card_id": "C11891-K1",
+     "txn_id": "3478782"
+    }
+   },
+   "ms": 0.0,
+   "result_preview": "{'action': 'BLOCK_CARD', 'route': 'L1', 'status': 'pending_human_approval', 'payload': {'case_id': 'HHG-002', 'card_id': 'C11891-K1', 'txn_id': '3478782'}}"
+  }
+ ]
+}

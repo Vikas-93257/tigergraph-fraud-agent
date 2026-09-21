@@ -1,0 +1,813 @@
+{
+ "case_id": "HHG-003",
+ "trigger": {
+  "case_id": "HHG-003",
+  "opened_at": "2016-12-10 15:01:21",
+  "trigger_type": "customer_report",
+  "trigger_text": "Customer C08623 message: 'I never made this $49.00 purchase. Please check my card.' Refers to 3530164.",
+  "flagged_txn_id": 3530164,
+  "card_id": "C08623-K2",
+  "customer_id": "C08623",
+  "risk_score": null
+ },
+ "txn": {
+  "txn_id": "3530164",
+  "ts": "2016-12-10 13:01:21",
+  "amount": 49.0,
+  "product": "W",
+  "channel": "in_person",
+  "region": 330.0,
+  "country": 87.0,
+  "dist1": 9.0,
+  "p_email": "me.com",
+  "r_email": null,
+  "risk_score": 0.4,
+  "device_profile": null,
+  "device_status": null,
+  "proxy": null,
+  "device_type": null,
+  "match_flags": {
+   "M1": "T",
+   "M2": "T",
+   "M3": "T",
+   "M4": "M0",
+   "M5": "F",
+   "M6": "T",
+   "M7": "F",
+   "M8": "F",
+   "M9": "T"
+  },
+  "counts": {
+   "C1": 1.0,
+   "C13": 2.0,
+   "C14": 1.0
+  },
+  "days_since_prev": 0.0,
+  "customer_id": "C08623",
+  "card_id": "C08623-K2",
+  "card_network": "mastercard",
+  "card_type": "credit"
+ },
+ "window": [
+  {
+   "txn_id": "3524629",
+   "ts": "2016-12-08 13:55:40",
+   "amount": 117.04,
+   "product": "W",
+   "channel": "in_person",
+   "region": 433.0,
+   "country": 87.0,
+   "dist1": null,
+   "p_email": null,
+   "r_email": null,
+   "risk_score": 0.03,
+   "device_profile": null,
+   "device_status": null,
+   "proxy": null,
+   "device_type": null,
+   "match_flags": {
+    "M1": "T",
+    "M2": "T",
+    "M3": "T",
+    "M4": "M0",
+    "M5": "T",
+    "M6": "T",
+    "M7": "F",
+    "M8": "T",
+    "M9": "T"
+   },
+   "counts": {
+    "C1": 1.0,
+    "C13": 1.0,
+    "C14": 1.0
+   },
+   "days_since_prev": 0.0
+  },
+  {
+   "txn_id": "3524740",
+   "ts": "2016-12-08 14:41:13",
+   "amount": 255.08,
+   "product": "W",
+   "channel": "in_person",
+   "region": 299.0,
+   "country": 87.0,
+   "dist1": 3.0,
+   "p_email": "gmail.com",
+   "r_email": null,
+   "risk_score": 0.18,
+   "device_profile": null,
+   "device_status": null,
+   "proxy": null,
+   "device_type": null,
+   "match_flags": {
+    "M1": "T",
+    "M2": "T",
+    "M3": "T",
+    "M4": "M0",
+    "M5": "T",
+    "M6": "F",
+    "M7": "F",
+    "M8": "F",
+    "M9": "T"
+   },
+   "counts": {
+    "C1": 6.0,
+    "C13": 3.0,
+    "C14": 3.0
+   },
+   "days_since_prev": 0.0
+  },
+  {
+   "txn_id": "3525595",
+   "ts": "2016-12-08 19:43:34",
+   "amount": 1749.88,
+   "product": "W",
+   "channel": "in_person",
+   "region": 143.0,
+   "country": 87.0,
+   "dist1": null,
+   "p_email": "gmail.com",
+   "r_email": null,
+   "risk_score": 0.6,
+   "device_profile": null,
+   "device_status": null,
+   "proxy": null,
+   "device_type": null,
+   "match_flags": {
+    "M1": "T",
+    "M2": "T",
+    "M3": "T",
+    "M4": null,
+    "M5": null,
+    "M6": "F",
+    "M7": "F",
+    "M8": "F",
+    "M9": "T"
+   },
+   "counts": {
+    "C1": 5.0,
+    "C13": 3.0,
+    "C14": 3.0
+   },
+   "days_since_prev": 211.0
+  },
+  {
+   "txn_id": "3527130",
+   "ts": "2016-12-09 11:18:05",
+   "amount": 29.06,
+   "product": "W",
+   "channel": "in_person",
+   "region": 204.0,
+   "country": 87.0,
+   "dist1": null,
+   "p_email": "aol.com",
+   "r_email": null,
+   "risk_score": 0.06,
+   "device_profile": null,
+   "device_status": null,
+   "proxy": null,
+   "device_type": null,
+   "match_flags": {
+    "M1": null,
+    "M2": null,
+    "M3": null,
+    "M4": "M0",
+    "M5": "T",
+    "M6": "T",
+    "M7": null,
+    "M8": null,
+    "M9": null
+   },
+   "counts": {
+    "C1": 1.0,
+    "C13": 0.0,
+    "C14": 0.0
+   },
+   "days_since_prev": 0.0
+  },
+  {
+   "txn_id": "3527215",
+   "ts": "2016-12-09 12:36:58",
+   "amount": 59.0,
+   "product": "W",
+   "channel": "in_person",
+   "region": 330.0,
+   "country": 87.0,
+   "dist1": null,
+   "p_email": "yahoo.com",
+   "r_email": null,
+   "risk_score": 0.3,
+   "device_profile": null,
+   "device_status": null,
+   "proxy": null,
+   "device_type": null,
+   "match_flags": {
+    "M1": "T",
+    "M2": "T",
+    "M3": "F",
+    "M4": "M1",
+    "M5": "T",
+    "M6": "F",
+    "M7": "F",
+    "M8": "F",
+    "M9": "T"
+   },
+   "counts": {
+    "C1": 3.0,
+    "C13": 1.0,
+    "C14": 1.0
+   },
+   "days_since_prev": 11.0
+  },
+  {
+   "txn_id": "3527397",
+   "ts": "2016-12-09 14:03:01",
+   "amount": 58.97,
+   "product": "W",
+   "channel": "in_person",
+   "region": 264.0,
+   "country": 87.0,
+   "dist1": null,
+   "p_email": "yahoo.com",
+   "r_email": null,
+   "risk_score": 0.16,
+   "device_profile": null,
+   "device_status": null,
+   "proxy": null,
+   "device_type": null,
+   "match_flags": {
+    "M1": null,
+    "M2": null,
+    "M3": null,
+    "M4": "M1",
+    "M5": "T",
+    "M6": "F",
+    "M7": null,
+    "M8": null,
+    "M9": null
+   },
+   "counts": {
+    "C1": 4.0,
+    "C13": 7.0,
+    "C14": 4.0
+   },
+   "days_since_prev": 0.0
+  },
+  {
+   "txn_id": "3527532",
+   "ts": "2016-12-09 14:49:46",
+   "amount": 193.04,
+   "product": "W",
+   "channel": "in_person",
+   "region": 272.0,
+   "country": 87.0,
+   "dist1": null,
+   "p_email": null,
+   "r_email": null,
+   "risk_score": 0.11,
+   "device_profile": null,
+   "device_status": null,
+   "proxy": null,
+   "device_type": null,
+   "match_flags": {
+    "M1": "T",
+    "M2": "F",
+    "M3": "F",
+    "M4": "M0",
+    "M5": "F",
+    "M6": "T",
+    "M7": "F",
+    "M8": "F",
+    "M9": "T"
+   },
+   "counts": {
+    "C1": 1.0,
+    "C13": 0.0,
+    "C14": 0.0
+   },
+   "days_since_prev": 0.0
+  },
+  {
+   "txn_id": "3528392",
+   "ts": "2016-12-09 19:39:12",
+   "amount": 117.06,
+   "product": "W",
+   "channel": "in_person",
+   "region": 191.0,
+   "country": 87.0,
+   "dist1": 1.0,
+   "p_email": "gmail.com",
+   "r_email": null,
+   "risk_score": 0.1,
+   "device_profile": null,
+   "device_status": null,
+   "proxy": null,
+   "device_type": null,
+   "match_flags": {
+    "M1": "T",
+    "M2": "T",
+    "M3": "T",
+    "M4": "M1",
+    "M5": "F",
+    "M6": "T",
+    "M7": "T",
+    "M8": "T",
+    "M9": "T"
+   },
+   "counts": {
+    "C1": 2.0,
+    "C13": 4.0,
+    "C14": 2.0
+   },
+   "days_since_prev": 8.0
+  },
+  {
+   "txn_id": "3528902",
+   "ts": "2016-12-09 22:19:33",
+   "amount": 141.0,
+   "product": "W",
+   "channel": "in_person",
+   "region": 269.0,
+   "country": 87.0,
+   "dist1": 1.0,
+   "p_email": "gmail.com",
+   "r_email": null,
+   "risk_score": 0.07,
+   "device_profile": null,
+   "device_status": null,
+   "proxy": null,
+   "device_type": null,
+   "match_flags": {
+    "M1": "T",
+    "M2": "T",
+    "M3": "T",
+    "M4": "M0",
+    "M5": "F",
+    "M6": "T",
+    "M7": "F",
+    "M8": "F",
+    "M9": "T"
+   },
+   "counts": {
+    "C1": 4.0,
+    "C13": 6.0,
+    "C14": 3.0
+   },
+   "days_since_prev": 0.0
+  },
+  {
+   "txn_id": "3529041",
+   "ts": "2016-12-09 23:01:44",
+   "amount": 34.09,
+   "product": "W",
+   "channel": "in_person",
+   "region": 264.0,
+   "country": 87.0,
+   "dist1": null,
+   "p_email": "yahoo.com",
+   "r_email": null,
+   "risk_score": 0.55,
+   "device_profile": null,
+   "device_status": null,
+   "proxy": null,
+   "device_type": null,
+   "match_flags": {
+    "M1": "T",
+    "M2": "T",
+    "M3": "T",
+    "M4": "M1",
+    "M5": "T",
+    "M6": "T",
+    "M7": "F",
+    "M8": "F",
+    "M9": "T"
+   },
+   "counts": {
+    "C1": 2.0,
+    "C13": 1.0,
+    "C14": 1.0
+   },
+   "days_since_prev": 0.0
+  },
+  {
+   "txn_id": "3529981",
+   "ts": "2016-12-10 10:50:46",
+   "amount": 108.43,
+   "product": "W",
+   "channel": "in_person",
+   "region": 251.0,
+   "country": 87.0,
+   "dist1": 54.0,
+   "p_email": null,
+   "r_email": null,
+   "risk_score": 0.08,
+   "device_profile": null,
+   "device_status": null,
+   "proxy": null,
+   "device_type": null,
+   "match_flags": {
+    "M1": "T",
+    "M2": "T",
+    "M3": "F",
+    "M4": "M1",
+    "M5": "T",
+    "M6": "F",
+    "M7": "F",
+    "M8": "F",
+    "M9": "T"
+   },
+   "counts": {
+    "C1": 12.0,
+    "C13": 68.0,
+    "C14": 9.0
+   },
+   "days_since_prev": 287.0
+  },
+  {
+   "txn_id": "3530056",
+   "ts": "2016-12-10 12:12:41",
+   "amount": 116.93,
+   "product": "W",
+   "channel": "in_person",
+   "region": 330.0,
+   "country": 87.0,
+   "dist1": null,
+   "p_email": "me.com",
+   "r_email": null,
+   "risk_score": 0.88,
+   "device_profile": null,
+   "device_status": null,
+   "proxy": null,
+   "device_type": null,
+   "match_flags": {
+    "M1": "T",
+    "M2": "T",
+    "M3": "T",
+    "M4": "M0",
+    "M5": "F",
+    "M6": "T",
+    "M7": "F",
+    "M8": "F",
+    "M9": "T"
+   },
+   "counts": {
+    "C1": 1.0,
+    "C13": 1.0,
+    "C14": 1.0
+   },
+   "days_since_prev": 0.0
+  },
+  {
+   "txn_id": "3530164",
+   "ts": "2016-12-10 13:01:21",
+   "amount": 49.0,
+   "product": "W",
+   "channel": "in_person",
+   "region": 330.0,
+   "country": 87.0,
+   "dist1": 9.0,
+   "p_email": "me.com",
+   "r_email": null,
+   "risk_score": 0.4,
+   "device_profile": null,
+   "device_status": null,
+   "proxy": null,
+   "device_type": null,
+   "match_flags": {
+    "M1": "T",
+    "M2": "T",
+    "M3": "T",
+    "M4": "M0",
+    "M5": "F",
+    "M6": "T",
+    "M7": "F",
+    "M8": "F",
+    "M9": "T"
+   },
+   "counts": {
+    "C1": 1.0,
+    "C13": 2.0,
+    "C14": 1.0
+   },
+   "days_since_prev": 0.0
+  }
+ ],
+ "profile": {
+  "card_id": "C08623-K2",
+  "customer_id": "C08623",
+  "n_txns": 985,
+  "first_seen": "2016-07-06 14:31:05",
+  "n_online": 49,
+  "n_in_person": 936,
+  "products": {
+   "W": 936,
+   "H": 25,
+   "S": 14,
+   "R": 10
+  },
+  "regions_top": {
+   "299.0": 117,
+   "204.0": 83,
+   "315.0": 73,
+   "264.0": 65,
+   "325.0": 46,
+   "441.0": 43,
+   "330.0": 42,
+   "272.0": 40
+  },
+  "n_regions": 53,
+  "amount_median": 67.92,
+  "amount_p95": 424.988,
+  "amount_max": 2680.95,
+  "known_devices": {
+   "Windows | Windows 10 | firefox 57.0 | 1920x1080": 4,
+   "? | Linux | chrome 63.0 | ?": 3,
+   "iOS Device | iOS 11.1.1 | mobile safari 11.0 | 1334x750": 2,
+   "Windows | Windows 10 | chrome 62.0 | 1920x1080": 2,
+   "iOS Device | iOS 11.1.2 | mobile safari generic | 2208x1242": 2,
+   "Windows | Windows Vista | firefox 52.0 | 1152x864": 2,
+   "iOS Device | iOS 11.2.1 | mobile safari 11.0 | 1334x750": 2,
+   "Windows | Windows 10 | edge 16.0 | ?": 2,
+   "iOS Device | iOS 11.2.5 | mobile safari generic | 1334x750": 2,
+   "Trident/7.0 | Windows 10 | ie 11.0 for desktop | 1440x900": 2
+  },
+  "new_device_share": 0.32653061224489793,
+  "n_known_devices": 33,
+  "p_email_top": {
+   "gmail.com": 388,
+   "yahoo.com": 222,
+   "aol.com": 46,
+   "hotmail.com": 41
+  },
+  "proxy_history": 4,
+  "flagged": {
+   "amount_percentile": 0.28426395939086296,
+   "amount_z": -0.4941432846192535,
+   "product_seen_before": 936,
+   "region_seen_before": 42,
+   "device_seen_before": null,
+   "channel_share_online": 0.049746192893401014
+  }
+ },
+ "device": null,
+ "peers": null,
+ "signals": [
+  {
+   "claim": "Cardholder reports they did not make the $49.00 purchase (customer disputes are right about 84% of the time in closed cases, but recurring charges are the usual exception)",
+   "source": "customer",
+   "ref": "trigger:customer_report",
+   "entity_ids": [
+    "3530164"
+   ],
+   "weight": 0.0,
+   "key": "customer_report"
+  },
+  {
+   "claim": "$49.00 is within the card's normal range (median $67.92, p95 $424.99)",
+   "source": "graph",
+   "ref": "query:card_profile(card_id=C08623-K2)",
+   "entity_ids": [
+    "3530164"
+   ],
+   "weight": -0.5,
+   "key": "amount_typical"
+  },
+  {
+   "claim": "Billing region 330 already appears 42 times on this card across 6 month(s)",
+   "source": "graph",
+   "ref": "query:region_history(card_id=C08623-K2, region=330)",
+   "entity_ids": [
+    "3530164"
+   ],
+   "weight": -0.9,
+   "key": "region_known"
+  },
+  {
+   "claim": "Same product and amount ($49.00 W) recurs 56 times across 6 months on this card \u2014 matches the cardholder's own recurring pattern",
+   "source": "graph",
+   "ref": "query:recurring_match(card_id=C08623-K2, txn_id=3530164)",
+   "entity_ids": [
+    "3501732",
+    "3511680",
+    "3515518",
+    "3530164"
+   ],
+   "weight": -1.6,
+   "key": "recurring"
+  },
+  {
+   "claim": "Customer has 5 confirmed fraud cases since July (mostly out_of_region_use) and 1 cleared alert(s) \u2014 a repeat target",
+   "source": "graph",
+   "ref": "query:prior_cases_for_customer(customer_id=C08623)",
+   "entity_ids": [
+    "CC-2817",
+    "CC-2935",
+    "CC-3327",
+    "CC-3682",
+    "CC-4957"
+   ],
+   "weight": 0.35,
+   "key": "history_repeat_victim"
+  },
+  {
+   "claim": "Customer response: Customer, shown the history of identical monthly charges on their own card, recognises the merchant and confirms the charge; asks for a reminder next cycle",
+   "source": "customer",
+   "ref": "evidence_request:1",
+   "entity_ids": [],
+   "weight": -2.4,
+   "key": "evidence_confirmed"
+  }
+ ],
+ "initial_prob": 0.08,
+ "tool_log": [
+  {
+   "step": 1,
+   "tool": "get_transaction",
+   "args": {
+    "txn_id": 3530164
+   },
+   "ms": 2.7,
+   "result_preview": "{'txn_id': '3530164', 'ts': '2016-12-10 13:01:21', 'amount': 49.0, 'product': 'W', 'channel': 'in_person', 'region': 330.0, 'country': 87.0, 'dist1': 9.0, 'p_email': 'me.com', 'r_email': None, 'risk_score': 0.4, 'device_profile': None, 'dev\u2026"
+  },
+  {
+   "step": 2,
+   "tool": "card_profile",
+   "args": {
+    "card_id": "C08623-K2",
+    "before_txn_id": 3530164
+   },
+   "ms": 23.0,
+   "result_preview": "{'card_id': 'C08623-K2', 'customer_id': 'C08623', 'n_txns': 985, 'first_seen': '2016-07-06 14:31:05', 'n_online': 49, 'n_in_person': 936, 'products': {'W': 936, 'H': 25, 'S': 14, 'R': 10}, 'regions_top': {'299.0': 117, '204.0': 83, '315.0':\u2026"
+  },
+  {
+   "step": 3,
+   "tool": "card_window",
+   "args": {
+    "card_id": "C08623-K2",
+    "center_txn_id": 3530164,
+    "hours_before": 48,
+    "hours_after": 48,
+    "as_of": "2016-12-10 15:01:21"
+   },
+   "ms": 7.0,
+   "result_preview": "[{'txn_id': '3524629', 'ts': '2016-12-08 13:55:40', 'amount': 117.04, 'product': 'W', 'channel': 'in_person', 'region': 433.0, 'country': 87.0, 'dist1': None, 'p_email': None, 'r_email': None, 'risk_score': 0.03, 'device_profile': None, 'de\u2026"
+  },
+  {
+   "step": 4,
+   "tool": "region_history",
+   "args": {
+    "card_id": "C08623-K2",
+    "region": 330.0,
+    "before_txn_id": 3530164,
+    "as_of": "2016-12-10 15:01:21"
+   },
+   "ms": 9.8,
+   "result_preview": "{'region': 330.0, 'home_region': 299.0, 'n_before': 42, 'first_seen_in_region': '2016-07-09 23:53:35', 'months_active_in_region': 6, 'in_region_next_7d': 1, 'home_activity_next_7d': 0, 'in_person_share_in_region': 0.8095238095238095}"
+  },
+  {
+   "step": 5,
+   "tool": "recurring_match",
+   "args": {
+    "card_id": "C08623-K2",
+    "txn_id": 3530164,
+    "as_of": "2016-12-10 15:01:21"
+   },
+   "ms": 7.5,
+   "result_preview": "{'amount': 49.0, 'product': 'W', 'n_matches': 56, 'months_with_match': ['2016-07', '2016-08', '2016-09', '2016-10', '2016-11', '2016-12'], 'n_months': 6, 'n_same_region': 4, 'share_of_card_txns': 0.0568, 'n_same_amount_within_1h': 1, 'same_\u2026"
+  },
+  {
+   "step": 6,
+   "tool": "customer_fraud_rate",
+   "args": {
+    "customer_id": "C08623",
+    "as_of": "2016-12-10 15:01:21"
+   },
+   "ms": 12.3,
+   "result_preview": "{'customer_id': 'C08623', 'n': 780, 'fraud_rate': 0.0115, 'global_rate': 0.0337, 'fraud_rate_in_person': 0.0109, 'n_in_person': 735, 'fraud_rate_online': 0.0222, 'n_online': 45}"
+  },
+  {
+   "step": 7,
+   "tool": "prior_cases_for_customer",
+   "args": {
+    "customer_id": "C08623"
+   },
+   "ms": 2.0,
+   "result_preview": "[{'case_id': 'CC-1589', 'outcome': 'cleared', 'pattern': 'none', 'opened_at': '2016-08-03 00:37:36', 'exposure_usd': 0.0, 'report_filed': 'No', 'notes': 'Case CC-1589: model scored a $99.91 transaction at 0.94. Cardholder confirmed travel t\u2026"
+  },
+  {
+   "step": 8,
+   "tool": "similar_cases",
+   "args": {
+    "query_text": "in person product W customer report recurring charge same amount monthly cardholder confirmed",
+    "pattern_hint": "out_of_region_use account_takeover",
+    "customer_id": "C08623",
+    "k": 5
+   },
+   "ms": 98.4,
+   "result_preview": "[{'case_id': 'HHG-003', 'kind': 'agent_case', 'score': 0.32, 'customer_id': 'C08623', 'card_id': 'C08623-K2', 'opened_at': '2016-12-10 15:01:21', 'status': 'closed_legitimate', 'verdict': 'legitimate', 'fraud_probability': 0.05, 'pattern': \u2026"
+  },
+  {
+   "step": 9,
+   "tool": "retrieve_policy",
+   "args": {
+    "query_text": "out_of_region_use account_takeover customer_report verify block report shared device",
+    "k": 4
+   },
+   "ms": 8.4,
+   "result_preview": "[{'doc_id': 'policy:R1', 'title': 'Fraud Policy R1 \u2013 verify before you block on a weak signal', 'score': 0.21, 'text': 'R1. Verify before you block on a weak signal. If the case rests on a single signal (including a risk score alone) and th\u2026"
+  },
+  {
+   "step": 10,
+   "tool": "evidence_request:customer_validation",
+   "args": {
+    "kind": "customer_validation",
+    "prompt": "Did you make the $49.00 W purchase on 2016-12-10?",
+    "assumed_response": "Customer, shown the history of identical monthly charges on their own card, recognises the merchant and confirms the charge; asks for a reminder next cycle"
+   },
+   "ms": 0.0,
+   "result_preview": "{'type': 'customer_validation', 'prompt': 'Did you make the $49.00 W purchase on 2016-12-10?', 'assumed_response': 'Customer, shown the history of identical monthly charges on their own card, recognises the merchant and confirms the charge;\u2026"
+  },
+  {
+   "step": 11,
+   "tool": "write_case",
+   "args": {
+    "case": {
+     "case_id": "HHG-003",
+     "customer_id": "C08623",
+     "card_id": "C08623-K2",
+     "opened_at": "2016-12-10 15:01:21",
+     "status": "closed_legitimate",
+     "verdict": "legitimate",
+     "fraud_probability": 0.05,
+     "pattern": "none",
+     "exposure_usd": 0.0,
+     "affected_txn_ids": [],
+     "connected_card_ids": [],
+     "connected_device_profiles": [],
+     "sar_filed": false,
+     "final_actions": [
+      "CREATE_CASE",
+      "WARN_CUSTOMER",
+      "CLOSE_NO_FRAUD"
+     ],
+     "summary": "Assessed as legitimate (probability 0.05, no fraud pattern). Flagged in-person W transaction 3530164 of $49.00 on card C08623-K2 at 2016-12-10 13:01:21. Customer response: Customer, shown the history of identical monthly charges on their own card, recognises the merchant and confirms the charge; asks for a reminder next cycle. Same product and amount ($49.00 W) recurs 56 times across 6 months on this card \u2014 matches the cardholder's own recurring pattern. Billing region 330 already appears 42 times on this card across 6 month(s). Evidence requested (customer validation); assumed response: Customer, shown the history of identical monthly charges on their own card, recognises the merchant and confirms the charge; asks for a reminder next cycle. Final actions: CREATE_CASE, WARN_CUSTOMER, CLOSE_NO_FRAUD.",
+     "similar_prior_cases": [
+      "HHG-003",
+      "HHG-009",
+      "HHG-018",
+      "HHG-011",
+      "MON-3502292"
+     ],
+     "graph_case_id": "CASE-2016-1028"
+    }
+   },
+   "ms": 771.0,
+   "result_preview": "CASE-2016-1028"
+  },
+  {
+   "step": 12,
+   "tool": "execute_action",
+   "args": {
+    "action": "CREATE_CASE",
+    "route": "auto",
+    "payload": {
+     "case_id": "HHG-003",
+     "card_id": "C08623-K2",
+     "txn_id": "3530164"
+    }
+   },
+   "ms": 0.0,
+   "result_preview": "{'action': 'CREATE_CASE', 'route': 'auto', 'status': 'executed', 'payload': {'case_id': 'HHG-003', 'card_id': 'C08623-K2', 'txn_id': '3530164'}}"
+  },
+  {
+   "step": 13,
+   "tool": "execute_action",
+   "args": {
+    "action": "WARN_CUSTOMER",
+    "route": "auto",
+    "payload": {
+     "case_id": "HHG-003",
+     "card_id": "C08623-K2",
+     "txn_id": "3530164"
+    }
+   },
+   "ms": 0.0,
+   "result_preview": "{'action': 'WARN_CUSTOMER', 'route': 'auto', 'status': 'executed', 'payload': {'case_id': 'HHG-003', 'card_id': 'C08623-K2', 'txn_id': '3530164'}}"
+  },
+  {
+   "step": 14,
+   "tool": "execute_action",
+   "args": {
+    "action": "CLOSE_NO_FRAUD",
+    "route": "auto",
+    "payload": {
+     "case_id": "HHG-003",
+     "card_id": "C08623-K2",
+     "txn_id": "3530164"
+    }
+   },
+   "ms": 0.0,
+   "result_preview": "{'action': 'CLOSE_NO_FRAUD', 'route': 'auto', 'status': 'executed', 'payload': {'case_id': 'HHG-003', 'card_id': 'C08623-K2', 'txn_id': '3530164'}}"
+  }
+ ]
+}

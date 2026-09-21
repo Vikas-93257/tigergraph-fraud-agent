@@ -1,0 +1,125 @@
+{
+  "case_id": "HHG-002",
+  "case": {
+    "status": "closed_fraud",
+    "verdict": "fraud",
+    "fraud_probability": 0.93,
+    "pattern": "card_not_present_fraud",
+    "pattern_description": "",
+    "affected_txn_ids": [
+      "3478782"
+    ],
+    "first_suspicious_txn_id": "3478782",
+    "connected_card_ids": [],
+    "connected_device_profiles": [],
+    "exposure_usd": 292.36,
+    "evidence": [
+      {
+        "claim": "Bank model risk score 0.79 on the flagged transaction (an input, not a verdict)",
+        "source": "graph",
+        "ref": "query:get_transaction(txn_id=3478782)",
+        "entity_ids": [
+          "3478782"
+        ]
+      },
+      {
+        "claim": "$292.36 exceeds every prior amount on this card (previous max $121.32, median $47.29)",
+        "source": "graph",
+        "ref": "query:card_profile(card_id=C11891-K1)",
+        "entity_ids": [
+          "3478782"
+        ]
+      },
+      {
+        "claim": "No device fingerprint captured for this online transaction",
+        "source": "graph",
+        "ref": "query:card_profile(card_id=C11891-K1)",
+        "entity_ids": [
+          "3478782"
+        ]
+      },
+      {
+        "claim": "Customer response: Customer states they did not make this purchase and still has the card",
+        "source": "customer",
+        "ref": "evidence_request:1",
+        "entity_ids": []
+      },
+      {
+        "claim": "Similar cases retrieved from case memory: HHG-001 (closed_legitimate, none); CC-4940 (confirmed_fraud, card_testing); CC-0137 (confirmed_fraud, card_testing)",
+        "source": "graph",
+        "ref": "query:similar_cases",
+        "entity_ids": [
+          "HHG-001",
+          "CC-4940",
+          "CC-0137"
+        ]
+      },
+      {
+        "claim": "Policy sections applied: Fraud Policy R1 \u2013 verify before you block on a weak signal, Fraud Policy 3a \u2013 a case is not a report, Fraud Policy R2 \u2013 customer denies the transaction",
+        "source": "document",
+        "ref": "policy:R1, policy:3a, policy:R2",
+        "entity_ids": []
+      }
+    ],
+    "similar_prior_cases": [
+      "CC-4940",
+      "CC-0137",
+      "CC-0290",
+      "CC-1242"
+    ],
+    "summary": "Assessed as fraud (probability 0.93, card not present fraud). Flagged online C transaction 3478782 of $292.36 on card C11891-K1 at 2016-11-22 17:27:07. Customer response: Customer states they did not make this purchase and still has the card. $292.36 exceeds every prior amount on this card (previous max $121.32, median $47.29). Evidence requested (customer validation); assumed response: Customer states they did not make this purchase and still has the card. Exposure $292.36 across 1 transaction(s). Final actions: CREATE_CASE, BLOCK_CARD.",
+    "written_to_graph": true,
+    "graph_case_id": "CASE-2016-1002"
+  },
+  "evidence_requests": [
+    {
+      "type": "customer_validation",
+      "asked_after_step": 5,
+      "assumed_response": "Customer states they did not make this purchase and still has the card"
+    }
+  ],
+  "next_best_actions": {
+    "initial": [
+      {
+        "action": "VERIFY_WITH_CUSTOMER",
+        "route": "auto",
+        "reason": "R1: probability 0.54 on a weak signal set; verify before any block"
+      },
+      {
+        "action": "CREATE_CASE",
+        "route": "auto",
+        "reason": "3a: fraud probability 0.54 \u2265 0.30; open the internal case"
+      },
+      {
+        "action": "MONITOR_CARD",
+        "route": "auto",
+        "reason": "72h heightened monitoring pending reply"
+      }
+    ],
+    "final": [
+      {
+        "action": "CREATE_CASE",
+        "route": "auto",
+        "reason": "R2"
+      },
+      {
+        "action": "BLOCK_CARD",
+        "route": "L1",
+        "reason": "R2: customer denied; exposure $292.36"
+      }
+    ],
+    "what_changed": "Customer denial (R2) raised probability from 0.54 to 0.93; verification is replaced by BLOCK_CARD and the case record."
+  },
+  "sar": {
+    "file": false,
+    "reason": "3a: fraud confirmed but exposure $292.36 is under $1,000, no shared origin and a documented pattern; case only, no report",
+    "narrative": "",
+    "subjects": [],
+    "total_amount_usd": 0,
+    "activity_dates": []
+  },
+  "stop_reason": "Verification response settled the question (customer denied); probability 0.93. Further graph queries would not change the actions.",
+  "tool_calls": 13,
+  "tokens": 0,
+  "latency_s": 0.84
+}

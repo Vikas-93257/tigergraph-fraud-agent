@@ -1,0 +1,160 @@
+{
+  "case_id": "ADHOC-3502436",
+  "case": {
+    "status": "closed_fraud",
+    "verdict": "fraud",
+    "fraud_probability": 0.95,
+    "pattern": "account_takeover",
+    "pattern_description": "",
+    "affected_txn_ids": [
+      "3500460",
+      "3502428",
+      "3502436"
+    ],
+    "first_suspicious_txn_id": "3500460",
+    "connected_card_ids": [],
+    "connected_device_profiles": [],
+    "exposure_usd": 4948.49,
+    "evidence": [
+      {
+        "claim": "Ad-hoc review of 3502436",
+        "source": "external",
+        "ref": "trigger:analyst_request",
+        "entity_ids": [
+          "3502436"
+        ]
+      },
+      {
+        "claim": "$1,650.97 is above the card's 95th percentile ($749.29; median $100.03)",
+        "source": "graph",
+        "ref": "query:card_profile(card_id=C11543-K2)",
+        "entity_ids": [
+          "3502436"
+        ]
+      },
+      {
+        "claim": "Billing region 191 already appears 28 times on this card across 5 month(s)",
+        "source": "graph",
+        "ref": "query:region_history(card_id=C11543-K2, region=191)",
+        "entity_ids": [
+          "3502436"
+        ]
+      },
+      {
+        "claim": "3 purchases above the card's 95th percentile ($749.29) within 48 hours ($1,136.48, $2,161.04, $1,650.97; in-person) \u2014 the card normally shows one such amount every 20 purchases",
+        "source": "graph",
+        "ref": "query:card_window(card_id=C11543-K2, hours=48)",
+        "entity_ids": [
+          "3500460",
+          "3502428",
+          "3502436"
+        ]
+      },
+      {
+        "claim": "Customer has 6 confirmed fraud cases since July (mostly card_not_present_fraud) and 1 cleared alert(s) \u2014 a repeat target",
+        "source": "graph",
+        "ref": "query:prior_cases_for_customer(customer_id=C11543)",
+        "entity_ids": [
+          "CC-2974",
+          "CC-3259",
+          "CC-3601",
+          "CC-4631",
+          "CC-5189"
+        ]
+      },
+      {
+        "claim": "Customer response: Customer states they did not make this purchase and still has the card",
+        "source": "customer",
+        "ref": "evidence_request:1",
+        "entity_ids": []
+      },
+      {
+        "claim": "Similar cases retrieved from case memory: MON-3502436 (closed_fraud, account_takeover); MON-3503978 (closed_legitimate, none); HHG-001 (closed_legitimate, none)",
+        "source": "graph",
+        "ref": "query:similar_cases",
+        "entity_ids": [
+          "MON-3502436",
+          "MON-3503978",
+          "HHG-001"
+        ]
+      },
+      {
+        "claim": "Policy sections applied: Fraud Policy 3a \u2013 a case is not a report, Fraud Policy R1 \u2013 verify before you block on a weak signal, Fraud Policy R2 \u2013 customer denies the transaction",
+        "source": "document",
+        "ref": "policy:3a, policy:R1, policy:R2",
+        "entity_ids": []
+      }
+    ],
+    "similar_prior_cases": [],
+    "summary": "Assessed as fraud (probability 0.95, account takeover). Flagged in-person W transaction 3502436 of $1,650.97 on card C11543-K2 at 2016-12-01 01:17:32. Customer response: Customer states they did not make this purchase and still has the card. 3 purchases above the card's 95th percentile ($749.29) within 48 hours ($1,136.48, $2,161.04, $1,650.97; in-person) \u2014 the card normally shows one such amount every 20 purchases. Billing region 191 already appears 28 times on this card across 5 month(s). Evidence requested (customer validation); assumed response: Customer states they did not make this purchase and still has the card. Exposure $4,948.49 across 3 transaction(s). Final actions: CREATE_CASE, BLOCK_CARD, FILE_REPORT.",
+    "written_to_graph": true,
+    "graph_case_id": "CASE-2016-1029"
+  },
+  "evidence_requests": [
+    {
+      "type": "customer_validation",
+      "asked_after_step": 5,
+      "assumed_response": "Customer states they did not make this purchase and still has the card"
+    }
+  ],
+  "next_best_actions": {
+    "initial": [
+      {
+        "action": "VERIFY_WITH_CUSTOMER",
+        "route": "auto",
+        "reason": "R1: probability 0.68 on a weak signal set; verify before any block"
+      },
+      {
+        "action": "CREATE_CASE",
+        "route": "auto",
+        "reason": "3a: fraud probability 0.68 \u2265 0.30; open the internal case"
+      },
+      {
+        "action": "MONITOR_CARD",
+        "route": "auto",
+        "reason": "72h heightened monitoring pending reply"
+      },
+      {
+        "action": "ESCALATE_TO_ANALYST",
+        "route": "auto",
+        "reason": "R8: verdict uncertain and exposure $4,948.49 exceeds $500"
+      }
+    ],
+    "final": [
+      {
+        "action": "CREATE_CASE",
+        "route": "auto",
+        "reason": "R2"
+      },
+      {
+        "action": "BLOCK_CARD",
+        "route": "L2",
+        "reason": "R2: customer denied; exposure $4,948.49"
+      },
+      {
+        "action": "FILE_REPORT",
+        "route": "L2",
+        "reason": "3a: exposure $4,948.49 exceeds $1,000"
+      }
+    ],
+    "what_changed": "Customer denial (R2) raised probability from 0.68 to 0.95; verification is replaced by BLOCK_CARD and the case record plus a report."
+  },
+  "sar": {
+    "file": true,
+    "reason": "3a: exposure $4,948.49 exceeds $1,000",
+    "subjects": [
+      "C11543",
+      "C11543-K2"
+    ],
+    "total_amount_usd": 4948.49,
+    "activity_dates": [
+      "2016-11-30",
+      "2016-12-01"
+    ],
+    "narrative": "Between 2016-11-30 and 2016-12-01, card C11543-K2 held by customer C11543 was used for 3 in-person transaction(s) totalling $4,948.49 ($1,136.48, $2,161.04, $1,650.97) under product code W in billing region 191. 3 purchases above the card's 95th percentile ($749.29) within 48 hours ($1,136.48, $2,161.04, $1,650.97; in-person) \u2014 the card normally shows one such amount every 20 purchases. $1,650.97 is above the card's 95th percentile ($749.29; median $100.03). The cardholder, contacted the same day, stated that they did not make these purchases and remained in possession of the card. The activity is consistent with account takeover and is inconsistent with the cardholder's established history. Total suspected unauthorised amount: $4,948.49. The card has been blocked and scheduled for reissue."
+  },
+  "stop_reason": "Verification response settled the question (customer denied); probability 0.95. Further graph queries would not change the actions.",
+  "tool_calls": 14,
+  "tokens": 0,
+  "latency_s": 0.84
+}

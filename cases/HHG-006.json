@@ -1,0 +1,204 @@
+{
+  "case_id": "HHG-006",
+  "case": {
+    "status": "escalated",
+    "verdict": "fraud",
+    "fraud_probability": 0.95,
+    "pattern": "undocumented",
+    "pattern_description": "Sub-threshold burst: three to four card-not-present purchases within roughly thirty minutes, each priced just under $500, from devices marked New (some behind a transparent proxy). The amounts look chosen to stay under a $500 authorization threshold; the same signature appears on other cards this month and matches closed cases CC-3748/CC-3841 from September. Found by scanning the \u00b148h card window and then querying the graph for peers with the same amount/velocity signature.",
+    "affected_txn_ids": [
+      "3476602",
+      "3476633",
+      "3476665",
+      "3476682"
+    ],
+    "first_suspicious_txn_id": "3476602",
+    "connected_card_ids": [
+      "C00466-K1",
+      "C05851-K1",
+      "C06208-K1",
+      "C09443-K1",
+      "C10990-K1",
+      "C11808-K1"
+    ],
+    "connected_device_profiles": [],
+    "exposure_usd": 1906.07,
+    "evidence": [
+      {
+        "claim": "Cardholder reports they did not make the $482.12 purchase (customer disputes are right about 84% of the time in closed cases, but recurring charges are the usual exception)",
+        "source": "customer",
+        "ref": "trigger:customer_report",
+        "entity_ids": [
+          "3476682"
+        ]
+      },
+      {
+        "claim": "$482.12 is above the card's 95th percentile ($414.69; median $62.93)",
+        "source": "graph",
+        "ref": "query:card_profile(card_id=C07297-K1)",
+        "entity_ids": [
+          "3476682"
+        ]
+      },
+      {
+        "claim": "Device profile 'Trident/7.0 | Windows 7 | ie 11.0 for desktop | 1920x1080' was already used 2 time(s) on this account before the alert",
+        "source": "graph",
+        "ref": "query:card_profile(card_id=C07297-K1)",
+        "entity_ids": [
+          "3476682"
+        ]
+      },
+      {
+        "claim": "Cardholder is almost exclusively in-person (5 of 199 prior transactions online); an online purchase is itself unusual",
+        "source": "graph",
+        "ref": "query:card_profile(card_id=C07297-K1)",
+        "entity_ids": [
+          "3476682"
+        ]
+      },
+      {
+        "claim": "4 online purchases of $478.95, $456.96, $488.04, $482.12 within 30 minutes, each just under $500 \u2014 amounts consistent with staying under a $500 authorization threshold",
+        "source": "graph",
+        "ref": "query:card_window(card_id=C07297-K1, hours=48)",
+        "entity_ids": [
+          "3476602",
+          "3476633",
+          "3476665",
+          "3476682"
+        ]
+      },
+      {
+        "claim": "4 purchases above the card's 95th percentile ($414.69) within 48 hours ($478.95, $456.96, $488.04, $482.12; online) \u2014 the card normally shows one such amount every 20 purchases",
+        "source": "graph",
+        "ref": "query:card_window(card_id=C07297-K1, hours=48)",
+        "entity_ids": [
+          "3476602",
+          "3476633",
+          "3476665",
+          "3476682"
+        ]
+      },
+      {
+        "claim": "6 other cards show the same signature (3\u20134 online purchases just under $500 within an hour) in the past 30 days",
+        "source": "graph",
+        "ref": "query:pattern_peers(kind=sub500_burst)",
+        "entity_ids": [
+          "C00466-K1",
+          "C05851-K1",
+          "C06208-K1",
+          "C09443-K1",
+          "C10990-K1",
+          "C11808-K1"
+        ]
+      },
+      {
+        "claim": "Similar cases retrieved from case memory: CC-3748 (confirmed_fraud, undocumented); CC-4086 (confirmed_fraud, undocumented); CC-3841 (confirmed_fraud, undocumented)",
+        "source": "graph",
+        "ref": "query:similar_cases",
+        "entity_ids": [
+          "CC-3748",
+          "CC-4086",
+          "CC-3841"
+        ]
+      },
+      {
+        "claim": "Policy sections applied: Fraud Policy R1 \u2013 verify before you block on a weak signal, Fraud Policy 3a \u2013 a case is not a report, Fraud Policy R2 \u2013 customer denies the transaction",
+        "source": "document",
+        "ref": "policy:R1, policy:3a, policy:R2",
+        "entity_ids": []
+      }
+    ],
+    "similar_prior_cases": [
+      "CC-3748",
+      "CC-4086",
+      "CC-3841",
+      "CC-4124",
+      "CC-3907"
+    ],
+    "summary": "Assessed as fraud (probability 0.95, undocumented). Flagged online C transaction 3476682 of $482.12 on card C07297-K1 at 2016-11-21 20:30:00. 4 online purchases of $478.95, $456.96, $488.04, $482.12 within 30 minutes, each just under $500 \u2014 amounts consistent with staying under a $500 authorization threshold. 4 purchases above the card's 95th percentile ($414.69) within 48 hours ($478.95, $456.96, $488.04, $482.12; online) \u2014 the card normally shows one such amount every 20 purchases. 6 other cards show the same signature (3\u20134 online purchases just under $500 within an hour) in the past 30 days. Exposure $1,906.07 across 4 transaction(s). Final actions: CREATE_CASE, BLOCK_CARD, MONITOR_CONNECTED_CARDS, FILE_REPORT, ESCALATE_TO_ANALYST.",
+    "written_to_graph": true,
+    "graph_case_id": "CASE-2016-1006"
+  },
+  "evidence_requests": [],
+  "next_best_actions": {
+    "initial": [
+      {
+        "action": "CREATE_CASE",
+        "route": "auto",
+        "reason": "3a: fraud probability 0.95 \u2265 0.30; open the internal case"
+      },
+      {
+        "action": "BLOCK_CARD",
+        "route": "L1",
+        "reason": "R9/R2: coordinated abuse across customers with probability 0.95"
+      },
+      {
+        "action": "MONITOR_CONNECTED_CARDS",
+        "route": "auto",
+        "reason": "R6: every card sharing the device / signature goes under monitoring"
+      },
+      {
+        "action": "FILE_REPORT",
+        "route": "L2",
+        "reason": "R9: undocumented, coordinated pattern"
+      },
+      {
+        "action": "ESCALATE_TO_ANALYST",
+        "route": "auto",
+        "reason": "R9: undocumented pattern must be reviewed by a human"
+      }
+    ],
+    "final": [
+      {
+        "action": "CREATE_CASE",
+        "route": "auto",
+        "reason": "3a: fraud probability 0.95 \u2265 0.30; open the internal case"
+      },
+      {
+        "action": "BLOCK_CARD",
+        "route": "L1",
+        "reason": "R9/R2: coordinated abuse across customers with probability 0.95"
+      },
+      {
+        "action": "MONITOR_CONNECTED_CARDS",
+        "route": "auto",
+        "reason": "R6: every card sharing the device / signature goes under monitoring"
+      },
+      {
+        "action": "FILE_REPORT",
+        "route": "L2",
+        "reason": "R9: undocumented, coordinated pattern"
+      },
+      {
+        "action": "ESCALATE_TO_ANALYST",
+        "route": "auto",
+        "reason": "R9: undocumented pattern must be reviewed by a human"
+      }
+    ],
+    "what_changed": "nothing"
+  },
+  "sar": {
+    "file": true,
+    "reason": "3a: exposure $1,906.07 exceeds $1,000; activity connects to a shared device profile / region cluster (R6); activity connects to another customer's confirmed fraud; pattern is coordinated or undocumented (R9)",
+    "subjects": [
+      "C07297",
+      "C07297-K1",
+      "C00466-K1",
+      "C05851-K1",
+      "C06208-K1",
+      "C09443-K1",
+      "C10990-K1",
+      "C11808-K1"
+    ],
+    "total_amount_usd": 1906.07,
+    "activity_dates": [
+      "2016-11-21",
+      "2016-11-21"
+    ],
+    "narrative": "Between 2016-11-21 and 2016-11-21, card C07297-K1 held by customer C07297 was used for 4 online transaction(s) totalling $1,906.07 ($478.95, $456.96, $488.04, $482.12) under product code C in billing region 264. The transactions were submitted from device profile 'Trident/7.0 | Windows 7 | ie 11.0 for desktop | 1920x1080', recorded as New for this account. 4 online purchases of $478.95, $456.96, $488.04, $482.12 within 30 minutes, each just under $500 \u2014 amounts consistent with staying under a $500 authorization threshold. 4 purchases above the card's 95th percentile ($414.69) within 48 hours ($478.95, $456.96, $488.04, $482.12; online) \u2014 the card normally shows one such amount every 20 purchases. 6 other cards show the same signature (3\u20134 online purchases just under $500 within an hour) in the past 30 days. $482.12 is above the card's 95th percentile ($414.69; median $62.93). The same device profile or transaction signature appears on 6 other card(s) in the same period, including C00466-K1, C05851-K1, C06208-K1, C09443-K1, C10990-K1, indicating a common actor across multiple cardholders. This device profile was previously recorded on closed fraud case(s) CC-0781, CC-1476, CC-1960. The activity does not match a documented typology: Sub-threshold burst: three to four card-not-present purchases within roughly thirty minutes, each priced just under $500, from devices marked New (some behind a transparent proxy). Total suspected unauthorised amount: $1,906.07. The card has been blocked and scheduled for reissue; connected cards have been placed under monitoring; the case has been escalated to a fraud analyst."
+  },
+  "stop_reason": "Probability 0.95 \u2265 0.85 on 6 independent pieces of graph evidence (\u00a76); a defensible action exists without contacting the customer.",
+  "tool_calls": 17,
+  "tokens": 0,
+  "latency_s": 0.92
+}

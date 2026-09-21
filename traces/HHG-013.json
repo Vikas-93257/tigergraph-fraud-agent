@@ -1,0 +1,2127 @@
+{
+ "case_id": "HHG-013",
+ "trigger": {
+  "case_id": "HHG-013",
+  "opened_at": "2016-12-09 05:39:29",
+  "trigger_type": "risk_score",
+  "trigger_text": "Real-time model scored transaction 3526826 ($35.66, online) at 0.76. Review and decide.",
+  "flagged_txn_id": 3526826,
+  "card_id": "C07671-K2",
+  "customer_id": "C07671",
+  "risk_score": 0.76
+ },
+ "txn": {
+  "txn_id": "3526826",
+  "ts": "2016-12-09 02:39:29",
+  "amount": 35.66,
+  "product": "C",
+  "channel": "online",
+  "region": null,
+  "country": null,
+  "dist1": null,
+  "p_email": "gmail.com",
+  "r_email": "gmail.com",
+  "risk_score": 0.76,
+  "device_profile": "Windows | ? | chrome 66.0 | ?",
+  "device_status": "New",
+  "proxy": null,
+  "device_type": "desktop",
+  "match_flags": {
+   "M1": null,
+   "M2": null,
+   "M3": null,
+   "M4": "M2",
+   "M5": null,
+   "M6": null,
+   "M7": null,
+   "M8": null,
+   "M9": null
+  },
+  "counts": {
+   "C1": 1.0,
+   "C13": 1.0,
+   "C14": 1.0
+  },
+  "days_since_prev": 0.0,
+  "customer_id": "C07671",
+  "card_id": "C07671-K2",
+  "card_network": "mastercard",
+  "card_type": "debit"
+ },
+ "window": [
+  {
+   "txn_id": "3521713",
+   "ts": "2016-12-07 12:59:07",
+   "amount": 72.97,
+   "product": "W",
+   "channel": "in_person",
+   "region": 264.0,
+   "country": 87.0,
+   "dist1": 35.0,
+   "p_email": "gmail.com",
+   "r_email": null,
+   "risk_score": 0.24,
+   "device_profile": null,
+   "device_status": null,
+   "proxy": null,
+   "device_type": null,
+   "match_flags": {
+    "M1": "T",
+    "M2": "T",
+    "M3": "T",
+    "M4": null,
+    "M5": null,
+    "M6": "F",
+    "M7": "F",
+    "M8": "F",
+    "M9": "T"
+   },
+   "counts": {
+    "C1": 1.0,
+    "C13": 5.0,
+    "C14": 1.0
+   },
+   "days_since_prev": 58.0
+  },
+  {
+   "txn_id": "3521799",
+   "ts": "2016-12-07 13:40:34",
+   "amount": 107.86,
+   "product": "W",
+   "channel": "in_person",
+   "region": 264.0,
+   "country": 87.0,
+   "dist1": 7.0,
+   "p_email": "gmail.com",
+   "r_email": null,
+   "risk_score": 0.01,
+   "device_profile": null,
+   "device_status": null,
+   "proxy": null,
+   "device_type": null,
+   "match_flags": {
+    "M1": "T",
+    "M2": "T",
+    "M3": "T",
+    "M4": null,
+    "M5": null,
+    "M6": "T",
+    "M7": "F",
+    "M8": "T",
+    "M9": "T"
+   },
+   "counts": {
+    "C1": 2.0,
+    "C13": 11.0,
+    "C14": 2.0
+   },
+   "days_since_prev": 251.0
+  },
+  {
+   "txn_id": "3521839",
+   "ts": "2016-12-07 13:55:26",
+   "amount": 87.09,
+   "product": "W",
+   "channel": "in_person",
+   "region": 264.0,
+   "country": 87.0,
+   "dist1": 28.0,
+   "p_email": "yahoo.com",
+   "r_email": null,
+   "risk_score": 0.16,
+   "device_profile": null,
+   "device_status": null,
+   "proxy": null,
+   "device_type": null,
+   "match_flags": {
+    "M1": "T",
+    "M2": "T",
+    "M3": "T",
+    "M4": "M0",
+    "M5": "T",
+    "M6": "F",
+    "M7": "F",
+    "M8": "F",
+    "M9": "T"
+   },
+   "counts": {
+    "C1": 2.0,
+    "C13": 21.0,
+    "C14": 2.0
+   },
+   "days_since_prev": 89.0
+  },
+  {
+   "txn_id": "3521874",
+   "ts": "2016-12-07 14:09:19",
+   "amount": 47.86,
+   "product": "W",
+   "channel": "in_person",
+   "region": 264.0,
+   "country": 87.0,
+   "dist1": 7.0,
+   "p_email": "yahoo.com",
+   "r_email": null,
+   "risk_score": 0.15,
+   "device_profile": null,
+   "device_status": null,
+   "proxy": null,
+   "device_type": null,
+   "match_flags": {
+    "M1": "T",
+    "M2": "T",
+    "M3": "T",
+    "M4": null,
+    "M5": null,
+    "M6": "T",
+    "M7": "F",
+    "M8": "T",
+    "M9": "T"
+   },
+   "counts": {
+    "C1": 2.0,
+    "C13": 3.0,
+    "C14": 2.0
+   },
+   "days_since_prev": 52.0
+  },
+  {
+   "txn_id": "3522133",
+   "ts": "2016-12-07 15:57:01",
+   "amount": 663.96,
+   "product": "W",
+   "channel": "in_person",
+   "region": 264.0,
+   "country": 87.0,
+   "dist1": null,
+   "p_email": "gmail.com",
+   "r_email": null,
+   "risk_score": 0.11,
+   "device_profile": null,
+   "device_status": null,
+   "proxy": null,
+   "device_type": null,
+   "match_flags": {
+    "M1": "T",
+    "M2": "T",
+    "M3": "T",
+    "M4": "M1",
+    "M5": "T",
+    "M6": "F",
+    "M7": "F",
+    "M8": "F",
+    "M9": "F"
+   },
+   "counts": {
+    "C1": 107.0,
+    "C13": 599.0,
+    "C14": 89.0
+   },
+   "days_since_prev": 206.0
+  },
+  {
+   "txn_id": "3523372",
+   "ts": "2016-12-07 22:30:19",
+   "amount": 107.86,
+   "product": "W",
+   "channel": "in_person",
+   "region": 264.0,
+   "country": 87.0,
+   "dist1": 5.0,
+   "p_email": "yahoo.com",
+   "r_email": null,
+   "risk_score": 0.16,
+   "device_profile": null,
+   "device_status": null,
+   "proxy": null,
+   "device_type": null,
+   "match_flags": {
+    "M1": "T",
+    "M2": "T",
+    "M3": "T",
+    "M4": null,
+    "M5": null,
+    "M6": "F",
+    "M7": "T",
+    "M8": "T",
+    "M9": "T"
+   },
+   "counts": {
+    "C1": 2.0,
+    "C13": 3.0,
+    "C14": 2.0
+   },
+   "days_since_prev": 2.0
+  },
+  {
+   "txn_id": "3523953",
+   "ts": "2016-12-08 01:44:52",
+   "amount": 25.9,
+   "product": "W",
+   "channel": "in_person",
+   "region": 264.0,
+   "country": 87.0,
+   "dist1": null,
+   "p_email": "gmail.com",
+   "r_email": null,
+   "risk_score": 0.03,
+   "device_profile": null,
+   "device_status": null,
+   "proxy": null,
+   "device_type": null,
+   "match_flags": {
+    "M1": null,
+    "M2": null,
+    "M3": null,
+    "M4": null,
+    "M5": null,
+    "M6": "F",
+    "M7": null,
+    "M8": null,
+    "M9": null
+   },
+   "counts": {
+    "C1": 8.0,
+    "C13": 13.0,
+    "C14": 7.0
+   },
+   "days_since_prev": 0.0
+  },
+  {
+   "txn_id": "3524194",
+   "ts": "2016-12-08 03:43:20",
+   "amount": 108.91,
+   "product": "W",
+   "channel": "in_person",
+   "region": 310.0,
+   "country": 87.0,
+   "dist1": null,
+   "p_email": "gmail.com",
+   "r_email": null,
+   "risk_score": 0.11,
+   "device_profile": null,
+   "device_status": null,
+   "proxy": null,
+   "device_type": null,
+   "match_flags": {
+    "M1": "T",
+    "M2": "F",
+    "M3": "F",
+    "M4": null,
+    "M5": null,
+    "M6": "F",
+    "M7": "F",
+    "M8": "F",
+    "M9": "T"
+   },
+   "counts": {
+    "C1": 1.0,
+    "C13": 2.0,
+    "C14": 1.0
+   },
+   "days_since_prev": 2.0
+  },
+  {
+   "txn_id": "3524237",
+   "ts": "2016-12-08 04:20:33",
+   "amount": 57.94,
+   "product": "W",
+   "channel": "in_person",
+   "region": 264.0,
+   "country": 87.0,
+   "dist1": null,
+   "p_email": null,
+   "r_email": null,
+   "risk_score": 0.04,
+   "device_profile": null,
+   "device_status": null,
+   "proxy": null,
+   "device_type": null,
+   "match_flags": {
+    "M1": "T",
+    "M2": "T",
+    "M3": "T",
+    "M4": null,
+    "M5": null,
+    "M6": "T",
+    "M7": "F",
+    "M8": "F",
+    "M9": "T"
+   },
+   "counts": {
+    "C1": 1.0,
+    "C13": 2.0,
+    "C14": 1.0
+   },
+   "days_since_prev": 17.0
+  },
+  {
+   "txn_id": "3524600",
+   "ts": "2016-12-08 13:38:44",
+   "amount": 49.07,
+   "product": "W",
+   "channel": "in_person",
+   "region": 264.0,
+   "country": 87.0,
+   "dist1": 15.0,
+   "p_email": null,
+   "r_email": null,
+   "risk_score": 0.06,
+   "device_profile": null,
+   "device_status": null,
+   "proxy": null,
+   "device_type": null,
+   "match_flags": {
+    "M1": "T",
+    "M2": "T",
+    "M3": "T",
+    "M4": "M0",
+    "M5": "F",
+    "M6": "F",
+    "M7": "F",
+    "M8": "F",
+    "M9": "T"
+   },
+   "counts": {
+    "C1": 3.0,
+    "C13": 4.0,
+    "C14": 2.0
+   },
+   "days_since_prev": 4.0
+  },
+  {
+   "txn_id": "3524626",
+   "ts": "2016-12-08 13:54:42",
+   "amount": 59.08,
+   "product": "W",
+   "channel": "in_person",
+   "region": 264.0,
+   "country": 87.0,
+   "dist1": null,
+   "p_email": "gmail.com",
+   "r_email": null,
+   "risk_score": 0.11,
+   "device_profile": null,
+   "device_status": null,
+   "proxy": null,
+   "device_type": null,
+   "match_flags": {
+    "M1": "T",
+    "M2": "T",
+    "M3": "T",
+    "M4": "M0",
+    "M5": "T",
+    "M6": "F",
+    "M7": "F",
+    "M8": "T",
+    "M9": "T"
+   },
+   "counts": {
+    "C1": 1.0,
+    "C13": 1.0,
+    "C14": 1.0
+   },
+   "days_since_prev": 0.0
+  },
+  {
+   "txn_id": "3524788",
+   "ts": "2016-12-08 15:03:25",
+   "amount": 108.92,
+   "product": "W",
+   "channel": "in_person",
+   "region": 264.0,
+   "country": 87.0,
+   "dist1": null,
+   "p_email": null,
+   "r_email": null,
+   "risk_score": 0.11,
+   "device_profile": null,
+   "device_status": null,
+   "proxy": null,
+   "device_type": null,
+   "match_flags": {
+    "M1": "T",
+    "M2": "T",
+    "M3": "T",
+    "M4": null,
+    "M5": null,
+    "M6": "F",
+    "M7": "T",
+    "M8": "T",
+    "M9": "T"
+   },
+   "counts": {
+    "C1": 3.0,
+    "C13": 5.0,
+    "C14": 3.0
+   },
+   "days_since_prev": 0.0
+  },
+  {
+   "txn_id": "3525205",
+   "ts": "2016-12-08 17:28:39",
+   "amount": 29.01,
+   "product": "W",
+   "channel": "in_person",
+   "region": 264.0,
+   "country": 87.0,
+   "dist1": 1.0,
+   "p_email": "aol.com",
+   "r_email": null,
+   "risk_score": 0.18,
+   "device_profile": null,
+   "device_status": null,
+   "proxy": null,
+   "device_type": null,
+   "match_flags": {
+    "M1": "T",
+    "M2": "T",
+    "M3": "F",
+    "M4": "M0",
+    "M5": "T",
+    "M6": "T",
+    "M7": null,
+    "M8": null,
+    "M9": null
+   },
+   "counts": {
+    "C1": 1.0,
+    "C13": 10.0,
+    "C14": 1.0
+   },
+   "days_since_prev": 90.0
+  },
+  {
+   "txn_id": "3525559",
+   "ts": "2016-12-08 19:26:45",
+   "amount": 108.93,
+   "product": "W",
+   "channel": "in_person",
+   "region": 264.0,
+   "country": 87.0,
+   "dist1": 0.0,
+   "p_email": "yahoo.com",
+   "r_email": null,
+   "risk_score": 0.28,
+   "device_profile": null,
+   "device_status": null,
+   "proxy": null,
+   "device_type": null,
+   "match_flags": {
+    "M1": "T",
+    "M2": "T",
+    "M3": "F",
+    "M4": null,
+    "M5": null,
+    "M6": "T",
+    "M7": "T",
+    "M8": "T",
+    "M9": "T"
+   },
+   "counts": {
+    "C1": 5.0,
+    "C13": 25.0,
+    "C14": 4.0
+   },
+   "days_since_prev": 51.0
+  },
+  {
+   "txn_id": "3525584",
+   "ts": "2016-12-08 19:38:15",
+   "amount": 334.91,
+   "product": "W",
+   "channel": "in_person",
+   "region": 264.0,
+   "country": 87.0,
+   "dist1": 25.0,
+   "p_email": "yahoo.com",
+   "r_email": null,
+   "risk_score": 0.14,
+   "device_profile": null,
+   "device_status": null,
+   "proxy": null,
+   "device_type": null,
+   "match_flags": {
+    "M1": "T",
+    "M2": "T",
+    "M3": "T",
+    "M4": "M1",
+    "M5": "F",
+    "M6": "T",
+    "M7": null,
+    "M8": null,
+    "M9": null
+   },
+   "counts": {
+    "C1": 1.0,
+    "C13": 4.0,
+    "C14": 1.0
+   },
+   "days_since_prev": 565.0
+  },
+  {
+   "txn_id": "3525753",
+   "ts": "2016-12-08 20:33:23",
+   "amount": 57.95,
+   "product": "W",
+   "channel": "in_person",
+   "region": 110.0,
+   "country": 87.0,
+   "dist1": null,
+   "p_email": "yahoo.com",
+   "r_email": null,
+   "risk_score": 0.19,
+   "device_profile": null,
+   "device_status": null,
+   "proxy": null,
+   "device_type": null,
+   "match_flags": {
+    "M1": "T",
+    "M2": "T",
+    "M3": "T",
+    "M4": null,
+    "M5": null,
+    "M6": "F",
+    "M7": "F",
+    "M8": "F",
+    "M9": "T"
+   },
+   "counts": {
+    "C1": 1.0,
+    "C13": 1.0,
+    "C14": 1.0
+   },
+   "days_since_prev": 0.0
+  },
+  {
+   "txn_id": "3525762",
+   "ts": "2016-12-08 20:35:21",
+   "amount": 108.02,
+   "product": "W",
+   "channel": "in_person",
+   "region": 264.0,
+   "country": 87.0,
+   "dist1": 12.0,
+   "p_email": "yahoo.com",
+   "r_email": null,
+   "risk_score": 0.01,
+   "device_profile": null,
+   "device_status": null,
+   "proxy": null,
+   "device_type": null,
+   "match_flags": {
+    "M1": "T",
+    "M2": "T",
+    "M3": "T",
+    "M4": null,
+    "M5": null,
+    "M6": "T",
+    "M7": "F",
+    "M8": "F",
+    "M9": "T"
+   },
+   "counts": {
+    "C1": 5.0,
+    "C13": 45.0,
+    "C14": 5.0
+   },
+   "days_since_prev": 624.0
+  },
+  {
+   "txn_id": "3525902",
+   "ts": "2016-12-08 21:21:52",
+   "amount": 30.96,
+   "product": "W",
+   "channel": "in_person",
+   "region": 264.0,
+   "country": 87.0,
+   "dist1": null,
+   "p_email": "att.net",
+   "r_email": null,
+   "risk_score": 0.07,
+   "device_profile": null,
+   "device_status": null,
+   "proxy": null,
+   "device_type": null,
+   "match_flags": {
+    "M1": "T",
+    "M2": "T",
+    "M3": "T",
+    "M4": null,
+    "M5": null,
+    "M6": "T",
+    "M7": "F",
+    "M8": "F",
+    "M9": "T"
+   },
+   "counts": {
+    "C1": 1.0,
+    "C13": 1.0,
+    "C14": 1.0
+   },
+   "days_since_prev": 0.0
+  },
+  {
+   "txn_id": "3526234",
+   "ts": "2016-12-08 22:59:27",
+   "amount": 59.02,
+   "product": "W",
+   "channel": "in_person",
+   "region": 264.0,
+   "country": 87.0,
+   "dist1": 28.0,
+   "p_email": "yahoo.com",
+   "r_email": null,
+   "risk_score": 0.1,
+   "device_profile": null,
+   "device_status": null,
+   "proxy": null,
+   "device_type": null,
+   "match_flags": {
+    "M1": "T",
+    "M2": "T",
+    "M3": "T",
+    "M4": "M0",
+    "M5": "T",
+    "M6": "F",
+    "M7": "F",
+    "M8": "F",
+    "M9": "T"
+   },
+   "counts": {
+    "C1": 2.0,
+    "C13": 22.0,
+    "C14": 2.0
+   },
+   "days_since_prev": 90.0
+  },
+  {
+   "txn_id": "3526249",
+   "ts": "2016-12-08 23:04:32",
+   "amount": 86.91,
+   "product": "W",
+   "channel": "in_person",
+   "region": 264.0,
+   "country": 87.0,
+   "dist1": 28.0,
+   "p_email": "yahoo.com",
+   "r_email": null,
+   "risk_score": 0.12,
+   "device_profile": null,
+   "device_status": null,
+   "proxy": null,
+   "device_type": null,
+   "match_flags": {
+    "M1": "T",
+    "M2": "T",
+    "M3": "T",
+    "M4": "M0",
+    "M5": "T",
+    "M6": "F",
+    "M7": "F",
+    "M8": "F",
+    "M9": "T"
+   },
+   "counts": {
+    "C1": 2.0,
+    "C13": 21.0,
+    "C14": 2.0
+   },
+   "days_since_prev": 90.0
+  },
+  {
+   "txn_id": "3526265",
+   "ts": "2016-12-08 23:08:45",
+   "amount": 58.92,
+   "product": "W",
+   "channel": "in_person",
+   "region": 110.0,
+   "country": 87.0,
+   "dist1": null,
+   "p_email": null,
+   "r_email": null,
+   "risk_score": 0.15,
+   "device_profile": null,
+   "device_status": null,
+   "proxy": null,
+   "device_type": null,
+   "match_flags": {
+    "M1": "T",
+    "M2": "T",
+    "M3": "T",
+    "M4": null,
+    "M5": null,
+    "M6": "F",
+    "M7": "T",
+    "M8": "T",
+    "M9": "T"
+   },
+   "counts": {
+    "C1": 5.0,
+    "C13": 32.0,
+    "C14": 5.0
+   },
+   "days_since_prev": 18.0
+  },
+  {
+   "txn_id": "3526538",
+   "ts": "2016-12-09 00:38:09",
+   "amount": 58.99,
+   "product": "W",
+   "channel": "in_person",
+   "region": 264.0,
+   "country": 87.0,
+   "dist1": 28.0,
+   "p_email": "yahoo.com",
+   "r_email": null,
+   "risk_score": 0.17,
+   "device_profile": null,
+   "device_status": null,
+   "proxy": null,
+   "device_type": null,
+   "match_flags": {
+    "M1": "T",
+    "M2": "T",
+    "M3": "T",
+    "M4": "M0",
+    "M5": "T",
+    "M6": "F",
+    "M7": "F",
+    "M8": "F",
+    "M9": "T"
+   },
+   "counts": {
+    "C1": 2.0,
+    "C13": 23.0,
+    "C14": 2.0
+   },
+   "days_since_prev": 91.0
+  },
+  {
+   "txn_id": "3526677",
+   "ts": "2016-12-09 01:26:56",
+   "amount": 58.87,
+   "product": "W",
+   "channel": "in_person",
+   "region": 310.0,
+   "country": 87.0,
+   "dist1": 4.0,
+   "p_email": "hotmail.com",
+   "r_email": null,
+   "risk_score": 0.08,
+   "device_profile": null,
+   "device_status": null,
+   "proxy": null,
+   "device_type": null,
+   "match_flags": {
+    "M1": "T",
+    "M2": "T",
+    "M3": "T",
+    "M4": null,
+    "M5": null,
+    "M6": "T",
+    "M7": "F",
+    "M8": "T",
+    "M9": "T"
+   },
+   "counts": {
+    "C1": 1.0,
+    "C13": 7.0,
+    "C14": 1.0
+   },
+   "days_since_prev": 63.0
+  },
+  {
+   "txn_id": "3526747",
+   "ts": "2016-12-09 02:04:41",
+   "amount": 43.86,
+   "product": "W",
+   "channel": "in_person",
+   "region": 310.0,
+   "country": 87.0,
+   "dist1": 16.0,
+   "p_email": "gmail.com",
+   "r_email": null,
+   "risk_score": 0.03,
+   "device_profile": null,
+   "device_status": null,
+   "proxy": null,
+   "device_type": null,
+   "match_flags": {
+    "M1": "T",
+    "M2": "T",
+    "M3": "T",
+    "M4": null,
+    "M5": null,
+    "M6": "T",
+    "M7": "F",
+    "M8": "F",
+    "M9": "T"
+   },
+   "counts": {
+    "C1": 2.0,
+    "C13": 2.0,
+    "C14": 2.0
+   },
+   "days_since_prev": 0.0
+  },
+  {
+   "txn_id": "3526826",
+   "ts": "2016-12-09 02:39:29",
+   "amount": 35.66,
+   "product": "C",
+   "channel": "online",
+   "region": null,
+   "country": null,
+   "dist1": null,
+   "p_email": "gmail.com",
+   "r_email": "gmail.com",
+   "risk_score": 0.76,
+   "device_profile": "Windows | ? | chrome 66.0 | ?",
+   "device_status": "New",
+   "proxy": null,
+   "device_type": "desktop",
+   "match_flags": {
+    "M1": null,
+    "M2": null,
+    "M3": null,
+    "M4": "M2",
+    "M5": null,
+    "M6": null,
+    "M7": null,
+    "M8": null,
+    "M9": null
+   },
+   "counts": {
+    "C1": 1.0,
+    "C13": 1.0,
+    "C14": 1.0
+   },
+   "days_since_prev": 0.0
+  },
+  {
+   "txn_id": "3526999",
+   "ts": "2016-12-09 04:41:53",
+   "amount": 58.87,
+   "product": "W",
+   "channel": "in_person",
+   "region": 110.0,
+   "country": 87.0,
+   "dist1": null,
+   "p_email": "gmail.com",
+   "r_email": null,
+   "risk_score": 0.06,
+   "device_profile": null,
+   "device_status": null,
+   "proxy": null,
+   "device_type": null,
+   "match_flags": {
+    "M1": null,
+    "M2": null,
+    "M3": null,
+    "M4": null,
+    "M5": null,
+    "M6": "T",
+    "M7": null,
+    "M8": null,
+    "M9": null
+   },
+   "counts": {
+    "C1": 4.0,
+    "C13": 3.0,
+    "C14": 3.0
+   },
+   "days_since_prev": 0.0
+  }
+ ],
+ "profile": {
+  "card_id": "C07671-K2",
+  "customer_id": "C07671",
+  "n_txns": 1439,
+  "first_seen": "2016-07-02 14:58:42",
+  "n_online": 21,
+  "n_in_person": 1418,
+  "products": {
+   "W": 1418,
+   "H": 16,
+   "R": 4,
+   "C": 1
+  },
+  "regions_top": {
+   "264.0": 1234,
+   "310.0": 92,
+   "110.0": 72,
+   "387.0": 14,
+   "272.0": 5,
+   "418.0": 4,
+   "123.0": 4,
+   "204.0": 3
+  },
+  "n_regions": 14,
+  "amount_median": 59.09,
+  "amount_p95": 315.32699999999977,
+  "amount_max": 3891.01,
+  "known_devices": {
+   "Windows | Windows 10 | chrome 63.0 | 1366x768": 3,
+   "iOS Device | iOS 11.1.2 | mobile safari generic | 2436x1125": 3,
+   "SAMSUNG SM-G950U Build/NRD90M | Android 7.0 | samsung browser generic | 2220x1080": 2,
+   "LG-H871 | Android 7.0 | firefox | 2672x1440": 2,
+   "rv:11.0 | Windows 7 | ie 11.0 for desktop | 1680x1050": 1,
+   "rv:57.0 | Mac OS X 10.9 | firefox 57.0 | 1920x1080": 1,
+   "iOS Device | iOS 11.1.1 | mobile safari 11.0 | 2436x1125": 1,
+   "Windows | Windows 7 | chrome 63.0 | 1920x1080": 1,
+   "iOS Device | iOS 10.0.2 | mobile safari 10.0 | 1136x640": 1,
+   "iOS Device | iOS 11.2.0 | mobile safari 11.0 | 2208x1242": 1
+  },
+  "new_device_share": 0.42857142857142855,
+  "n_known_devices": 12,
+  "p_email_top": {
+   "gmail.com": 682,
+   "yahoo.com": 382,
+   "hotmail.com": 31,
+   "aol.com": 30
+  },
+  "proxy_history": 1,
+  "flagged": {
+   "amount_percentile": 0.14662960389159138,
+   "amount_z": -0.36773336954379726,
+   "product_seen_before": 1,
+   "region_seen_before": null,
+   "device_seen_before": 0,
+   "channel_share_online": 0.014593467685892982
+  }
+ },
+ "device": {
+  "device_profile": "Windows | ? | chrome 66.0 | ?",
+  "window": [
+   "2016-11-09 02:39:29",
+   "2016-12-09 05:39:29"
+  ],
+  "n_cards": 59,
+  "cards": [
+   {
+    "card_id": "C00140-K1",
+    "customer_id": "C00140",
+    "n_txns": 3,
+    "total_usd": 84.78,
+    "new_device_share": 0.0,
+    "proxy": [],
+    "first": "2016-12-08 18:28:10",
+    "last": "2016-12-08 18:34:46",
+    "txn_ids": [
+     "3525374",
+     "3525381",
+     "3525391"
+    ]
+   },
+   {
+    "card_id": "C00426-K2",
+    "customer_id": "C00426",
+    "n_txns": 1,
+    "total_usd": 50.62,
+    "new_device_share": 0.0,
+    "proxy": [],
+    "first": "2016-12-09 02:38:59",
+    "last": "2016-12-09 02:38:59",
+    "txn_ids": [
+     "3526821"
+    ]
+   },
+   {
+    "card_id": "C00523-K1",
+    "customer_id": "C00523",
+    "n_txns": 1,
+    "total_usd": 9.93,
+    "new_device_share": 0.0,
+    "proxy": [],
+    "first": "2016-12-08 14:50:47",
+    "last": "2016-12-08 14:50:47",
+    "txn_ids": [
+     "3524763"
+    ]
+   },
+   {
+    "card_id": "C00788-K1",
+    "customer_id": "C00788",
+    "n_txns": 1,
+    "total_usd": 20.59,
+    "new_device_share": 0.0,
+    "proxy": [],
+    "first": "2016-12-07 19:02:30",
+    "last": "2016-12-07 19:02:30",
+    "txn_ids": [
+     "3522696"
+    ]
+   },
+   {
+    "card_id": "C00927-K1",
+    "customer_id": "C00927",
+    "n_txns": 1,
+    "total_usd": 24.78,
+    "new_device_share": 0.0,
+    "proxy": [],
+    "first": "2016-12-05 17:16:05",
+    "last": "2016-12-05 17:16:05",
+    "txn_ids": [
+     "3516410"
+    ]
+   },
+   {
+    "card_id": "C00978-K1",
+    "customer_id": "C00978",
+    "n_txns": 1,
+    "total_usd": 25.2,
+    "new_device_share": 1.0,
+    "proxy": [],
+    "first": "2016-12-06 23:14:48",
+    "last": "2016-12-06 23:14:48",
+    "txn_ids": [
+     "3520683"
+    ]
+   },
+   {
+    "card_id": "C01109-K2",
+    "customer_id": "C01109",
+    "n_txns": 3,
+    "total_usd": 682.21,
+    "new_device_share": 0.6666666666666666,
+    "proxy": [],
+    "first": "2016-12-08 06:35:11",
+    "last": "2016-12-08 06:57:35",
+    "txn_ids": [
+     "3524314",
+     "3524322",
+     "3524323"
+    ]
+   },
+   {
+    "card_id": "C01433-K1",
+    "customer_id": "C01433",
+    "n_txns": 1,
+    "total_usd": 128.83,
+    "new_device_share": 1.0,
+    "proxy": [],
+    "first": "2016-12-08 19:23:12",
+    "last": "2016-12-08 19:23:12",
+    "txn_ids": [
+     "3525547"
+    ]
+   },
+   {
+    "card_id": "C01521-K2",
+    "customer_id": "C01521",
+    "n_txns": 1,
+    "total_usd": 26.07,
+    "new_device_share": 1.0,
+    "proxy": [],
+    "first": "2016-12-09 00:36:13",
+    "last": "2016-12-09 00:36:13",
+    "txn_ids": [
+     "3526534"
+    ]
+   },
+   {
+    "card_id": "C01525-K2",
+    "customer_id": "C01525",
+    "n_txns": 1,
+    "total_usd": 81.81,
+    "new_device_share": 0.0,
+    "proxy": [],
+    "first": "2016-12-07 15:09:40",
+    "last": "2016-12-07 15:09:40",
+    "txn_ids": [
+     "3522034"
+    ]
+   },
+   {
+    "card_id": "C02228-K1",
+    "customer_id": "C02228",
+    "n_txns": 1,
+    "total_usd": 50.37,
+    "new_device_share": 0.0,
+    "proxy": [],
+    "first": "2016-12-08 21:14:19",
+    "last": "2016-12-08 21:14:19",
+    "txn_ids": [
+     "3525877"
+    ]
+   },
+   {
+    "card_id": "C02315-K1",
+    "customer_id": "C02315",
+    "n_txns": 2,
+    "total_usd": 243.55,
+    "new_device_share": 0.5,
+    "proxy": [],
+    "first": "2016-12-07 05:38:48",
+    "last": "2016-12-07 05:56:30",
+    "txn_ids": [
+     "3521468",
+     "3521480"
+    ]
+   },
+   {
+    "card_id": "C02456-K1",
+    "customer_id": "C02456",
+    "n_txns": 1,
+    "total_usd": 49.7,
+    "new_device_share": 1.0,
+    "proxy": [],
+    "first": "2016-12-08 20:04:40",
+    "last": "2016-12-08 20:04:40",
+    "txn_ids": [
+     "3525673"
+    ]
+   },
+   {
+    "card_id": "C02782-K2",
+    "customer_id": "C02782",
+    "n_txns": 12,
+    "total_usd": 138.9,
+    "new_device_share": 0.0,
+    "proxy": [],
+    "first": "2016-12-07 21:43:56",
+    "last": "2016-12-09 00:47:27",
+    "txn_ids": [
+     "3523222",
+     "3523705",
+     "3523751",
+     "3523767",
+     "3523774",
+     "3523776",
+     "3523783",
+     "3525503",
+     "3525504",
+     "3525536",
+     "3526526",
+     "3526570"
+    ]
+   },
+   {
+    "card_id": "C02851-K2",
+    "customer_id": "C02851",
+    "n_txns": 1,
+    "total_usd": 29.73,
+    "new_device_share": 1.0,
+    "proxy": [],
+    "first": "2016-12-08 00:14:24",
+    "last": "2016-12-08 00:14:24",
+    "txn_ids": [
+     "3523704"
+    ]
+   },
+   {
+    "card_id": "C03157-K1",
+    "customer_id": "C03157",
+    "n_txns": 1,
+    "total_usd": 6.8,
+    "new_device_share": 0.0,
+    "proxy": [],
+    "first": "2016-12-06 01:14:37",
+    "last": "2016-12-06 01:14:37",
+    "txn_ids": [
+     "3517973"
+    ]
+   },
+   {
+    "card_id": "C03488-K2",
+    "customer_id": "C03488",
+    "n_txns": 2,
+    "total_usd": 53.77,
+    "new_device_share": 0.0,
+    "proxy": [],
+    "first": "2016-12-05 22:49:19",
+    "last": "2016-12-05 23:10:20",
+    "txn_ids": [
+     "3517500",
+     "3517572"
+    ]
+   },
+   {
+    "card_id": "C04034-K2",
+    "customer_id": "C04034",
+    "n_txns": 2,
+    "total_usd": 60.23,
+    "new_device_share": 0.5,
+    "proxy": [],
+    "first": "2016-12-08 03:42:03",
+    "last": "2016-12-09 02:06:41",
+    "txn_ids": [
+     "3524191",
+     "3526749"
+    ]
+   },
+   {
+    "card_id": "C04108-K2",
+    "customer_id": "C04108",
+    "n_txns": 1,
+    "total_usd": 100.03,
+    "new_device_share": 0.0,
+    "proxy": [],
+    "first": "2016-12-04 21:49:01",
+    "last": "2016-12-04 21:49:01",
+    "txn_ids": [
+     "3514400"
+    ]
+   },
+   {
+    "card_id": "C04177-K1",
+    "customer_id": "C04177",
+    "n_txns": 1,
+    "total_usd": 13.68,
+    "new_device_share": 1.0,
+    "proxy": [],
+    "first": "2016-12-09 00:23:49",
+    "last": "2016-12-09 00:23:49",
+    "txn_ids": [
+     "3526499"
+    ]
+   },
+   {
+    "card_id": "C04248-K2",
+    "customer_id": "C04248",
+    "n_txns": 2,
+    "total_usd": 76.42,
+    "new_device_share": 1.0,
+    "proxy": [],
+    "first": "2016-12-05 04:08:40",
+    "last": "2016-12-06 06:21:51",
+    "txn_ids": [
+     "3515400",
+     "3518449"
+    ]
+   },
+   {
+    "card_id": "C04597-K2",
+    "customer_id": "C04597",
+    "n_txns": 6,
+    "total_usd": 284.94,
+    "new_device_share": 0.5,
+    "proxy": [],
+    "first": "2016-12-05 19:08:44",
+    "last": "2016-12-08 20:05:12",
+    "txn_ids": [
+     "3516774",
+     "3518372",
+     "3519613",
+     "3524753",
+     "3525272",
+     "3525677"
+    ]
+   },
+   {
+    "card_id": "C05027-K1",
+    "customer_id": "C05027",
+    "n_txns": 1,
+    "total_usd": 208.61,
+    "new_device_share": 0.0,
+    "proxy": [],
+    "first": "2016-12-08 13:55:10",
+    "last": "2016-12-08 13:55:10",
+    "txn_ids": [
+     "3524628"
+    ]
+   },
+   {
+    "card_id": "C05031-K2",
+    "customer_id": "C05031",
+    "n_txns": 3,
+    "total_usd": 199.28,
+    "new_device_share": 1.0,
+    "proxy": [],
+    "first": "2016-12-08 16:23:04",
+    "last": "2016-12-08 22:52:00",
+    "txn_ids": [
+     "3525012",
+     "3526116",
+     "3526210"
+    ]
+   },
+   {
+    "card_id": "C05381-K2",
+    "customer_id": "C05381",
+    "n_txns": 1,
+    "total_usd": 25.03,
+    "new_device_share": 1.0,
+    "proxy": [],
+    "first": "2016-12-09 05:15:52",
+    "last": "2016-12-09 05:15:52",
+    "txn_ids": [
+     "3527033"
+    ]
+   },
+   {
+    "card_id": "C05423-K1",
+    "customer_id": "C05423",
+    "n_txns": 3,
+    "total_usd": 21.77,
+    "new_device_share": 0.6666666666666666,
+    "proxy": [],
+    "first": "2016-12-07 18:54:57",
+    "last": "2016-12-09 03:51:18",
+    "txn_ids": [
+     "3522674",
+     "3523834",
+     "3526942"
+    ]
+   },
+   {
+    "card_id": "C05704-K2",
+    "customer_id": "C05704",
+    "n_txns": 1,
+    "total_usd": 28.05,
+    "new_device_share": 0.0,
+    "proxy": [],
+    "first": "2016-12-06 16:53:26",
+    "last": "2016-12-06 16:53:26",
+    "txn_ids": [
+     "3519318"
+    ]
+   },
+   {
+    "card_id": "C05996-K1",
+    "customer_id": "C05996",
+    "n_txns": 1,
+    "total_usd": 32.23,
+    "new_device_share": 1.0,
+    "proxy": [],
+    "first": "2016-12-08 01:18:31",
+    "last": "2016-12-08 01:18:31",
+    "txn_ids": [
+     "3523876"
+    ]
+   },
+   {
+    "card_id": "C06049-K1",
+    "customer_id": "C06049",
+    "n_txns": 1,
+    "total_usd": 14.78,
+    "new_device_share": 1.0,
+    "proxy": [],
+    "first": "2016-12-07 03:34:12",
+    "last": "2016-12-07 03:34:12",
+    "txn_ids": [
+     "3521347"
+    ]
+   },
+   {
+    "card_id": "C06224-K2",
+    "customer_id": "C06224",
+    "n_txns": 2,
+    "total_usd": 56.19,
+    "new_device_share": 0.0,
+    "proxy": [],
+    "first": "2016-12-07 16:30:52",
+    "last": "2016-12-07 16:33:57",
+    "txn_ids": [
+     "3522248",
+     "3522258"
+    ]
+   },
+   {
+    "card_id": "C06339-K1",
+    "customer_id": "C06339",
+    "n_txns": 2,
+    "total_usd": 79.65,
+    "new_device_share": 0.0,
+    "proxy": [],
+    "first": "2016-12-07 19:25:49",
+    "last": "2016-12-07 19:27:53",
+    "txn_ids": [
+     "3522758",
+     "3522775"
+    ]
+   },
+   {
+    "card_id": "C06630-K2",
+    "customer_id": "C06630",
+    "n_txns": 1,
+    "total_usd": 17.41,
+    "new_device_share": 1.0,
+    "proxy": [],
+    "first": "2016-12-08 21:06:32",
+    "last": "2016-12-08 21:06:32",
+    "txn_ids": [
+     "3525855"
+    ]
+   },
+   {
+    "card_id": "C06636-K1",
+    "customer_id": "C06636",
+    "n_txns": 1,
+    "total_usd": 33.59,
+    "new_device_share": 0.0,
+    "proxy": [],
+    "first": "2016-12-06 17:50:31",
+    "last": "2016-12-06 17:50:31",
+    "txn_ids": [
+     "3519520"
+    ]
+   },
+   {
+    "card_id": "C06940-K1",
+    "customer_id": "C06940",
+    "n_txns": 3,
+    "total_usd": 133.24,
+    "new_device_share": 0.3333333333333333,
+    "proxy": [],
+    "first": "2016-12-05 03:51:23",
+    "last": "2016-12-08 20:03:39",
+    "txn_ids": [
+     "3515375",
+     "3525384",
+     "3525666"
+    ]
+   },
+   {
+    "card_id": "C07220-K1",
+    "customer_id": "C07220",
+    "n_txns": 1,
+    "total_usd": 31.79,
+    "new_device_share": 1.0,
+    "proxy": [],
+    "first": "2016-12-07 01:33:24",
+    "last": "2016-12-07 01:33:24",
+    "txn_ids": [
+     "3521089"
+    ]
+   },
+   {
+    "card_id": "C07671-K2",
+    "customer_id": "C07671",
+    "n_txns": 1,
+    "total_usd": 35.66,
+    "new_device_share": 1.0,
+    "proxy": [],
+    "first": "2016-12-09 02:39:29",
+    "last": "2016-12-09 02:39:29",
+    "txn_ids": [
+     "3526826"
+    ]
+   },
+   {
+    "card_id": "C08391-K2",
+    "customer_id": "C08391",
+    "n_txns": 16,
+    "total_usd": 797.79,
+    "new_device_share": 0.375,
+    "proxy": [],
+    "first": "2016-12-04 14:12:38",
+    "last": "2016-12-08 17:06:11",
+    "txn_ids": [
+     "3512900",
+     "3516889",
+     "3520659",
+     "3521313",
+     "3521343",
+     "3521344",
+     "3521346",
+     "3521350",
+     "3521945",
+     "3521949",
+     "3521971",
+     "3521987",
+     "3523946",
+     "3524006",
+     "3525124",
+     "3525133"
+    ]
+   },
+   {
+    "card_id": "C08832-K1",
+    "customer_id": "C08832",
+    "n_txns": 1,
+    "total_usd": 115.53,
+    "new_device_share": 1.0,
+    "proxy": [],
+    "first": "2016-12-07 05:06:31",
+    "last": "2016-12-07 05:06:31",
+    "txn_ids": [
+     "3521454"
+    ]
+   },
+   {
+    "card_id": "C09354-K1",
+    "customer_id": "C09354",
+    "n_txns": 3,
+    "total_usd": 55.0,
+    "new_device_share": 0.6666666666666666,
+    "proxy": [],
+    "first": "2016-12-04 06:30:20",
+    "last": "2016-12-07 13:22:53",
+    "txn_ids": [
+     "3512449",
+     "3512451",
+     "3521751"
+    ]
+   },
+   {
+    "card_id": "C09657-K2",
+    "customer_id": "C09657",
+    "n_txns": 7,
+    "total_usd": 185.68,
+    "new_device_share": 0.7142857142857143,
+    "proxy": [],
+    "first": "2016-12-06 20:16:52",
+    "last": "2016-12-08 20:23:03",
+    "txn_ids": [
+     "3520045",
+     "3523014",
+     "3523989",
+     "3525320",
+     "3525451",
+     "3525717",
+     "3525724"
+    ]
+   },
+   {
+    "card_id": "C09975-K1",
+    "customer_id": "C09975",
+    "n_txns": 1,
+    "total_usd": 15.37,
+    "new_device_share": 1.0,
+    "proxy": [],
+    "first": "2016-12-08 20:16:13",
+    "last": "2016-12-08 20:16:13",
+    "txn_ids": [
+     "3525712"
+    ]
+   },
+   {
+    "card_id": "C10026-K1",
+    "customer_id": "C10026",
+    "n_txns": 1,
+    "total_usd": 43.17,
+    "new_device_share": 1.0,
+    "proxy": [],
+    "first": "2016-12-08 23:40:46",
+    "last": "2016-12-08 23:40:46",
+    "txn_ids": [
+     "3526365"
+    ]
+   },
+   {
+    "card_id": "C10031-K1",
+    "customer_id": "C10031",
+    "n_txns": 1,
+    "total_usd": 141.44,
+    "new_device_share": 0.0,
+    "proxy": [],
+    "first": "2016-12-07 18:46:28",
+    "last": "2016-12-07 18:46:28",
+    "txn_ids": [
+     "3522649"
+    ]
+   },
+   {
+    "card_id": "C10760-K2",
+    "customer_id": "C10760",
+    "n_txns": 1,
+    "total_usd": 20.34,
+    "new_device_share": 1.0,
+    "proxy": [],
+    "first": "2016-12-06 23:09:28",
+    "last": "2016-12-06 23:09:28",
+    "txn_ids": [
+     "3520662"
+    ]
+   },
+   {
+    "card_id": "C11230-K2",
+    "customer_id": "C11230",
+    "n_txns": 1,
+    "total_usd": 25.77,
+    "new_device_share": 0.0,
+    "proxy": [],
+    "first": "2016-12-07 00:33:37",
+    "last": "2016-12-07 00:33:37",
+    "txn_ids": [
+     "3520941"
+    ]
+   },
+   {
+    "card_id": "C11444-K1",
+    "customer_id": "C11444",
+    "n_txns": 1,
+    "total_usd": 13.54,
+    "new_device_share": 0.0,
+    "proxy": [],
+    "first": "2016-12-09 04:01:11",
+    "last": "2016-12-09 04:01:11",
+    "txn_ids": [
+     "3526952"
+    ]
+   },
+   {
+    "card_id": "C11509-K2",
+    "customer_id": "C11509",
+    "n_txns": 5,
+    "total_usd": 75.56,
+    "new_device_share": 0.6,
+    "proxy": [],
+    "first": "2016-12-07 16:55:11",
+    "last": "2016-12-09 01:32:35",
+    "txn_ids": [
+     "3522320",
+     "3522344",
+     "3523718",
+     "3526296",
+     "3526688"
+    ]
+   },
+   {
+    "card_id": "C11844-K2",
+    "customer_id": "C11844",
+    "n_txns": 1,
+    "total_usd": 52.21,
+    "new_device_share": 1.0,
+    "proxy": [],
+    "first": "2016-12-08 14:53:25",
+    "last": "2016-12-08 14:53:25",
+    "txn_ids": [
+     "3524766"
+    ]
+   },
+   {
+    "card_id": "C11859-K1",
+    "customer_id": "C11859",
+    "n_txns": 1,
+    "total_usd": 20.66,
+    "new_device_share": 0.0,
+    "proxy": [],
+    "first": "2016-12-04 18:08:50",
+    "last": "2016-12-04 18:08:50",
+    "txn_ids": [
+     "3513660"
+    ]
+   },
+   {
+    "card_id": "C11919-K2",
+    "customer_id": "C11919",
+    "n_txns": 4,
+    "total_usd": 366.93,
+    "new_device_share": 0.25,
+    "proxy": [],
+    "first": "2016-12-08 00:56:43",
+    "last": "2016-12-09 05:26:17",
+    "txn_ids": [
+     "3523820",
+     "3523856",
+     "3523863",
+     "3527040"
+    ]
+   },
+   {
+    "card_id": "C11923-K2",
+    "customer_id": "C11923",
+    "n_txns": 38,
+    "total_usd": 1817.37,
+    "new_device_share": 0.631578947368421,
+    "proxy": [],
+    "first": "2016-12-05 04:44:41",
+    "last": "2016-12-09 03:17:37",
+    "txn_ids": [
+     "3515438",
+     "3516192",
+     "3516242",
+     "3516603",
+     "3517757",
+     "3517873",
+     "3517895",
+     "3518330",
+     "3518969",
+     "3518977",
+     "3520227",
+     "3520346",
+     "3520373",
+     "3520462",
+     "3520528",
+     "3520802",
+     "3521140",
+     "3521385",
+     "3521458",
+     "3521661"
+    ]
+   },
+   {
+    "card_id": "C11965-K1",
+    "customer_id": "C11965",
+    "n_txns": 2,
+    "total_usd": 99.55,
+    "new_device_share": 0.0,
+    "proxy": [],
+    "first": "2016-12-04 16:51:50",
+    "last": "2016-12-06 21:40:48",
+    "txn_ids": [
+     "3513417",
+     "3520356"
+    ]
+   },
+   {
+    "card_id": "C12136-K2",
+    "customer_id": "C12136",
+    "n_txns": 1,
+    "total_usd": 57.27,
+    "new_device_share": 1.0,
+    "proxy": [],
+    "first": "2016-12-08 16:56:36",
+    "last": "2016-12-08 16:56:36",
+    "txn_ids": [
+     "3525109"
+    ]
+   },
+   {
+    "card_id": "C12961-K2",
+    "customer_id": "C12961",
+    "n_txns": 1,
+    "total_usd": 157.48,
+    "new_device_share": 1.0,
+    "proxy": [],
+    "first": "2016-12-08 07:03:53",
+    "last": "2016-12-08 07:03:53",
+    "txn_ids": [
+     "3524326"
+    ]
+   },
+   {
+    "card_id": "C12966-K1",
+    "customer_id": "C12966",
+    "n_txns": 1,
+    "total_usd": 21.19,
+    "new_device_share": 0.0,
+    "proxy": [],
+    "first": "2016-12-08 14:34:17",
+    "last": "2016-12-08 14:34:17",
+    "txn_ids": [
+     "3524719"
+    ]
+   },
+   {
+    "card_id": "C12987-K1",
+    "customer_id": "C12987",
+    "n_txns": 1,
+    "total_usd": 82.61,
+    "new_device_share": 0.0,
+    "proxy": [],
+    "first": "2016-12-06 19:53:54",
+    "last": "2016-12-06 19:53:54",
+    "txn_ids": [
+     "3519950"
+    ]
+   },
+   {
+    "card_id": "C13147-K1",
+    "customer_id": "C13147",
+    "n_txns": 1,
+    "total_usd": 47.8,
+    "new_device_share": 0.0,
+    "proxy": [],
+    "first": "2016-12-06 21:22:51",
+    "last": "2016-12-06 21:22:51",
+    "txn_ids": [
+     "3520297"
+    ]
+   },
+   {
+    "card_id": "C13171-K2",
+    "customer_id": "C13171",
+    "n_txns": 8,
+    "total_usd": 354.48,
+    "new_device_share": 0.375,
+    "proxy": [],
+    "first": "2016-12-05 16:48:33",
+    "last": "2016-12-08 22:42:45",
+    "txn_ids": [
+     "3516324",
+     "3520460",
+     "3523471",
+     "3523491",
+     "3523501",
+     "3523589",
+     "3523729",
+     "3526177"
+    ]
+   },
+   {
+    "card_id": "C13407-K1",
+    "customer_id": "C13407",
+    "n_txns": 1,
+    "total_usd": 47.0,
+    "new_device_share": 1.0,
+    "proxy": [],
+    "first": "2016-12-08 17:51:22",
+    "last": "2016-12-08 17:51:22",
+    "txn_ids": [
+     "3525271"
+    ]
+   }
+  ],
+  "n_cards_all_time": 253,
+  "n_txns_all_time": 1531,
+  "closed_cases_on_device": [],
+  "proxy_share_in_window": 0.0,
+  "new_share_in_window": 0.4759036144578313,
+  "generic_fingerprint": true
+ },
+ "peers": null,
+ "signals": [
+  {
+   "claim": "Bank model risk score 0.76 on the flagged transaction (an input, not a verdict)",
+   "source": "graph",
+   "ref": "query:get_transaction(txn_id=3526826)",
+   "entity_ids": [
+    "3526826"
+   ],
+   "weight": 0.21,
+   "key": "risk_score"
+  },
+  {
+   "claim": "$35.66 is within the card's normal range (median $59.09, p95 $315.33)",
+   "source": "graph",
+   "ref": "query:card_profile(card_id=C07671-K2)",
+   "entity_ids": [
+    "3526826"
+   ],
+   "weight": -0.5,
+   "key": "amount_typical"
+  },
+  {
+   "claim": "Device is marked New, but 42% of this account's online history comes from New devices \u2014 a new device is normal here",
+   "source": "graph",
+   "ref": "query:card_profile(card_id=C07671-K2)",
+   "entity_ids": [
+    "3526826"
+   ],
+   "weight": 0.1,
+   "key": "device_new_common"
+  },
+  {
+   "claim": "Cardholder is almost exclusively in-person (21 of 1439 prior transactions online); an online purchase is itself unusual",
+   "source": "graph",
+   "ref": "query:card_profile(card_id=C07671-K2)",
+   "entity_ids": [
+    "3526826"
+   ],
+   "weight": 0.6,
+   "key": "channel_shift"
+  },
+  {
+   "claim": "Customer has 3 confirmed fraud cases since July (mostly account_takeover) and 1 cleared alert(s) \u2014 a repeat target",
+   "source": "graph",
+   "ref": "query:prior_cases_for_customer(customer_id=C07671)",
+   "entity_ids": [
+    "CC-1475",
+    "CC-3216",
+    "CC-4294"
+   ],
+   "weight": 0.35,
+   "key": "history_repeat_victim"
+  },
+  {
+   "claim": "15% of this customer's prior online transactions were later confirmed fraudulent (portfolio average 3%)",
+   "source": "graph",
+   "ref": "query:customer_fraud_rate(customer_id=C07671)",
+   "entity_ids": [
+    "C07671"
+   ],
+   "weight": 0.6,
+   "key": "base_rate_high"
+  },
+  {
+   "claim": "Customer response: Customer states they did not make this purchase and still has the card",
+   "source": "customer",
+   "ref": "evidence_request:1",
+   "entity_ids": [],
+   "weight": 2.4,
+   "key": "evidence_denied"
+  }
+ ],
+ "initial_prob": 0.52,
+ "tool_log": [
+  {
+   "step": 1,
+   "tool": "get_transaction",
+   "args": {
+    "txn_id": 3526826
+   },
+   "ms": 0.6,
+   "result_preview": "{'txn_id': '3526826', 'ts': '2016-12-09 02:39:29', 'amount': 35.66, 'product': 'C', 'channel': 'online', 'region': None, 'country': None, 'dist1': None, 'p_email': 'gmail.com', 'r_email': 'gmail.com', 'risk_score': 0.76, 'device_profile': '\u2026"
+  },
+  {
+   "step": 2,
+   "tool": "card_profile",
+   "args": {
+    "card_id": "C07671-K2",
+    "before_txn_id": 3526826
+   },
+   "ms": 4.8,
+   "result_preview": "{'card_id': 'C07671-K2', 'customer_id': 'C07671', 'n_txns': 1439, 'first_seen': '2016-07-02 14:58:42', 'n_online': 21, 'n_in_person': 1418, 'products': {'W': 1418, 'H': 16, 'R': 4, 'C': 1}, 'regions_top': {'264.0': 1234, '310.0': 92, '110.0\u2026"
+  },
+  {
+   "step": 3,
+   "tool": "card_window",
+   "args": {
+    "card_id": "C07671-K2",
+    "center_txn_id": 3526826,
+    "hours_before": 48,
+    "hours_after": 48,
+    "as_of": "2016-12-09 05:39:29"
+   },
+   "ms": 4.5,
+   "result_preview": "[{'txn_id': '3521713', 'ts': '2016-12-07 12:59:07', 'amount': 72.97, 'product': 'W', 'channel': 'in_person', 'region': 264.0, 'country': 87.0, 'dist1': 35.0, 'p_email': 'gmail.com', 'r_email': None, 'risk_score': 0.24, 'device_profile': Non\u2026"
+  },
+  {
+   "step": 4,
+   "tool": "device_neighbors",
+   "args": {
+    "device_id": "Windows | ? | chrome 66.0 | ?",
+    "start": "2016-11-09 02:39:29",
+    "end": "2016-12-09 05:39:29"
+   },
+   "ms": 65.9,
+   "result_preview": "{'device_profile': 'Windows | ? | chrome 66.0 | ?', 'window': ['2016-11-09 02:39:29', '2016-12-09 05:39:29'], 'n_cards': 59, 'cards': [{'card_id': 'C00140-K1', 'customer_id': 'C00140', 'n_txns': 3, 'total_usd': 84.78, 'new_device_share': 0.\u2026"
+  },
+  {
+   "step": 5,
+   "tool": "recurring_match",
+   "args": {
+    "card_id": "C07671-K2",
+    "txn_id": 3526826,
+    "as_of": "2016-12-09 05:39:29"
+   },
+   "ms": 2.8,
+   "result_preview": "{'amount': 35.66, 'product': 'C', 'n_matches': 2, 'months_with_match': ['2016-09', '2016-12'], 'n_months': 2, 'n_same_region': 0, 'share_of_card_txns': 0.0014, 'n_same_amount_within_1h': 1, 'same_amount_burst_ids': [], 'is_recurring': False\u2026"
+  },
+  {
+   "step": 6,
+   "tool": "small_auth_run",
+   "args": {
+    "card_id": "C07671-K2",
+    "txn_id": 3526826,
+    "as_of": "2016-12-09 05:39:29"
+   },
+   "ms": 2.3,
+   "result_preview": "{'n_small_auths': 0, 'small_txn_ids': [], 'larger_after': [], 'testing_sequence': False, 'cleared_over_100': False}"
+  },
+  {
+   "step": 7,
+   "tool": "customer_fraud_rate",
+   "args": {
+    "customer_id": "C07671",
+    "as_of": "2016-12-09 05:39:29"
+   },
+   "ms": 4.8,
+   "result_preview": "{'customer_id': 'C07671', 'n': 1085, 'fraud_rate': 0.0138, 'global_rate': 0.0337, 'fraud_rate_in_person': 0.0113, 'n_in_person': 1066, 'fraud_rate_online': 0.1579, 'n_online': 19}"
+  },
+  {
+   "step": 8,
+   "tool": "prior_cases_for_customer",
+   "args": {
+    "customer_id": "C07671"
+   },
+   "ms": 1.9,
+   "result_preview": "[{'case_id': 'CC-1475', 'outcome': 'confirmed_fraud', 'pattern': 'account_takeover', 'opened_at': '2016-07-31 00:50:27', 'exposure_usd': 1307.98, 'report_filed': 'Yes', 'notes': 'Case CC-1475: cardholder C07671 reported unrecognized activit\u2026"
+  },
+  {
+   "step": 9,
+   "tool": "similar_cases",
+   "args": {
+    "query_text": "online product C risk score Windows   ?   chrome 66.0   ? device never seen on this account new device same device profile several cardholders reported this month",
+    "pattern_hint": "card_not_present_new_device",
+    "customer_id": "C07671",
+    "k": 5
+   },
+   "ms": 8.8,
+   "result_preview": "[{'case_id': 'CC-2971', 'kind': 'closed_case', 'score': 0.234, 'customer_id': 'C09998', 'card_id': 'C09998-K1', 'outcome': 'confirmed_fraud', 'pattern': 'undocumented', 'exposure_usd': 108.36, 'report_filed': 'Yes', 'opened_at': '2016-09-03\u2026"
+  },
+  {
+   "step": 10,
+   "tool": "retrieve_policy",
+   "args": {
+    "query_text": "card_not_present_new_device risk_score verify block report shared device",
+    "k": 4
+   },
+   "ms": 6.7,
+   "result_preview": "[{'doc_id': 'policy:R1', 'title': 'Fraud Policy R1 \u2013 verify before you block on a weak signal', 'score': 0.21, 'text': 'R1. Verify before you block on a weak signal. If the case rests on a single signal (including a risk score alone) and th\u2026"
+  },
+  {
+   "step": 11,
+   "tool": "evidence_request:customer_validation",
+   "args": {
+    "kind": "customer_validation",
+    "prompt": "Did you make the $35.66 C purchase on 2016-12-09?",
+    "assumed_response": "Customer states they did not make this purchase and still has the card"
+   },
+   "ms": 0.0,
+   "result_preview": "{'type': 'customer_validation', 'prompt': 'Did you make the $35.66 C purchase on 2016-12-09?', 'assumed_response': 'Customer states they did not make this purchase and still has the card'}"
+  },
+  {
+   "step": 12,
+   "tool": "write_case",
+   "args": {
+    "case": {
+     "case_id": "HHG-013",
+     "customer_id": "C07671",
+     "card_id": "C07671-K2",
+     "opened_at": "2016-12-09 05:39:29",
+     "status": "closed_fraud",
+     "verdict": "fraud",
+     "fraud_probability": 0.92,
+     "pattern": "card_not_present_new_device",
+     "exposure_usd": 35.66,
+     "affected_txn_ids": [
+      "3526826"
+     ],
+     "connected_card_ids": [],
+     "connected_device_profiles": [],
+     "sar_filed": false,
+     "final_actions": [
+      "CREATE_CASE",
+      "BLOCK_CARD"
+     ],
+     "summary": "Assessed as fraud (probability 0.92, card not present new device). Flagged online C transaction 3526826 of $35.66 on card C07671-K2 at 2016-12-09 02:39:29. Customer response: Customer states they did not make this purchase and still has the card. Cardholder is almost exclusively in-person (21 of 1439 prior transactions online); an online purchase is itself unusual. 15% of this customer's prior online transactions were later confirmed fraudulent (portfolio average 3%). Evidence requested (customer validation); assumed response: Customer states they did not make this purchase and still has the card. Exposure $35.66 across 1 transaction(s). Final actions: CREATE_CASE, BLOCK_CARD.",
+     "similar_prior_cases": [
+      "CC-2971",
+      "CC-2649",
+      "CC-2985",
+      "CC-3035",
+      "CC-4089"
+     ],
+     "graph_case_id": "CASE-2016-1013"
+    }
+   },
+   "ms": 788.2,
+   "result_preview": "CASE-2016-1013"
+  },
+  {
+   "step": 13,
+   "tool": "execute_action",
+   "args": {
+    "action": "CREATE_CASE",
+    "route": "auto",
+    "payload": {
+     "case_id": "HHG-013",
+     "card_id": "C07671-K2",
+     "txn_id": "3526826"
+    }
+   },
+   "ms": 0.0,
+   "result_preview": "{'action': 'CREATE_CASE', 'route': 'auto', 'status': 'executed', 'payload': {'case_id': 'HHG-013', 'card_id': 'C07671-K2', 'txn_id': '3526826'}}"
+  },
+  {
+   "step": 14,
+   "tool": "execute_action",
+   "args": {
+    "action": "BLOCK_CARD",
+    "route": "L1",
+    "payload": {
+     "case_id": "HHG-013",
+     "card_id": "C07671-K2",
+     "txn_id": "3526826"
+    }
+   },
+   "ms": 0.0,
+   "result_preview": "{'action': 'BLOCK_CARD', 'route': 'L1', 'status': 'pending_human_approval', 'payload': {'case_id': 'HHG-013', 'card_id': 'C07671-K2', 'txn_id': '3526826'}}"
+  }
+ ]
+}

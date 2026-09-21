@@ -1,0 +1,12 @@
+pandas>=2.2
+pyarrow>=15
+numpy
+networkx>=3.2
+scikit-learn>=1.4
+fastapi>=0.110
+uvicorn>=0.29
+pyTigerGraph>=1.6
+mcp>=1.0
+langgraph>=0.2
+python-dotenv
+pytest

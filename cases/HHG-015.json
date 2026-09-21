@@ -1,0 +1,162 @@
+{
+  "case_id": "HHG-015",
+  "case": {
+    "status": "closed_fraud",
+    "verdict": "fraud",
+    "fraud_probability": 0.95,
+    "pattern": "card_not_present_new_device",
+    "pattern_description": "",
+    "affected_txn_ids": [
+      "3462387",
+      "3462404",
+      "3464869"
+    ],
+    "first_suspicious_txn_id": "3462387",
+    "connected_card_ids": [],
+    "connected_device_profiles": [],
+    "exposure_usd": 1699.98,
+    "evidence": [
+      {
+        "claim": "Bank model risk score 0.77 on the flagged transaction (an input, not a verdict)",
+        "source": "graph",
+        "ref": "query:get_transaction(txn_id=3464869)",
+        "entity_ids": [
+          "3464869"
+        ]
+      },
+      {
+        "claim": "$599.94 exceeds every prior amount on this card (previous max $550.03, median $99.96)",
+        "source": "graph",
+        "ref": "query:card_profile(card_id=C03042-K1)",
+        "entity_ids": [
+          "3464869"
+        ]
+      },
+      {
+        "claim": "Device is marked New, but 35% of this account's online history comes from New devices \u2014 a new device is normal here",
+        "source": "graph",
+        "ref": "query:card_profile(card_id=C03042-K1)",
+        "entity_ids": [
+          "3464869"
+        ]
+      },
+      {
+        "claim": "Purchaser and recipient email domains are both anonymous.com",
+        "source": "graph",
+        "ref": "query:card_profile(card_id=C03042-K1)",
+        "entity_ids": [
+          "3464869"
+        ]
+      },
+      {
+        "claim": "3 purchases above the card's 95th percentile ($444.96) within 48 hours ($550.03, $550.01, $599.94; in-person and online) \u2014 the card normally shows one such amount every 20 purchases",
+        "source": "graph",
+        "ref": "query:card_window(card_id=C03042-K1, hours=48)",
+        "entity_ids": [
+          "3462387",
+          "3462404",
+          "3464869"
+        ]
+      },
+      {
+        "claim": "Customer response: Customer states they did not make this purchase and still has the card",
+        "source": "customer",
+        "ref": "evidence_request:1",
+        "entity_ids": []
+      },
+      {
+        "claim": "Similar cases retrieved from case memory: CC-5111 (confirmed_fraud, card_not_present_new_device); CC-3368 (confirmed_fraud, card_not_present_new_device); CC-2910 (confirmed_fraud, card_not_present_new_device)",
+        "source": "graph",
+        "ref": "query:similar_cases",
+        "entity_ids": [
+          "CC-5111",
+          "CC-3368",
+          "CC-2910"
+        ]
+      },
+      {
+        "claim": "Policy sections applied: Fraud Policy R1 \u2013 verify before you block on a weak signal, Fraud Policy 3a \u2013 a case is not a report, Fraud Policy R2 \u2013 customer denies the transaction",
+        "source": "document",
+        "ref": "policy:R1, policy:3a, policy:R2",
+        "entity_ids": []
+      }
+    ],
+    "similar_prior_cases": [
+      "CC-5111",
+      "CC-3368",
+      "CC-2910",
+      "CC-4943",
+      "CC-2989"
+    ],
+    "summary": "Assessed as fraud (probability 0.95, card not present new device). Flagged online R transaction 3464869 of $599.94 on card C03042-K1 at 2016-11-17 14:03:36. Customer response: Customer states they did not make this purchase and still has the card. $599.94 exceeds every prior amount on this card (previous max $550.03, median $99.96). 3 purchases above the card's 95th percentile ($444.96) within 48 hours ($550.03, $550.01, $599.94; in-person and online) \u2014 the card normally shows one such amount every 20 purchases. Evidence requested (customer validation); assumed response: Customer states they did not make this purchase and still has the card. Exposure $1,699.98 across 3 transaction(s). Final actions: CREATE_CASE, BLOCK_CARD, FILE_REPORT.",
+    "written_to_graph": true,
+    "graph_case_id": "CASE-2016-1015"
+  },
+  "evidence_requests": [
+    {
+      "type": "customer_validation",
+      "asked_after_step": 5,
+      "assumed_response": "Customer states they did not make this purchase and still has the card"
+    }
+  ],
+  "next_best_actions": {
+    "initial": [
+      {
+        "action": "DECLINE_TRANSACTION",
+        "route": "L1",
+        "reason": "Probability 0.83: decline the pending authorization while we confirm"
+      },
+      {
+        "action": "VERIFY_WITH_CUSTOMER",
+        "route": "auto",
+        "reason": "R1: single-signal set below the block threshold; confirm with the cardholder before blocking"
+      },
+      {
+        "action": "CREATE_CASE",
+        "route": "auto",
+        "reason": "3a: fraud probability 0.83 \u2265 0.30; open the internal case"
+      },
+      {
+        "action": "MONITOR_CARD",
+        "route": "auto",
+        "reason": "72h heightened monitoring pending reply"
+      }
+    ],
+    "final": [
+      {
+        "action": "CREATE_CASE",
+        "route": "auto",
+        "reason": "R2"
+      },
+      {
+        "action": "BLOCK_CARD",
+        "route": "L1",
+        "reason": "R2: customer denied; exposure $1,699.98"
+      },
+      {
+        "action": "FILE_REPORT",
+        "route": "L2",
+        "reason": "3a: exposure $1,699.98 exceeds $1,000"
+      }
+    ],
+    "what_changed": "Customer denial (R2) raised probability from 0.83 to 0.95; verification is replaced by BLOCK_CARD and the case record plus a report."
+  },
+  "sar": {
+    "file": true,
+    "reason": "3a: exposure $1,699.98 exceeds $1,000",
+    "subjects": [
+      "C03042",
+      "C03042-K1"
+    ],
+    "total_amount_usd": 1699.98,
+    "activity_dates": [
+      "2016-11-16",
+      "2016-11-17"
+    ],
+    "narrative": "Between 2016-11-16 and 2016-11-17, card C03042-K1 held by customer C03042 was used for 3 online transaction(s) totalling $1,699.98 ($550.03, $550.01, $599.94) under product code R in billing region 327. The transactions were submitted from device profile 'Trident/7.0 | Windows 8.1 | ie 11.0 for desktop | 1680x1050', recorded as New for this account. $599.94 exceeds every prior amount on this card (previous max $550.03, median $99.96). 3 purchases above the card's 95th percentile ($444.96) within 48 hours ($550.03, $550.01, $599.94; in-person and online) \u2014 the card normally shows one such amount every 20 purchases. The cardholder, contacted the same day, stated that they did not make these purchases and remained in possession of the card. The activity is consistent with card not present new device and is inconsistent with the cardholder's established history. Total suspected unauthorised amount: $1,699.98. The card has been blocked and scheduled for reissue."
+  },
+  "stop_reason": "Verification response settled the question (customer denied); probability 0.95. Further graph queries would not change the actions.",
+  "tool_calls": 15,
+  "tokens": 0,
+  "latency_s": 0.82
+}

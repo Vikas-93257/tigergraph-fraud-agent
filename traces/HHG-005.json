@@ -1,0 +1,435 @@
+{
+ "case_id": "HHG-005",
+ "trigger": {
+  "case_id": "HHG-005",
+  "opened_at": "2016-12-08 03:38:37",
+  "trigger_type": "risk_score",
+  "trigger_text": "Real-time model scored transaction 3523199 ($100.07, online) at 0.54. Review and decide.",
+  "flagged_txn_id": 3523199,
+  "card_id": "C02923-K1",
+  "customer_id": "C02923",
+  "risk_score": 0.54
+ },
+ "txn": {
+  "txn_id": "3523199",
+  "ts": "2016-12-07 21:38:37",
+  "amount": 100.07,
+  "product": "R",
+  "channel": "online",
+  "region": 330.0,
+  "country": 87.0,
+  "dist1": null,
+  "p_email": "icloud.com",
+  "r_email": "gmail.com",
+  "risk_score": 0.54,
+  "device_profile": "iOS Device | iOS 9.3.5 | mobile safari 9.0 | 1024x768",
+  "device_status": "New",
+  "proxy": null,
+  "device_type": "mobile",
+  "match_flags": {
+   "M1": null,
+   "M2": null,
+   "M3": null,
+   "M4": null,
+   "M5": null,
+   "M6": null,
+   "M7": null,
+   "M8": null,
+   "M9": null
+  },
+  "counts": {
+   "C1": 1.0,
+   "C13": 1.0,
+   "C14": 1.0
+  },
+  "days_since_prev": 0.0,
+  "customer_id": "C02923",
+  "card_id": "C02923-K1",
+  "card_network": "visa",
+  "card_type": "credit"
+ },
+ "window": [
+  {
+   "txn_id": "3523199",
+   "ts": "2016-12-07 21:38:37",
+   "amount": 100.07,
+   "product": "R",
+   "channel": "online",
+   "region": 330.0,
+   "country": 87.0,
+   "dist1": null,
+   "p_email": "icloud.com",
+   "r_email": "gmail.com",
+   "risk_score": 0.54,
+   "device_profile": "iOS Device | iOS 9.3.5 | mobile safari 9.0 | 1024x768",
+   "device_status": "New",
+   "proxy": null,
+   "device_type": "mobile",
+   "match_flags": {
+    "M1": null,
+    "M2": null,
+    "M3": null,
+    "M4": null,
+    "M5": null,
+    "M6": null,
+    "M7": null,
+    "M8": null,
+    "M9": null
+   },
+   "counts": {
+    "C1": 1.0,
+    "C13": 1.0,
+    "C14": 1.0
+   },
+   "days_since_prev": 0.0
+  }
+ ],
+ "profile": {
+  "card_id": "C02923-K1",
+  "customer_id": "C02923",
+  "n_txns": 90,
+  "first_seen": "2016-07-02 16:06:18",
+  "n_online": 21,
+  "n_in_person": 69,
+  "products": {
+   "W": 69,
+   "S": 8,
+   "H": 7,
+   "R": 6
+  },
+  "regions_top": {
+   "330.0": 85,
+   "272.0": 2,
+   "299.0": 1,
+   "126.0": 1,
+   "324.0": 1
+  },
+  "n_regions": 5,
+  "amount_median": 117.01,
+  "amount_p95": 761.2339999999987,
+  "amount_max": 1104.08,
+  "known_devices": {
+   "Windows | Windows 7 | firefox 57.0 | 1680x1050": 2,
+   "MacOS | Mac OS X 10_13_2 | safari generic | 1440x900": 2,
+   "Windows | Windows 10 | chrome 62.0 | 1366x768": 1,
+   "iOS Device | iOS 11.1.2 | mobile safari 11.0 | 1136x640": 1,
+   "MacOS | Mac OS X 10_12_6 | safari generic | 2880x1800": 1,
+   "iOS Device | iOS 11.0.3 | mobile safari 11.0 | 1334x750": 1,
+   "rv:57.0 | Mac OS X 10.9 | firefox 57.0 | 1920x1080": 1,
+   "MacOS | Mac OS X 10_10_5 | safari generic | 1920x1080": 1,
+   "Windows | Windows 10 | firefox 57.0 | 1366x768": 1,
+   "Windows | Windows 7 | firefox 57.0 | 1600x900": 1
+  },
+  "new_device_share": 0.42857142857142855,
+  "n_known_devices": 19,
+  "p_email_top": {
+   "gmail.com": 43,
+   "yahoo.com": 17,
+   "anonymous.com": 4,
+   "verizon.net": 4
+  },
+  "proxy_history": 0,
+  "flagged": {
+   "amount_percentile": 0.23333333333333334,
+   "amount_z": -0.3343325314252084,
+   "product_seen_before": 6,
+   "region_seen_before": 85,
+   "device_seen_before": 0,
+   "channel_share_online": 0.23333333333333334
+  }
+ },
+ "device": {
+  "device_profile": "iOS Device | iOS 9.3.5 | mobile safari 9.0 | 1024x768",
+  "window": [
+   "2016-11-07 21:38:37",
+   "2016-12-08 03:38:37"
+  ],
+  "n_cards": 1,
+  "cards": [
+   {
+    "card_id": "C02923-K1",
+    "customer_id": "C02923",
+    "n_txns": 1,
+    "total_usd": 100.07,
+    "new_device_share": 1.0,
+    "proxy": [],
+    "first": "2016-12-07 21:38:37",
+    "last": "2016-12-07 21:38:37",
+    "txn_ids": [
+     "3523199"
+    ]
+   }
+  ],
+  "n_cards_all_time": 112,
+  "n_txns_all_time": 168,
+  "closed_cases_on_device": [
+   {
+    "case_id": "CC-0189",
+    "outcome": "cleared",
+    "pattern": "none"
+   },
+   {
+    "case_id": "CC-0219",
+    "outcome": "cleared",
+    "pattern": "none"
+   },
+   {
+    "case_id": "CC-0374",
+    "outcome": "cleared",
+    "pattern": "none"
+   },
+   {
+    "case_id": "CC-0965",
+    "outcome": "cleared",
+    "pattern": "none"
+   },
+   {
+    "case_id": "CC-1672",
+    "outcome": "confirmed_fraud",
+    "pattern": "card_not_present_new_device"
+   }
+  ],
+  "proxy_share_in_window": 0.0,
+  "new_share_in_window": 1.0,
+  "generic_fingerprint": false
+ },
+ "peers": null,
+ "signals": [
+  {
+   "claim": "Bank model risk score 0.54 on the flagged transaction (an input, not a verdict)",
+   "source": "graph",
+   "ref": "query:get_transaction(txn_id=3523199)",
+   "entity_ids": [
+    "3523199"
+   ],
+   "weight": 0.03,
+   "key": "risk_score"
+  },
+  {
+   "claim": "$100.07 is within the card's normal range (median $117.01, p95 $761.23)",
+   "source": "graph",
+   "ref": "query:card_profile(card_id=C02923-K1)",
+   "entity_ids": [
+    "3523199"
+   ],
+   "weight": -0.5,
+   "key": "amount_typical"
+  },
+  {
+   "claim": "Device is marked New, but 42% of this account's online history comes from New devices \u2014 a new device is normal here",
+   "source": "graph",
+   "ref": "query:card_profile(card_id=C02923-K1)",
+   "entity_ids": [
+    "3523199"
+   ],
+   "weight": 0.1,
+   "key": "device_new_common"
+  },
+  {
+   "claim": "Customer has 3 confirmed fraud cases since July (mostly account_takeover) and 0 cleared alert(s) \u2014 a repeat target",
+   "source": "graph",
+   "ref": "query:prior_cases_for_customer(customer_id=C02923)",
+   "entity_ids": [
+    "CC-2400",
+    "CC-2717",
+    "CC-2857"
+   ],
+   "weight": 0.35,
+   "key": "history_repeat_victim"
+  },
+  {
+   "claim": "Customer response: Customer completes the one-time passcode from a known phone number",
+   "source": "customer",
+   "ref": "evidence_request:1",
+   "entity_ids": [],
+   "weight": -2.4,
+   "key": "evidence_confirmed"
+  }
+ ],
+ "initial_prob": 0.22,
+ "tool_log": [
+  {
+   "step": 1,
+   "tool": "get_transaction",
+   "args": {
+    "txn_id": 3523199
+   },
+   "ms": 0.3,
+   "result_preview": "{'txn_id': '3523199', 'ts': '2016-12-07 21:38:37', 'amount': 100.07, 'product': 'R', 'channel': 'online', 'region': 330.0, 'country': 87.0, 'dist1': None, 'p_email': 'icloud.com', 'r_email': 'gmail.com', 'risk_score': 0.54, 'device_profile'\u2026"
+  },
+  {
+   "step": 2,
+   "tool": "card_profile",
+   "args": {
+    "card_id": "C02923-K1",
+    "before_txn_id": 3523199
+   },
+   "ms": 3.8,
+   "result_preview": "{'card_id': 'C02923-K1', 'customer_id': 'C02923', 'n_txns': 90, 'first_seen': '2016-07-02 16:06:18', 'n_online': 21, 'n_in_person': 69, 'products': {'W': 69, 'S': 8, 'H': 7, 'R': 6}, 'regions_top': {'330.0': 85, '272.0': 2, '299.0': 1, '126\u2026"
+  },
+  {
+   "step": 3,
+   "tool": "card_window",
+   "args": {
+    "card_id": "C02923-K1",
+    "center_txn_id": 3523199,
+    "hours_before": 48,
+    "hours_after": 48,
+    "as_of": "2016-12-08 03:38:37"
+   },
+   "ms": 1.3,
+   "result_preview": "[{'txn_id': '3523199', 'ts': '2016-12-07 21:38:37', 'amount': 100.07, 'product': 'R', 'channel': 'online', 'region': 330.0, 'country': 87.0, 'dist1': None, 'p_email': 'icloud.com', 'r_email': 'gmail.com', 'risk_score': 0.54, 'device_profile\u2026"
+  },
+  {
+   "step": 4,
+   "tool": "device_neighbors",
+   "args": {
+    "device_id": "iOS Device | iOS 9.3.5 | mobile safari 9.0 | 1024x768",
+    "start": "2016-11-07 21:38:37",
+    "end": "2016-12-08 03:38:37"
+   },
+   "ms": 33.5,
+   "result_preview": "{'device_profile': 'iOS Device | iOS 9.3.5 | mobile safari 9.0 | 1024x768', 'window': ['2016-11-07 21:38:37', '2016-12-08 03:38:37'], 'n_cards': 1, 'cards': [{'card_id': 'C02923-K1', 'customer_id': 'C02923', 'n_txns': 1, 'total_usd': 100.07\u2026"
+  },
+  {
+   "step": 5,
+   "tool": "recurring_match",
+   "args": {
+    "card_id": "C02923-K1",
+    "txn_id": 3523199,
+    "as_of": "2016-12-08 03:38:37"
+   },
+   "ms": 2.5,
+   "result_preview": "{'amount': 100.07, 'product': 'R', 'n_matches': 2, 'months_with_match': ['2016-07', '2016-12'], 'n_months': 2, 'n_same_region': 2, 'share_of_card_txns': 0.022, 'n_same_amount_within_1h': 1, 'same_amount_burst_ids': [], 'is_recurring': False\u2026"
+  },
+  {
+   "step": 6,
+   "tool": "small_auth_run",
+   "args": {
+    "card_id": "C02923-K1",
+    "txn_id": 3523199,
+    "as_of": "2016-12-08 03:38:37"
+   },
+   "ms": 1.5,
+   "result_preview": "{'n_small_auths': 0, 'small_txn_ids': [], 'larger_after': [], 'testing_sequence': False, 'cleared_over_100': False}"
+  },
+  {
+   "step": 7,
+   "tool": "customer_fraud_rate",
+   "args": {
+    "customer_id": "C02923",
+    "as_of": "2016-12-08 03:38:37"
+   },
+   "ms": 1.8,
+   "result_preview": "{'customer_id': 'C02923', 'n': 68, 'fraud_rate': 0.1618, 'global_rate': 0.0337, 'fraud_rate_in_person': 0.2041, 'n_in_person': 49, 'fraud_rate_online': 0.0526, 'n_online': 19}"
+  },
+  {
+   "step": 8,
+   "tool": "prior_cases_for_customer",
+   "args": {
+    "customer_id": "C02923"
+   },
+   "ms": 1.1,
+   "result_preview": "[{'case_id': 'CC-2400', 'outcome': 'confirmed_fraud', 'pattern': 'account_takeover', 'opened_at': '2016-08-20 20:57:31', 'exposure_usd': 350.99, 'report_filed': 'No', 'notes': 'Case CC-2400: cardholder C02923 reported unrecognized activity \u2026"
+  },
+  {
+   "step": 9,
+   "tool": "similar_cases",
+   "args": {
+    "query_text": "online product R risk score iOS Device   iOS 9.3.5   mobile safari 9.0   1024x768 device never seen on this account new device",
+    "pattern_hint": "card_not_present_new_device",
+    "customer_id": "C02923",
+    "k": 5
+   },
+   "ms": 7.8,
+   "result_preview": "[{'case_id': 'CC-5410', 'kind': 'closed_case', 'score': 0.141, 'customer_id': 'C04108', 'card_id': 'C04108-K2', 'outcome': 'confirmed_fraud', 'pattern': 'card_not_present_new_device', 'exposure_usd': 1300.04, 'report_filed': 'Yes', 'opened_\u2026"
+  },
+  {
+   "step": 10,
+   "tool": "retrieve_policy",
+   "args": {
+    "query_text": "card_not_present_new_device risk_score verify block report shared device",
+    "k": 4
+   },
+   "ms": 6.3,
+   "result_preview": "[{'doc_id': 'policy:R1', 'title': 'Fraud Policy R1 \u2013 verify before you block on a weak signal', 'score': 0.209, 'text': 'R1. Verify before you block on a weak signal. If the case rests on a single signal (including a risk score alone) and t\u2026"
+  },
+  {
+   "step": 11,
+   "tool": "evidence_request:step_up_auth",
+   "args": {
+    "kind": "step_up_auth",
+    "prompt": "Please confirm via one-time passcode",
+    "assumed_response": "Customer completes the one-time passcode from a known phone number"
+   },
+   "ms": 0.0,
+   "result_preview": "{'type': 'step_up_auth', 'prompt': 'Please confirm via one-time passcode', 'assumed_response': 'Customer completes the one-time passcode from a known phone number'}"
+  },
+  {
+   "step": 12,
+   "tool": "write_case",
+   "args": {
+    "case": {
+     "case_id": "HHG-005",
+     "customer_id": "C02923",
+     "card_id": "C02923-K1",
+     "opened_at": "2016-12-08 03:38:37",
+     "status": "closed_legitimate",
+     "verdict": "legitimate",
+     "fraud_probability": 0.05,
+     "pattern": "none",
+     "exposure_usd": 0.0,
+     "affected_txn_ids": [],
+     "connected_card_ids": [],
+     "connected_device_profiles": [],
+     "sar_filed": false,
+     "final_actions": [
+      "CREATE_CASE",
+      "CLOSE_NO_FRAUD"
+     ],
+     "summary": "Assessed as legitimate (probability 0.05, no fraud pattern). Flagged online R transaction 3523199 of $100.07 on card C02923-K1 at 2016-12-07 21:38:37. Customer response: Customer completes the one-time passcode from a known phone number. Evidence requested (step up auth); assumed response: Customer completes the one-time passcode from a known phone number. Final actions: CREATE_CASE, CLOSE_NO_FRAUD.",
+     "similar_prior_cases": [
+      "CC-5410",
+      "CC-4542",
+      "CC-3088",
+      "CC-3289",
+      "CC-3051"
+     ],
+     "graph_case_id": "CASE-2016-1005"
+    }
+   },
+   "ms": 759.4,
+   "result_preview": "CASE-2016-1005"
+  },
+  {
+   "step": 13,
+   "tool": "execute_action",
+   "args": {
+    "action": "CREATE_CASE",
+    "route": "auto",
+    "payload": {
+     "case_id": "HHG-005",
+     "card_id": "C02923-K1",
+     "txn_id": "3523199"
+    }
+   },
+   "ms": 0.0,
+   "result_preview": "{'action': 'CREATE_CASE', 'route': 'auto', 'status': 'executed', 'payload': {'case_id': 'HHG-005', 'card_id': 'C02923-K1', 'txn_id': '3523199'}}"
+  },
+  {
+   "step": 14,
+   "tool": "execute_action",
+   "args": {
+    "action": "CLOSE_NO_FRAUD",
+    "route": "auto",
+    "payload": {
+     "case_id": "HHG-005",
+     "card_id": "C02923-K1",
+     "txn_id": "3523199"
+    }
+   },
+   "ms": 0.0,
+   "result_preview": "{'action': 'CLOSE_NO_FRAUD', 'route': 'auto', 'status': 'executed', 'payload': {'case_id': 'HHG-005', 'card_id': 'C02923-K1', 'txn_id': '3523199'}}"
+  }
+ ]
+}

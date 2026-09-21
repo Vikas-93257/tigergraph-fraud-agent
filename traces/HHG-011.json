@@ -1,0 +1,2609 @@
+{
+ "case_id": "HHG-011",
+ "trigger": {
+  "case_id": "HHG-011",
+  "opened_at": "2016-12-29 06:27:44",
+  "trigger_type": "customer_report",
+  "trigger_text": "Customer C11923 message: 'I never made this $131.30 purchase. Please check my card.' Refers to 3583368.",
+  "flagged_txn_id": 3583368,
+  "card_id": "C11923-K2",
+  "customer_id": "C11923",
+  "risk_score": null
+ },
+ "txn": {
+  "txn_id": "3583368",
+  "ts": "2016-12-29 03:27:44",
+  "amount": 131.3,
+  "product": "C",
+  "channel": "online",
+  "region": null,
+  "country": null,
+  "dist1": null,
+  "p_email": "gmail.com",
+  "r_email": "gmail.com",
+  "risk_score": 0.39,
+  "device_profile": "SM-G610F Build/NRD90M | ? | chrome 66.0 for android | ?",
+  "device_status": "New",
+  "proxy": null,
+  "device_type": "mobile",
+  "match_flags": {
+   "M1": null,
+   "M2": null,
+   "M3": null,
+   "M4": "M2",
+   "M5": null,
+   "M6": null,
+   "M7": null,
+   "M8": null,
+   "M9": null
+  },
+  "counts": {
+   "C1": 1.0,
+   "C13": 0.0,
+   "C14": 0.0
+  },
+  "days_since_prev": 0.0,
+  "customer_id": "C11923",
+  "card_id": "C11923-K2",
+  "card_network": "visa",
+  "card_type": "debit"
+ },
+ "window": [
+  {
+   "txn_id": "3578405",
+   "ts": "2016-12-27 03:33:30",
+   "amount": 61.67,
+   "product": "C",
+   "channel": "online",
+   "region": null,
+   "country": null,
+   "dist1": null,
+   "p_email": "hotmail.com",
+   "r_email": "hotmail.com",
+   "risk_score": 0.14,
+   "device_profile": "SM-G955U1 Build/R16NW | ? | chrome 66.0 for android | ?",
+   "device_status": "Found",
+   "proxy": null,
+   "device_type": "mobile",
+   "match_flags": {
+    "M1": null,
+    "M2": null,
+    "M3": null,
+    "M4": "M2",
+    "M5": null,
+    "M6": null,
+    "M7": null,
+    "M8": null,
+    "M9": null
+   },
+   "counts": {
+    "C1": 2.0,
+    "C13": 1.0,
+    "C14": 1.0
+   },
+   "days_since_prev": 0.0
+  },
+  {
+   "txn_id": "3578451",
+   "ts": "2016-12-27 04:31:11",
+   "amount": 9.94,
+   "product": "C",
+   "channel": "online",
+   "region": null,
+   "country": null,
+   "dist1": null,
+   "p_email": "hotmail.com",
+   "r_email": "hotmail.com",
+   "risk_score": 0.13,
+   "device_profile": "? | ? | mobile safari 11.0 | ?",
+   "device_status": "Unknown",
+   "proxy": null,
+   "device_type": "mobile",
+   "match_flags": {
+    "M1": null,
+    "M2": null,
+    "M3": null,
+    "M4": "M2",
+    "M5": null,
+    "M6": null,
+    "M7": null,
+    "M8": null,
+    "M9": null
+   },
+   "counts": {
+    "C1": 2.0,
+    "C13": 3.0,
+    "C14": 2.0
+   },
+   "days_since_prev": 50.0
+  },
+  {
+   "txn_id": "3578471",
+   "ts": "2016-12-27 04:50:11",
+   "amount": 92.77,
+   "product": "C",
+   "channel": "online",
+   "region": null,
+   "country": null,
+   "dist1": null,
+   "p_email": "gmail.com",
+   "r_email": "gmail.com",
+   "risk_score": 0.14,
+   "device_profile": "? | ? | mobile safari 11.0 | ?",
+   "device_status": "Unknown",
+   "proxy": null,
+   "device_type": "mobile",
+   "match_flags": {
+    "M1": null,
+    "M2": null,
+    "M3": null,
+    "M4": "M2",
+    "M5": null,
+    "M6": null,
+    "M7": null,
+    "M8": null,
+    "M9": null
+   },
+   "counts": {
+    "C1": 1.0,
+    "C13": 1.0,
+    "C14": 1.0
+   },
+   "days_since_prev": 4.0
+  },
+  {
+   "txn_id": "3578475",
+   "ts": "2016-12-27 04:54:00",
+   "amount": 92.87,
+   "product": "C",
+   "channel": "online",
+   "region": null,
+   "country": null,
+   "dist1": null,
+   "p_email": "gmail.com",
+   "r_email": "gmail.com",
+   "risk_score": 0.06,
+   "device_profile": "? | ? | mobile safari 11.0 | ?",
+   "device_status": "Unknown",
+   "proxy": null,
+   "device_type": "mobile",
+   "match_flags": {
+    "M1": null,
+    "M2": null,
+    "M3": null,
+    "M4": "M2",
+    "M5": null,
+    "M6": null,
+    "M7": null,
+    "M8": null,
+    "M9": null
+   },
+   "counts": {
+    "C1": 1.0,
+    "C13": 1.0,
+    "C14": 1.0
+   },
+   "days_since_prev": 4.0
+  },
+  {
+   "txn_id": "3578483",
+   "ts": "2016-12-27 05:07:11",
+   "amount": 92.91,
+   "product": "C",
+   "channel": "online",
+   "region": null,
+   "country": null,
+   "dist1": null,
+   "p_email": "gmail.com",
+   "r_email": "gmail.com",
+   "risk_score": 0.07,
+   "device_profile": "? | ? | mobile safari 11.0 | ?",
+   "device_status": "Unknown",
+   "proxy": null,
+   "device_type": "mobile",
+   "match_flags": {
+    "M1": null,
+    "M2": null,
+    "M3": null,
+    "M4": "M2",
+    "M5": null,
+    "M6": null,
+    "M7": null,
+    "M8": null,
+    "M9": null
+   },
+   "counts": {
+    "C1": 1.0,
+    "C13": 1.0,
+    "C14": 1.0
+   },
+   "days_since_prev": 4.0
+  },
+  {
+   "txn_id": "3578486",
+   "ts": "2016-12-27 05:09:31",
+   "amount": 92.81,
+   "product": "C",
+   "channel": "online",
+   "region": null,
+   "country": null,
+   "dist1": null,
+   "p_email": "gmail.com",
+   "r_email": "gmail.com",
+   "risk_score": 0.04,
+   "device_profile": "? | ? | mobile safari 11.0 | ?",
+   "device_status": "Unknown",
+   "proxy": null,
+   "device_type": "mobile",
+   "match_flags": {
+    "M1": null,
+    "M2": null,
+    "M3": null,
+    "M4": "M2",
+    "M5": null,
+    "M6": null,
+    "M7": null,
+    "M8": null,
+    "M9": null
+   },
+   "counts": {
+    "C1": 1.0,
+    "C13": 1.0,
+    "C14": 1.0
+   },
+   "days_since_prev": 4.0
+  },
+  {
+   "txn_id": "3578491",
+   "ts": "2016-12-27 05:19:26",
+   "amount": 5.13,
+   "product": "C",
+   "channel": "online",
+   "region": null,
+   "country": null,
+   "dist1": null,
+   "p_email": "gmail.com",
+   "r_email": "gmail.com",
+   "risk_score": 0.23,
+   "device_profile": "Windows | ? | chrome 66.0 | ?",
+   "device_status": "Found",
+   "proxy": null,
+   "device_type": "desktop",
+   "match_flags": {
+    "M1": null,
+    "M2": null,
+    "M3": null,
+    "M4": "M2",
+    "M5": null,
+    "M6": null,
+    "M7": null,
+    "M8": null,
+    "M9": null
+   },
+   "counts": {
+    "C1": 16.0,
+    "C13": 0.0,
+    "C14": 0.0
+   },
+   "days_since_prev": 0.0
+  },
+  {
+   "txn_id": "3578496",
+   "ts": "2016-12-27 05:30:40",
+   "amount": 4.96,
+   "product": "C",
+   "channel": "online",
+   "region": null,
+   "country": null,
+   "dist1": null,
+   "p_email": "gmail.com",
+   "r_email": "gmail.com",
+   "risk_score": 0.03,
+   "device_profile": "Windows | ? | chrome 66.0 | ?",
+   "device_status": "Found",
+   "proxy": null,
+   "device_type": "desktop",
+   "match_flags": {
+    "M1": null,
+    "M2": null,
+    "M3": null,
+    "M4": "M2",
+    "M5": null,
+    "M6": null,
+    "M7": null,
+    "M8": null,
+    "M9": null
+   },
+   "counts": {
+    "C1": 16.0,
+    "C13": 0.0,
+    "C14": 0.0
+   },
+   "days_since_prev": 0.0
+  },
+  {
+   "txn_id": "3578506",
+   "ts": "2016-12-27 06:10:43",
+   "amount": 92.87,
+   "product": "C",
+   "channel": "online",
+   "region": null,
+   "country": null,
+   "dist1": null,
+   "p_email": "gmail.com",
+   "r_email": "gmail.com",
+   "risk_score": 0.06,
+   "device_profile": "? | ? | mobile safari 11.0 | ?",
+   "device_status": "Unknown",
+   "proxy": null,
+   "device_type": "mobile",
+   "match_flags": {
+    "M1": null,
+    "M2": null,
+    "M3": null,
+    "M4": "M2",
+    "M5": null,
+    "M6": null,
+    "M7": null,
+    "M8": null,
+    "M9": null
+   },
+   "counts": {
+    "C1": 1.0,
+    "C13": 1.0,
+    "C14": 1.0
+   },
+   "days_since_prev": 4.0
+  },
+  {
+   "txn_id": "3578817",
+   "ts": "2016-12-27 13:49:50",
+   "amount": 25.73,
+   "product": "C",
+   "channel": "online",
+   "region": null,
+   "country": null,
+   "dist1": null,
+   "p_email": "hotmail.com",
+   "r_email": "hotmail.com",
+   "risk_score": 0.01,
+   "device_profile": "Windows | ? | chrome 66.0 | ?",
+   "device_status": "New",
+   "proxy": null,
+   "device_type": "desktop",
+   "match_flags": {
+    "M1": null,
+    "M2": null,
+    "M3": null,
+    "M4": "M2",
+    "M5": null,
+    "M6": null,
+    "M7": null,
+    "M8": null,
+    "M9": null
+   },
+   "counts": {
+    "C1": 1.0,
+    "C13": 1.0,
+    "C14": 1.0
+   },
+   "days_since_prev": 0.0
+  },
+  {
+   "txn_id": "3578995",
+   "ts": "2016-12-27 15:06:53",
+   "amount": 65.24,
+   "product": "C",
+   "channel": "online",
+   "region": null,
+   "country": null,
+   "dist1": null,
+   "p_email": "anonymous.com",
+   "r_email": "anonymous.com",
+   "risk_score": 0.01,
+   "device_profile": "Windows | ? | chrome 66.0 | ?",
+   "device_status": "Found",
+   "proxy": null,
+   "device_type": "desktop",
+   "match_flags": {
+    "M1": null,
+    "M2": null,
+    "M3": null,
+    "M4": "M0",
+    "M5": null,
+    "M6": null,
+    "M7": null,
+    "M8": null,
+    "M9": null
+   },
+   "counts": {
+    "C1": 1.0,
+    "C13": 2.0,
+    "C14": 1.0
+   },
+   "days_since_prev": 4.0
+  },
+  {
+   "txn_id": "3578997",
+   "ts": "2016-12-27 15:06:59",
+   "amount": 4.88,
+   "product": "C",
+   "channel": "online",
+   "region": null,
+   "country": null,
+   "dist1": null,
+   "p_email": "gmail.com",
+   "r_email": "gmail.com",
+   "risk_score": 0.28,
+   "device_profile": null,
+   "device_status": null,
+   "proxy": null,
+   "device_type": null,
+   "match_flags": {
+    "M1": null,
+    "M2": null,
+    "M3": null,
+    "M4": "M2",
+    "M5": null,
+    "M6": null,
+    "M7": null,
+    "M8": null,
+    "M9": null
+   },
+   "counts": {
+    "C1": 1.0,
+    "C13": 1.0,
+    "C14": 1.0
+   },
+   "days_since_prev": 0.0
+  },
+  {
+   "txn_id": "3579400",
+   "ts": "2016-12-27 17:46:48",
+   "amount": 92.07,
+   "product": "C",
+   "channel": "online",
+   "region": null,
+   "country": null,
+   "dist1": null,
+   "p_email": "gmail.com",
+   "r_email": "gmail.com",
+   "risk_score": 0.03,
+   "device_profile": "Windows | ? | chrome 66.0 | ?",
+   "device_status": "Found",
+   "proxy": null,
+   "device_type": "desktop",
+   "match_flags": {
+    "M1": null,
+    "M2": null,
+    "M3": null,
+    "M4": "M2",
+    "M5": null,
+    "M6": null,
+    "M7": null,
+    "M8": null,
+    "M9": null
+   },
+   "counts": {
+    "C1": 2.0,
+    "C13": 0.0,
+    "C14": 0.0
+   },
+   "days_since_prev": 0.0
+  },
+  {
+   "txn_id": "3579407",
+   "ts": "2016-12-27 17:48:19",
+   "amount": 92.17,
+   "product": "C",
+   "channel": "online",
+   "region": null,
+   "country": null,
+   "dist1": null,
+   "p_email": "gmail.com",
+   "r_email": "gmail.com",
+   "risk_score": 0.14,
+   "device_profile": "Windows | ? | chrome 66.0 | ?",
+   "device_status": "Found",
+   "proxy": null,
+   "device_type": "desktop",
+   "match_flags": {
+    "M1": null,
+    "M2": null,
+    "M3": null,
+    "M4": "M2",
+    "M5": null,
+    "M6": null,
+    "M7": null,
+    "M8": null,
+    "M9": null
+   },
+   "counts": {
+    "C1": 2.0,
+    "C13": 0.0,
+    "C14": 0.0
+   },
+   "days_since_prev": 0.0
+  },
+  {
+   "txn_id": "3579576",
+   "ts": "2016-12-27 18:45:45",
+   "amount": 16.16,
+   "product": "C",
+   "channel": "online",
+   "region": null,
+   "country": null,
+   "dist1": null,
+   "p_email": "hotmail.com",
+   "r_email": "hotmail.com",
+   "risk_score": 0.13,
+   "device_profile": "? | ? | safari 11.0 | ?",
+   "device_status": "Unknown",
+   "proxy": null,
+   "device_type": "desktop",
+   "match_flags": {
+    "M1": null,
+    "M2": null,
+    "M3": null,
+    "M4": "M2",
+    "M5": null,
+    "M6": null,
+    "M7": null,
+    "M8": null,
+    "M9": null
+   },
+   "counts": {
+    "C1": 1.0,
+    "C13": 1.0,
+    "C14": 1.0
+   },
+   "days_since_prev": 0.0
+  },
+  {
+   "txn_id": "3579597",
+   "ts": "2016-12-27 18:54:32",
+   "amount": 26.19,
+   "product": "C",
+   "channel": "online",
+   "region": null,
+   "country": null,
+   "dist1": null,
+   "p_email": "yahoo.com.mx",
+   "r_email": "yahoo.com.mx",
+   "risk_score": 0.08,
+   "device_profile": "Trident/7.0 | ? | ie 11.0 for desktop | ?",
+   "device_status": "New",
+   "proxy": null,
+   "device_type": "desktop",
+   "match_flags": {
+    "M1": null,
+    "M2": null,
+    "M3": null,
+    "M4": "M2",
+    "M5": null,
+    "M6": null,
+    "M7": null,
+    "M8": null,
+    "M9": null
+   },
+   "counts": {
+    "C1": 1.0,
+    "C13": 1.0,
+    "C14": 1.0
+   },
+   "days_since_prev": 0.0
+  },
+  {
+   "txn_id": "3580137",
+   "ts": "2016-12-27 21:57:18",
+   "amount": 67.15,
+   "product": "C",
+   "channel": "online",
+   "region": null,
+   "country": null,
+   "dist1": null,
+   "p_email": "gmail.com",
+   "r_email": "gmail.com",
+   "risk_score": 0.01,
+   "device_profile": "SM-G532M Build/MMB29T | ? | chrome 55.0 for android | ?",
+   "device_status": "Found",
+   "proxy": null,
+   "device_type": "mobile",
+   "match_flags": {
+    "M1": null,
+    "M2": null,
+    "M3": null,
+    "M4": "M2",
+    "M5": null,
+    "M6": null,
+    "M7": null,
+    "M8": null,
+    "M9": null
+   },
+   "counts": {
+    "C1": 1.0,
+    "C13": 1.0,
+    "C14": 1.0
+   },
+   "days_since_prev": 2.0
+  },
+  {
+   "txn_id": "3580202",
+   "ts": "2016-12-27 22:18:19",
+   "amount": 67.18,
+   "product": "C",
+   "channel": "online",
+   "region": null,
+   "country": null,
+   "dist1": null,
+   "p_email": "gmail.com",
+   "r_email": "gmail.com",
+   "risk_score": 0.09,
+   "device_profile": "SM-G532M Build/MMB29T | ? | chrome 55.0 for android | ?",
+   "device_status": "Found",
+   "proxy": null,
+   "device_type": "mobile",
+   "match_flags": {
+    "M1": null,
+    "M2": null,
+    "M3": null,
+    "M4": "M2",
+    "M5": null,
+    "M6": null,
+    "M7": null,
+    "M8": null,
+    "M9": null
+   },
+   "counts": {
+    "C1": 1.0,
+    "C13": 1.0,
+    "C14": 1.0
+   },
+   "days_since_prev": 2.0
+  },
+  {
+   "txn_id": "3580219",
+   "ts": "2016-12-27 22:24:42",
+   "amount": 68.55,
+   "product": "C",
+   "channel": "online",
+   "region": null,
+   "country": null,
+   "dist1": null,
+   "p_email": "gmail.com",
+   "r_email": "gmail.com",
+   "risk_score": 0.01,
+   "device_profile": "SM-G532M Build/MMB29T | ? | chrome 55.0 for android | ?",
+   "device_status": "Found",
+   "proxy": null,
+   "device_type": "mobile",
+   "match_flags": {
+    "M1": null,
+    "M2": null,
+    "M3": null,
+    "M4": "M2",
+    "M5": null,
+    "M6": null,
+    "M7": null,
+    "M8": null,
+    "M9": null
+   },
+   "counts": {
+    "C1": 2.0,
+    "C13": 1.0,
+    "C14": 1.0
+   },
+   "days_since_prev": 0.0
+  },
+  {
+   "txn_id": "3580232",
+   "ts": "2016-12-27 22:27:19",
+   "amount": 68.54,
+   "product": "C",
+   "channel": "online",
+   "region": null,
+   "country": null,
+   "dist1": null,
+   "p_email": "gmail.com",
+   "r_email": "gmail.com",
+   "risk_score": 0.25,
+   "device_profile": "SM-G532M Build/MMB29T | ? | chrome 55.0 for android | ?",
+   "device_status": "Found",
+   "proxy": null,
+   "device_type": "mobile",
+   "match_flags": {
+    "M1": null,
+    "M2": null,
+    "M3": null,
+    "M4": "M2",
+    "M5": null,
+    "M6": null,
+    "M7": null,
+    "M8": null,
+    "M9": null
+   },
+   "counts": {
+    "C1": 1.0,
+    "C13": 1.0,
+    "C14": 1.0
+   },
+   "days_since_prev": 2.0
+  },
+  {
+   "txn_id": "3580348",
+   "ts": "2016-12-27 23:07:25",
+   "amount": 41.34,
+   "product": "C",
+   "channel": "online",
+   "region": null,
+   "country": null,
+   "dist1": null,
+   "p_email": "gmail.com",
+   "r_email": "gmail.com",
+   "risk_score": 0.11,
+   "device_profile": "? | ? | mobile safari 11.0 | ?",
+   "device_status": "Unknown",
+   "proxy": null,
+   "device_type": "mobile",
+   "match_flags": {
+    "M1": null,
+    "M2": null,
+    "M3": null,
+    "M4": "M2",
+    "M5": null,
+    "M6": null,
+    "M7": null,
+    "M8": null,
+    "M9": null
+   },
+   "counts": {
+    "C1": 1.0,
+    "C13": 2.0,
+    "C14": 1.0
+   },
+   "days_since_prev": 9.0
+  },
+  {
+   "txn_id": "3580380",
+   "ts": "2016-12-27 23:19:57",
+   "amount": 25.67,
+   "product": "C",
+   "channel": "online",
+   "region": null,
+   "country": null,
+   "dist1": null,
+   "p_email": "hotmail.com",
+   "r_email": "hotmail.com",
+   "risk_score": 0.12,
+   "device_profile": "Moto G (4) Build/NPJ25.93-14.7 | ? | chrome 66.0 for android | ?",
+   "device_status": "New",
+   "proxy": null,
+   "device_type": "mobile",
+   "match_flags": {
+    "M1": null,
+    "M2": null,
+    "M3": null,
+    "M4": "M2",
+    "M5": null,
+    "M6": null,
+    "M7": null,
+    "M8": null,
+    "M9": null
+   },
+   "counts": {
+    "C1": 6.0,
+    "C13": 4.0,
+    "C14": 2.0
+   },
+   "days_since_prev": 48.0
+  },
+  {
+   "txn_id": "3580403",
+   "ts": "2016-12-27 23:29:12",
+   "amount": 25.76,
+   "product": "C",
+   "channel": "online",
+   "region": null,
+   "country": null,
+   "dist1": null,
+   "p_email": "hotmail.com",
+   "r_email": "hotmail.com",
+   "risk_score": 0.36,
+   "device_profile": "Windows | ? | chrome 67.0 | ?",
+   "device_status": "New",
+   "proxy": null,
+   "device_type": "desktop",
+   "match_flags": {
+    "M1": null,
+    "M2": null,
+    "M3": null,
+    "M4": "M2",
+    "M5": null,
+    "M6": null,
+    "M7": null,
+    "M8": null,
+    "M9": null
+   },
+   "counts": {
+    "C1": 7.0,
+    "C13": 4.0,
+    "C14": 2.0
+   },
+   "days_since_prev": 48.0
+  },
+  {
+   "txn_id": "3580417",
+   "ts": "2016-12-27 23:33:11",
+   "amount": 25.68,
+   "product": "C",
+   "channel": "online",
+   "region": null,
+   "country": null,
+   "dist1": null,
+   "p_email": "hotmail.com",
+   "r_email": "hotmail.com",
+   "risk_score": 0.16,
+   "device_profile": "Trident/7.0 | ? | ie 11.0 for desktop | ?",
+   "device_status": "New",
+   "proxy": null,
+   "device_type": "desktop",
+   "match_flags": {
+    "M1": null,
+    "M2": null,
+    "M3": null,
+    "M4": "M2",
+    "M5": null,
+    "M6": null,
+    "M7": null,
+    "M8": null,
+    "M9": null
+   },
+   "counts": {
+    "C1": 7.0,
+    "C13": 4.0,
+    "C14": 2.0
+   },
+   "days_since_prev": 48.0
+  },
+  {
+   "txn_id": "3580427",
+   "ts": "2016-12-27 23:36:26",
+   "amount": 96.66,
+   "product": "C",
+   "channel": "online",
+   "region": null,
+   "country": null,
+   "dist1": null,
+   "p_email": "yahoo.com",
+   "r_email": "yahoo.com",
+   "risk_score": 0.02,
+   "device_profile": "Windows | ? | firefox 60.0 | ?",
+   "device_status": "Found",
+   "proxy": null,
+   "device_type": "desktop",
+   "match_flags": {
+    "M1": null,
+    "M2": null,
+    "M3": null,
+    "M4": "M2",
+    "M5": null,
+    "M6": null,
+    "M7": null,
+    "M8": null,
+    "M9": null
+   },
+   "counts": {
+    "C1": 1.0,
+    "C13": 1.0,
+    "C14": 1.0
+   },
+   "days_since_prev": 0.0
+  },
+  {
+   "txn_id": "3580478",
+   "ts": "2016-12-28 00:00:27",
+   "amount": 23.52,
+   "product": "C",
+   "channel": "online",
+   "region": null,
+   "country": null,
+   "dist1": null,
+   "p_email": "gmail.com",
+   "r_email": "gmail.com",
+   "risk_score": 0.32,
+   "device_profile": "ALE-L23 Build/HuaweiALE-L23 | ? | chrome 66.0 for android | ?",
+   "device_status": "New",
+   "proxy": null,
+   "device_type": "mobile",
+   "match_flags": {
+    "M1": null,
+    "M2": null,
+    "M3": null,
+    "M4": "M2",
+    "M5": null,
+    "M6": null,
+    "M7": null,
+    "M8": null,
+    "M9": null
+   },
+   "counts": {
+    "C1": 1.0,
+    "C13": 1.0,
+    "C14": 1.0
+   },
+   "days_since_prev": 0.0
+  },
+  {
+   "txn_id": "3580544",
+   "ts": "2016-12-28 00:24:53",
+   "amount": 22.07,
+   "product": "C",
+   "channel": "online",
+   "region": null,
+   "country": null,
+   "dist1": null,
+   "p_email": "hotmail.com",
+   "r_email": "hotmail.com",
+   "risk_score": 0.68,
+   "device_profile": "SM-G610M Build/MMB29K | ? | chrome 56.0 for android | ?",
+   "device_status": "New",
+   "proxy": null,
+   "device_type": "mobile",
+   "match_flags": {
+    "M1": null,
+    "M2": null,
+    "M3": null,
+    "M4": "M2",
+    "M5": null,
+    "M6": null,
+    "M7": null,
+    "M8": null,
+    "M9": null
+   },
+   "counts": {
+    "C1": 1.0,
+    "C13": 1.0,
+    "C14": 1.0
+   },
+   "days_since_prev": 0.0
+  },
+  {
+   "txn_id": "3580712",
+   "ts": "2016-12-28 01:26:33",
+   "amount": 44.08,
+   "product": "C",
+   "channel": "online",
+   "region": null,
+   "country": null,
+   "dist1": null,
+   "p_email": "anonymous.com",
+   "r_email": "anonymous.com",
+   "risk_score": 0.2,
+   "device_profile": "Windows | ? | chrome 66.0 | ?",
+   "device_status": "New",
+   "proxy": null,
+   "device_type": "desktop",
+   "match_flags": {
+    "M1": null,
+    "M2": null,
+    "M3": null,
+    "M4": "M2",
+    "M5": null,
+    "M6": null,
+    "M7": null,
+    "M8": null,
+    "M9": null
+   },
+   "counts": {
+    "C1": 1.0,
+    "C13": 1.0,
+    "C14": 1.0
+   },
+   "days_since_prev": 0.0
+  },
+  {
+   "txn_id": "3580765",
+   "ts": "2016-12-28 01:53:09",
+   "amount": 40.12,
+   "product": "C",
+   "channel": "online",
+   "region": null,
+   "country": null,
+   "dist1": null,
+   "p_email": "gmail.com",
+   "r_email": "gmail.com",
+   "risk_score": 0.63,
+   "device_profile": "Windows | ? | chrome 66.0 | ?",
+   "device_status": "New",
+   "proxy": null,
+   "device_type": "desktop",
+   "match_flags": {
+    "M1": null,
+    "M2": null,
+    "M3": null,
+    "M4": "M2",
+    "M5": null,
+    "M6": null,
+    "M7": null,
+    "M8": null,
+    "M9": null
+   },
+   "counts": {
+    "C1": 1.0,
+    "C13": 1.0,
+    "C14": 1.0
+   },
+   "days_since_prev": 0.0
+  },
+  {
+   "txn_id": "3580776",
+   "ts": "2016-12-28 02:00:28",
+   "amount": 25.08,
+   "product": "C",
+   "channel": "online",
+   "region": null,
+   "country": null,
+   "dist1": null,
+   "p_email": "gmail.com",
+   "r_email": "gmail.com",
+   "risk_score": 0.4,
+   "device_profile": "Windows | ? | chrome 66.0 | ?",
+   "device_status": "New",
+   "proxy": null,
+   "device_type": "desktop",
+   "match_flags": {
+    "M1": null,
+    "M2": null,
+    "M3": null,
+    "M4": "M2",
+    "M5": null,
+    "M6": null,
+    "M7": null,
+    "M8": null,
+    "M9": null
+   },
+   "counts": {
+    "C1": 1.0,
+    "C13": 1.0,
+    "C14": 1.0
+   },
+   "days_since_prev": 0.0
+  },
+  {
+   "txn_id": "3580815",
+   "ts": "2016-12-28 02:28:16",
+   "amount": 15.21,
+   "product": "C",
+   "channel": "online",
+   "region": null,
+   "country": null,
+   "dist1": null,
+   "p_email": "hotmail.com",
+   "r_email": "hotmail.com",
+   "risk_score": 0.84,
+   "device_profile": "Windows | ? | chrome 66.0 | ?",
+   "device_status": "New",
+   "proxy": null,
+   "device_type": "desktop",
+   "match_flags": {
+    "M1": null,
+    "M2": null,
+    "M3": null,
+    "M4": "M2",
+    "M5": null,
+    "M6": null,
+    "M7": null,
+    "M8": null,
+    "M9": null
+   },
+   "counts": {
+    "C1": 5.0,
+    "C13": 2.0,
+    "C14": 1.0
+   },
+   "days_since_prev": 0.0
+  },
+  {
+   "txn_id": "3580821",
+   "ts": "2016-12-28 02:32:19",
+   "amount": 15.17,
+   "product": "C",
+   "channel": "online",
+   "region": null,
+   "country": null,
+   "dist1": null,
+   "p_email": "hotmail.com",
+   "r_email": "hotmail.com",
+   "risk_score": 0.01,
+   "device_profile": "Windows | ? | chrome 66.0 | ?",
+   "device_status": "Found",
+   "proxy": null,
+   "device_type": "desktop",
+   "match_flags": {
+    "M1": null,
+    "M2": null,
+    "M3": null,
+    "M4": "M2",
+    "M5": null,
+    "M6": null,
+    "M7": null,
+    "M8": null,
+    "M9": null
+   },
+   "counts": {
+    "C1": 5.0,
+    "C13": 2.0,
+    "C14": 1.0
+   },
+   "days_since_prev": 0.0
+  },
+  {
+   "txn_id": "3580907",
+   "ts": "2016-12-28 03:33:38",
+   "amount": 16.17,
+   "product": "C",
+   "channel": "online",
+   "region": null,
+   "country": null,
+   "dist1": null,
+   "p_email": "gmail.com",
+   "r_email": "gmail.com",
+   "risk_score": 0.09,
+   "device_profile": "SM-G570M Build/NRD90M | ? | chrome 66.0 for android | ?",
+   "device_status": "New",
+   "proxy": null,
+   "device_type": "mobile",
+   "match_flags": {
+    "M1": null,
+    "M2": null,
+    "M3": null,
+    "M4": "M2",
+    "M5": null,
+    "M6": null,
+    "M7": null,
+    "M8": null,
+    "M9": null
+   },
+   "counts": {
+    "C1": 1.0,
+    "C13": 1.0,
+    "C14": 1.0
+   },
+   "days_since_prev": 0.0
+  },
+  {
+   "txn_id": "3580933",
+   "ts": "2016-12-28 03:57:10",
+   "amount": 23.78,
+   "product": "C",
+   "channel": "online",
+   "region": null,
+   "country": null,
+   "dist1": null,
+   "p_email": "gmail.com",
+   "r_email": "gmail.com",
+   "risk_score": 0.09,
+   "device_profile": "SM-J701M Build/NRD90M | ? | chrome 63.0 for android | ?",
+   "device_status": "Found",
+   "proxy": null,
+   "device_type": "mobile",
+   "match_flags": {
+    "M1": null,
+    "M2": null,
+    "M3": null,
+    "M4": "M2",
+    "M5": null,
+    "M6": null,
+    "M7": null,
+    "M8": null,
+    "M9": null
+   },
+   "counts": {
+    "C1": 1.0,
+    "C13": 1.0,
+    "C14": 1.0
+   },
+   "days_since_prev": 0.0
+  },
+  {
+   "txn_id": "3580951",
+   "ts": "2016-12-28 04:21:00",
+   "amount": 52.17,
+   "product": "C",
+   "channel": "online",
+   "region": null,
+   "country": null,
+   "dist1": null,
+   "p_email": "hotmail.com",
+   "r_email": "hotmail.com",
+   "risk_score": 0.05,
+   "device_profile": "Windows | ? | chrome 66.0 | ?",
+   "device_status": "Found",
+   "proxy": null,
+   "device_type": "desktop",
+   "match_flags": {
+    "M1": null,
+    "M2": null,
+    "M3": null,
+    "M4": "M0",
+    "M5": null,
+    "M6": null,
+    "M7": null,
+    "M8": null,
+    "M9": null
+   },
+   "counts": {
+    "C1": 2.0,
+    "C13": 4.0,
+    "C14": 2.0
+   },
+   "days_since_prev": 0.0
+  },
+  {
+   "txn_id": "3580992",
+   "ts": "2016-12-28 05:30:26",
+   "amount": 39.78,
+   "product": "C",
+   "channel": "online",
+   "region": null,
+   "country": null,
+   "dist1": null,
+   "p_email": "gmail.com",
+   "r_email": "gmail.com",
+   "risk_score": 0.12,
+   "device_profile": "? | ? | chrome 66.0 | ?",
+   "device_status": "Found",
+   "proxy": null,
+   "device_type": "desktop",
+   "match_flags": {
+    "M1": null,
+    "M2": null,
+    "M3": null,
+    "M4": "M2",
+    "M5": null,
+    "M6": null,
+    "M7": null,
+    "M8": null,
+    "M9": null
+   },
+   "counts": {
+    "C1": 3.0,
+    "C13": 3.0,
+    "C14": 2.0
+   },
+   "days_since_prev": 0.0
+  },
+  {
+   "txn_id": "3581048",
+   "ts": "2016-12-28 09:02:04",
+   "amount": 37.08,
+   "product": "C",
+   "channel": "online",
+   "region": null,
+   "country": null,
+   "dist1": null,
+   "p_email": "hotmail.com",
+   "r_email": "hotmail.com",
+   "risk_score": 0.23,
+   "device_profile": "G630-U251 | ? | chrome | ?",
+   "device_status": "New",
+   "proxy": null,
+   "device_type": "mobile",
+   "match_flags": {
+    "M1": null,
+    "M2": null,
+    "M3": null,
+    "M4": "M2",
+    "M5": null,
+    "M6": null,
+    "M7": null,
+    "M8": null,
+    "M9": null
+   },
+   "counts": {
+    "C1": 1.0,
+    "C13": 0.0,
+    "C14": 0.0
+   },
+   "days_since_prev": 0.0
+  },
+  {
+   "txn_id": "3581345",
+   "ts": "2016-12-28 14:21:12",
+   "amount": 9.39,
+   "product": "C",
+   "channel": "online",
+   "region": null,
+   "country": null,
+   "dist1": null,
+   "p_email": "gmail.com",
+   "r_email": "gmail.com",
+   "risk_score": 0.06,
+   "device_profile": "Windows | ? | chrome 66.0 | ?",
+   "device_status": "Found",
+   "proxy": null,
+   "device_type": "desktop",
+   "match_flags": {
+    "M1": null,
+    "M2": null,
+    "M3": null,
+    "M4": "M2",
+    "M5": null,
+    "M6": null,
+    "M7": null,
+    "M8": null,
+    "M9": null
+   },
+   "counts": {
+    "C1": 2.0,
+    "C13": 0.0,
+    "C14": 0.0
+   },
+   "days_since_prev": 30.0
+  },
+  {
+   "txn_id": "3582082",
+   "ts": "2016-12-28 18:54:14",
+   "amount": 62.11,
+   "product": "C",
+   "channel": "online",
+   "region": null,
+   "country": null,
+   "dist1": null,
+   "p_email": "anonymous.com",
+   "r_email": "anonymous.com",
+   "risk_score": 0.04,
+   "device_profile": "Windows | ? | chrome 66.0 | ?",
+   "device_status": "Found",
+   "proxy": null,
+   "device_type": "desktop",
+   "match_flags": {
+    "M1": null,
+    "M2": null,
+    "M3": null,
+    "M4": "M0",
+    "M5": null,
+    "M6": null,
+    "M7": null,
+    "M8": null,
+    "M9": null
+   },
+   "counts": {
+    "C1": 1.0,
+    "C13": 1.0,
+    "C14": 1.0
+   },
+   "days_since_prev": 0.0
+  },
+  {
+   "txn_id": "3582107",
+   "ts": "2016-12-28 19:03:07",
+   "amount": 62.06,
+   "product": "C",
+   "channel": "online",
+   "region": null,
+   "country": null,
+   "dist1": null,
+   "p_email": "anonymous.com",
+   "r_email": "anonymous.com",
+   "risk_score": 0.21,
+   "device_profile": null,
+   "device_status": null,
+   "proxy": null,
+   "device_type": null,
+   "match_flags": {
+    "M1": null,
+    "M2": null,
+    "M3": null,
+    "M4": "M2",
+    "M5": null,
+    "M6": null,
+    "M7": null,
+    "M8": null,
+    "M9": null
+   },
+   "counts": {
+    "C1": 1.0,
+    "C13": 0.0,
+    "C14": 0.0
+   },
+   "days_since_prev": 0.0
+  },
+  {
+   "txn_id": "3582142",
+   "ts": "2016-12-28 19:13:13",
+   "amount": 4.15,
+   "product": "C",
+   "channel": "online",
+   "region": null,
+   "country": null,
+   "dist1": null,
+   "p_email": "hotmail.com",
+   "r_email": "hotmail.com",
+   "risk_score": 0.03,
+   "device_profile": "? | ? | chrome 66.0 | ?",
+   "device_status": "Found",
+   "proxy": null,
+   "device_type": "desktop",
+   "match_flags": {
+    "M1": null,
+    "M2": null,
+    "M3": null,
+    "M4": "M2",
+    "M5": null,
+    "M6": null,
+    "M7": null,
+    "M8": null,
+    "M9": null
+   },
+   "counts": {
+    "C1": 7.0,
+    "C13": 4.0,
+    "C14": 2.0
+   },
+   "days_since_prev": 49.0
+  },
+  {
+   "txn_id": "3582175",
+   "ts": "2016-12-28 19:22:39",
+   "amount": 4.01,
+   "product": "C",
+   "channel": "online",
+   "region": null,
+   "country": null,
+   "dist1": null,
+   "p_email": "hotmail.com",
+   "r_email": "hotmail.com",
+   "risk_score": 0.12,
+   "device_profile": "? | ? | chrome 66.0 | ?",
+   "device_status": "Found",
+   "proxy": null,
+   "device_type": "desktop",
+   "match_flags": {
+    "M1": null,
+    "M2": null,
+    "M3": null,
+    "M4": "M0",
+    "M5": null,
+    "M6": null,
+    "M7": null,
+    "M8": null,
+    "M9": null
+   },
+   "counts": {
+    "C1": 7.0,
+    "C13": 4.0,
+    "C14": 2.0
+   },
+   "days_since_prev": 49.0
+  },
+  {
+   "txn_id": "3582178",
+   "ts": "2016-12-28 19:23:22",
+   "amount": 49.91,
+   "product": "C",
+   "channel": "online",
+   "region": null,
+   "country": null,
+   "dist1": null,
+   "p_email": "live.com",
+   "r_email": "live.com",
+   "risk_score": 0.14,
+   "device_profile": "Windows | ? | chrome 66.0 | ?",
+   "device_status": "Found",
+   "proxy": null,
+   "device_type": "desktop",
+   "match_flags": {
+    "M1": null,
+    "M2": null,
+    "M3": null,
+    "M4": "M2",
+    "M5": null,
+    "M6": null,
+    "M7": null,
+    "M8": null,
+    "M9": null
+   },
+   "counts": {
+    "C1": 1.0,
+    "C13": 1.0,
+    "C14": 1.0
+   },
+   "days_since_prev": 0.0
+  },
+  {
+   "txn_id": "3582327",
+   "ts": "2016-12-28 20:26:44",
+   "amount": 15.71,
+   "product": "C",
+   "channel": "online",
+   "region": null,
+   "country": null,
+   "dist1": null,
+   "p_email": "gmail.com",
+   "r_email": "gmail.com",
+   "risk_score": 0.11,
+   "device_profile": "Windows | ? | chrome 66.0 | ?",
+   "device_status": "Found",
+   "proxy": null,
+   "device_type": "desktop",
+   "match_flags": {
+    "M1": null,
+    "M2": null,
+    "M3": null,
+    "M4": "M2",
+    "M5": null,
+    "M6": null,
+    "M7": null,
+    "M8": null,
+    "M9": null
+   },
+   "counts": {
+    "C1": 2.0,
+    "C13": 0.0,
+    "C14": 0.0
+   },
+   "days_since_prev": 255.0
+  },
+  {
+   "txn_id": "3582338",
+   "ts": "2016-12-28 20:30:19",
+   "amount": 36.67,
+   "product": "C",
+   "channel": "online",
+   "region": null,
+   "country": null,
+   "dist1": null,
+   "p_email": "gmail.com",
+   "r_email": "gmail.com",
+   "risk_score": 0.05,
+   "device_profile": "Windows | ? | chrome 66.0 | ?",
+   "device_status": "New",
+   "proxy": null,
+   "device_type": "desktop",
+   "match_flags": {
+    "M1": null,
+    "M2": null,
+    "M3": null,
+    "M4": "M0",
+    "M5": null,
+    "M6": null,
+    "M7": null,
+    "M8": null,
+    "M9": null
+   },
+   "counts": {
+    "C1": 1.0,
+    "C13": 1.0,
+    "C14": 1.0
+   },
+   "days_since_prev": 0.0
+  },
+  {
+   "txn_id": "3582375",
+   "ts": "2016-12-28 20:40:44",
+   "amount": 32.65,
+   "product": "C",
+   "channel": "online",
+   "region": null,
+   "country": null,
+   "dist1": null,
+   "p_email": "gmail.com",
+   "r_email": "gmail.com",
+   "risk_score": 0.07,
+   "device_profile": "Windows | ? | chrome 66.0 | ?",
+   "device_status": "New",
+   "proxy": null,
+   "device_type": "desktop",
+   "match_flags": {
+    "M1": null,
+    "M2": null,
+    "M3": null,
+    "M4": "M0",
+    "M5": null,
+    "M6": null,
+    "M7": null,
+    "M8": null,
+    "M9": null
+   },
+   "counts": {
+    "C1": 1.0,
+    "C13": 1.0,
+    "C14": 1.0
+   },
+   "days_since_prev": 0.0
+  },
+  {
+   "txn_id": "3582413",
+   "ts": "2016-12-28 20:54:06",
+   "amount": 16.63,
+   "product": "C",
+   "channel": "online",
+   "region": null,
+   "country": null,
+   "dist1": null,
+   "p_email": "hotmail.com",
+   "r_email": "hotmail.com",
+   "risk_score": 0.39,
+   "device_profile": "SM-J700M Build/MMB29K | ? | chrome 63.0 for android | ?",
+   "device_status": "New",
+   "proxy": null,
+   "device_type": "mobile",
+   "match_flags": {
+    "M1": null,
+    "M2": null,
+    "M3": null,
+    "M4": "M2",
+    "M5": null,
+    "M6": null,
+    "M7": null,
+    "M8": null,
+    "M9": null
+   },
+   "counts": {
+    "C1": 1.0,
+    "C13": 1.0,
+    "C14": 1.0
+   },
+   "days_since_prev": 0.0
+  },
+  {
+   "txn_id": "3582602",
+   "ts": "2016-12-28 21:56:53",
+   "amount": 19.87,
+   "product": "C",
+   "channel": "online",
+   "region": null,
+   "country": null,
+   "dist1": null,
+   "p_email": "hotmail.com",
+   "r_email": "hotmail.com",
+   "risk_score": 0.14,
+   "device_profile": "Windows | ? | chrome 66.0 | ?",
+   "device_status": "Found",
+   "proxy": null,
+   "device_type": "desktop",
+   "match_flags": {
+    "M1": null,
+    "M2": null,
+    "M3": null,
+    "M4": "M2",
+    "M5": null,
+    "M6": null,
+    "M7": null,
+    "M8": null,
+    "M9": null
+   },
+   "counts": {
+    "C1": 10.0,
+    "C13": 25.0,
+    "C14": 9.0
+   },
+   "days_since_prev": 466.0
+  },
+  {
+   "txn_id": "3582624",
+   "ts": "2016-12-28 22:03:09",
+   "amount": 0.93,
+   "product": "C",
+   "channel": "online",
+   "region": null,
+   "country": null,
+   "dist1": null,
+   "p_email": "hotmail.com",
+   "r_email": "hotmail.com",
+   "risk_score": 0.15,
+   "device_profile": "Moto G (4) Build/NPJ25.93-14.7 | ? | chrome 66.0 for android | ?",
+   "device_status": "Found",
+   "proxy": null,
+   "device_type": "mobile",
+   "match_flags": {
+    "M1": null,
+    "M2": null,
+    "M3": null,
+    "M4": "M2",
+    "M5": null,
+    "M6": null,
+    "M7": null,
+    "M8": null,
+    "M9": null
+   },
+   "counts": {
+    "C1": 7.0,
+    "C13": 4.0,
+    "C14": 2.0
+   },
+   "days_since_prev": 49.0
+  },
+  {
+   "txn_id": "3582671",
+   "ts": "2016-12-28 22:21:56",
+   "amount": 98.7,
+   "product": "C",
+   "channel": "online",
+   "region": null,
+   "country": null,
+   "dist1": null,
+   "p_email": "gmail.com",
+   "r_email": "gmail.com",
+   "risk_score": 0.26,
+   "device_profile": "Windows | ? | chrome 66.0 | ?",
+   "device_status": "Found",
+   "proxy": null,
+   "device_type": "desktop",
+   "match_flags": {
+    "M1": null,
+    "M2": null,
+    "M3": null,
+    "M4": "M0",
+    "M5": null,
+    "M6": null,
+    "M7": null,
+    "M8": null,
+    "M9": null
+   },
+   "counts": {
+    "C1": 2.0,
+    "C13": 1.0,
+    "C14": 1.0
+   },
+   "days_since_prev": 0.0
+  },
+  {
+   "txn_id": "3582738",
+   "ts": "2016-12-28 22:45:49",
+   "amount": 56.59,
+   "product": "C",
+   "channel": "online",
+   "region": null,
+   "country": null,
+   "dist1": null,
+   "p_email": "anonymous.com",
+   "r_email": "anonymous.com",
+   "risk_score": 0.06,
+   "device_profile": "Windows | ? | chrome 66.0 | ?",
+   "device_status": "New",
+   "proxy": null,
+   "device_type": "desktop",
+   "match_flags": {
+    "M1": null,
+    "M2": null,
+    "M3": null,
+    "M4": "M0",
+    "M5": null,
+    "M6": null,
+    "M7": null,
+    "M8": null,
+    "M9": null
+   },
+   "counts": {
+    "C1": 1.0,
+    "C13": 1.0,
+    "C14": 1.0
+   },
+   "days_since_prev": 0.0
+  },
+  {
+   "txn_id": "3582868",
+   "ts": "2016-12-28 23:30:58",
+   "amount": 57.27,
+   "product": "C",
+   "channel": "online",
+   "region": null,
+   "country": null,
+   "dist1": null,
+   "p_email": "hotmail.com",
+   "r_email": "hotmail.com",
+   "risk_score": 0.24,
+   "device_profile": "? | ? | chrome 66.0 | ?",
+   "device_status": "New",
+   "proxy": null,
+   "device_type": "desktop",
+   "match_flags": {
+    "M1": null,
+    "M2": null,
+    "M3": null,
+    "M4": "M2",
+    "M5": null,
+    "M6": null,
+    "M7": null,
+    "M8": null,
+    "M9": null
+   },
+   "counts": {
+    "C1": 1.0,
+    "C13": 0.0,
+    "C14": 0.0
+   },
+   "days_since_prev": 0.0
+  },
+  {
+   "txn_id": "3582897",
+   "ts": "2016-12-28 23:38:48",
+   "amount": 57.29,
+   "product": "C",
+   "channel": "online",
+   "region": null,
+   "country": null,
+   "dist1": null,
+   "p_email": "gmail.com",
+   "r_email": "gmail.com",
+   "risk_score": 0.03,
+   "device_profile": "? | ? | chrome 66.0 | ?",
+   "device_status": "Found",
+   "proxy": null,
+   "device_type": "desktop",
+   "match_flags": {
+    "M1": null,
+    "M2": null,
+    "M3": null,
+    "M4": "M2",
+    "M5": null,
+    "M6": null,
+    "M7": null,
+    "M8": null,
+    "M9": null
+   },
+   "counts": {
+    "C1": 1.0,
+    "C13": 1.0,
+    "C14": 1.0
+   },
+   "days_since_prev": 0.0
+  },
+  {
+   "txn_id": "3583101",
+   "ts": "2016-12-29 00:53:52",
+   "amount": 40.56,
+   "product": "C",
+   "channel": "online",
+   "region": null,
+   "country": null,
+   "dist1": null,
+   "p_email": "outlook.es",
+   "r_email": "outlook.es",
+   "risk_score": 0.13,
+   "device_profile": "? | ? | chrome 66.0 | ?",
+   "device_status": "New",
+   "proxy": null,
+   "device_type": "desktop",
+   "match_flags": {
+    "M1": null,
+    "M2": null,
+    "M3": null,
+    "M4": "M2",
+    "M5": null,
+    "M6": null,
+    "M7": null,
+    "M8": null,
+    "M9": null
+   },
+   "counts": {
+    "C1": 1.0,
+    "C13": 1.0,
+    "C14": 1.0
+   },
+   "days_since_prev": 0.0
+  },
+  {
+   "txn_id": "3583140",
+   "ts": "2016-12-29 01:11:19",
+   "amount": 23.56,
+   "product": "C",
+   "channel": "online",
+   "region": null,
+   "country": null,
+   "dist1": null,
+   "p_email": "gmail.com",
+   "r_email": "gmail.com",
+   "risk_score": 0.14,
+   "device_profile": "Moto G (5) Build/NPP25.137-93 | ? | chrome 66.0 for android | ?",
+   "device_status": "Found",
+   "proxy": null,
+   "device_type": "mobile",
+   "match_flags": {
+    "M1": null,
+    "M2": null,
+    "M3": null,
+    "M4": "M2",
+    "M5": null,
+    "M6": null,
+    "M7": null,
+    "M8": null,
+    "M9": null
+   },
+   "counts": {
+    "C1": 2.0,
+    "C13": 2.0,
+    "C14": 2.0
+   },
+   "days_since_prev": 16.0
+  },
+  {
+   "txn_id": "3583199",
+   "ts": "2016-12-29 01:37:42",
+   "amount": 47.02,
+   "product": "C",
+   "channel": "online",
+   "region": null,
+   "country": null,
+   "dist1": null,
+   "p_email": "yahoo.com.mx",
+   "r_email": "yahoo.com.mx",
+   "risk_score": 0.1,
+   "device_profile": "Windows | ? | chrome 67.0 | ?",
+   "device_status": "Found",
+   "proxy": null,
+   "device_type": "desktop",
+   "match_flags": {
+    "M1": null,
+    "M2": null,
+    "M3": null,
+    "M4": "M0",
+    "M5": null,
+    "M6": null,
+    "M7": null,
+    "M8": null,
+    "M9": null
+   },
+   "counts": {
+    "C1": 3.0,
+    "C13": 3.0,
+    "C14": 3.0
+   },
+   "days_since_prev": 0.0
+  },
+  {
+   "txn_id": "3583229",
+   "ts": "2016-12-29 01:54:34",
+   "amount": 16.78,
+   "product": "C",
+   "channel": "online",
+   "region": null,
+   "country": null,
+   "dist1": null,
+   "p_email": "gmail.com",
+   "r_email": "gmail.com",
+   "risk_score": 0.15,
+   "device_profile": "LDN-LX3 Build/HUAWEILDN-LX3 | ? | chrome 66.0 for android | ?",
+   "device_status": "New",
+   "proxy": null,
+   "device_type": "mobile",
+   "match_flags": {
+    "M1": null,
+    "M2": null,
+    "M3": null,
+    "M4": "M2",
+    "M5": null,
+    "M6": null,
+    "M7": null,
+    "M8": null,
+    "M9": null
+   },
+   "counts": {
+    "C1": 1.0,
+    "C13": 1.0,
+    "C14": 1.0
+   },
+   "days_since_prev": 0.0
+  },
+  {
+   "txn_id": "3583348",
+   "ts": "2016-12-29 03:12:50",
+   "amount": 34.57,
+   "product": "C",
+   "channel": "online",
+   "region": null,
+   "country": null,
+   "dist1": null,
+   "p_email": "yahoo.com.mx",
+   "r_email": "yahoo.com.mx",
+   "risk_score": 0.16,
+   "device_profile": "? | ? | chrome 66.0 | ?",
+   "device_status": "Found",
+   "proxy": null,
+   "device_type": "desktop",
+   "match_flags": {
+    "M1": null,
+    "M2": null,
+    "M3": null,
+    "M4": "M2",
+    "M5": null,
+    "M6": null,
+    "M7": null,
+    "M8": null,
+    "M9": null
+   },
+   "counts": {
+    "C1": 1.0,
+    "C13": 2.0,
+    "C14": 1.0
+   },
+   "days_since_prev": 20.0
+  },
+  {
+   "txn_id": "3583368",
+   "ts": "2016-12-29 03:27:44",
+   "amount": 131.3,
+   "product": "C",
+   "channel": "online",
+   "region": null,
+   "country": null,
+   "dist1": null,
+   "p_email": "gmail.com",
+   "r_email": "gmail.com",
+   "risk_score": 0.39,
+   "device_profile": "SM-G610F Build/NRD90M | ? | chrome 66.0 for android | ?",
+   "device_status": "New",
+   "proxy": null,
+   "device_type": "mobile",
+   "match_flags": {
+    "M1": null,
+    "M2": null,
+    "M3": null,
+    "M4": "M2",
+    "M5": null,
+    "M6": null,
+    "M7": null,
+    "M8": null,
+    "M9": null
+   },
+   "counts": {
+    "C1": 1.0,
+    "C13": 0.0,
+    "C14": 0.0
+   },
+   "days_since_prev": 0.0
+  },
+  {
+   "txn_id": "3583406",
+   "ts": "2016-12-29 04:10:46",
+   "amount": 19.55,
+   "product": "C",
+   "channel": "online",
+   "region": null,
+   "country": null,
+   "dist1": null,
+   "p_email": "gmail.com",
+   "r_email": "gmail.com",
+   "risk_score": 0.1,
+   "device_profile": "SM-G531H Build/LMY48B | ? | chrome 64.0 for android | ?",
+   "device_status": "New",
+   "proxy": null,
+   "device_type": "mobile",
+   "match_flags": {
+    "M1": null,
+    "M2": null,
+    "M3": null,
+    "M4": "M2",
+    "M5": null,
+    "M6": null,
+    "M7": null,
+    "M8": null,
+    "M9": null
+   },
+   "counts": {
+    "C1": 1.0,
+    "C13": 1.0,
+    "C14": 1.0
+   },
+   "days_since_prev": 0.0
+  },
+  {
+   "txn_id": "3583411",
+   "ts": "2016-12-29 04:13:36",
+   "amount": 6.33,
+   "product": "C",
+   "channel": "online",
+   "region": null,
+   "country": null,
+   "dist1": null,
+   "p_email": "hotmail.com",
+   "r_email": "hotmail.com",
+   "risk_score": 0.01,
+   "device_profile": "? | ? | mobile safari 11.0 | ?",
+   "device_status": "New",
+   "proxy": null,
+   "device_type": "mobile",
+   "match_flags": {
+    "M1": null,
+    "M2": null,
+    "M3": null,
+    "M4": "M2",
+    "M5": null,
+    "M6": null,
+    "M7": null,
+    "M8": null,
+    "M9": null
+   },
+   "counts": {
+    "C1": 7.0,
+    "C13": 4.0,
+    "C14": 2.0
+   },
+   "days_since_prev": 50.0
+  },
+  {
+   "txn_id": "3583415",
+   "ts": "2016-12-29 04:16:10",
+   "amount": 6.39,
+   "product": "C",
+   "channel": "online",
+   "region": null,
+   "country": null,
+   "dist1": null,
+   "p_email": "hotmail.com",
+   "r_email": "hotmail.com",
+   "risk_score": 0.01,
+   "device_profile": "? | ? | mobile safari 11.0 | ?",
+   "device_status": "Found",
+   "proxy": null,
+   "device_type": "mobile",
+   "match_flags": {
+    "M1": null,
+    "M2": null,
+    "M3": null,
+    "M4": "M2",
+    "M5": null,
+    "M6": null,
+    "M7": null,
+    "M8": null,
+    "M9": null
+   },
+   "counts": {
+    "C1": 7.0,
+    "C13": 4.0,
+    "C14": 2.0
+   },
+   "days_since_prev": 50.0
+  },
+  {
+   "txn_id": "3583417",
+   "ts": "2016-12-29 04:22:35",
+   "amount": 6.35,
+   "product": "C",
+   "channel": "online",
+   "region": null,
+   "country": null,
+   "dist1": null,
+   "p_email": "hotmail.com",
+   "r_email": "hotmail.com",
+   "risk_score": 0.07,
+   "device_profile": "? | ? | mobile safari 11.0 | ?",
+   "device_status": "Found",
+   "proxy": null,
+   "device_type": "mobile",
+   "match_flags": {
+    "M1": null,
+    "M2": null,
+    "M3": null,
+    "M4": "M2",
+    "M5": null,
+    "M6": null,
+    "M7": null,
+    "M8": null,
+    "M9": null
+   },
+   "counts": {
+    "C1": 7.0,
+    "C13": 4.0,
+    "C14": 2.0
+   },
+   "days_since_prev": 50.0
+  },
+  {
+   "txn_id": "3583435",
+   "ts": "2016-12-29 05:04:18",
+   "amount": 22.93,
+   "product": "C",
+   "channel": "online",
+   "region": null,
+   "country": null,
+   "dist1": null,
+   "p_email": "hotmail.com",
+   "r_email": "hotmail.com",
+   "risk_score": 0.18,
+   "device_profile": "SM-J700M Build/MMB29K | ? | chrome 66.0 for android | ?",
+   "device_status": "New",
+   "proxy": null,
+   "device_type": "mobile",
+   "match_flags": {
+    "M1": null,
+    "M2": null,
+    "M3": null,
+    "M4": "M2",
+    "M5": null,
+    "M6": null,
+    "M7": null,
+    "M8": null,
+    "M9": null
+   },
+   "counts": {
+    "C1": 2.0,
+    "C13": 2.0,
+    "C14": 2.0
+   },
+   "days_since_prev": 0.0
+  }
+ ],
+ "profile": {
+  "card_id": "C11923-K2",
+  "customer_id": "C11923",
+  "n_txns": 10335,
+  "first_seen": "2016-07-02 00:06:21",
+  "n_online": 10335,
+  "n_in_person": 0,
+  "products": {
+   "C": 10334,
+   "R": 1
+  },
+  "regions_top": {
+   "284.0": 95,
+   "465.0": 71,
+   "130.0": 54,
+   "161.0": 51,
+   "511.0": 34,
+   "148.0": 16,
+   "167.0": 14,
+   "242.0": 14
+  },
+  "n_regions": 32,
+  "amount_median": 28.58,
+  "amount_p95": 107.72099999999988,
+  "amount_max": 486.52,
+  "known_devices": {
+   "Windows | ? | chrome 63.0 | ?": 973,
+   "? | ? | mobile safari generic | ?": 678,
+   "? | ? | chrome 63.0 | ?": 480,
+   "? | ? | mobile safari 11.0 | ?": 458,
+   "Windows | ? | chrome 64.0 | ?": 440,
+   "Windows | ? | chrome 65.0 | ?": 376,
+   "Windows | ? | chrome 66.0 | ?": 238,
+   "Windows | ? | chrome 62.0 | ?": 191,
+   "Trident/7.0 | ? | ie 11.0 for desktop | ?": 188,
+   "? | ? | chrome 65.0 | ?": 170
+  },
+  "new_device_share": 0.41296565070149976,
+  "n_known_devices": 1481,
+  "p_email_top": {
+   "hotmail.com": 4184,
+   "gmail.com": 3978,
+   "anonymous.com": 777,
+   "outlook.com": 370
+  },
+  "proxy_history": 59,
+  "flagged": {
+   "amount_percentile": 0.9673923560716013,
+   "amount_z": 2.5537413148111883,
+   "product_seen_before": 10334,
+   "region_seen_before": null,
+   "device_seen_before": 0,
+   "channel_share_online": 1.0
+  }
+ },
+ "device": {
+  "device_profile": "SM-G610F Build/NRD90M | ? | chrome 66.0 for android | ?",
+  "window": [
+   "2016-11-29 03:27:44",
+   "2016-12-29 06:27:44"
+  ],
+  "n_cards": 3,
+  "cards": [
+   {
+    "card_id": "C03938-K1",
+    "customer_id": "C03938",
+    "n_txns": 1,
+    "total_usd": 125.59,
+    "new_device_share": 0.0,
+    "proxy": [],
+    "first": "2016-12-28 22:48:51",
+    "last": "2016-12-28 22:48:51",
+    "txn_ids": [
+     "3582750"
+    ]
+   },
+   {
+    "card_id": "C05595-K1",
+    "customer_id": "C05595",
+    "n_txns": 1,
+    "total_usd": 125.72,
+    "new_device_share": 1.0,
+    "proxy": [],
+    "first": "2016-12-28 22:43:11",
+    "last": "2016-12-28 22:43:11",
+    "txn_ids": [
+     "3582730"
+    ]
+   },
+   {
+    "card_id": "C11923-K2",
+    "customer_id": "C11923",
+    "n_txns": 1,
+    "total_usd": 131.3,
+    "new_device_share": 1.0,
+    "proxy": [],
+    "first": "2016-12-29 03:27:44",
+    "last": "2016-12-29 03:27:44",
+    "txn_ids": [
+     "3583368"
+    ]
+   }
+  ],
+  "n_cards_all_time": 4,
+  "n_txns_all_time": 4,
+  "closed_cases_on_device": [],
+  "proxy_share_in_window": 0.0,
+  "new_share_in_window": 0.6666666666666666,
+  "generic_fingerprint": true
+ },
+ "peers": null,
+ "signals": [
+  {
+   "claim": "Cardholder reports they did not make the $131.30 purchase (customer disputes are right about 84% of the time in closed cases, but recurring charges are the usual exception)",
+   "source": "customer",
+   "ref": "trigger:customer_report",
+   "entity_ids": [
+    "3583368"
+   ],
+   "weight": 0.0,
+   "key": "customer_report"
+  },
+  {
+   "claim": "$131.30 is above the card's 95th percentile ($107.72; median $28.58)",
+   "source": "graph",
+   "ref": "query:card_profile(card_id=C11923-K2)",
+   "entity_ids": [
+    "3583368"
+   ],
+   "weight": 0.7,
+   "key": "amount_above_p95"
+  },
+  {
+   "claim": "Device is marked New, but 41% of this account's online history comes from New devices \u2014 a new device is normal here",
+   "source": "graph",
+   "ref": "query:card_profile(card_id=C11923-K2)",
+   "entity_ids": [
+    "3583368"
+   ],
+   "weight": 0.1,
+   "key": "device_new_common"
+  },
+  {
+   "claim": "Same product and amount ($131.30 C) recurs 6 times across 4 months on this card \u2014 matches the cardholder's own recurring pattern",
+   "source": "graph",
+   "ref": "query:recurring_match(card_id=C11923-K2, txn_id=3583368)",
+   "entity_ids": [
+    "3325985",
+    "3377879",
+    "3528954",
+    "3583368"
+   ],
+   "weight": -1.6,
+   "key": "recurring"
+  },
+  {
+   "claim": "Customer has 10 confirmed fraud cases since July (mostly card_not_present_new_device) and 1 cleared alert(s) \u2014 a repeat target",
+   "source": "graph",
+   "ref": "query:prior_cases_for_customer(customer_id=C11923)",
+   "entity_ids": [
+    "CC-0031",
+    "CC-0290",
+    "CC-1056",
+    "CC-2247",
+    "CC-2673"
+   ],
+   "weight": 0.35,
+   "key": "history_repeat_victim"
+  },
+  {
+   "claim": "Customer response: Customer, shown the history of identical monthly charges on their own card, recognises the merchant and confirms the charge; asks for a reminder next cycle",
+   "source": "customer",
+   "ref": "evidence_request:1",
+   "entity_ids": [],
+   "weight": -2.4,
+   "key": "evidence_confirmed"
+  }
+ ],
+ "initial_prob": 0.44,
+ "tool_log": [
+  {
+   "step": 1,
+   "tool": "get_transaction",
+   "args": {
+    "txn_id": 3583368
+   },
+   "ms": 0.3,
+   "result_preview": "{'txn_id': '3583368', 'ts': '2016-12-29 03:27:44', 'amount': 131.3, 'product': 'C', 'channel': 'online', 'region': None, 'country': None, 'dist1': None, 'p_email': 'gmail.com', 'r_email': 'gmail.com', 'risk_score': 0.39, 'device_profile': '\u2026"
+  },
+  {
+   "step": 2,
+   "tool": "card_profile",
+   "args": {
+    "card_id": "C11923-K2",
+    "before_txn_id": 3583368
+   },
+   "ms": 18.0,
+   "result_preview": "{'card_id': 'C11923-K2', 'customer_id': 'C11923', 'n_txns': 10335, 'first_seen': '2016-07-02 00:06:21', 'n_online': 10335, 'n_in_person': 0, 'products': {'C': 10334, 'R': 1}, 'regions_top': {'284.0': 95, '465.0': 71, '130.0': 54, '161.0': 5\u2026"
+  },
+  {
+   "step": 3,
+   "tool": "card_window",
+   "args": {
+    "card_id": "C11923-K2",
+    "center_txn_id": 3583368,
+    "hours_before": 48,
+    "hours_after": 48,
+    "as_of": "2016-12-29 06:27:44"
+   },
+   "ms": 9.5,
+   "result_preview": "[{'txn_id': '3578405', 'ts': '2016-12-27 03:33:30', 'amount': 61.67, 'product': 'C', 'channel': 'online', 'region': None, 'country': None, 'dist1': None, 'p_email': 'hotmail.com', 'r_email': 'hotmail.com', 'risk_score': 0.14, 'device_profil\u2026"
+  },
+  {
+   "step": 4,
+   "tool": "device_neighbors",
+   "args": {
+    "device_id": "SM-G610F Build/NRD90M | ? | chrome 66.0 for android | ?",
+    "start": "2016-11-29 03:27:44",
+    "end": "2016-12-29 06:27:44"
+   },
+   "ms": 33.1,
+   "result_preview": "{'device_profile': 'SM-G610F Build/NRD90M | ? | chrome 66.0 for android | ?', 'window': ['2016-11-29 03:27:44', '2016-12-29 06:27:44'], 'n_cards': 3, 'cards': [{'card_id': 'C03938-K1', 'customer_id': 'C03938', 'n_txns': 1, 'total_usd': 125.\u2026"
+  },
+  {
+   "step": 5,
+   "tool": "recurring_match",
+   "args": {
+    "card_id": "C11923-K2",
+    "txn_id": 3583368,
+    "as_of": "2016-12-29 06:27:44"
+   },
+   "ms": 6.3,
+   "result_preview": "{'amount': 131.3, 'product': 'C', 'n_matches': 6, 'months_with_match': ['2016-07', '2016-08', '2016-10', '2016-12'], 'n_months': 4, 'n_same_region': 0, 'share_of_card_txns': 0.0006, 'n_same_amount_within_1h': 1, 'same_amount_burst_ids': [],\u2026"
+  },
+  {
+   "step": 6,
+   "tool": "small_auth_run",
+   "args": {
+    "card_id": "C11923-K2",
+    "txn_id": 3583368,
+    "as_of": "2016-12-29 06:27:44"
+   },
+   "ms": 5.7,
+   "result_preview": "{'n_small_auths': 0, 'small_txn_ids': [], 'larger_after': [], 'testing_sequence': False, 'cleared_over_100': False}"
+  },
+  {
+   "step": 7,
+   "tool": "customer_fraud_rate",
+   "args": {
+    "customer_id": "C11923",
+    "as_of": "2016-12-29 06:27:44"
+   },
+   "ms": 12.7,
+   "result_preview": "{'customer_id': 'C11923', 'n': 7736, 'fraud_rate': 0.0292, 'global_rate': 0.0337, 'fraud_rate_online': 0.0292, 'n_online': 7736}"
+  },
+  {
+   "step": 8,
+   "tool": "prior_cases_for_customer",
+   "args": {
+    "customer_id": "C11923"
+   },
+   "ms": 1.7,
+   "result_preview": "[{'case_id': 'CC-0031', 'outcome': 'confirmed_fraud', 'pattern': 'card_not_present_new_device', 'opened_at': '2016-07-04 01:23:36', 'exposure_usd': 20.36, 'report_filed': 'No', 'notes': \"Case CC-0031: cardholder C11923 reported unrecognized\u2026"
+  },
+  {
+   "step": 9,
+   "tool": "similar_cases",
+   "args": {
+    "query_text": "online product C customer report SM-G610F Build/NRD90M   ?   chrome 66.0 for android   ? device never seen on this account new device recurring charge same amount monthly cardholder confirmed",
+    "pattern_hint": "card_not_present_new_device",
+    "customer_id": "C11923",
+    "k": 5
+   },
+   "ms": 7.1,
+   "result_preview": "[{'case_id': 'HHG-009', 'kind': 'agent_case', 'score': 0.158, 'customer_id': 'C08299', 'card_id': 'C08299-K1', 'opened_at': '2016-12-28 17:10:53', 'status': 'closed_legitimate', 'verdict': 'legitimate', 'fraud_probability': 0.05, 'pattern':\u2026"
+  },
+  {
+   "step": 10,
+   "tool": "retrieve_policy",
+   "args": {
+    "query_text": "card_not_present_new_device customer_report verify block report shared device",
+    "k": 4
+   },
+   "ms": 6.0,
+   "result_preview": "[{'doc_id': 'policy:R1', 'title': 'Fraud Policy R1 \u2013 verify before you block on a weak signal', 'score': 0.21, 'text': 'R1. Verify before you block on a weak signal. If the case rests on a single signal (including a risk score alone) and th\u2026"
+  },
+  {
+   "step": 11,
+   "tool": "evidence_request:customer_validation",
+   "args": {
+    "kind": "customer_validation",
+    "prompt": "Did you make the $131.30 C purchase on 2016-12-29?",
+    "assumed_response": "Customer, shown the history of identical monthly charges on their own card, recognises the merchant and confirms the charge; asks for a reminder next cycle"
+   },
+   "ms": 0.0,
+   "result_preview": "{'type': 'customer_validation', 'prompt': 'Did you make the $131.30 C purchase on 2016-12-29?', 'assumed_response': 'Customer, shown the history of identical monthly charges on their own card, recognises the merchant and confirms the charge\u2026"
+  },
+  {
+   "step": 12,
+   "tool": "write_case",
+   "args": {
+    "case": {
+     "case_id": "HHG-011",
+     "customer_id": "C11923",
+     "card_id": "C11923-K2",
+     "opened_at": "2016-12-29 06:27:44",
+     "status": "closed_legitimate",
+     "verdict": "legitimate",
+     "fraud_probability": 0.07,
+     "pattern": "none",
+     "exposure_usd": 0.0,
+     "affected_txn_ids": [],
+     "connected_card_ids": [],
+     "connected_device_profiles": [],
+     "sar_filed": false,
+     "final_actions": [
+      "CREATE_CASE",
+      "WARN_CUSTOMER",
+      "CLOSE_NO_FRAUD"
+     ],
+     "summary": "Assessed as legitimate (probability 0.07, no fraud pattern). Flagged online C transaction 3583368 of $131.30 on card C11923-K2 at 2016-12-29 03:27:44. Customer response: Customer, shown the history of identical monthly charges on their own card, recognises the merchant and confirms the charge; asks for a reminder next cycle. Same product and amount ($131.30 C) recurs 6 times across 4 months on this card \u2014 matches the cardholder's own recurring pattern. $131.30 is above the card's 95th percentile ($107.72; median $28.58). Evidence requested (customer validation); assumed response: Customer, shown the history of identical monthly charges on their own card, recognises the merchant and confirms the charge; asks for a reminder next cycle. Final actions: CREATE_CASE, WARN_CUSTOMER, CLOSE_NO_FRAUD.",
+     "similar_prior_cases": [
+      "HHG-009",
+      "CC-0324",
+      "CC-1413",
+      "CC-4546",
+      "CC-0334"
+     ],
+     "graph_case_id": "CASE-2016-1011"
+    }
+   },
+   "ms": 752.7,
+   "result_preview": "CASE-2016-1011"
+  },
+  {
+   "step": 13,
+   "tool": "execute_action",
+   "args": {
+    "action": "CREATE_CASE",
+    "route": "auto",
+    "payload": {
+     "case_id": "HHG-011",
+     "card_id": "C11923-K2",
+     "txn_id": "3583368"
+    }
+   },
+   "ms": 0.0,
+   "result_preview": "{'action': 'CREATE_CASE', 'route': 'auto', 'status': 'executed', 'payload': {'case_id': 'HHG-011', 'card_id': 'C11923-K2', 'txn_id': '3583368'}}"
+  },
+  {
+   "step": 14,
+   "tool": "execute_action",
+   "args": {
+    "action": "WARN_CUSTOMER",
+    "route": "auto",
+    "payload": {
+     "case_id": "HHG-011",
+     "card_id": "C11923-K2",
+     "txn_id": "3583368"
+    }
+   },
+   "ms": 0.0,
+   "result_preview": "{'action': 'WARN_CUSTOMER', 'route': 'auto', 'status': 'executed', 'payload': {'case_id': 'HHG-011', 'card_id': 'C11923-K2', 'txn_id': '3583368'}}"
+  },
+  {
+   "step": 15,
+   "tool": "execute_action",
+   "args": {
+    "action": "CLOSE_NO_FRAUD",
+    "route": "auto",
+    "payload": {
+     "case_id": "HHG-011",
+     "card_id": "C11923-K2",
+     "txn_id": "3583368"
+    }
+   },
+   "ms": 0.0,
+   "result_preview": "{'action': 'CLOSE_NO_FRAUD', 'route': 'auto', 'status': 'executed', 'payload': {'case_id': 'HHG-011', 'card_id': 'C11923-K2', 'txn_id': '3583368'}}"
+  }
+ ]
+}

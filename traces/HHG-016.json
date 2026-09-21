@@ -1,0 +1,1160 @@
+{
+ "case_id": "HHG-016",
+ "trigger": {
+  "case_id": "HHG-016",
+  "opened_at": "2016-12-12 01:39:08",
+  "trigger_type": "customer_report",
+  "trigger_text": "Customer C09988 message: 'I never made this $59.67 purchase. Please check my card.' Refers to 3534820.",
+  "flagged_txn_id": 3534820,
+  "card_id": "C09988-K1",
+  "customer_id": "C09988",
+  "risk_score": null
+ },
+ "txn": {
+  "txn_id": "3534820",
+  "ts": "2016-12-11 22:39:08",
+  "amount": 59.67,
+  "product": "C",
+  "channel": "online",
+  "region": null,
+  "country": null,
+  "dist1": null,
+  "p_email": "hotmail.com",
+  "r_email": "hotmail.com",
+  "risk_score": 0.37,
+  "device_profile": "Windows | ? | edge 16.0 | ?",
+  "device_status": "New",
+  "proxy": null,
+  "device_type": "desktop",
+  "match_flags": {
+   "M1": null,
+   "M2": null,
+   "M3": null,
+   "M4": "M1",
+   "M5": null,
+   "M6": null,
+   "M7": null,
+   "M8": null,
+   "M9": null
+  },
+  "counts": {
+   "C1": 9.0,
+   "C13": 0.0,
+   "C14": 0.0
+  },
+  "days_since_prev": 0.0,
+  "customer_id": "C09988",
+  "card_id": "C09988-K1",
+  "card_network": "visa",
+  "card_type": "debit"
+ },
+ "window": [
+  {
+   "txn_id": "3534820",
+   "ts": "2016-12-11 22:39:08",
+   "amount": 59.67,
+   "product": "C",
+   "channel": "online",
+   "region": null,
+   "country": null,
+   "dist1": null,
+   "p_email": "hotmail.com",
+   "r_email": "hotmail.com",
+   "risk_score": 0.37,
+   "device_profile": "Windows | ? | edge 16.0 | ?",
+   "device_status": "New",
+   "proxy": null,
+   "device_type": "desktop",
+   "match_flags": {
+    "M1": null,
+    "M2": null,
+    "M3": null,
+    "M4": "M1",
+    "M5": null,
+    "M6": null,
+    "M7": null,
+    "M8": null,
+    "M9": null
+   },
+   "counts": {
+    "C1": 9.0,
+    "C13": 0.0,
+    "C14": 0.0
+   },
+   "days_since_prev": 0.0
+  }
+ ],
+ "profile": {
+  "card_id": "C09988-K1",
+  "customer_id": "C09988",
+  "n_txns": 48,
+  "first_seen": "2016-07-06 19:02:49",
+  "n_online": 48,
+  "n_in_person": 0,
+  "products": {
+   "C": 48
+  },
+  "regions_top": {
+   "100.0": 1,
+   "382.0": 1
+  },
+  "n_regions": 2,
+  "amount_median": 37.754999999999995,
+  "amount_p95": 83.67999999999999,
+  "amount_max": 94.7,
+  "known_devices": {
+   "Windows | ? | chrome 64.0 | ?": 16,
+   "? | ? | chrome 64.0 | ?": 12,
+   "Windows | ? | chrome 63.0 | ?": 5,
+   "SM-G950F Build/NRD90M | ? | chrome 64.0 for android | ?": 4,
+   "SAMSUNG SM-G900F Build/MMB29M | ? | samsung browser 6.2 | ?": 2,
+   "? | ? | chrome 63.0 | ?": 2,
+   "SM-J510FN | ? | chrome 62.0 for android | ?": 1,
+   "? | ? | safari generic | ?": 1,
+   "? | ? | mobile safari 11.0 | ?": 1,
+   "? | ? | mobile safari generic | ?": 1
+  },
+  "new_device_share": 0.3125,
+  "n_known_devices": 12,
+  "p_email_top": {
+   "hotmail.com": 16,
+   "gmail.com": 13,
+   "anonymous.com": 8,
+   "hotmail.fr": 6
+  },
+  "proxy_history": 0,
+  "flagged": {
+   "amount_percentile": 0.75,
+   "amount_z": 0.7797937793204498,
+   "product_seen_before": 48,
+   "region_seen_before": null,
+   "device_seen_before": 0,
+   "channel_share_online": 1.0
+  }
+ },
+ "device": {
+  "device_profile": "Windows | ? | edge 16.0 | ?",
+  "window": [
+   "2016-11-11 22:39:08",
+   "2016-12-12 01:39:08"
+  ],
+  "n_cards": 52,
+  "cards": [
+   {
+    "card_id": "C00045-K1",
+    "customer_id": "C00045",
+    "n_txns": 1,
+    "total_usd": 29.75,
+    "new_device_share": 1.0,
+    "proxy": [],
+    "first": "2016-11-19 19:53:17",
+    "last": "2016-11-19 19:53:17",
+    "txn_ids": [
+     "3471255"
+    ]
+   },
+   {
+    "card_id": "C00294-K2",
+    "customer_id": "C00294",
+    "n_txns": 1,
+    "total_usd": 30.74,
+    "new_device_share": 0.0,
+    "proxy": [],
+    "first": "2016-11-12 22:49:58",
+    "last": "2016-11-12 22:49:58",
+    "txn_ids": [
+     "3453066"
+    ]
+   },
+   {
+    "card_id": "C00854-K2",
+    "customer_id": "C00854",
+    "n_txns": 2,
+    "total_usd": 112.95,
+    "new_device_share": 0.0,
+    "proxy": [],
+    "first": "2016-12-05 19:58:02",
+    "last": "2016-12-10 20:27:24",
+    "txn_ids": [
+     "3516942",
+     "3531451"
+    ]
+   },
+   {
+    "card_id": "C01002-K1",
+    "customer_id": "C01002",
+    "n_txns": 2,
+    "total_usd": 278.49,
+    "new_device_share": 0.5,
+    "proxy": [],
+    "first": "2016-12-10 06:49:19",
+    "last": "2016-12-10 07:58:55",
+    "txn_ids": [
+     "3529926",
+     "3529938"
+    ]
+   },
+   {
+    "card_id": "C01109-K2",
+    "customer_id": "C01109",
+    "n_txns": 3,
+    "total_usd": 81.67,
+    "new_device_share": 0.0,
+    "proxy": [],
+    "first": "2016-11-30 19:35:20",
+    "last": "2016-11-30 19:41:58",
+    "txn_ids": [
+     "3501236",
+     "3501259",
+     "3501261"
+    ]
+   },
+   {
+    "card_id": "C01521-K2",
+    "customer_id": "C01521",
+    "n_txns": 1,
+    "total_usd": 66.59,
+    "new_device_share": 1.0,
+    "proxy": [],
+    "first": "2016-11-18 22:27:11",
+    "last": "2016-11-18 22:27:11",
+    "txn_ids": [
+     "3469006"
+    ]
+   },
+   {
+    "card_id": "C01525-K2",
+    "customer_id": "C01525",
+    "n_txns": 1,
+    "total_usd": 154.15,
+    "new_device_share": 1.0,
+    "proxy": [],
+    "first": "2016-12-11 01:34:54",
+    "last": "2016-12-11 01:34:54",
+    "txn_ids": [
+     "3532418"
+    ]
+   },
+   {
+    "card_id": "C02181-K2",
+    "customer_id": "C02181",
+    "n_txns": 1,
+    "total_usd": 21.46,
+    "new_device_share": 0.0,
+    "proxy": [],
+    "first": "2016-11-28 16:07:39",
+    "last": "2016-11-28 16:07:39",
+    "txn_ids": [
+     "3494640"
+    ]
+   },
+   {
+    "card_id": "C02545-K2",
+    "customer_id": "C02545",
+    "n_txns": 1,
+    "total_usd": 26.88,
+    "new_device_share": 0.0,
+    "proxy": [],
+    "first": "2016-12-01 20:14:58",
+    "last": "2016-12-01 20:14:58",
+    "txn_ids": [
+     "3504446"
+    ]
+   },
+   {
+    "card_id": "C03047-K2",
+    "customer_id": "C03047",
+    "n_txns": 1,
+    "total_usd": 59.59,
+    "new_device_share": 0.0,
+    "proxy": [],
+    "first": "2016-12-07 20:38:24",
+    "last": "2016-12-07 20:38:24",
+    "txn_ids": [
+     "3523010"
+    ]
+   },
+   {
+    "card_id": "C03488-K2",
+    "customer_id": "C03488",
+    "n_txns": 1,
+    "total_usd": 26.04,
+    "new_device_share": 1.0,
+    "proxy": [],
+    "first": "2016-11-24 00:06:40",
+    "last": "2016-11-24 00:06:40",
+    "txn_ids": [
+     "3482511"
+    ]
+   },
+   {
+    "card_id": "C04034-K2",
+    "customer_id": "C04034",
+    "n_txns": 3,
+    "total_usd": 660.03,
+    "new_device_share": 0.6666666666666666,
+    "proxy": [],
+    "first": "2016-11-25 21:05:39",
+    "last": "2016-12-05 20:53:57",
+    "txn_ids": [
+     "3487309",
+     "3517093",
+     "3517130"
+    ]
+   },
+   {
+    "card_id": "C04058-K1",
+    "customer_id": "C04058",
+    "n_txns": 1,
+    "total_usd": 16.6,
+    "new_device_share": 0.0,
+    "proxy": [],
+    "first": "2016-11-25 02:08:01",
+    "last": "2016-11-25 02:08:01",
+    "txn_ids": [
+     "3485476"
+    ]
+   },
+   {
+    "card_id": "C04597-K2",
+    "customer_id": "C04597",
+    "n_txns": 2,
+    "total_usd": 105.92,
+    "new_device_share": 1.0,
+    "proxy": [],
+    "first": "2016-11-29 17:29:30",
+    "last": "2016-12-11 20:08:46",
+    "txn_ids": [
+     "3497686",
+     "3534342"
+    ]
+   },
+   {
+    "card_id": "C04965-K2",
+    "customer_id": "C04965",
+    "n_txns": 1,
+    "total_usd": 31.45,
+    "new_device_share": 0.0,
+    "proxy": [],
+    "first": "2016-11-24 15:46:30",
+    "last": "2016-11-24 15:46:30",
+    "txn_ids": [
+     "3483604"
+    ]
+   },
+   {
+    "card_id": "C05031-K2",
+    "customer_id": "C05031",
+    "n_txns": 2,
+    "total_usd": 84.1,
+    "new_device_share": 0.0,
+    "proxy": [],
+    "first": "2016-11-15 04:58:17",
+    "last": "2016-11-27 00:50:55",
+    "txn_ids": [
+     "3459192",
+     "3490637"
+    ]
+   },
+   {
+    "card_id": "C05307-K2",
+    "customer_id": "C05307",
+    "n_txns": 1,
+    "total_usd": 20.94,
+    "new_device_share": 1.0,
+    "proxy": [],
+    "first": "2016-12-03 17:41:30",
+    "last": "2016-12-03 17:41:30",
+    "txn_ids": [
+     "3510445"
+    ]
+   },
+   {
+    "card_id": "C05381-K2",
+    "customer_id": "C05381",
+    "n_txns": 5,
+    "total_usd": 179.56,
+    "new_device_share": 0.6,
+    "proxy": [],
+    "first": "2016-11-15 20:31:30",
+    "last": "2016-12-10 22:34:07",
+    "txn_ids": [
+     "3460640",
+     "3480357",
+     "3523218",
+     "3528685",
+     "3531867"
+    ]
+   },
+   {
+    "card_id": "C05630-K1",
+    "customer_id": "C05630",
+    "n_txns": 1,
+    "total_usd": 59.63,
+    "new_device_share": 0.0,
+    "proxy": [],
+    "first": "2016-12-11 20:23:34",
+    "last": "2016-12-11 20:23:34",
+    "txn_ids": [
+     "3534386"
+    ]
+   },
+   {
+    "card_id": "C05793-K1",
+    "customer_id": "C05793",
+    "n_txns": 1,
+    "total_usd": 59.59,
+    "new_device_share": 0.0,
+    "proxy": [],
+    "first": "2016-12-09 20:34:12",
+    "last": "2016-12-09 20:34:12",
+    "txn_ids": [
+     "3528575"
+    ]
+   },
+   {
+    "card_id": "C06224-K2",
+    "customer_id": "C06224",
+    "n_txns": 1,
+    "total_usd": 59.71,
+    "new_device_share": 0.0,
+    "proxy": [],
+    "first": "2016-12-10 20:48:52",
+    "last": "2016-12-10 20:48:52",
+    "txn_ids": [
+     "3531522"
+    ]
+   },
+   {
+    "card_id": "C06630-K2",
+    "customer_id": "C06630",
+    "n_txns": 1,
+    "total_usd": 67.5,
+    "new_device_share": 1.0,
+    "proxy": [],
+    "first": "2016-11-30 01:35:41",
+    "last": "2016-11-30 01:35:41",
+    "txn_ids": [
+     "3499197"
+    ]
+   },
+   {
+    "card_id": "C06744-K2",
+    "customer_id": "C06744",
+    "n_txns": 3,
+    "total_usd": 115.73,
+    "new_device_share": 1.0,
+    "proxy": [],
+    "first": "2016-12-01 15:42:47",
+    "last": "2016-12-11 21:01:47",
+    "txn_ids": [
+     "3503533",
+     "3515373",
+     "3534518"
+    ]
+   },
+   {
+    "card_id": "C07438-K1",
+    "customer_id": "C07438",
+    "n_txns": 1,
+    "total_usd": 77.95,
+    "new_device_share": 0.0,
+    "proxy": [],
+    "first": "2016-11-26 21:37:34",
+    "last": "2016-11-26 21:37:34",
+    "txn_ids": [
+     "3490042"
+    ]
+   },
+   {
+    "card_id": "C07508-K2",
+    "customer_id": "C07508",
+    "n_txns": 1,
+    "total_usd": 134.96,
+    "new_device_share": 0.0,
+    "proxy": [],
+    "first": "2016-12-06 20:37:35",
+    "last": "2016-12-06 20:37:35",
+    "txn_ids": [
+     "3520143"
+    ]
+   },
+   {
+    "card_id": "C07562-K2",
+    "customer_id": "C07562",
+    "n_txns": 8,
+    "total_usd": 239.4,
+    "new_device_share": 0.75,
+    "proxy": [],
+    "first": "2016-11-15 16:57:45",
+    "last": "2016-12-06 04:43:48",
+    "txn_ids": [
+     "3460013",
+     "3474808",
+     "3477827",
+     "3479966",
+     "3493694",
+     "3509013",
+     "3510426",
+     "3518392"
+    ]
+   },
+   {
+    "card_id": "C07981-K1",
+    "customer_id": "C07981",
+    "n_txns": 1,
+    "total_usd": 47.99,
+    "new_device_share": 1.0,
+    "proxy": [],
+    "first": "2016-11-30 13:47:08",
+    "last": "2016-11-30 13:47:08",
+    "txn_ids": [
+     "3500023"
+    ]
+   },
+   {
+    "card_id": "C08106-K1",
+    "customer_id": "C08106",
+    "n_txns": 3,
+    "total_usd": 115.51,
+    "new_device_share": 0.6666666666666666,
+    "proxy": [],
+    "first": "2016-11-20 13:36:02",
+    "last": "2016-12-01 21:16:04",
+    "txn_ids": [
+     "3472923",
+     "3504265",
+     "3504647"
+    ]
+   },
+   {
+    "card_id": "C08281-K2",
+    "customer_id": "C08281",
+    "n_txns": 1,
+    "total_usd": 110.33,
+    "new_device_share": 0.0,
+    "proxy": [],
+    "first": "2016-12-09 17:29:30",
+    "last": "2016-12-09 17:29:30",
+    "txn_ids": [
+     "3527964"
+    ]
+   },
+   {
+    "card_id": "C08374-K1",
+    "customer_id": "C08374",
+    "n_txns": 3,
+    "total_usd": 525.07,
+    "new_device_share": 0.0,
+    "proxy": [],
+    "first": "2016-12-10 13:46:27",
+    "last": "2016-12-10 14:08:01",
+    "txn_ids": [
+     "3530247",
+     "3530283",
+     "3530305"
+    ]
+   },
+   {
+    "card_id": "C08391-K2",
+    "customer_id": "C08391",
+    "n_txns": 1,
+    "total_usd": 40.8,
+    "new_device_share": 1.0,
+    "proxy": [],
+    "first": "2016-11-27 16:26:24",
+    "last": "2016-11-27 16:26:24",
+    "txn_ids": [
+     "3491817"
+    ]
+   },
+   {
+    "card_id": "C08610-K1",
+    "customer_id": "C08610",
+    "n_txns": 2,
+    "total_usd": 740.71,
+    "new_device_share": 0.0,
+    "proxy": [],
+    "first": "2016-11-23 21:24:25",
+    "last": "2016-11-27 20:47:56",
+    "txn_ids": [
+     "3481988",
+     "3492646"
+    ]
+   },
+   {
+    "card_id": "C08962-K2",
+    "customer_id": "C08962",
+    "n_txns": 9,
+    "total_usd": 260.78,
+    "new_device_share": 0.5555555555555556,
+    "proxy": [],
+    "first": "2016-11-17 04:32:22",
+    "last": "2016-12-09 20:36:54",
+    "txn_ids": [
+     "3464479",
+     "3466063",
+     "3466071",
+     "3485232",
+     "3502294",
+     "3517543",
+     "3517887",
+     "3519459",
+     "3528588"
+    ]
+   },
+   {
+    "card_id": "C09241-K2",
+    "customer_id": "C09241",
+    "n_txns": 1,
+    "total_usd": 58.06,
+    "new_device_share": 0.0,
+    "proxy": [],
+    "first": "2016-11-27 00:45:18",
+    "last": "2016-11-27 00:45:18",
+    "txn_ids": [
+     "3490622"
+    ]
+   },
+   {
+    "card_id": "C09246-K1",
+    "customer_id": "C09246",
+    "n_txns": 1,
+    "total_usd": 5.69,
+    "new_device_share": 1.0,
+    "proxy": [],
+    "first": "2016-11-30 03:26:33",
+    "last": "2016-11-30 03:26:33",
+    "txn_ids": [
+     "3499381"
+    ]
+   },
+   {
+    "card_id": "C09251-K1",
+    "customer_id": "C09251",
+    "n_txns": 1,
+    "total_usd": 59.6,
+    "new_device_share": 0.0,
+    "proxy": [],
+    "first": "2016-12-10 20:27:42",
+    "last": "2016-12-10 20:27:42",
+    "txn_ids": [
+     "3531452"
+    ]
+   },
+   {
+    "card_id": "C09533-K1",
+    "customer_id": "C09533",
+    "n_txns": 1,
+    "total_usd": 27.45,
+    "new_device_share": 1.0,
+    "proxy": [],
+    "first": "2016-11-30 13:28:35",
+    "last": "2016-11-30 13:28:35",
+    "txn_ids": [
+     "3499967"
+    ]
+   },
+   {
+    "card_id": "C09616-K1",
+    "customer_id": "C09616",
+    "n_txns": 1,
+    "total_usd": 49.92,
+    "new_device_share": 0.0,
+    "proxy": [],
+    "first": "2016-12-08 14:14:33",
+    "last": "2016-12-08 14:14:33",
+    "txn_ids": [
+     "3524668"
+    ]
+   },
+   {
+    "card_id": "C09657-K2",
+    "customer_id": "C09657",
+    "n_txns": 4,
+    "total_usd": 193.65,
+    "new_device_share": 0.75,
+    "proxy": [],
+    "first": "2016-11-20 04:04:52",
+    "last": "2016-12-04 19:40:23",
+    "txn_ids": [
+     "3472545",
+     "3472551",
+     "3485611",
+     "3513977"
+    ]
+   },
+   {
+    "card_id": "C09940-K1",
+    "customer_id": "C09940",
+    "n_txns": 1,
+    "total_usd": 47.1,
+    "new_device_share": 0.0,
+    "proxy": [],
+    "first": "2016-12-07 10:06:37",
+    "last": "2016-12-07 10:06:37",
+    "txn_ids": [
+     "3521544"
+    ]
+   },
+   {
+    "card_id": "C09988-K1",
+    "customer_id": "C09988",
+    "n_txns": 1,
+    "total_usd": 59.67,
+    "new_device_share": 1.0,
+    "proxy": [],
+    "first": "2016-12-11 22:39:08",
+    "last": "2016-12-11 22:39:08",
+    "txn_ids": [
+     "3534820"
+    ]
+   },
+   {
+    "card_id": "C10131-K1",
+    "customer_id": "C10131",
+    "n_txns": 1,
+    "total_usd": 173.55,
+    "new_device_share": 1.0,
+    "proxy": [],
+    "first": "2016-11-19 17:58:05",
+    "last": "2016-11-19 17:58:05",
+    "txn_ids": [
+     "3470899"
+    ]
+   },
+   {
+    "card_id": "C11509-K2",
+    "customer_id": "C11509",
+    "n_txns": 1,
+    "total_usd": 7.62,
+    "new_device_share": 1.0,
+    "proxy": [],
+    "first": "2016-12-03 02:34:50",
+    "last": "2016-12-03 02:34:50",
+    "txn_ids": [
+     "3509079"
+    ]
+   },
+   {
+    "card_id": "C11597-K2",
+    "customer_id": "C11597",
+    "n_txns": 2,
+    "total_usd": 428.85,
+    "new_device_share": 0.0,
+    "proxy": [],
+    "first": "2016-12-01 21:57:34",
+    "last": "2016-12-02 20:37:16",
+    "txn_ids": [
+     "3504804",
+     "3507910"
+    ]
+   },
+   {
+    "card_id": "C11799-K1",
+    "customer_id": "C11799",
+    "n_txns": 2,
+    "total_usd": 105.56,
+    "new_device_share": 0.0,
+    "proxy": [],
+    "first": "2016-11-27 07:31:35",
+    "last": "2016-11-27 07:35:11",
+    "txn_ids": [
+     "3491080",
+     "3491081"
+    ]
+   },
+   {
+    "card_id": "C11919-K2",
+    "customer_id": "C11919",
+    "n_txns": 1,
+    "total_usd": 28.7,
+    "new_device_share": 1.0,
+    "proxy": [],
+    "first": "2016-11-15 13:48:50",
+    "last": "2016-11-15 13:48:50",
+    "txn_ids": [
+     "3459500"
+    ]
+   },
+   {
+    "card_id": "C11923-K2",
+    "customer_id": "C11923",
+    "n_txns": 11,
+    "total_usd": 517.83,
+    "new_device_share": 0.36363636363636365,
+    "proxy": [],
+    "first": "2016-11-15 13:07:41",
+    "last": "2016-12-12 01:33:23",
+    "txn_ids": [
+     "3459413",
+     "3464066",
+     "3464193",
+     "3482666",
+     "3482683",
+     "3482687",
+     "3482719",
+     "3495448",
+     "3529511",
+     "3535294",
+     "3535325"
+    ]
+   },
+   {
+    "card_id": "C12098-K1",
+    "customer_id": "C12098",
+    "n_txns": 3,
+    "total_usd": 113.23,
+    "new_device_share": 0.0,
+    "proxy": [],
+    "first": "2016-11-25 23:41:18",
+    "last": "2016-11-26 07:39:53",
+    "txn_ids": [
+     "3487778",
+     "3487832",
+     "3488425"
+    ]
+   },
+   {
+    "card_id": "C12340-K1",
+    "customer_id": "C12340",
+    "n_txns": 1,
+    "total_usd": 26.0,
+    "new_device_share": 1.0,
+    "proxy": [],
+    "first": "2016-12-10 00:28:04",
+    "last": "2016-12-10 00:28:04",
+    "txn_ids": [
+     "3529321"
+    ]
+   },
+   {
+    "card_id": "C12645-K1",
+    "customer_id": "C12645",
+    "n_txns": 1,
+    "total_usd": 64.38,
+    "new_device_share": 1.0,
+    "proxy": [],
+    "first": "2016-11-28 02:08:19",
+    "last": "2016-11-28 02:08:19",
+    "txn_ids": [
+     "3493603"
+    ]
+   },
+   {
+    "card_id": "C12987-K1",
+    "customer_id": "C12987",
+    "n_txns": 3,
+    "total_usd": 179.11,
+    "new_device_share": 0.3333333333333333,
+    "proxy": [],
+    "first": "2016-11-19 03:54:19",
+    "last": "2016-11-19 04:04:17",
+    "txn_ids": [
+     "3469813",
+     "3469826",
+     "3469829"
+    ]
+   },
+   {
+    "card_id": "C13171-K2",
+    "customer_id": "C13171",
+    "n_txns": 1,
+    "total_usd": 46.49,
+    "new_device_share": 1.0,
+    "proxy": [],
+    "first": "2016-11-27 03:11:42",
+    "last": "2016-11-27 03:11:42",
+    "txn_ids": [
+     "3490919"
+    ]
+   }
+  ],
+  "n_cards_all_time": 158,
+  "n_txns_all_time": 592,
+  "closed_cases_on_device": [
+   {
+    "case_id": "CC-0497",
+    "outcome": "confirmed_fraud",
+    "pattern": "card_not_present_fraud"
+   },
+   {
+    "case_id": "CC-2540",
+    "outcome": "confirmed_fraud",
+    "pattern": "card_not_present_new_device"
+   },
+   {
+    "case_id": "CC-2675",
+    "outcome": "confirmed_fraud",
+    "pattern": "card_not_present_new_device"
+   },
+   {
+    "case_id": "CC-2694",
+    "outcome": "confirmed_fraud",
+    "pattern": "card_not_present_new_device"
+   },
+   {
+    "case_id": "CC-2732",
+    "outcome": "confirmed_fraud",
+    "pattern": "card_not_present_new_device"
+   },
+   {
+    "case_id": "CC-2765",
+    "outcome": "confirmed_fraud",
+    "pattern": "card_not_present_fraud"
+   },
+   {
+    "case_id": "CC-2898",
+    "outcome": "confirmed_fraud",
+    "pattern": "card_not_present_new_device"
+   },
+   {
+    "case_id": "CC-3491",
+    "outcome": "confirmed_fraud",
+    "pattern": "card_not_present_new_device"
+   },
+   {
+    "case_id": "CC-3580",
+    "outcome": "confirmed_fraud",
+    "pattern": "card_not_present_new_device"
+   },
+   {
+    "case_id": "CC-5057",
+    "outcome": "confirmed_fraud",
+    "pattern": "card_not_present_new_device"
+   }
+  ],
+  "proxy_share_in_window": 0.0,
+  "new_share_in_window": 0.4666666666666667,
+  "generic_fingerprint": true
+ },
+ "peers": null,
+ "signals": [
+  {
+   "claim": "Cardholder reports they did not make the $59.67 purchase (customer disputes are right about 84% of the time in closed cases, but recurring charges are the usual exception)",
+   "source": "customer",
+   "ref": "trigger:customer_report",
+   "entity_ids": [
+    "3534820"
+   ],
+   "weight": 0.0,
+   "key": "customer_report"
+  },
+  {
+   "claim": "Device is marked New, but 31% of this account's online history comes from New devices \u2014 a new device is normal here",
+   "source": "graph",
+   "ref": "query:card_profile(card_id=C09988-K1)",
+   "entity_ids": [
+    "3534820"
+   ],
+   "weight": 0.1,
+   "key": "device_new_common"
+  },
+  {
+   "claim": "None of this customer's 47 prior online transactions were ever confirmed fraudulent",
+   "source": "graph",
+   "ref": "query:customer_fraud_rate(customer_id=C09988)",
+   "entity_ids": [
+    "C09988"
+   ],
+   "weight": -0.3,
+   "key": "base_rate_zero"
+  },
+  {
+   "claim": "Customer response: Customer confirms they did not make the purchase, did not authorise anyone else, and still holds the physical card; asks for a new card",
+   "source": "customer",
+   "ref": "evidence_request:1",
+   "entity_ids": [],
+   "weight": 2.4,
+   "key": "evidence_denied"
+  }
+ ],
+ "initial_prob": 0.5,
+ "tool_log": [
+  {
+   "step": 1,
+   "tool": "get_transaction",
+   "args": {
+    "txn_id": 3534820
+   },
+   "ms": 0.3,
+   "result_preview": "{'txn_id': '3534820', 'ts': '2016-12-11 22:39:08', 'amount': 59.67, 'product': 'C', 'channel': 'online', 'region': None, 'country': None, 'dist1': None, 'p_email': 'hotmail.com', 'r_email': 'hotmail.com', 'risk_score': 0.37, 'device_profile\u2026"
+  },
+  {
+   "step": 2,
+   "tool": "card_profile",
+   "args": {
+    "card_id": "C09988-K1",
+    "before_txn_id": 3534820
+   },
+   "ms": 3.6,
+   "result_preview": "{'card_id': 'C09988-K1', 'customer_id': 'C09988', 'n_txns': 48, 'first_seen': '2016-07-06 19:02:49', 'n_online': 48, 'n_in_person': 0, 'products': {'C': 48}, 'regions_top': {'100.0': 1, '382.0': 1}, 'n_regions': 2, 'amount_median': 37.75499\u2026"
+  },
+  {
+   "step": 3,
+   "tool": "card_window",
+   "args": {
+    "card_id": "C09988-K1",
+    "center_txn_id": 3534820,
+    "hours_before": 48,
+    "hours_after": 48,
+    "as_of": "2016-12-12 01:39:08"
+   },
+   "ms": 1.3,
+   "result_preview": "[{'txn_id': '3534820', 'ts': '2016-12-11 22:39:08', 'amount': 59.67, 'product': 'C', 'channel': 'online', 'region': None, 'country': None, 'dist1': None, 'p_email': 'hotmail.com', 'r_email': 'hotmail.com', 'risk_score': 0.37, 'device_profil\u2026"
+  },
+  {
+   "step": 4,
+   "tool": "device_neighbors",
+   "args": {
+    "device_id": "Windows | ? | edge 16.0 | ?",
+    "start": "2016-11-11 22:39:08",
+    "end": "2016-12-12 01:39:08"
+   },
+   "ms": 62.0,
+   "result_preview": "{'device_profile': 'Windows | ? | edge 16.0 | ?', 'window': ['2016-11-11 22:39:08', '2016-12-12 01:39:08'], 'n_cards': 52, 'cards': [{'card_id': 'C00045-K1', 'customer_id': 'C00045', 'n_txns': 1, 'total_usd': 29.75, 'new_device_share': 1.0,\u2026"
+  },
+  {
+   "step": 5,
+   "tool": "recurring_match",
+   "args": {
+    "card_id": "C09988-K1",
+    "txn_id": 3534820,
+    "as_of": "2016-12-12 01:39:08"
+   },
+   "ms": 2.2,
+   "result_preview": "{'amount': 59.67, 'product': 'C', 'n_matches': 1, 'months_with_match': ['2016-12'], 'n_months': 1, 'n_same_region': 0, 'share_of_card_txns': 0.0204, 'n_same_amount_within_1h': 1, 'same_amount_burst_ids': [], 'is_recurring': False, 'sample_t\u2026"
+  },
+  {
+   "step": 6,
+   "tool": "small_auth_run",
+   "args": {
+    "card_id": "C09988-K1",
+    "txn_id": 3534820,
+    "as_of": "2016-12-12 01:39:08"
+   },
+   "ms": 1.6,
+   "result_preview": "{'n_small_auths': 0, 'small_txn_ids': [], 'larger_after': [], 'testing_sequence': False, 'cleared_over_100': False}"
+  },
+  {
+   "step": 7,
+   "tool": "customer_fraud_rate",
+   "args": {
+    "customer_id": "C09988",
+    "as_of": "2016-12-12 01:39:08"
+   },
+   "ms": 1.6,
+   "result_preview": "{'customer_id': 'C09988', 'n': 47, 'fraud_rate': 0.0, 'global_rate': 0.0337, 'fraud_rate_online': 0.0, 'n_online': 47}"
+  },
+  {
+   "step": 8,
+   "tool": "prior_cases_for_customer",
+   "args": {
+    "customer_id": "C09988"
+   },
+   "ms": 0.8,
+   "result_preview": "[]"
+  },
+  {
+   "step": 9,
+   "tool": "similar_cases",
+   "args": {
+    "query_text": "online product C customer report Windows   ?   edge 16.0   ? device never seen on this account new device same device profile several cardholders reported this month",
+    "pattern_hint": "card_not_present_new_device",
+    "customer_id": "C09988",
+    "k": 5
+   },
+   "ms": 7.7,
+   "result_preview": "[{'case_id': 'CC-2971', 'kind': 'closed_case', 'score': 0.258, 'customer_id': 'C09998', 'card_id': 'C09998-K1', 'outcome': 'confirmed_fraud', 'pattern': 'undocumented', 'exposure_usd': 108.36, 'report_filed': 'Yes', 'opened_at': '2016-09-03\u2026"
+  },
+  {
+   "step": 10,
+   "tool": "retrieve_policy",
+   "args": {
+    "query_text": "card_not_present_new_device customer_report verify block report shared device",
+    "k": 4
+   },
+   "ms": 7.0,
+   "result_preview": "[{'doc_id': 'policy:R1', 'title': 'Fraud Policy R1 \u2013 verify before you block on a weak signal', 'score': 0.211, 'text': 'R1. Verify before you block on a weak signal. If the case rests on a single signal (including a risk score alone) and t\u2026"
+  },
+  {
+   "step": 11,
+   "tool": "evidence_request:customer_validation",
+   "args": {
+    "kind": "customer_validation",
+    "prompt": "Did you make the $59.67 C purchase on 2016-12-11?",
+    "assumed_response": "Customer confirms they did not make the purchase, did not authorise anyone else, and still holds the physical card; asks for a new card"
+   },
+   "ms": 0.0,
+   "result_preview": "{'type': 'customer_validation', 'prompt': 'Did you make the $59.67 C purchase on 2016-12-11?', 'assumed_response': 'Customer confirms they did not make the purchase, did not authorise anyone else, and still holds the physical card; asks for\u2026"
+  },
+  {
+   "step": 12,
+   "tool": "write_case",
+   "args": {
+    "case": {
+     "case_id": "HHG-016",
+     "customer_id": "C09988",
+     "card_id": "C09988-K1",
+     "opened_at": "2016-12-12 01:39:08",
+     "status": "closed_fraud",
+     "verdict": "fraud",
+     "fraud_probability": 0.92,
+     "pattern": "card_not_present_new_device",
+     "exposure_usd": 59.67,
+     "affected_txn_ids": [
+      "3534820"
+     ],
+     "connected_card_ids": [],
+     "connected_device_profiles": [],
+     "sar_filed": false,
+     "final_actions": [
+      "CREATE_CASE",
+      "BLOCK_CARD"
+     ],
+     "summary": "Assessed as fraud (probability 0.92, card not present new device). Flagged online C transaction 3534820 of $59.67 on card C09988-K1 at 2016-12-11 22:39:08. Customer response: Customer confirms they did not make the purchase, did not authorise anyone else, and still holds the physical card; asks for a new card. Evidence requested (customer validation); assumed response: Customer confirms they did not make the purchase, did not authorise anyone else, and still holds the physical card; asks for a new card. Exposure $59.67 across 1 transaction(s). Final actions: CREATE_CASE, BLOCK_CARD.",
+     "similar_prior_cases": [
+      "CC-2971",
+      "CC-2649",
+      "CC-2985",
+      "CC-3035",
+      "CC-4362"
+     ],
+     "graph_case_id": "CASE-2016-1016"
+    }
+   },
+   "ms": 875.5,
+   "result_preview": "CASE-2016-1016"
+  },
+  {
+   "step": 13,
+   "tool": "execute_action",
+   "args": {
+    "action": "CREATE_CASE",
+    "route": "auto",
+    "payload": {
+     "case_id": "HHG-016",
+     "card_id": "C09988-K1",
+     "txn_id": "3534820"
+    }
+   },
+   "ms": 0.0,
+   "result_preview": "{'action': 'CREATE_CASE', 'route': 'auto', 'status': 'executed', 'payload': {'case_id': 'HHG-016', 'card_id': 'C09988-K1', 'txn_id': '3534820'}}"
+  },
+  {
+   "step": 14,
+   "tool": "execute_action",
+   "args": {
+    "action": "BLOCK_CARD",
+    "route": "L1",
+    "payload": {
+     "case_id": "HHG-016",
+     "card_id": "C09988-K1",
+     "txn_id": "3534820"
+    }
+   },
+   "ms": 0.0,
+   "result_preview": "{'action': 'BLOCK_CARD', 'route': 'L1', 'status': 'pending_human_approval', 'payload': {'case_id': 'HHG-016', 'card_id': 'C09988-K1', 'txn_id': '3534820'}}"
+  }
+ ]
+}

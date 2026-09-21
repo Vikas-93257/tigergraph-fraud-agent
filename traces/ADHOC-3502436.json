@@ -1,0 +1,613 @@
+{
+ "case_id": "ADHOC-3502436",
+ "trigger": {
+  "case_id": "ADHOC-3502436",
+  "trigger_type": "analyst_request",
+  "customer_id": "C11543",
+  "card_id": "C11543-K2",
+  "flagged_txn_id": 3502436,
+  "opened_at": "2016-12-01 01:17:32",
+  "trigger_text": "Ad-hoc review of 3502436",
+  "risk_score": 0.94
+ },
+ "txn": {
+  "txn_id": "3502436",
+  "ts": "2016-12-01 01:17:32",
+  "amount": 1650.97,
+  "product": "W",
+  "channel": "in_person",
+  "region": 191.0,
+  "country": 87.0,
+  "dist1": 26.0,
+  "p_email": "yahoo.com",
+  "r_email": null,
+  "risk_score": 0.94,
+  "device_profile": null,
+  "device_status": null,
+  "proxy": null,
+  "device_type": null,
+  "match_flags": {
+   "M1": "T",
+   "M2": "T",
+   "M3": "T",
+   "M4": "M0",
+   "M5": "T",
+   "M6": "T",
+   "M7": "F",
+   "M8": "F",
+   "M9": "T"
+  },
+  "counts": {
+   "C1": 5.0,
+   "C13": 7.0,
+   "C14": 4.0
+  },
+  "days_since_prev": 33.0,
+  "customer_id": "C11543",
+  "card_id": "C11543-K2",
+  "card_network": "visa",
+  "card_type": "debit"
+ },
+ "window": [
+  {
+   "txn_id": "3497130",
+   "ts": "2016-11-29 14:24:15",
+   "amount": 49.07,
+   "product": "W",
+   "channel": "in_person",
+   "region": 254.0,
+   "country": 87.0,
+   "dist1": null,
+   "p_email": "yahoo.com",
+   "r_email": null,
+   "risk_score": 0.08,
+   "device_profile": null,
+   "device_status": null,
+   "proxy": null,
+   "device_type": null,
+   "match_flags": {
+    "M1": "T",
+    "M2": "T",
+    "M3": "F",
+    "M4": "M0",
+    "M5": "F",
+    "M6": "F",
+    "M7": null,
+    "M8": null,
+    "M9": null
+   },
+   "counts": {
+    "C1": 3.0,
+    "C13": 32.0,
+    "C14": 2.0
+   },
+   "days_since_prev": 347.0
+  },
+  {
+   "txn_id": "3498054",
+   "ts": "2016-11-29 19:22:03",
+   "amount": 117.0,
+   "product": "W",
+   "channel": "in_person",
+   "region": 441.0,
+   "country": 87.0,
+   "dist1": null,
+   "p_email": "yahoo.com",
+   "r_email": null,
+   "risk_score": 0.09,
+   "device_profile": null,
+   "device_status": null,
+   "proxy": null,
+   "device_type": null,
+   "match_flags": {
+    "M1": "T",
+    "M2": "T",
+    "M3": "F",
+    "M4": "M0",
+    "M5": "F",
+    "M6": "T",
+    "M7": "T",
+    "M8": "T",
+    "M9": "T"
+   },
+   "counts": {
+    "C1": 1.0,
+    "C13": 1.0,
+    "C14": 1.0
+   },
+   "days_since_prev": 0.0
+  },
+  {
+   "txn_id": "3500042",
+   "ts": "2016-11-30 13:53:29",
+   "amount": 694.89,
+   "product": "W",
+   "channel": "in_person",
+   "region": 264.0,
+   "country": 87.0,
+   "dist1": 22.0,
+   "p_email": "yahoo.com",
+   "r_email": null,
+   "risk_score": 0.1,
+   "device_profile": null,
+   "device_status": null,
+   "proxy": null,
+   "device_type": null,
+   "match_flags": {
+    "M1": "T",
+    "M2": "T",
+    "M3": "T",
+    "M4": null,
+    "M5": null,
+    "M6": "T",
+    "M7": "F",
+    "M8": "F",
+    "M9": "T"
+   },
+   "counts": {
+    "C1": 1.0,
+    "C13": 7.0,
+    "C14": 1.0
+   },
+   "days_since_prev": 241.0
+  },
+  {
+   "txn_id": "3500460",
+   "ts": "2016-11-30 15:57:20",
+   "amount": 1136.48,
+   "product": "W",
+   "channel": "in_person",
+   "region": 264.0,
+   "country": 87.0,
+   "dist1": null,
+   "p_email": "yahoo.com",
+   "r_email": null,
+   "risk_score": 0.53,
+   "device_profile": null,
+   "device_status": null,
+   "proxy": null,
+   "device_type": null,
+   "match_flags": {
+    "M1": null,
+    "M2": null,
+    "M3": null,
+    "M4": null,
+    "M5": null,
+    "M6": "F",
+    "M7": null,
+    "M8": null,
+    "M9": null
+   },
+   "counts": {
+    "C1": 1.0,
+    "C13": 1.0,
+    "C14": 1.0
+   },
+   "days_since_prev": 0.0
+  },
+  {
+   "txn_id": "3500574",
+   "ts": "2016-11-30 16:30:11",
+   "amount": 334.99,
+   "product": "W",
+   "channel": "in_person",
+   "region": 203.0,
+   "country": 87.0,
+   "dist1": null,
+   "p_email": "att.net",
+   "r_email": null,
+   "risk_score": 0.08,
+   "device_profile": null,
+   "device_status": null,
+   "proxy": null,
+   "device_type": null,
+   "match_flags": {
+    "M1": "T",
+    "M2": "T",
+    "M3": "T",
+    "M4": "M0",
+    "M5": "F",
+    "M6": "T",
+    "M7": "F",
+    "M8": "F",
+    "M9": "F"
+   },
+   "counts": {
+    "C1": 3.0,
+    "C13": 1.0,
+    "C14": 1.0
+   },
+   "days_since_prev": 0.0
+  },
+  {
+   "txn_id": "3502428",
+   "ts": "2016-12-01 01:15:27",
+   "amount": 2161.04,
+   "product": "W",
+   "channel": "in_person",
+   "region": 191.0,
+   "country": 87.0,
+   "dist1": 26.0,
+   "p_email": "yahoo.com",
+   "r_email": null,
+   "risk_score": 0.46,
+   "device_profile": null,
+   "device_status": null,
+   "proxy": null,
+   "device_type": null,
+   "match_flags": {
+    "M1": "T",
+    "M2": "T",
+    "M3": "T",
+    "M4": "M0",
+    "M5": "T",
+    "M6": "T",
+    "M7": "F",
+    "M8": "F",
+    "M9": "T"
+   },
+   "counts": {
+    "C1": 5.0,
+    "C13": 6.0,
+    "C14": 4.0
+   },
+   "days_since_prev": 33.0
+  },
+  {
+   "txn_id": "3502436",
+   "ts": "2016-12-01 01:17:32",
+   "amount": 1650.97,
+   "product": "W",
+   "channel": "in_person",
+   "region": 191.0,
+   "country": 87.0,
+   "dist1": 26.0,
+   "p_email": "yahoo.com",
+   "r_email": null,
+   "risk_score": 0.94,
+   "device_profile": null,
+   "device_status": null,
+   "proxy": null,
+   "device_type": null,
+   "match_flags": {
+    "M1": "T",
+    "M2": "T",
+    "M3": "T",
+    "M4": "M0",
+    "M5": "T",
+    "M6": "T",
+    "M7": "F",
+    "M8": "F",
+    "M9": "T"
+   },
+   "counts": {
+    "C1": 5.0,
+    "C13": 7.0,
+    "C14": 4.0
+   },
+   "days_since_prev": 33.0
+  }
+ ],
+ "profile": {
+  "card_id": "C11543-K2",
+  "customer_id": "C11543",
+  "n_txns": 498,
+  "first_seen": "2016-07-03 00:18:13",
+  "n_online": 182,
+  "n_in_person": 316,
+  "products": {
+   "W": 316,
+   "H": 91,
+   "R": 71,
+   "S": 19,
+   "C": 1
+  },
+  "regions_top": {
+   "264.0": 89,
+   "272.0": 47,
+   "337.0": 39,
+   "191.0": 28,
+   "441.0": 27,
+   "299.0": 23,
+   "184.0": 22,
+   "204.0": 21
+  },
+  "n_regions": 45,
+  "amount_median": 100.025,
+  "amount_p95": 749.2944999999994,
+  "amount_max": 3299.91,
+  "known_devices": {
+   "Windows | Windows 10 | chrome 63.0 | 1920x1080": 6,
+   "iOS Device | iOS 11.2.1 | mobile safari 11.0 | 1334x750": 5,
+   "Windows | Windows 7 | chrome 63.0 | 1920x1080": 5,
+   "iOS Device | iOS 11.2.5 | mobile safari generic | 1334x750": 5,
+   "MacOS | Mac OS X 10_11_6 | safari generic | 2560x1440": 4,
+   "MacOS | Mac OS X 10_13_1 | safari generic | 1920x1080": 3,
+   "iOS Device | iOS 11.2.2 | mobile safari 11.0 | 1334x750": 3,
+   "MacOS | Mac OS X 10_11_3 | safari generic | 1280x800": 3,
+   "iOS Device | iOS 11.2.6 | mobile safari generic | 2208x1242": 3,
+   "Trident/7.0 | Windows 7 | ie 11.0 for desktop | 1440x900": 3
+  },
+  "new_device_share": 0.4835164835164835,
+  "n_known_devices": 119,
+  "p_email_top": {
+   "gmail.com": 211,
+   "yahoo.com": 120,
+   "hotmail.com": 29,
+   "anonymous.com": 24
+  },
+  "proxy_history": 12,
+  "flagged": {
+   "amount_percentile": 0.9779116465863453,
+   "amount_z": 3.545079001431152,
+   "product_seen_before": 316,
+   "region_seen_before": 28,
+   "device_seen_before": null,
+   "channel_share_online": 0.3654618473895582
+  }
+ },
+ "device": null,
+ "peers": null,
+ "signals": [
+  {
+   "claim": "Ad-hoc review of 3502436",
+   "source": "external",
+   "ref": "trigger:analyst_request",
+   "entity_ids": [
+    "3502436"
+   ],
+   "weight": 0.0,
+   "key": "analyst_request"
+  },
+  {
+   "claim": "$1,650.97 is above the card's 95th percentile ($749.29; median $100.03)",
+   "source": "graph",
+   "ref": "query:card_profile(card_id=C11543-K2)",
+   "entity_ids": [
+    "3502436"
+   ],
+   "weight": 0.7,
+   "key": "amount_above_p95"
+  },
+  {
+   "claim": "Billing region 191 already appears 28 times on this card across 5 month(s)",
+   "source": "graph",
+   "ref": "query:region_history(card_id=C11543-K2, region=191)",
+   "entity_ids": [
+    "3502436"
+   ],
+   "weight": -0.9,
+   "key": "region_known"
+  },
+  {
+   "claim": "3 purchases above the card's 95th percentile ($749.29) within 48 hours ($1,136.48, $2,161.04, $1,650.97; in-person) \u2014 the card normally shows one such amount every 20 purchases",
+   "source": "graph",
+   "ref": "query:card_window(card_id=C11543-K2, hours=48)",
+   "entity_ids": [
+    "3500460",
+    "3502428",
+    "3502436"
+   ],
+   "weight": 1.0,
+   "key": "spend_spike"
+  },
+  {
+   "claim": "Customer has 6 confirmed fraud cases since July (mostly card_not_present_fraud) and 1 cleared alert(s) \u2014 a repeat target",
+   "source": "graph",
+   "ref": "query:prior_cases_for_customer(customer_id=C11543)",
+   "entity_ids": [
+    "CC-2974",
+    "CC-3259",
+    "CC-3601",
+    "CC-4631",
+    "CC-5189"
+   ],
+   "weight": 0.35,
+   "key": "history_repeat_victim"
+  },
+  {
+   "claim": "Customer response: Customer states they did not make this purchase and still has the card",
+   "source": "customer",
+   "ref": "evidence_request:1",
+   "entity_ids": [],
+   "weight": 2.4,
+   "key": "evidence_denied"
+  }
+ ],
+ "initial_prob": 0.68,
+ "tool_log": [
+  {
+   "step": 1,
+   "tool": "get_transaction",
+   "args": {
+    "txn_id": 3502436
+   },
+   "ms": 0.5,
+   "result_preview": "{'txn_id': '3502436', 'ts': '2016-12-01 01:17:32', 'amount': 1650.97, 'product': 'W', 'channel': 'in_person', 'region': 191.0, 'country': 87.0, 'dist1': 26.0, 'p_email': 'yahoo.com', 'r_email': None, 'risk_score': 0.94, 'device_profile': No\u2026"
+  },
+  {
+   "step": 2,
+   "tool": "card_profile",
+   "args": {
+    "card_id": "C11543-K2",
+    "before_txn_id": 3502436
+   },
+   "ms": 20.6,
+   "result_preview": "{'card_id': 'C11543-K2', 'customer_id': 'C11543', 'n_txns': 498, 'first_seen': '2016-07-03 00:18:13', 'n_online': 182, 'n_in_person': 316, 'products': {'W': 316, 'H': 91, 'R': 71, 'S': 19, 'C': 1}, 'regions_top': {'264.0': 89, '272.0': 47, \u2026"
+  },
+  {
+   "step": 3,
+   "tool": "card_window",
+   "args": {
+    "card_id": "C11543-K2",
+    "center_txn_id": 3502436,
+    "hours_before": 48,
+    "hours_after": 48,
+    "as_of": "2016-12-01 01:17:32"
+   },
+   "ms": 5.1,
+   "result_preview": "[{'txn_id': '3497130', 'ts': '2016-11-29 14:24:15', 'amount': 49.07, 'product': 'W', 'channel': 'in_person', 'region': 254.0, 'country': 87.0, 'dist1': None, 'p_email': 'yahoo.com', 'r_email': None, 'risk_score': 0.08, 'device_profile': Non\u2026"
+  },
+  {
+   "step": 4,
+   "tool": "region_history",
+   "args": {
+    "card_id": "C11543-K2",
+    "region": 191.0,
+    "before_txn_id": 3502436,
+    "as_of": "2016-12-01 01:17:32"
+   },
+   "ms": 5.9,
+   "result_preview": "{'region': 191.0, 'home_region': 264.0, 'n_before': 28, 'first_seen_in_region': '2016-08-07 00:36:33', 'months_active_in_region': 5, 'in_region_next_7d': 1, 'home_activity_next_7d': 0, 'in_person_share_in_region': 0.9642857142857143}"
+  },
+  {
+   "step": 5,
+   "tool": "recurring_match",
+   "args": {
+    "card_id": "C11543-K2",
+    "txn_id": 3502436,
+    "as_of": "2016-12-01 01:17:32"
+   },
+   "ms": 3.8,
+   "result_preview": "{'amount': 1650.97, 'product': 'W', 'n_matches': 1, 'months_with_match': ['2016-12'], 'n_months': 1, 'n_same_region': 1, 'share_of_card_txns': 0.002, 'n_same_amount_within_1h': 1, 'same_amount_burst_ids': [], 'is_recurring': False, 'sample_\u2026"
+  },
+  {
+   "step": 6,
+   "tool": "customer_fraud_rate",
+   "args": {
+    "customer_id": "C11543",
+    "as_of": "2016-12-01 01:17:32"
+   },
+   "ms": 3.1,
+   "result_preview": "{'customer_id': 'C11543', 'n': 417, 'fraud_rate': 0.0192, 'global_rate': 0.0337, 'fraud_rate_in_person': 0.0117, 'n_in_person': 257, 'fraud_rate_online': 0.0312, 'n_online': 160}"
+  },
+  {
+   "step": 7,
+   "tool": "prior_cases_for_customer",
+   "args": {
+    "customer_id": "C11543"
+   },
+   "ms": 1.7,
+   "result_preview": "[{'case_id': 'CC-0966', 'outcome': 'cleared', 'pattern': 'none', 'opened_at': '2016-07-22 22:23:19', 'exposure_usd': 0.0, 'report_filed': 'No', 'notes': 'Case CC-0966: model scored a $200.06 transaction at 0.89. Cardholder confirmed travel \u2026"
+  },
+  {
+   "step": 8,
+   "tool": "similar_cases",
+   "args": {
+    "query_text": "in person product W analyst request",
+    "pattern_hint": "out_of_region_use account_takeover",
+    "customer_id": "C11543",
+    "k": 5
+   },
+   "ms": 8.2,
+   "result_preview": "[{'case_id': 'MON-3502436', 'kind': 'agent_case', 'score': 0.242, 'customer_id': 'C11543', 'card_id': 'C11543-K2', 'opened_at': '2016-12-01 01:17:32', 'status': 'closed_fraud', 'verdict': 'fraud', 'fraud_probability': 0.93, 'pattern': 'acco\u2026"
+  },
+  {
+   "step": 9,
+   "tool": "retrieve_policy",
+   "args": {
+    "query_text": "out_of_region_use account_takeover analyst_request verify block report shared device",
+    "k": 4
+   },
+   "ms": 6.0,
+   "result_preview": "[{'doc_id': 'policy:3a', 'title': 'Fraud Policy 3a \u2013 a case is not a report', 'score': 0.21, 'text': \"A case (CREATE_CASE) is the bank's internal record. Open one whenever fraud probability reaches 0.30, whenever evidence is requested, or w\u2026"
+  },
+  {
+   "step": 10,
+   "tool": "evidence_request:customer_validation",
+   "args": {
+    "kind": "customer_validation",
+    "prompt": "Did you make the $1,650.97 W purchase on 2016-12-01?",
+    "assumed_response": "Customer states they did not make this purchase and still has the card"
+   },
+   "ms": 0.0,
+   "result_preview": "{'type': 'customer_validation', 'prompt': 'Did you make the $1,650.97 W purchase on 2016-12-01?', 'assumed_response': 'Customer states they did not make this purchase and still has the card'}"
+  },
+  {
+   "step": 11,
+   "tool": "write_case",
+   "args": {
+    "case": {
+     "case_id": "ADHOC-3502436",
+     "customer_id": "C11543",
+     "card_id": "C11543-K2",
+     "opened_at": "2016-12-01 01:17:32",
+     "status": "closed_fraud",
+     "verdict": "fraud",
+     "fraud_probability": 0.95,
+     "pattern": "account_takeover",
+     "exposure_usd": 4948.49,
+     "affected_txn_ids": [
+      "3500460",
+      "3502428",
+      "3502436"
+     ],
+     "connected_card_ids": [],
+     "connected_device_profiles": [],
+     "sar_filed": true,
+     "final_actions": [
+      "CREATE_CASE",
+      "BLOCK_CARD",
+      "FILE_REPORT"
+     ],
+     "summary": "Assessed as fraud (probability 0.95, account takeover). Flagged in-person W transaction 3502436 of $1,650.97 on card C11543-K2 at 2016-12-01 01:17:32. Customer response: Customer states they did not make this purchase and still has the card. 3 purchases above the card's 95th percentile ($749.29) within 48 hours ($1,136.48, $2,161.04, $1,650.97; in-person) \u2014 the card normally shows one such amount every 20 purchases. Billing region 191 already appears 28 times on this card across 5 month(s). Evidence requested (customer validation); assumed response: Customer states they did not make this purchase and still has the card. Exposure $4,948.49 across 3 transaction(s). Final actions: CREATE_CASE, BLOCK_CARD, FILE_REPORT.",
+     "similar_prior_cases": [
+      "MON-3502436",
+      "MON-3503978",
+      "HHG-001",
+      "HHG-012",
+      "HHG-003"
+     ],
+     "graph_case_id": "CASE-2016-1029"
+    }
+   },
+   "ms": 779.4,
+   "result_preview": "CASE-2016-1029"
+  },
+  {
+   "step": 12,
+   "tool": "execute_action",
+   "args": {
+    "action": "CREATE_CASE",
+    "route": "auto",
+    "payload": {
+     "case_id": "ADHOC-3502436",
+     "card_id": "C11543-K2",
+     "txn_id": "3502436"
+    }
+   },
+   "ms": 0.0,
+   "result_preview": "{'action': 'CREATE_CASE', 'route': 'auto', 'status': 'executed', 'payload': {'case_id': 'ADHOC-3502436', 'card_id': 'C11543-K2', 'txn_id': '3502436'}}"
+  },
+  {
+   "step": 13,
+   "tool": "execute_action",
+   "args": {
+    "action": "BLOCK_CARD",
+    "route": "L2",
+    "payload": {
+     "case_id": "ADHOC-3502436",
+     "card_id": "C11543-K2",
+     "txn_id": "3502436"
+    }
+   },
+   "ms": 0.0,
+   "result_preview": "{'action': 'BLOCK_CARD', 'route': 'L2', 'status': 'pending_human_approval', 'payload': {'case_id': 'ADHOC-3502436', 'card_id': 'C11543-K2', 'txn_id': '3502436'}}"
+  },
+  {
+   "step": 14,
+   "tool": "execute_action",
+   "args": {
+    "action": "FILE_REPORT",
+    "route": "L2",
+    "payload": {
+     "case_id": "ADHOC-3502436",
+     "card_id": "C11543-K2",
+     "txn_id": "3502436"
+    }
+   },
+   "ms": 0.0,
+   "result_preview": "{'action': 'FILE_REPORT', 'route': 'L2', 'status': 'pending_human_approval', 'payload': {'case_id': 'ADHOC-3502436', 'card_id': 'C11543-K2', 'txn_id': '3502436'}}"
+  }
+ ]
+}
