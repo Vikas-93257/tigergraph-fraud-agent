@@ -55,32 +55,32 @@
         "entity_ids": []
       },
       {
-        "claim": "Similar cases retrieved from case memory: CC-3193 (confirmed_fraud, card_not_present_new_device); CC-3430 (confirmed_fraud, card_not_present_fraud); CC-3280 (confirmed_fraud, card_not_present_fraud)",
+        "claim": "Similar cases retrieved from case memory: CC-1230 (confirmed_fraud, card_not_present_new_device); CC-5081 (confirmed_fraud, card_not_present_new_device); CC-0853 (confirmed_fraud, card_not_present_new_device)",
         "source": "graph",
         "ref": "query:similar_cases",
         "entity_ids": [
-          "CC-3193",
-          "CC-3430",
-          "CC-3280"
+          "CC-1230",
+          "CC-5081",
+          "CC-0853"
         ]
       },
       {
-        "claim": "Policy sections applied: Fraud Policy R1 \u2013 verify before you block on a weak signal, Fraud Policy 3a \u2013 a case is not a report, Fraud Policy R2 \u2013 customer denies the transaction",
+        "claim": "Policy sections applied: Known pattern 3 \u2013 card-not-present from a new device, Fraud Policy R2 \u2013 customer denies the transaction, Fraud Policy 2 \u2013 approval routing",
         "source": "document",
-        "ref": "policy:R1, policy:3a, policy:R2",
+        "ref": "typology:cnp_new_device, policy:R2, policy:routing",
         "entity_ids": []
       }
     ],
     "similar_prior_cases": [
-      "CC-3193",
-      "CC-3430",
-      "CC-3280",
-      "CC-4992",
-      "CC-2064"
+      "CC-1230",
+      "CC-5081",
+      "CC-0853",
+      "CC-5481",
+      "CC-1099"
     ],
     "summary": "Assessed as fraud (probability 0.95, card not present new device). Flagged online C transaction 3583227 of $128.33 on card C08106-K1 at 2016-12-29 01:53:54. Customer response: Customer confirms they did not make the purchase, did not authorise anyone else, and still holds the physical card; asks for a new card. $128.33 is above the card's 95th percentile ($96.39; median $27.73). Evidence requested (customer validation); assumed response: Customer confirms they did not make the purchase, did not authorise anyone else, and still holds the physical card; asks for a new card. Exposure $128.33 across 1 transaction(s). Final actions: CREATE_CASE, BLOCK_CARD.",
     "written_to_graph": true,
-    "graph_case_id": "CASE-2016-1004"
+    "graph_case_id": "CASE-2016-004"
   },
   "evidence_requests": [
     {
@@ -132,5 +132,5 @@
   "stop_reason": "Verification response settled the question (customer denied); probability 0.95. Further graph queries would not change the actions.",
   "tool_calls": 14,
   "tokens": 0,
-  "latency_s": 0.88
+  "latency_s": 0.97
 }

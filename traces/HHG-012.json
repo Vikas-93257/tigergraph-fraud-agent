@@ -18,7 +18,7 @@
   "channel": "in_person",
   "region": 494.0,
   "country": 87.0,
-  "dist1": null,
+  "dist1": 0,
   "p_email": "gmail.com",
   "r_email": null,
   "risk_score": 0.55,
@@ -27,22 +27,16 @@
   "proxy": null,
   "device_type": null,
   "match_flags": {
-   "M1": null,
-   "M2": null,
-   "M3": null,
    "M4": null,
    "M5": null,
-   "M6": "F",
-   "M7": null,
-   "M8": null,
-   "M9": null
+   "M6": "F"
   },
   "counts": {
-   "C1": 107.0,
-   "C13": 458.0,
-   "C14": 89.0
+   "C1": 107,
+   "C13": 458,
+   "C14": 89
   },
-  "days_since_prev": 0.0,
+  "days_since_prev": 0,
   "customer_id": "C05876",
   "card_id": "C05876-K2",
   "card_network": "visa",
@@ -57,7 +51,7 @@
    "channel": "in_person",
    "region": 330.0,
    "country": 87.0,
-   "dist1": 488.0,
+   "dist1": 488,
    "p_email": "gmail.com",
    "r_email": null,
    "risk_score": 0.16,
@@ -66,22 +60,16 @@
    "proxy": null,
    "device_type": null,
    "match_flags": {
-    "M1": "T",
-    "M2": "F",
-    "M3": "F",
     "M4": "M0",
     "M5": "T",
-    "M6": "F",
-    "M7": "F",
-    "M8": "F",
-    "M9": "F"
+    "M6": "F"
    },
    "counts": {
-    "C1": 3.0,
-    "C13": 6.0,
-    "C14": 3.0
+    "C1": 3,
+    "C13": 6,
+    "C14": 3
    },
-   "days_since_prev": 306.0
+   "days_since_prev": 306
   },
   {
    "txn_id": "3548770",
@@ -91,7 +79,7 @@
    "channel": "in_person",
    "region": 272.0,
    "country": 87.0,
-   "dist1": null,
+   "dist1": 0,
    "p_email": "yahoo.com",
    "r_email": null,
    "risk_score": 0.26,
@@ -100,22 +88,16 @@
    "proxy": null,
    "device_type": null,
    "match_flags": {
-    "M1": "T",
-    "M2": "T",
-    "M3": "F",
     "M4": "M0",
     "M5": "F",
-    "M6": null,
-    "M7": "F",
-    "M8": "F",
-    "M9": "T"
+    "M6": null
    },
    "counts": {
-    "C1": 2.0,
-    "C13": 2.0,
-    "C14": 2.0
+    "C1": 2,
+    "C13": 2,
+    "C14": 2
    },
-   "days_since_prev": 0.0
+   "days_since_prev": 0
   },
   {
    "txn_id": "3549201",
@@ -125,7 +107,7 @@
    "channel": "in_person",
    "region": 191.0,
    "country": 87.0,
-   "dist1": null,
+   "dist1": 0,
    "p_email": "gmail.com",
    "r_email": null,
    "risk_score": 0.05,
@@ -134,22 +116,16 @@
    "proxy": null,
    "device_type": null,
    "match_flags": {
-    "M1": "T",
-    "M2": "T",
-    "M3": "T",
     "M4": "M0",
     "M5": "F",
-    "M6": "F",
-    "M7": "F",
-    "M8": "T",
-    "M9": "T"
+    "M6": "F"
    },
    "counts": {
-    "C1": 4.0,
-    "C13": 4.0,
-    "C14": 4.0
+    "C1": 4,
+    "C13": 4,
+    "C14": 4
    },
-   "days_since_prev": 0.0
+   "days_since_prev": 0
   },
   {
    "txn_id": "3549583",
@@ -159,7 +135,7 @@
    "channel": "in_person",
    "region": 126.0,
    "country": 87.0,
-   "dist1": 3.0,
+   "dist1": 3,
    "p_email": "gmail.com",
    "r_email": null,
    "risk_score": 0.12,
@@ -168,22 +144,16 @@
    "proxy": null,
    "device_type": null,
    "match_flags": {
-    "M1": "T",
-    "M2": "T",
-    "M3": "T",
     "M4": null,
     "M5": null,
-    "M6": "F",
-    "M7": "F",
-    "M8": "F",
-    "M9": "T"
+    "M6": "F"
    },
    "counts": {
-    "C1": 10.0,
-    "C13": 15.0,
-    "C14": 8.0
+    "C1": 10,
+    "C13": 15,
+    "C14": 8
    },
-   "days_since_prev": 0.0
+   "days_since_prev": 0
   },
   {
    "txn_id": "3550012",
@@ -193,7 +163,7 @@
    "channel": "in_person",
    "region": 264.0,
    "country": 87.0,
-   "dist1": null,
+   "dist1": 0,
    "p_email": "yahoo.com",
    "r_email": null,
    "risk_score": 0.13,
@@ -202,22 +172,16 @@
    "proxy": null,
    "device_type": null,
    "match_flags": {
-    "M1": "T",
-    "M2": "T",
-    "M3": "T",
     "M4": null,
     "M5": null,
-    "M6": "F",
-    "M7": "F",
-    "M8": "T",
-    "M9": "T"
+    "M6": "F"
    },
    "counts": {
-    "C1": 5.0,
-    "C13": 5.0,
-    "C14": 5.0
+    "C1": 5,
+    "C13": 5,
+    "C14": 5
    },
-   "days_since_prev": 0.0
+   "days_since_prev": 0
   },
   {
    "txn_id": "3550013",
@@ -227,7 +191,7 @@
    "channel": "in_person",
    "region": 264.0,
    "country": 87.0,
-   "dist1": null,
+   "dist1": 0,
    "p_email": "aol.com",
    "r_email": null,
    "risk_score": 0.52,
@@ -236,22 +200,16 @@
    "proxy": null,
    "device_type": null,
    "match_flags": {
-    "M1": "T",
-    "M2": "T",
-    "M3": "T",
     "M4": "M0",
     "M5": "T",
-    "M6": "F",
-    "M7": "F",
-    "M8": "F",
-    "M9": "T"
+    "M6": "F"
    },
    "counts": {
-    "C1": 1.0,
-    "C13": 1.0,
-    "C14": 1.0
+    "C1": 1,
+    "C13": 1,
+    "C14": 1
    },
-   "days_since_prev": 0.0
+   "days_since_prev": 0
   },
   {
    "txn_id": "3550293",
@@ -261,7 +219,7 @@
    "channel": "in_person",
    "region": 272.0,
    "country": 87.0,
-   "dist1": 19.0,
+   "dist1": 19,
    "p_email": "anonymous.com",
    "r_email": null,
    "risk_score": 0.04,
@@ -270,22 +228,16 @@
    "proxy": null,
    "device_type": null,
    "match_flags": {
-    "M1": "T",
-    "M2": "T",
-    "M3": "T",
     "M4": null,
     "M5": null,
-    "M6": "F",
-    "M7": "F",
-    "M8": "F",
-    "M9": "T"
+    "M6": "F"
    },
    "counts": {
-    "C1": 4.0,
-    "C13": 6.0,
-    "C14": 4.0
+    "C1": 4,
+    "C13": 6,
+    "C14": 4
    },
-   "days_since_prev": 13.0
+   "days_since_prev": 13
   },
   {
    "txn_id": "3550470",
@@ -295,7 +247,7 @@
    "channel": "in_person",
    "region": 264.0,
    "country": 87.0,
-   "dist1": null,
+   "dist1": 0,
    "p_email": "gmail.com",
    "r_email": null,
    "risk_score": 0.02,
@@ -304,22 +256,16 @@
    "proxy": null,
    "device_type": null,
    "match_flags": {
-    "M1": null,
-    "M2": null,
-    "M3": null,
     "M4": "M0",
     "M5": "F",
-    "M6": "F",
-    "M7": null,
-    "M8": null,
-    "M9": null
+    "M6": "F"
    },
    "counts": {
-    "C1": 1.0,
-    "C13": 1.0,
-    "C14": 1.0
+    "C1": 1,
+    "C13": 1,
+    "C14": 1
    },
-   "days_since_prev": 0.0
+   "days_since_prev": 0
   },
   {
    "txn_id": "3551245",
@@ -329,7 +275,7 @@
    "channel": "in_person",
    "region": 433.0,
    "country": 87.0,
-   "dist1": 1.0,
+   "dist1": 1,
    "p_email": "yahoo.com",
    "r_email": null,
    "risk_score": 0.05,
@@ -338,22 +284,16 @@
    "proxy": null,
    "device_type": null,
    "match_flags": {
-    "M1": "T",
-    "M2": "T",
-    "M3": "T",
     "M4": "M0",
     "M5": "T",
-    "M6": "T",
-    "M7": "T",
-    "M8": "T",
-    "M9": "T"
+    "M6": "T"
    },
    "counts": {
-    "C1": 1.0,
-    "C13": 2.0,
-    "C14": 1.0
+    "C1": 1,
+    "C13": 2,
+    "C14": 1
    },
-   "days_since_prev": 2.0
+   "days_since_prev": 2
   },
   {
    "txn_id": "3552000",
@@ -363,7 +303,7 @@
    "channel": "in_person",
    "region": 330.0,
    "country": 87.0,
-   "dist1": 8.0,
+   "dist1": 8,
    "p_email": "ymail.com",
    "r_email": null,
    "risk_score": 0.23,
@@ -372,22 +312,16 @@
    "proxy": null,
    "device_type": null,
    "match_flags": {
-    "M1": "T",
-    "M2": "T",
-    "M3": "T",
     "M4": null,
     "M5": null,
-    "M6": "F",
-    "M7": "F",
-    "M8": "T",
-    "M9": "T"
+    "M6": "F"
    },
    "counts": {
-    "C1": 8.0,
-    "C13": 11.0,
-    "C14": 5.0
+    "C1": 8,
+    "C13": 11,
+    "C14": 5
    },
-   "days_since_prev": 0.0
+   "days_since_prev": 0
   },
   {
    "txn_id": "3552020",
@@ -397,7 +331,7 @@
    "channel": "in_person",
    "region": 330.0,
    "country": 87.0,
-   "dist1": 8.0,
+   "dist1": 8,
    "p_email": "ymail.com",
    "r_email": null,
    "risk_score": 0.1,
@@ -406,22 +340,16 @@
    "proxy": null,
    "device_type": null,
    "match_flags": {
-    "M1": "T",
-    "M2": "T",
-    "M3": "T",
     "M4": null,
     "M5": null,
-    "M6": "F",
-    "M7": "F",
-    "M8": "T",
-    "M9": "T"
+    "M6": "F"
    },
    "counts": {
-    "C1": 8.0,
-    "C13": 12.0,
-    "C14": 5.0
+    "C1": 8,
+    "C13": 12,
+    "C14": 5
    },
-   "days_since_prev": 0.0
+   "days_since_prev": 0
   },
   {
    "txn_id": "3553253",
@@ -431,7 +359,7 @@
    "channel": "in_person",
    "region": 476.0,
    "country": 87.0,
-   "dist1": 33.0,
+   "dist1": 33,
    "p_email": null,
    "r_email": null,
    "risk_score": 0.02,
@@ -440,22 +368,16 @@
    "proxy": null,
    "device_type": null,
    "match_flags": {
-    "M1": "T",
-    "M2": "T",
-    "M3": "T",
     "M4": null,
     "M5": null,
-    "M6": "F",
-    "M7": null,
-    "M8": null,
-    "M9": null
+    "M6": "F"
    },
    "counts": {
-    "C1": 3.0,
-    "C13": 5.0,
-    "C14": 3.0
+    "C1": 3,
+    "C13": 5,
+    "C14": 3
    },
-   "days_since_prev": 3.0
+   "days_since_prev": 3
   },
   {
    "txn_id": "3553342",
@@ -465,7 +387,7 @@
    "channel": "in_person",
    "region": 494.0,
    "country": 87.0,
-   "dist1": null,
+   "dist1": 0,
    "p_email": "gmail.com",
    "r_email": null,
    "risk_score": 0.55,
@@ -474,22 +396,16 @@
    "proxy": null,
    "device_type": null,
    "match_flags": {
-    "M1": null,
-    "M2": null,
-    "M3": null,
     "M4": null,
     "M5": null,
-    "M6": "F",
-    "M7": null,
-    "M8": null,
-    "M9": null
+    "M6": "F"
    },
    "counts": {
-    "C1": 107.0,
-    "C13": 458.0,
-    "C14": 89.0
+    "C1": 107,
+    "C13": 458,
+    "C14": 89
    },
-   "days_since_prev": 0.0
+   "days_since_prev": 0
   }
  ],
  "profile": {
@@ -523,13 +439,13 @@
    "Windows | Windows 10 | chrome 63.0 | 1366x768": 9,
    "? | ? | safari generic | 2048x1536": 3,
    "KYOCERA-C6742A Build/LMY47V | Android 5.1.1 | chrome generic | 960x540": 2,
-   "Windows | Windows 7 | ie 11.0 for desktop | 1440x900": 2,
-   "iOS Device | iOS 11.2.1 | mobile safari 11.0 | 1334x750": 2,
-   "Windows | Windows 10 | chrome 63.0 | 1920x1080": 2,
-   "iOS Device | iOS 11.0.3 | mobile safari generic | 2048x1536": 2,
-   "rv:11.0 | ? | ie 11.0 for desktop | ?": 2,
    "Windows | Windows 8.1 | chrome 62.0 | 1600x900": 2,
-   "MacOS | Mac OS X 10_12_3 | chrome 62.0 | 1440x900": 1
+   "Windows | Windows 7 | ie 11.0 for desktop | 1440x900": 2,
+   "Windows | Windows 10 | chrome 63.0 | 1920x1080": 2,
+   "iOS Device | iOS 11.2.1 | mobile safari 11.0 | 1334x750": 2,
+   "rv:11.0 | ? | ie 11.0 for desktop | ?": 2,
+   "iOS Device | iOS 11.0.3 | mobile safari generic | 2048x1536": 2,
+   "iOS Device | iOS 11.1.1 | mobile safari 11.0 | 1334x750": 1
   },
   "new_device_share": 0.47540983606557374,
   "n_known_devices": 43,
@@ -537,7 +453,7 @@
    "gmail.com": 508,
    "yahoo.com": 169,
    "icloud.com": 25,
-   "hotmail.com": 20
+   "aol.com": 20
   },
   "proxy_history": 7,
   "flagged": {
@@ -596,7 +512,7 @@
    "key": "recurring"
   },
   {
-   "claim": "None of this customer's 559 prior in_person transactions were ever confirmed fraudulent",
+   "claim": "None of this customer's 853 prior in_person transactions were ever confirmed fraudulent",
    "source": "graph",
    "ref": "query:customer_fraud_rate(customer_id=C05876)",
    "entity_ids": [
@@ -614,8 +530,8 @@
    "args": {
     "txn_id": 3553342
    },
-   "ms": 0.4,
-   "result_preview": "{'txn_id': '3553342', 'ts': '2016-12-18 04:00:31', 'amount': 30.91, 'product': 'W', 'channel': 'in_person', 'region': 494.0, 'country': 87.0, 'dist1': None, 'p_email': 'gmail.com', 'r_email': None, 'risk_score': 0.55, 'device_profile': None\u2026"
+   "ms": 75.8,
+   "result_preview": "{'txn_id': '3553342', 'ts': '2016-12-18 04:00:31', 'amount': 30.91, 'product': 'W', 'channel': 'in_person', 'region': 494.0, 'country': 87.0, 'dist1': 0, 'p_email': 'gmail.com', 'r_email': None, 'risk_score': 0.55, 'device_profile': None, '\u2026"
   },
   {
    "step": 2,
@@ -624,7 +540,7 @@
     "card_id": "C05876-K2",
     "before_txn_id": 3553342
    },
-   "ms": 4.2,
+   "ms": 184.3,
    "result_preview": "{'card_id': 'C05876-K2', 'customer_id': 'C05876', 'n_txns': 913, 'first_seen': '2016-07-02 13:34:01', 'n_online': 61, 'n_in_person': 852, 'products': {'W': 852, 'S': 30, 'H': 18, 'R': 13}, 'regions_top': {'325.0': 118, '272.0': 91, '264.0':\u2026"
   },
   {
@@ -637,8 +553,8 @@
     "hours_after": 48,
     "as_of": "2016-12-18 05:00:31"
    },
-   "ms": 3.0,
-   "result_preview": "[{'txn_id': '3547831', 'ts': '2016-12-16 12:34:04', 'amount': 25.07, 'product': 'W', 'channel': 'in_person', 'region': 330.0, 'country': 87.0, 'dist1': 488.0, 'p_email': 'gmail.com', 'r_email': None, 'risk_score': 0.16, 'device_profile': No\u2026"
+   "ms": 76.4,
+   "result_preview": "[{'txn_id': '3547831', 'ts': '2016-12-16 12:34:04', 'amount': 25.07, 'product': 'W', 'channel': 'in_person', 'region': 330.0, 'country': 87.0, 'dist1': 488, 'p_email': 'gmail.com', 'r_email': None, 'risk_score': 0.16, 'device_profile': None\u2026"
   },
   {
    "step": 4,
@@ -649,8 +565,8 @@
     "before_txn_id": 3553342,
     "as_of": "2016-12-18 05:00:31"
    },
-   "ms": 3.3,
-   "result_preview": "{'region': 494.0, 'home_region': 325.0, 'n_before': 21, 'first_seen_in_region': '2016-07-05 01:43:06', 'months_active_in_region': 6, 'in_region_next_7d': 1, 'home_activity_next_7d': 0, 'in_person_share_in_region': 1.0}"
+   "ms": 77.0,
+   "result_preview": "{'card_id': 'C05876-K2', 'region': 494.0, 'n_before': 21, 'home_region': 325.0, 'first_seen_in_region': '2016-07-05 01:43:06', 'months_active_in_region': 6, 'in_region_next_7d': 0, 'home_activity_next_7d': 0, 'in_person_share_in_region': 1.\u2026"
   },
   {
    "step": 5,
@@ -660,7 +576,7 @@
     "txn_id": 3553342,
     "as_of": "2016-12-18 05:00:31"
    },
-   "ms": 2.6,
+   "ms": 118.5,
    "result_preview": "{'amount': 30.91, 'product': 'W', 'n_matches': 26, 'months_with_match': ['2016-08', '2016-09', '2016-10', '2016-11', '2016-12'], 'n_months': 5, 'n_same_region': 3, 'share_of_card_txns': 0.0284, 'n_same_amount_within_1h': 1, 'same_amount_bur\u2026"
   },
   {
@@ -670,8 +586,8 @@
     "customer_id": "C05876",
     "as_of": "2016-12-18 05:00:31"
    },
-   "ms": 2.7,
-   "result_preview": "{'customer_id': 'C05876', 'n': 613, 'fraud_rate': 0.0033, 'global_rate': 0.0337, 'fraud_rate_in_person': 0.0, 'n_in_person': 559, 'fraud_rate_online': 0.037, 'n_online': 54}"
+   "ms": 78.5,
+   "result_preview": "{'customer_id': 'C05876', 'n': 914, 'fraud_rate': 0.002188183807439825, 'global_rate': 0.0337, 'fraud_rate_in_person': 0.0, 'n_in_person': 853, 'fraud_rate_online': 0.03278688524590164, 'n_online': 61}"
   },
   {
    "step": 7,
@@ -679,8 +595,8 @@
    "args": {
     "customer_id": "C05876"
    },
-   "ms": 1.1,
-   "result_preview": "[{'case_id': 'CC-0003', 'outcome': 'cleared', 'pattern': 'none', 'opened_at': '2016-07-02 16:34:01', 'exposure_usd': 0.0, 'report_filed': 'No', 'notes': 'Case CC-0003: model scored a $442.92 transaction at 0.91. Cardholder confirmed travel \u2026"
+   "ms": 76.0,
+   "result_preview": "[{'case_id': 'CC-0003', 'opened_at': '2016-07-02 16:34:01', 'outcome': 'cleared', 'pattern': 'none', 'exposure_usd': 0, 'report_filed': 'No', 'notes': 'Case CC-0003: model scored a $442.92 transaction at 0.91. Cardholder confirmed travel to\u2026"
   },
   {
    "step": 8,
@@ -691,8 +607,8 @@
     "customer_id": "C05876",
     "k": 5
    },
-   "ms": 7.9,
-   "result_preview": "[{'case_id': 'HHG-009', 'kind': 'agent_case', 'score': 0.175, 'customer_id': 'C08299', 'card_id': 'C08299-K1', 'opened_at': '2016-12-28 17:10:53', 'status': 'closed_legitimate', 'verdict': 'legitimate', 'fraud_probability': 0.05, 'pattern':\u2026"
+   "ms": 76.7,
+   "result_preview": "[{'case_id': 'CC-2875', 'kind': 'closed_case', 'score': 0.403, 'customer_id': 'C01400', 'card_id': 'C01400-K1', 'outcome': 'confirmed_fraud', 'status': None, 'verdict': None, 'pattern': 'out_of_region_use', 'exposure_usd': 97, 'opened_at': \u2026"
   },
   {
    "step": 9,
@@ -701,8 +617,8 @@
     "query_text": "out_of_region_use account_takeover risk_score verify block report shared device",
     "k": 4
    },
-   "ms": 6.7,
-   "result_preview": "[{'doc_id': 'policy:R1', 'title': 'Fraud Policy R1 \u2013 verify before you block on a weak signal', 'score': 0.209, 'text': 'R1. Verify before you block on a weak signal. If the case rests on a single signal (including a risk score alone) and t\u2026"
+   "ms": 76.4,
+   "result_preview": "[{'doc_id': 'fincen:ato', 'title': 'FinCEN Advisory FIN-2011-A016 \u2013 account takeover red flags', 'score': 0.301, 'text': \"Account takeover indicators include access from unfamiliar devices or IP addresses, use of anonymizing proxies, change\u2026"
   },
   {
    "step": 10,
@@ -728,17 +644,17 @@
      ],
      "summary": "Assessed as legitimate (probability 0.05, no fraud pattern). Flagged in-person W transaction 3553342 of $30.91 on card C05876-K2 at 2016-12-18 04:00:31. Same product and amount ($30.91 W) recurs 26 times across 5 months on this card \u2014 matches the cardholder's own recurring pattern. Billing region 494 already appears 21 times on this card across 6 month(s). Final actions: ALLOW_TRANSACTION, CLOSE_NO_FRAUD.",
      "similar_prior_cases": [
-      "HHG-009",
-      "HHG-003",
-      "HHG-011",
-      "HHG-001",
-      "HHG-007"
+      "CC-2875",
+      "CC-1551",
+      "CC-2894",
+      "CC-3963",
+      "CC-5565"
      ],
-     "graph_case_id": "CASE-2016-1012"
+     "graph_case_id": "CASE-2016-012"
     }
    },
-   "ms": 751.6,
-   "result_preview": "CASE-2016-1012"
+   "ms": 181.9,
+   "result_preview": "CASE-2016-012"
   },
   {
    "step": 11,

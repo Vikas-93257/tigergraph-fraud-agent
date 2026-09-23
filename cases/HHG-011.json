@@ -66,31 +66,32 @@
         "entity_ids": []
       },
       {
-        "claim": "Similar cases retrieved from case memory: HHG-009 (closed_legitimate, none); CC-0324 (confirmed_fraud, card_not_present_new_device); CC-1413 (confirmed_fraud, card_not_present_new_device)",
+        "claim": "Similar cases retrieved from case memory: CC-1504 (confirmed_fraud, card_not_present_new_device); CC-3550 (confirmed_fraud, card_not_present_new_device); CC-5197 (confirmed_fraud, card_not_present_new_device)",
         "source": "graph",
         "ref": "query:similar_cases",
         "entity_ids": [
-          "HHG-009",
-          "CC-0324",
-          "CC-1413"
+          "CC-1504",
+          "CC-3550",
+          "CC-5197"
         ]
       },
       {
-        "claim": "Policy sections applied: Fraud Policy R1 \u2013 verify before you block on a weak signal, Fraud Policy 3a \u2013 a case is not a report, Fraud Policy R2 \u2013 customer denies the transaction",
+        "claim": "Policy sections applied: Known pattern 3 \u2013 card-not-present from a new device, Fraud Policy R2 \u2013 customer denies the transaction, Fraud Policy 2 \u2013 approval routing",
         "source": "document",
-        "ref": "policy:R1, policy:3a, policy:R2",
+        "ref": "typology:cnp_new_device, policy:R2, policy:routing",
         "entity_ids": []
       }
     ],
     "similar_prior_cases": [
-      "CC-0324",
-      "CC-1413",
-      "CC-4546",
-      "CC-0334"
+      "CC-1504",
+      "CC-3550",
+      "CC-5197",
+      "CC-1691",
+      "CC-1273"
     ],
     "summary": "Assessed as legitimate (probability 0.07, no fraud pattern). Flagged online C transaction 3583368 of $131.30 on card C11923-K2 at 2016-12-29 03:27:44. Customer response: Customer, shown the history of identical monthly charges on their own card, recognises the merchant and confirms the charge; asks for a reminder next cycle. Same product and amount ($131.30 C) recurs 6 times across 4 months on this card \u2014 matches the cardholder's own recurring pattern. $131.30 is above the card's 95th percentile ($107.72; median $28.58). Evidence requested (customer validation); assumed response: Customer, shown the history of identical monthly charges on their own card, recognises the merchant and confirms the charge; asks for a reminder next cycle. Final actions: CREATE_CASE, WARN_CUSTOMER, CLOSE_NO_FRAUD.",
     "written_to_graph": true,
-    "graph_case_id": "CASE-2016-1011"
+    "graph_case_id": "CASE-2016-011"
   },
   "evidence_requests": [
     {
@@ -147,5 +148,5 @@
   "stop_reason": "Verification response settled the question (customer confirmed); probability 0.07. Further graph queries would not change the actions.",
   "tool_calls": 15,
   "tokens": 0,
-  "latency_s": 0.86
+  "latency_s": 2.92
 }

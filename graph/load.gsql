@@ -4,7 +4,7 @@ USE GRAPH FraudGraph
 CREATE LOADING JOB load_fraud FOR GRAPH FraudGraph {
   DEFINE FILENAME f_customers;   // customer_id
   DEFINE FILENAME f_cards;       // card_id,customer_id,network,card_type
-  DEFINE FILENAME f_txns;        // txn_id,card_id,ts,amount,product,channel,region,country,dist1,p_email,r_email,risk_score,device_status,proxy,device_type,m4,m5,m6,c1,c13,c14,d1,device_id
+  DEFINE FILENAME f_txns;        // txn_id,card_id,ts,amount,product,channel,region,country,dist1,p_email,r_email,risk_score,device_status,proxy_type,device_type,m4,m5,m6,c1,c13,c14,d1,device_id
   DEFINE FILENAME f_devices;     // device_id,device_info,os,browser,screen
   DEFINE FILENAME f_next;        // from_txn,to_txn,gap_seconds
   DEFINE FILENAME f_closed;      // case_id,customer_id,card_id,opened_at,closed_at,outcome,pattern,first_fraud_txn_id,n_txns,exposure_usd,actions_taken,report_filed,analyst_notes

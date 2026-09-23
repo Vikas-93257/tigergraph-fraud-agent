@@ -45,31 +45,32 @@
         "entity_ids": []
       },
       {
-        "claim": "Similar cases retrieved from case memory: HHG-001 (closed_legitimate, none); CC-4940 (confirmed_fraud, card_testing); CC-0137 (confirmed_fraud, card_testing)",
+        "claim": "Similar cases retrieved from case memory: CC-4154 (confirmed_fraud, card_not_present_fraud); CC-0064 (confirmed_fraud, card_not_present_fraud); CC-1151 (confirmed_fraud, card_not_present_fraud)",
         "source": "graph",
         "ref": "query:similar_cases",
         "entity_ids": [
-          "HHG-001",
-          "CC-4940",
-          "CC-0137"
+          "CC-4154",
+          "CC-0064",
+          "CC-1151"
         ]
       },
       {
-        "claim": "Policy sections applied: Fraud Policy R1 \u2013 verify before you block on a weak signal, Fraud Policy 3a \u2013 a case is not a report, Fraud Policy R2 \u2013 customer denies the transaction",
+        "claim": "Policy sections applied: Fraud Policy R2 \u2013 customer denies the transaction, Known pattern 3 \u2013 card-not-present from a new device, Fraud Policy R5 \u2013 card testing",
         "source": "document",
-        "ref": "policy:R1, policy:3a, policy:R2",
+        "ref": "policy:R2, typology:cnp_new_device, policy:R5",
         "entity_ids": []
       }
     ],
     "similar_prior_cases": [
-      "CC-4940",
-      "CC-0137",
-      "CC-0290",
-      "CC-1242"
+      "CC-4154",
+      "CC-0064",
+      "CC-1151",
+      "CC-0584",
+      "CC-4525"
     ],
     "summary": "Assessed as fraud (probability 0.93, card not present fraud). Flagged online C transaction 3478782 of $292.36 on card C11891-K1 at 2016-11-22 17:27:07. Customer response: Customer states they did not make this purchase and still has the card. $292.36 exceeds every prior amount on this card (previous max $121.32, median $47.29). Evidence requested (customer validation); assumed response: Customer states they did not make this purchase and still has the card. Exposure $292.36 across 1 transaction(s). Final actions: CREATE_CASE, BLOCK_CARD.",
     "written_to_graph": true,
-    "graph_case_id": "CASE-2016-1002"
+    "graph_case_id": "CASE-2016-002"
   },
   "evidence_requests": [
     {
@@ -121,5 +122,5 @@
   "stop_reason": "Verification response settled the question (customer denied); probability 0.93. Further graph queries would not change the actions.",
   "tool_calls": 13,
   "tokens": 0,
-  "latency_s": 0.84
+  "latency_s": 0.89
 }

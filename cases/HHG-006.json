@@ -92,32 +92,32 @@
         ]
       },
       {
-        "claim": "Similar cases retrieved from case memory: CC-3748 (confirmed_fraud, undocumented); CC-4086 (confirmed_fraud, undocumented); CC-3841 (confirmed_fraud, undocumented)",
+        "claim": "Similar cases retrieved from case memory: CC-5111 (confirmed_fraud, card_not_present_new_device); CC-5285 (confirmed_fraud, card_not_present_new_device); CC-5081 (confirmed_fraud, card_not_present_new_device)",
         "source": "graph",
         "ref": "query:similar_cases",
         "entity_ids": [
-          "CC-3748",
-          "CC-4086",
-          "CC-3841"
+          "CC-5111",
+          "CC-5285",
+          "CC-5081"
         ]
       },
       {
-        "claim": "Policy sections applied: Fraud Policy R1 \u2013 verify before you block on a weak signal, Fraud Policy 3a \u2013 a case is not a report, Fraud Policy R2 \u2013 customer denies the transaction",
+        "claim": "Policy sections applied: Known pattern 3 \u2013 card-not-present from a new device, Fraud Policy R2 \u2013 customer denies the transaction, Fraud Policy 2 \u2013 approval routing",
         "source": "document",
-        "ref": "policy:R1, policy:3a, policy:R2",
+        "ref": "typology:cnp_new_device, policy:R2, policy:routing",
         "entity_ids": []
       }
     ],
     "similar_prior_cases": [
-      "CC-3748",
-      "CC-4086",
-      "CC-3841",
-      "CC-4124",
-      "CC-3907"
+      "CC-5111",
+      "CC-5285",
+      "CC-5081",
+      "CC-3423",
+      "CC-4943"
     ],
     "summary": "Assessed as fraud (probability 0.95, undocumented). Flagged online C transaction 3476682 of $482.12 on card C07297-K1 at 2016-11-21 20:30:00. 4 online purchases of $478.95, $456.96, $488.04, $482.12 within 30 minutes, each just under $500 \u2014 amounts consistent with staying under a $500 authorization threshold. 4 purchases above the card's 95th percentile ($414.69) within 48 hours ($478.95, $456.96, $488.04, $482.12; online) \u2014 the card normally shows one such amount every 20 purchases. 6 other cards show the same signature (3\u20134 online purchases just under $500 within an hour) in the past 30 days. Exposure $1,906.07 across 4 transaction(s). Final actions: CREATE_CASE, BLOCK_CARD, MONITOR_CONNECTED_CARDS, FILE_REPORT, ESCALATE_TO_ANALYST.",
     "written_to_graph": true,
-    "graph_case_id": "CASE-2016-1006"
+    "graph_case_id": "CASE-2016-006"
   },
   "evidence_requests": [],
   "next_best_actions": {
@@ -200,5 +200,5 @@
   "stop_reason": "Probability 0.95 \u2265 0.85 on 6 independent pieces of graph evidence (\u00a76); a defensible action exists without contacting the customer.",
   "tool_calls": 17,
   "tokens": 0,
-  "latency_s": 0.92
+  "latency_s": 1.13
 }

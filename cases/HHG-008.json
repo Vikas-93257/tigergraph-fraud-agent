@@ -63,7 +63,7 @@
         ]
       },
       {
-        "claim": "14% of this customer's prior online transactions were later confirmed fraudulent (portfolio average 3%)",
+        "claim": "11% of this customer's prior online transactions were later confirmed fraudulent (portfolio average 3%)",
         "source": "graph",
         "ref": "query:customer_fraud_rate(customer_id=C13171)",
         "entity_ids": [
@@ -77,32 +77,31 @@
         "entity_ids": []
       },
       {
-        "claim": "Similar cases retrieved from case memory: CC-4819 (cleared, none); CC-2971 (confirmed_fraud, undocumented); CC-2649 (confirmed_fraud, undocumented)",
+        "claim": "Similar cases retrieved from case memory: CASE-2016-002 (closed_fraud, card_not_present_fraud); CC-2971 (confirmed_fraud, undocumented); CC-2649 (confirmed_fraud, undocumented)",
         "source": "graph",
         "ref": "query:similar_cases",
         "entity_ids": [
-          "CC-4819",
+          "CASE-2016-002",
           "CC-2971",
           "CC-2649"
         ]
       },
       {
-        "claim": "Policy sections applied: Fraud Policy R1 \u2013 verify before you block on a weak signal, Fraud Policy 3a \u2013 a case is not a report, Fraud Policy R2 \u2013 customer denies the transaction",
+        "claim": "Policy sections applied: Fraud Policy R2 \u2013 customer denies the transaction, Fraud Policy 2 \u2013 approval routing, Fraud Policy R5 \u2013 card testing",
         "source": "document",
-        "ref": "policy:R1, policy:3a, policy:R2",
+        "ref": "policy:R2, policy:routing, policy:R5",
         "entity_ids": []
       }
     ],
     "similar_prior_cases": [
-      "CC-4819",
       "CC-2971",
       "CC-2649",
-      "CC-2985",
-      "CC-3035"
+      "CC-3035",
+      "CC-4491"
     ],
     "summary": "Assessed as fraud (probability 0.95, card not present fraud). Flagged online C transaction 3558054 of $55.68 on card C13171-K2 at 2016-12-19 22:08:56. Customer response: Customer confirms they did not make the purchase, did not authorise anyone else, and still holds the physical card; asks for a new card. 3 charges of the same amount ($55.68) within one hour on this card \u2014 repeated submissions rather than a single purchase. Device profile '? | ? | chrome 66.0 | ?' was already used 9 time(s) on this account before the alert. Evidence requested (customer validation); assumed response: Customer confirms they did not make the purchase, did not authorise anyone else, and still holds the physical card; asks for a new card. Exposure $166.97 across 3 transaction(s). Final actions: CREATE_CASE, BLOCK_CARD.",
     "written_to_graph": true,
-    "graph_case_id": "CASE-2016-1008"
+    "graph_case_id": "CASE-2016-008"
   },
   "evidence_requests": [
     {
@@ -154,5 +153,5 @@
   "stop_reason": "Verification response settled the question (customer denied); probability 0.95. Further graph queries would not change the actions.",
   "tool_calls": 14,
   "tokens": 0,
-  "latency_s": 0.94
+  "latency_s": 1.38
 }

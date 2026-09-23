@@ -10,7 +10,7 @@ CREATE SCHEMA_CHANGE JOB fraud_schema FOR GRAPH FraudGraph {
   ADD VERTEX Card          (PRIMARY_ID card_id STRING, customer_id STRING, network STRING, card_type STRING) WITH primary_id_as_attribute="true";
   ADD VERTEX Transaction   (PRIMARY_ID txn_id STRING, ts DATETIME, amount DOUBLE, product STRING, channel STRING,
                             region STRING, country STRING, dist1 DOUBLE, p_email STRING, r_email STRING,
-                            risk_score DOUBLE, device_status STRING, proxy STRING, device_type STRING,
+                            risk_score DOUBLE, device_status STRING, proxy_type STRING, device_type STRING,
                             m4 STRING, m5 STRING, m6 STRING, c1 DOUBLE, c13 DOUBLE, c14 DOUBLE, d1 DOUBLE) WITH primary_id_as_attribute="true";
   ADD VERTEX DeviceProfile (PRIMARY_ID device_id STRING, device_info STRING, os STRING, browser STRING, screen STRING) WITH primary_id_as_attribute="true";
   ADD VERTEX EmailDomain   (PRIMARY_ID domain STRING) WITH primary_id_as_attribute="true";
@@ -42,11 +42,11 @@ CREATE SCHEMA_CHANGE JOB fraud_schema FOR GRAPH FraudGraph {
 }
 RUN SCHEMA_CHANGE JOB fraud_schema
 
-// TigerVector (TigerGraph >= 4.2). On builds without vector support skip this job; the stores detect the missing
-// similar_cases query and fall back to the TF-IDF retriever over the same vertices.
+// TigerVector (TigerGraph >= 4.2, verified on 4.2.5 Savanna). On builds without vector support skip this job;
+// the stores detect the missing similar_cases query and fall back to the TF-IDF retriever over the same vertices.
 CREATE SCHEMA_CHANGE JOB fraud_vectors FOR GRAPH FraudGraph {
-  ADD VECTOR ATTRIBUTE embedding(DIMENSION=384, METRIC="COSINE") ON VERTEX ClosedCase;
-  ADD VECTOR ATTRIBUTE embedding(DIMENSION=384, METRIC="COSINE") ON VERTEX AgentCase;
-  ADD VECTOR ATTRIBUTE embedding(DIMENSION=384, METRIC="COSINE") ON VERTEX PolicyChunk;
+  ALTER VERTEX ClosedCase  ADD VECTOR ATTRIBUTE embedding(DIMENSION=384, METRIC="COSINE");
+  ALTER VERTEX AgentCase   ADD VECTOR ATTRIBUTE embedding(DIMENSION=384, METRIC="COSINE");
+  ALTER VERTEX PolicyChunk ADD VECTOR ATTRIBUTE embedding(DIMENSION=384, METRIC="COSINE");
 }
 RUN SCHEMA_CHANGE JOB fraud_vectors

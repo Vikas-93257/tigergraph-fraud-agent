@@ -49,30 +49,32 @@
         ]
       },
       {
-        "claim": "Similar cases retrieved from case memory: HHG-001 (closed_legitimate, none); HHG-003 (closed_legitimate, none); CC-3291 (confirmed_fraud, out_of_region_use)",
+        "claim": "Similar cases retrieved from case memory: CC-2894 (confirmed_fraud, out_of_region_use); CC-1551 (confirmed_fraud, out_of_region_use); CC-2875 (confirmed_fraud, out_of_region_use)",
         "source": "graph",
         "ref": "query:similar_cases",
         "entity_ids": [
-          "HHG-001",
-          "HHG-003",
-          "CC-3291"
+          "CC-2894",
+          "CC-1551",
+          "CC-2875"
         ]
       },
       {
-        "claim": "Policy sections applied: Fraud Policy R1 \u2013 verify before you block on a weak signal, Fraud Policy 3a \u2013 a case is not a report, Fraud Policy R2 \u2013 customer denies the transaction",
+        "claim": "Policy sections applied: FinCEN Advisory FIN-2011-A016 \u2013 account takeover red flags, Fraud Policy R2 \u2013 customer denies the transaction, Fraud Policy R1 \u2013 verify before you block on a weak signal",
         "source": "document",
-        "ref": "policy:R1, policy:3a, policy:R2",
+        "ref": "fincen:ato, policy:R2, policy:R1",
         "entity_ids": []
       }
     ],
     "similar_prior_cases": [
-      "CC-3291",
-      "CC-2947",
-      "CC-4638"
+      "CC-2894",
+      "CC-1551",
+      "CC-2875",
+      "CC-3963",
+      "CC-5565"
     ],
     "summary": "Assessed as legitimate (probability 0.12, no fraud pattern). Flagged in-person W transaction 3514948 of $111.92 on card C09933-K2 at 2016-12-05 00:46:14. Billing region 264 already appears 2221 times on this card across 6 month(s). Final actions: ALLOW_TRANSACTION, CLOSE_NO_FRAUD.",
     "written_to_graph": true,
-    "graph_case_id": "CASE-2016-1007"
+    "graph_case_id": "CASE-2016-007"
   },
   "evidence_requests": [],
   "next_best_actions": {
@@ -113,5 +115,5 @@
   "stop_reason": "Probability 0.12 \u2264 0.15 on 2 independent pieces of evidence (\u00a76); the activity matches the cardholder's own history.",
   "tool_calls": 12,
   "tokens": 0,
-  "latency_s": 1.09
+  "latency_s": 2.78
 }

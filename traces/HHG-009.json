@@ -18,7 +18,7 @@
   "channel": "online",
   "region": 203.0,
   "country": 87.0,
-  "dist1": null,
+  "dist1": 0,
   "p_email": null,
   "r_email": "gmail.com",
   "risk_score": 0.28,
@@ -27,22 +27,16 @@
   "proxy": null,
   "device_type": "desktop",
   "match_flags": {
-   "M1": null,
-   "M2": null,
-   "M3": null,
    "M4": null,
    "M5": null,
-   "M6": null,
-   "M7": null,
-   "M8": null,
-   "M9": null
+   "M6": null
   },
   "counts": {
-   "C1": 24.0,
-   "C13": 0.0,
-   "C14": 0.0
+   "C1": 24,
+   "C13": 0,
+   "C14": 0
   },
-  "days_since_prev": 0.0,
+  "days_since_prev": 0,
   "customer_id": "C08299",
   "card_id": "C08299-K1",
   "card_network": "visa",
@@ -57,7 +51,7 @@
    "channel": "online",
    "region": 203.0,
    "country": 87.0,
-   "dist1": null,
+   "dist1": 0,
    "p_email": null,
    "r_email": "gmail.com",
    "risk_score": 0.28,
@@ -66,22 +60,16 @@
    "proxy": null,
    "device_type": "desktop",
    "match_flags": {
-    "M1": null,
-    "M2": null,
-    "M3": null,
     "M4": null,
     "M5": null,
-    "M6": null,
-    "M7": null,
-    "M8": null,
-    "M9": null
+    "M6": null
    },
    "counts": {
-    "C1": 24.0,
-    "C13": 0.0,
-    "C14": 0.0
+    "C1": 24,
+    "C13": 0,
+    "C14": 0
    },
-   "days_since_prev": 0.0
+   "days_since_prev": 0
   }
  ],
  "profile": {
@@ -115,11 +103,11 @@
    "Windows | Windows 10 | chrome 64.0 | 1680x1050": 4,
    "Windows | Windows 10 | firefox 59.0 | 1600x900": 3,
    "Windows | Windows 10 | edge 14.0 | 1920x1080": 2,
-   "Windows | Windows 7 | firefox 58.0 | 1366x768": 2,
    "Windows | Windows 7 | chrome 63.0 | 1360x768": 2,
+   "Windows | Windows 7 | firefox 58.0 | 1366x768": 2,
    "rv:55.0 | Windows 7 | firefox 55.0 | 1366x768": 1,
-   "Windows | Windows 7 | chrome 63.0 | 1680x1050": 1,
-   "Windows | Windows 10 | chrome 63.0 | 1366x768": 1
+   "Windows | Windows 10 | chrome 63.0 | 1366x768": 1,
+   "Windows | Windows 10 | chrome 63.0 | 1920x1080": 1
   },
   "new_device_share": 0.35,
   "n_known_devices": 19,
@@ -185,7 +173,7 @@
    "key": "recurring_weak"
   },
   {
-   "claim": "None of this customer's 30 prior online transactions were ever confirmed fraudulent",
+   "claim": "None of this customer's 41 prior online transactions were ever confirmed fraudulent",
    "source": "graph",
    "ref": "query:customer_fraud_rate(customer_id=C08299)",
    "entity_ids": [
@@ -211,8 +199,8 @@
    "args": {
     "txn_id": 3581141
    },
-   "ms": 0.3,
-   "result_preview": "{'txn_id': '3581141', 'ts': '2016-12-28 12:10:53', 'amount': 30.02, 'product': 'S', 'channel': 'online', 'region': 203.0, 'country': 87.0, 'dist1': None, 'p_email': None, 'r_email': 'gmail.com', 'risk_score': 0.28, 'device_profile': None, '\u2026"
+   "ms": 75.7,
+   "result_preview": "{'txn_id': '3581141', 'ts': '2016-12-28 12:10:53', 'amount': 30.02, 'product': 'S', 'channel': 'online', 'region': 203.0, 'country': 87.0, 'dist1': 0, 'p_email': None, 'r_email': 'gmail.com', 'risk_score': 0.28, 'device_profile': None, 'dev\u2026"
   },
   {
    "step": 2,
@@ -221,7 +209,7 @@
     "card_id": "C08299-K1",
     "before_txn_id": 3581141
    },
-   "ms": 3.5,
+   "ms": 154.8,
    "result_preview": "{'card_id': 'C08299-K1', 'customer_id': 'C08299', 'n_txns': 46, 'first_seen': '2016-07-04 20:30:37', 'n_online': 40, 'n_in_person': 6, 'products': {'S': 39, 'W': 6, 'H': 1}, 'regions_top': {'330.0': 30, '204.0': 5, '441.0': 4, '337.0': 3, '\u2026"
   },
   {
@@ -234,8 +222,8 @@
     "hours_after": 48,
     "as_of": "2016-12-28 17:10:53"
    },
-   "ms": 1.3,
-   "result_preview": "[{'txn_id': '3581141', 'ts': '2016-12-28 12:10:53', 'amount': 30.02, 'product': 'S', 'channel': 'online', 'region': 203.0, 'country': 87.0, 'dist1': None, 'p_email': None, 'r_email': 'gmail.com', 'risk_score': 0.28, 'device_profile': None, \u2026"
+   "ms": 75.1,
+   "result_preview": "[{'txn_id': '3581141', 'ts': '2016-12-28 12:10:53', 'amount': 30.02, 'product': 'S', 'channel': 'online', 'region': 203.0, 'country': 87.0, 'dist1': 0, 'p_email': None, 'r_email': 'gmail.com', 'risk_score': 0.28, 'device_profile': None, 'de\u2026"
   },
   {
    "step": 4,
@@ -245,7 +233,7 @@
     "txn_id": 3581141,
     "as_of": "2016-12-28 17:10:53"
    },
-   "ms": 2.3,
+   "ms": 77.7,
    "result_preview": "{'amount': 30.02, 'product': 'S', 'n_matches': 5, 'months_with_match': ['2016-07', '2016-10', '2016-12'], 'n_months': 3, 'n_same_region': 1, 'share_of_card_txns': 0.1064, 'n_same_amount_within_1h': 1, 'same_amount_burst_ids': [], 'is_recurr\u2026"
   },
   {
@@ -256,7 +244,7 @@
     "txn_id": 3581141,
     "as_of": "2016-12-28 17:10:53"
    },
-   "ms": 1.5,
+   "ms": 0.1,
    "result_preview": "{'n_small_auths': 0, 'small_txn_ids': [], 'larger_after': [], 'testing_sequence': False, 'cleared_over_100': False}"
   },
   {
@@ -266,8 +254,8 @@
     "customer_id": "C08299",
     "as_of": "2016-12-28 17:10:53"
    },
-   "ms": 1.8,
-   "result_preview": "{'customer_id': 'C08299', 'n': 36, 'fraud_rate': 0.0, 'global_rate': 0.0337, 'fraud_rate_in_person': 0.0, 'n_in_person': 6, 'fraud_rate_online': 0.0, 'n_online': 30}"
+   "ms": 75.2,
+   "result_preview": "{'customer_id': 'C08299', 'n': 47, 'fraud_rate': 0.0, 'global_rate': 0.0337, 'fraud_rate_in_person': 0.0, 'n_in_person': 6, 'fraud_rate_online': 0.0, 'n_online': 41}"
   },
   {
    "step": 7,
@@ -275,7 +263,7 @@
    "args": {
     "customer_id": "C08299"
    },
-   "ms": 0.8,
+   "ms": 75.1,
    "result_preview": "[]"
   },
   {
@@ -287,8 +275,8 @@
     "customer_id": "C08299",
     "k": 5
    },
-   "ms": 7.7,
-   "result_preview": "[{'case_id': 'HHG-003', 'kind': 'agent_case', 'score': 0.171, 'customer_id': 'C08623', 'card_id': 'C08623-K2', 'opened_at': '2016-12-10 15:01:21', 'status': 'closed_legitimate', 'verdict': 'legitimate', 'fraud_probability': 0.05, 'pattern':\u2026"
+   "ms": 76.4,
+   "result_preview": "[{'case_id': 'CC-4457', 'kind': 'closed_case', 'score': 0.579, 'customer_id': 'C00978', 'card_id': 'C00978-K1', 'outcome': 'confirmed_fraud', 'status': None, 'verdict': None, 'pattern': 'card_not_present_fraud', 'exposure_usd': 61.64, 'open\u2026"
   },
   {
    "step": 9,
@@ -297,8 +285,8 @@
     "query_text": "card_not_present_fraud card_testing customer_report verify block report shared device",
     "k": 4
    },
-   "ms": 5.6,
-   "result_preview": "[{'doc_id': 'policy:R1', 'title': 'Fraud Policy R1 \u2013 verify before you block on a weak signal', 'score': 0.2, 'text': 'R1. Verify before you block on a weak signal. If the case rests on a single signal (including a risk score alone) and the\u2026"
+   "ms": 74.9,
+   "result_preview": "[{'doc_id': 'policy:R2', 'title': 'Fraud Policy R2 \u2013 customer denies the transaction', 'score': 0.483, 'text': \"R2. Customer denies the transaction. Recommend BLOCK_CARD and CREATE_CASE. Add FILE_REPORT if exposure exceeds $1,000 or the cas\u2026"
   },
   {
    "step": 10,
@@ -336,17 +324,17 @@
      ],
      "summary": "Assessed as legitimate (probability 0.05, no fraud pattern). Flagged online S transaction 3581141 of $30.02 on card C08299-K1 at 2016-12-28 12:10:53. Customer response: Customer, shown the history of identical monthly charges on their own card, recognises the merchant and confirms the charge; asks for a reminder next cycle. Same product and amount ($30.02 S) recurs 5 times across 3 months on this card \u2014 a possible recurring charge, but the history is thin. Evidence requested (customer validation); assumed response: Customer, shown the history of identical monthly charges on their own card, recognises the merchant and confirms the charge; asks for a reminder next cycle. Final actions: CREATE_CASE, WARN_CUSTOMER, CLOSE_NO_FRAUD.",
      "similar_prior_cases": [
-      "HHG-003",
-      "HHG-001",
-      "CC-4940",
-      "CC-0137",
-      "CC-0290"
+      "CC-4457",
+      "CC-4154",
+      "CC-0142",
+      "CC-3524",
+      "CC-4525"
      ],
-     "graph_case_id": "CASE-2016-1009"
+     "graph_case_id": "CASE-2016-009"
     }
    },
-   "ms": 793.5,
-   "result_preview": "CASE-2016-1009"
+   "ms": 180.2,
+   "result_preview": "CASE-2016-009"
   },
   {
    "step": 12,

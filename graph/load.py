@@ -100,7 +100,12 @@ def export():
 
 def _conn():
     import pyTigerGraph as tg
-    conn = tg.TigerGraphConnection(host=config.TG_HOST, username=config.TG_USERNAME, password=config.TG_PASSWORD)
+    conn = tg.TigerGraphConnection(host=config.TG_HOST, graphname=config.TG_GRAPH, username=config.TG_USERNAME or 'tigergraph',
+                                   password=config.TG_PASSWORD, gsqlSecret=config.TG_SECRET or None)
+    if config.TG_SECRET:
+        conn.getToken(config.TG_SECRET)
+    else:
+        conn.getToken(conn.createSecret())
     return conn
 
 
@@ -113,8 +118,6 @@ def schema():
 
 def load():
     conn = _conn()
-    conn.graphname = config.TG_GRAPH
-    conn.getToken(conn.createSecret())
     files = {'f_customers': 'customers.csv', 'f_cards': 'cards.csv', 'f_txns': 'transactions.csv', 'f_devices': 'devices.csv',
              'f_next': 'next.csv', 'f_closed': 'closed_cases.csv', 'f_closed_txn': 'closed_case_txns.csv',
              'f_closed_conn': 'closed_case_connected.csv', 'f_policy': 'policy_chunks.csv'}
@@ -124,15 +127,21 @@ def load():
 
 
 def embed_vertices():
-    """Fill TigerVector embeddings for ClosedCase / PolicyChunk (run once after load; needs the fraud_vectors job)."""
+    """Populate the TigerVector attributes (ClosedCase / PolicyChunk) so similar_cases & retrieve_policy run in-graph."""
     from fraud_agent.store.embeddings import embed
-    conn = _conn(); conn.graphname = config.TG_GRAPH; conn.getToken(conn.createSecret())
-    cc = pd.read_csv(OUT / 'closed_cases.csv')
-    for r in cc.itertuples():
-        conn.runInstalledQuery('set_embedding', {'vtype': 'ClosedCase', 'id': r.case_id, 'vec': embed(f"{r.pattern} {r.outcome} {r.analyst_notes}")})
-    for c in POLICY_CHUNKS:
-        conn.runInstalledQuery('set_embedding', {'vtype': 'PolicyChunk', 'id': c['id'], 'vec': embed(c['text'])})
-    print('embedded', len(cc), 'closed cases and', len(POLICY_CHUNKS), 'policy chunks')
+    conn = _conn()
+    n = 0
+    for v in conn.getVertices('PolicyChunk', limit=1000):
+        conn.runInstalledQuery('set_embedding', {'vtype': 'PolicyChunk', 'id': v['v_id'], 'vec': embed(v['attributes']['text'])})
+        n += 1
+    for v in conn.getVertices('ClosedCase', limit=100000):
+        a = v['attributes']
+        conn.runInstalledQuery('set_embedding', {'vtype': 'ClosedCase', 'id': v['v_id'],
+                                                 'vec': embed(f"{a.get('pattern')} {a.get('outcome')} {a.get('analyst_notes')}")})
+        n += 1
+        if n % 500 == 0:
+            print('embedded', n, flush=True)
+    print('embedded', n, 'vertices')
 
 
 if __name__ == '__main__':

@@ -147,5 +147,11 @@ when they exist and falls back to TF-IDF over the same vertices otherwise.
 * Evidence requests are simulated with a deterministic rule (README allows it); a real deployment plugs the customer
   channel into `Toolbox.request_evidence`.
 * Card ids for customers not present in `case_pack` / closed cases are assumed `<customer>-K1`.
-* TigerGraph loading was written against Savanna 4.x syntax but exercised end-to-end only on the local backend in this
-  environment (no cluster credentials); the two stores share one contract and a contract test.
+* The submitted `cases/*.json` were produced with `GRAPH_BACKEND=tigergraph` against a TigerGraph Savanna 4.2.5
+  cluster (590,743 Transaction vertices, 5,566 ClosedCase, 24 PolicyChunk, 12 installed GSQL queries, TigerVector
+  indexes populated; 20 `AgentCase` vertices written back). `GRAPH_BACKEND=local` reproduces the same verdicts,
+  probabilities, exposures, actions and SARs from the CSVs alone; only `similar_prior_cases` ordering differs
+  (TigerVector cosine vs. TF-IDF).
+* Savanna 4.2.5 gotchas we hit: `proxy` is a reserved attribute name (renamed `proxy_type`); vector attributes must be
+  added with `ALTER VERTEX ... ADD VECTOR ATTRIBUTE` in a schema-change job; `vectorSearch` needs `LIST<FLOAT>` params
+  and `MapAccum<VERTEX, FLOAT>` distance maps; the REST endpoint for tokens is `/gsql/v1/tokens`.

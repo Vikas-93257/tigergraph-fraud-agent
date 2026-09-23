@@ -18,7 +18,7 @@
   "channel": "online",
   "region": null,
   "country": null,
-  "dist1": null,
+  "dist1": 0,
   "p_email": "hotmail.com",
   "r_email": "hotmail.com",
   "risk_score": 0.34,
@@ -27,22 +27,16 @@
   "proxy": null,
   "device_type": "desktop",
   "match_flags": {
-   "M1": null,
-   "M2": null,
-   "M3": null,
    "M4": "M2",
    "M5": null,
-   "M6": null,
-   "M7": null,
-   "M8": null,
-   "M9": null
+   "M6": null
   },
   "counts": {
-   "C1": 1.0,
-   "C13": 1.0,
-   "C14": 1.0
+   "C1": 1,
+   "C13": 1,
+   "C14": 1
   },
-  "days_since_prev": 0.0,
+  "days_since_prev": 0,
   "customer_id": "C08106",
   "card_id": "C08106-K1",
   "card_network": "visa",
@@ -57,7 +51,7 @@
    "channel": "online",
    "region": null,
    "country": null,
-   "dist1": null,
+   "dist1": 0,
    "p_email": "gmail.com",
    "r_email": "gmail.com",
    "risk_score": 0.46,
@@ -66,22 +60,16 @@
    "proxy": null,
    "device_type": "desktop",
    "match_flags": {
-    "M1": null,
-    "M2": null,
-    "M3": null,
     "M4": "M0",
     "M5": null,
-    "M6": null,
-    "M7": null,
-    "M8": null,
-    "M9": null
+    "M6": null
    },
    "counts": {
-    "C1": 1.0,
-    "C13": 1.0,
-    "C14": 1.0
+    "C1": 1,
+    "C13": 1,
+    "C14": 1
    },
-   "days_since_prev": 0.0
+   "days_since_prev": 0
   },
   {
    "txn_id": "3583227",
@@ -91,7 +79,7 @@
    "channel": "online",
    "region": null,
    "country": null,
-   "dist1": null,
+   "dist1": 0,
    "p_email": "hotmail.com",
    "r_email": "hotmail.com",
    "risk_score": 0.34,
@@ -100,22 +88,16 @@
    "proxy": null,
    "device_type": "desktop",
    "match_flags": {
-    "M1": null,
-    "M2": null,
-    "M3": null,
     "M4": "M2",
     "M5": null,
-    "M6": null,
-    "M7": null,
-    "M8": null,
-    "M9": null
+    "M6": null
    },
    "counts": {
-    "C1": 1.0,
-    "C13": 1.0,
-    "C14": 1.0
+    "C1": 1,
+    "C13": 1,
+    "C14": 1
    },
-   "days_since_prev": 0.0
+   "days_since_prev": 0
   }
  ],
  "profile": {
@@ -144,11 +126,11 @@
    "Windows | ? | chrome 65.0 | ?": 8,
    "? | ? | mobile safari generic | ?": 7,
    "? | ? | chrome 63.0 | ?": 7,
-   "Windows | ? | chrome 64.0 | ?": 7,
    "? | ? | chrome 64.0 | ?": 7,
+   "Windows | ? | chrome 64.0 | ?": 7,
    "Windows | ? | chrome generic | ?": 6,
    "Z9 PLUS Build/NRD90M | ? | chrome 63.0 for android | ?": 5,
-   "LG-K410 Build/LRX22G | ? | chrome 63.0 for android | ?": 4
+   "? | ? | mobile safari 11.0 | ?": 4
   },
   "new_device_share": 0.41626794258373206,
   "n_known_devices": 76,
@@ -258,8 +240,8 @@
    "args": {
     "txn_id": 3583227
    },
-   "ms": 0.3,
-   "result_preview": "{'txn_id': '3583227', 'ts': '2016-12-29 01:53:54', 'amount': 128.33, 'product': 'C', 'channel': 'online', 'region': None, 'country': None, 'dist1': None, 'p_email': 'hotmail.com', 'r_email': 'hotmail.com', 'risk_score': 0.34, 'device_profil\u2026"
+   "ms": 75.7,
+   "result_preview": "{'txn_id': '3583227', 'ts': '2016-12-29 01:53:54', 'amount': 128.33, 'product': 'C', 'channel': 'online', 'region': None, 'country': None, 'dist1': 0, 'p_email': 'hotmail.com', 'r_email': 'hotmail.com', 'risk_score': 0.34, 'device_profile':\u2026"
   },
   {
    "step": 2,
@@ -268,7 +250,7 @@
     "card_id": "C08106-K1",
     "before_txn_id": 3583227
    },
-   "ms": 4.3,
+   "ms": 162.0,
    "result_preview": "{'card_id': 'C08106-K1', 'customer_id': 'C08106', 'n_txns': 209, 'first_seen': '2016-07-06 23:51:38', 'n_online': 209, 'n_in_person': 0, 'products': {'C': 209}, 'regions_top': {'284.0': 3, '465.0': 2, '161.0': 1, '431.0': 1}, 'n_regions': 4\u2026"
   },
   {
@@ -281,8 +263,8 @@
     "hours_after": 48,
     "as_of": "2016-12-29 07:53:54"
    },
-   "ms": 1.5,
-   "result_preview": "[{'txn_id': '3580804', 'ts': '2016-12-28 02:21:09', 'amount': 92.86, 'product': 'C', 'channel': 'online', 'region': None, 'country': None, 'dist1': None, 'p_email': 'gmail.com', 'r_email': 'gmail.com', 'risk_score': 0.46, 'device_profile': \u2026"
+   "ms": 76.5,
+   "result_preview": "[{'txn_id': '3580804', 'ts': '2016-12-28 02:21:09', 'amount': 92.86, 'product': 'C', 'channel': 'online', 'region': None, 'country': None, 'dist1': 0, 'p_email': 'gmail.com', 'r_email': 'gmail.com', 'risk_score': 0.46, 'device_profile': 'Wi\u2026"
   },
   {
    "step": 4,
@@ -292,7 +274,7 @@
     "start": "2016-11-29 01:53:54",
     "end": "2016-12-29 07:53:54"
    },
-   "ms": 32.8,
+   "ms": 79.0,
    "result_preview": "{'device_profile': '? | ? | firefox 47.0 | ?', 'window': ['2016-11-29 01:53:54', '2016-12-29 07:53:54'], 'n_cards': 1, 'cards': [{'card_id': 'C08106-K1', 'customer_id': 'C08106', 'n_txns': 1, 'total_usd': 128.33, 'new_device_share': 1.0, 'p\u2026"
   },
   {
@@ -303,7 +285,7 @@
     "txn_id": 3583227,
     "as_of": "2016-12-29 07:53:54"
    },
-   "ms": 2.2,
+   "ms": 82.1,
    "result_preview": "{'amount': 128.33, 'product': 'C', 'n_matches': 1, 'months_with_match': ['2016-12'], 'n_months': 1, 'n_same_region': 0, 'share_of_card_txns': 0.0048, 'n_same_amount_within_1h': 1, 'same_amount_burst_ids': [], 'is_recurring': False, 'sample_\u2026"
   },
   {
@@ -314,7 +296,7 @@
     "txn_id": 3583227,
     "as_of": "2016-12-29 07:53:54"
    },
-   "ms": 1.6,
+   "ms": 0.3,
    "result_preview": "{'n_small_auths': 0, 'small_txn_ids': [], 'larger_after': [], 'testing_sequence': False, 'cleared_over_100': False}"
   },
   {
@@ -324,8 +306,8 @@
     "customer_id": "C08106",
     "as_of": "2016-12-29 07:53:54"
    },
-   "ms": 1.7,
-   "result_preview": "{'customer_id': 'C08106', 'n': 146, 'fraud_rate': 0.0205, 'global_rate': 0.0337, 'fraud_rate_online': 0.0205, 'n_online': 146}"
+   "ms": 74.8,
+   "result_preview": "{'customer_id': 'C08106', 'n': 210, 'fraud_rate': 0.014285714285714285, 'global_rate': 0.0337, 'fraud_rate_in_person': None, 'n_in_person': 0, 'fraud_rate_online': 0.014285714285714285, 'n_online': 210}"
   },
   {
    "step": 8,
@@ -333,8 +315,8 @@
    "args": {
     "customer_id": "C08106"
    },
-   "ms": 1.1,
-   "result_preview": "[{'case_id': 'CC-0696', 'outcome': 'cleared', 'pattern': 'none', 'opened_at': '2016-07-18 05:30:15', 'exposure_usd': 0.0, 'report_filed': 'No', 'notes': 'Case CC-0696: model scored a $13.68 transaction at 0.83. Cardholder confirmed travel t\u2026"
+   "ms": 74.7,
+   "result_preview": "[{'case_id': 'CC-0696', 'opened_at': '2016-07-18 05:30:15', 'outcome': 'cleared', 'pattern': 'none', 'exposure_usd': 0, 'report_filed': 'No', 'notes': 'Case CC-0696: model scored a $13.68 transaction at 0.83. Cardholder confirmed travel to \u2026"
   },
   {
    "step": 9,
@@ -345,8 +327,8 @@
     "customer_id": "C08106",
     "k": 5
    },
-   "ms": 7.7,
-   "result_preview": "[{'case_id': 'CC-3193', 'kind': 'closed_case', 'score': 0.217, 'customer_id': 'C03277', 'card_id': 'C03277-K1', 'outcome': 'confirmed_fraud', 'pattern': 'card_not_present_new_device', 'exposure_usd': 75.09, 'report_filed': 'No', 'opened_at'\u2026"
+   "ms": 74.9,
+   "result_preview": "[{'case_id': 'CC-1230', 'kind': 'closed_case', 'score': 0.513, 'customer_id': 'C06669', 'card_id': 'C06669-K1', 'outcome': 'confirmed_fraud', 'status': None, 'verdict': None, 'pattern': 'card_not_present_new_device', 'exposure_usd': 150.09,\u2026"
   },
   {
    "step": 10,
@@ -355,8 +337,8 @@
     "query_text": "card_not_present_new_device customer_report verify block report shared device",
     "k": 4
    },
-   "ms": 6.5,
-   "result_preview": "[{'doc_id': 'policy:R1', 'title': 'Fraud Policy R1 \u2013 verify before you block on a weak signal', 'score': 0.208, 'text': 'R1. Verify before you block on a weak signal. If the case rests on a single signal (including a risk score alone) and t\u2026"
+   "ms": 74.5,
+   "result_preview": "[{'doc_id': 'typology:cnp_new_device', 'title': 'Known pattern 3 \u2013 card-not-present from a new device', 'score': 0.417, 'text': 'Card-not-present fraud from a new device. Same as card-not-present, with the identity record marking the device\u2026"
   },
   {
    "step": 11,
@@ -395,17 +377,17 @@
      ],
      "summary": "Assessed as fraud (probability 0.95, card not present new device). Flagged online C transaction 3583227 of $128.33 on card C08106-K1 at 2016-12-29 01:53:54. Customer response: Customer confirms they did not make the purchase, did not authorise anyone else, and still holds the physical card; asks for a new card. $128.33 is above the card's 95th percentile ($96.39; median $27.73). Evidence requested (customer validation); assumed response: Customer confirms they did not make the purchase, did not authorise anyone else, and still holds the physical card; asks for a new card. Exposure $128.33 across 1 transaction(s). Final actions: CREATE_CASE, BLOCK_CARD.",
      "similar_prior_cases": [
-      "CC-3193",
-      "CC-3430",
-      "CC-3280",
-      "CC-4992",
-      "CC-2064"
+      "CC-1230",
+      "CC-5081",
+      "CC-0853",
+      "CC-5481",
+      "CC-1099"
      ],
-     "graph_case_id": "CASE-2016-1004"
+     "graph_case_id": "CASE-2016-004"
     }
    },
-   "ms": 817.4,
-   "result_preview": "CASE-2016-1004"
+   "ms": 191.1,
+   "result_preview": "CASE-2016-004"
   },
   {
    "step": 13,

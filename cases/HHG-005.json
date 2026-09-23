@@ -53,32 +53,32 @@
         "entity_ids": []
       },
       {
-        "claim": "Similar cases retrieved from case memory: CC-5410 (confirmed_fraud, card_not_present_new_device); CC-4542 (confirmed_fraud, card_not_present_new_device); CC-3088 (confirmed_fraud, card_not_present_new_device)",
+        "claim": "Similar cases retrieved from case memory: CC-5081 (confirmed_fraud, card_not_present_new_device); CC-0853 (confirmed_fraud, card_not_present_new_device); CC-1803 (confirmed_fraud, card_not_present_new_device)",
         "source": "graph",
         "ref": "query:similar_cases",
         "entity_ids": [
-          "CC-5410",
-          "CC-4542",
-          "CC-3088"
+          "CC-5081",
+          "CC-0853",
+          "CC-1803"
         ]
       },
       {
-        "claim": "Policy sections applied: Fraud Policy R1 \u2013 verify before you block on a weak signal, Fraud Policy 3a \u2013 a case is not a report, Fraud Policy R2 \u2013 customer denies the transaction",
+        "claim": "Policy sections applied: Known pattern 3 \u2013 card-not-present from a new device, Fraud Policy R2 \u2013 customer denies the transaction, Fraud Policy R4 \u2013 no reply within 24 hours",
         "source": "document",
-        "ref": "policy:R1, policy:3a, policy:R2",
+        "ref": "typology:cnp_new_device, policy:R2, policy:R4",
         "entity_ids": []
       }
     ],
     "similar_prior_cases": [
-      "CC-5410",
-      "CC-4542",
-      "CC-3088",
-      "CC-3289",
-      "CC-3051"
+      "CC-5081",
+      "CC-0853",
+      "CC-1803",
+      "CC-1230",
+      "CC-2278"
     ],
     "summary": "Assessed as legitimate (probability 0.05, no fraud pattern). Flagged online R transaction 3523199 of $100.07 on card C02923-K1 at 2016-12-07 21:38:37. Customer response: Customer completes the one-time passcode from a known phone number. Evidence requested (step up auth); assumed response: Customer completes the one-time passcode from a known phone number. Final actions: CREATE_CASE, CLOSE_NO_FRAUD.",
     "written_to_graph": true,
-    "graph_case_id": "CASE-2016-1005"
+    "graph_case_id": "CASE-2016-005"
   },
   "evidence_requests": [
     {
@@ -125,5 +125,5 @@
   "stop_reason": "Verification response settled the question (customer confirmed); probability 0.05. Further graph queries would not change the actions.",
   "tool_calls": 14,
   "tokens": 0,
-  "latency_s": 0.82
+  "latency_s": 0.96
 }

@@ -18,7 +18,7 @@
   "channel": "online",
   "region": 264.0,
   "country": 87.0,
-  "dist1": null,
+  "dist1": 0,
   "p_email": "yahoo.com",
   "r_email": "cox.net",
   "risk_score": 0.52,
@@ -27,22 +27,16 @@
   "proxy": null,
   "device_type": "desktop",
   "match_flags": {
-   "M1": null,
-   "M2": null,
-   "M3": null,
    "M4": null,
    "M5": null,
-   "M6": null,
-   "M7": null,
-   "M8": null,
-   "M9": null
+   "M6": null
   },
   "counts": {
-   "C1": 1.0,
-   "C13": 1.0,
-   "C14": 1.0
+   "C1": 1,
+   "C13": 1,
+   "C14": 1
   },
-  "days_since_prev": 0.0,
+  "days_since_prev": 0,
   "customer_id": "C12265",
   "card_id": "C12265-K2",
   "card_network": "visa",
@@ -57,7 +51,7 @@
    "channel": "online",
    "region": 264.0,
    "country": 87.0,
-   "dist1": null,
+   "dist1": 0,
    "p_email": "yahoo.com",
    "r_email": "cox.net",
    "risk_score": 0.52,
@@ -66,22 +60,16 @@
    "proxy": null,
    "device_type": "desktop",
    "match_flags": {
-    "M1": null,
-    "M2": null,
-    "M3": null,
     "M4": null,
     "M5": null,
-    "M6": null,
-    "M7": null,
-    "M8": null,
-    "M9": null
+    "M6": null
    },
    "counts": {
-    "C1": 1.0,
-    "C13": 1.0,
-    "C14": 1.0
+    "C1": 1,
+    "C13": 1,
+    "C14": 1
    },
-   "days_since_prev": 0.0
+   "days_since_prev": 0
   }
  ],
  "profile": {
@@ -119,7 +107,7 @@
   "proxy_history": 0,
   "flagged": {
    "amount_percentile": 0.5903614457831325,
-   "amount_z": -0.2347350677131811,
+   "amount_z": -0.23473506771318112,
    "product_seen_before": 0,
    "region_seen_before": 83,
    "device_seen_before": 0,
@@ -318,7 +306,7 @@
     "card_id": "C03218-K2",
     "customer_id": "C03218",
     "n_txns": 1,
-    "total_usd": 50.0,
+    "total_usd": 50,
     "new_device_share": 1.0,
     "proxy": [],
     "first": "2016-11-23 21:53:59",
@@ -439,7 +427,7 @@
     "card_id": "C07212-K2",
     "customer_id": "C07212",
     "n_txns": 2,
-    "total_usd": 200.0,
+    "total_usd": 200,
     "new_device_share": 0.0,
     "proxy": [],
     "first": "2016-11-10 17:29:14",
@@ -479,7 +467,7 @@
     "card_id": "C08374-K1",
     "customer_id": "C08374",
     "n_txns": 1,
-    "total_usd": 100.0,
+    "total_usd": 100,
     "new_device_share": 0.0,
     "proxy": [],
     "first": "2016-11-29 18:25:53",
@@ -816,8 +804,8 @@
    "args": {
     "txn_id": 3509359
    },
-   "ms": 0.3,
-   "result_preview": "{'txn_id': '3509359', 'ts': '2016-12-03 06:04:26', 'amount': 125.08, 'product': 'R', 'channel': 'online', 'region': 264.0, 'country': 87.0, 'dist1': None, 'p_email': 'yahoo.com', 'r_email': 'cox.net', 'risk_score': 0.52, 'device_profile': '\u2026"
+   "ms": 76.5,
+   "result_preview": "{'txn_id': '3509359', 'ts': '2016-12-03 06:04:26', 'amount': 125.08, 'product': 'R', 'channel': 'online', 'region': 264.0, 'country': 87.0, 'dist1': 0, 'p_email': 'yahoo.com', 'r_email': 'cox.net', 'risk_score': 0.52, 'device_profile': 'Tri\u2026"
   },
   {
    "step": 2,
@@ -826,7 +814,7 @@
     "card_id": "C12265-K2",
     "before_txn_id": 3509359
    },
-   "ms": 3.4,
+   "ms": 155.5,
    "result_preview": "{'card_id': 'C12265-K2', 'customer_id': 'C12265', 'n_txns': 83, 'first_seen': '2016-07-06 03:27:13', 'n_online': 4, 'n_in_person': 79, 'products': {'W': 79, 'H': 4}, 'regions_top': {'264.0': 83}, 'n_regions': 1, 'amount_median': 107.9, 'amo\u2026"
   },
   {
@@ -839,8 +827,8 @@
     "hours_after": 48,
     "as_of": "2016-12-03 12:04:26"
    },
-   "ms": 1.3,
-   "result_preview": "[{'txn_id': '3509359', 'ts': '2016-12-03 06:04:26', 'amount': 125.08, 'product': 'R', 'channel': 'online', 'region': 264.0, 'country': 87.0, 'dist1': None, 'p_email': 'yahoo.com', 'r_email': 'cox.net', 'risk_score': 0.52, 'device_profile': \u2026"
+   "ms": 74.6,
+   "result_preview": "[{'txn_id': '3509359', 'ts': '2016-12-03 06:04:26', 'amount': 125.08, 'product': 'R', 'channel': 'online', 'region': 264.0, 'country': 87.0, 'dist1': 0, 'p_email': 'yahoo.com', 'r_email': 'cox.net', 'risk_score': 0.52, 'device_profile': 'Tr\u2026"
   },
   {
    "step": 4,
@@ -850,7 +838,7 @@
     "start": "2016-11-03 06:04:26",
     "end": "2016-12-03 12:04:26"
    },
-   "ms": 54.5,
+   "ms": 78.4,
    "result_preview": "{'device_profile': 'Trident/7.0 | Windows 10 | ie 11.0 for desktop | 1920x1080', 'window': ['2016-11-03 06:04:26', '2016-12-03 12:04:26'], 'n_cards': 44, 'cards': [{'card_id': 'C00854-K2', 'customer_id': 'C00854', 'n_txns': 3, 'total_usd': \u2026"
   },
   {
@@ -861,7 +849,7 @@
     "txn_id": 3509359,
     "as_of": "2016-12-03 12:04:26"
    },
-   "ms": 2.4,
+   "ms": 79.8,
    "result_preview": "{'amount': 125.08, 'product': 'R', 'n_matches': 1, 'months_with_match': ['2016-12'], 'n_months': 1, 'n_same_region': 1, 'share_of_card_txns': 0.0119, 'n_same_amount_within_1h': 1, 'same_amount_burst_ids': [], 'is_recurring': False, 'sample_\u2026"
   },
   {
@@ -872,7 +860,7 @@
     "txn_id": 3509359,
     "as_of": "2016-12-03 12:04:26"
    },
-   "ms": 1.8,
+   "ms": 0.1,
    "result_preview": "{'n_small_auths': 0, 'small_txn_ids': [], 'larger_after': [], 'testing_sequence': False, 'cleared_over_100': False}"
   },
   {
@@ -882,8 +870,8 @@
     "customer_id": "C12265",
     "as_of": "2016-12-03 12:04:26"
    },
-   "ms": 1.8,
-   "result_preview": "{'customer_id': 'C12265', 'n': 59, 'fraud_rate': 0.0339, 'global_rate': 0.0337, 'fraud_rate_in_person': 0.0364, 'n_in_person': 55, 'fraud_rate_online': 0.0, 'n_online': 4}"
+   "ms": 75.5,
+   "result_preview": "{'customer_id': 'C12265', 'n': 84, 'fraud_rate': 0.023809523809523808, 'global_rate': 0.0337, 'fraud_rate_in_person': 0.02531645569620253, 'n_in_person': 79, 'fraud_rate_online': 0.0, 'n_online': 5}"
   },
   {
    "step": 8,
@@ -891,8 +879,8 @@
    "args": {
     "customer_id": "C12265"
    },
-   "ms": 1.0,
-   "result_preview": "[{'case_id': 'CC-2277', 'outcome': 'confirmed_fraud', 'pattern': 'account_takeover', 'opened_at': '2016-08-18 05:23:30', 'exposure_usd': 81.93, 'report_filed': 'No', 'notes': 'Case CC-2277: cardholder C12265 reported unrecognized activity o\u2026"
+   "ms": 75.4,
+   "result_preview": "[{'case_id': 'CC-2277', 'opened_at': '2016-08-18 05:23:30', 'outcome': 'confirmed_fraud', 'pattern': 'account_takeover', 'exposure_usd': 81.93, 'report_filed': 'No', 'notes': 'Case CC-2277: cardholder C12265 reported unrecognized activity o\u2026"
   },
   {
    "step": 9,
@@ -903,8 +891,8 @@
     "customer_id": "C12265",
     "k": 5
    },
-   "ms": 7.8,
-   "result_preview": "[{'case_id': 'CC-2649', 'kind': 'closed_case', 'score': 0.212, 'customer_id': 'C03528', 'card_id': 'C03528-K1', 'outcome': 'confirmed_fraud', 'pattern': 'undocumented', 'exposure_usd': 390.04, 'report_filed': 'Yes', 'opened_at': '2016-08-27\u2026"
+   "ms": 76.5,
+   "result_preview": "[{'case_id': 'CC-4943', 'kind': 'closed_case', 'score': 0.51, 'customer_id': 'C11444', 'card_id': 'C11444-K1', 'outcome': 'confirmed_fraud', 'status': None, 'verdict': None, 'pattern': 'card_not_present_new_device', 'exposure_usd': 54.32, '\u2026"
   },
   {
    "step": 10,
@@ -913,8 +901,8 @@
     "query_text": "card_not_present_new_device risk_score verify block report shared device",
     "k": 4
    },
-   "ms": 6.4,
-   "result_preview": "[{'doc_id': 'policy:R1', 'title': 'Fraud Policy R1 \u2013 verify before you block on a weak signal', 'score': 0.211, 'text': 'R1. Verify before you block on a weak signal. If the case rests on a single signal (including a risk score alone) and t\u2026"
+   "ms": 75.1,
+   "result_preview": "[{'doc_id': 'typology:cnp_new_device', 'title': 'Known pattern 3 \u2013 card-not-present from a new device', 'score': 0.482, 'text': 'Card-not-present fraud from a new device. Same as card-not-present, with the identity record marking the device\u2026"
   },
   {
    "step": 11,
@@ -924,8 +912,8 @@
     "device_id": "Trident/7.0 | Windows 10 | ie 11.0 for desktop | 1920x1080",
     "as_of": "2016-12-03 12:04:26"
    },
-   "ms": 1.3,
-   "result_preview": "[{'txn_id': '3509359', 'ts': '2016-12-03 06:04:26', 'amount': 125.08, 'product': 'R', 'channel': 'online', 'region': 264.0, 'country': 87.0, 'dist1': None, 'p_email': 'yahoo.com', 'r_email': 'cox.net', 'risk_score': 0.52, 'device_profile': \u2026"
+   "ms": 0.0,
+   "result_preview": "[{'txn_id': '3509359', 'ts': '2016-12-03 06:04:26', 'amount': 125.08, 'product': 'R', 'channel': 'online', 'region': 264.0, 'country': 87.0, 'dist1': 0, 'p_email': 'yahoo.com', 'r_email': 'cox.net', 'risk_score': 0.52, 'device_profile': 'Tr\u2026"
   },
   {
    "step": 12,
@@ -964,17 +952,17 @@
      ],
      "summary": "Assessed as fraud (probability 0.95, card not present new device). Flagged online R transaction 3509359 of $125.08 on card C12265-K2 at 2016-12-03 06:04:26. Customer response: Customer states they did not make this purchase and still has the card. Device profile 'Trident/7.0 | Windows 10 | ie 11.0 for desktop | 1920x1080' is marked New and has never been seen on this account (4 known devices). Product code R never used on this card in 83 prior transactions. Evidence requested (customer validation); assumed response: Customer states they did not make this purchase and still has the card. Exposure $125.08 across 1 transaction(s). Final actions: CREATE_CASE, BLOCK_CARD.",
      "similar_prior_cases": [
-      "CC-2649",
-      "CC-2971",
-      "CC-2985",
-      "CC-3035",
-      "CC-5111"
+      "CC-4943",
+      "CC-5111",
+      "CC-5285",
+      "CC-5081",
+      "CC-2910"
      ],
-     "graph_case_id": "CASE-2016-1020"
+     "graph_case_id": "CASE-2016-020"
     }
    },
-   "ms": 747.9,
-   "result_preview": "CASE-2016-1020"
+   "ms": 180.0,
+   "result_preview": "CASE-2016-020"
   },
   {
    "step": 14,

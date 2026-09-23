@@ -1,0 +1,209 @@
+// GSQL implementations of the agent's graph tools. Names match fraud_agent/store/base.py 1:1.
+// Verified on TigerGraph 4.2.5 (Savanna).
+USE GRAPH FraudGraph
+
+// ---------------------------------------------------------------------------------------------- get_transaction
+CREATE OR REPLACE QUERY get_transaction(VERTEX<Transaction> t) FOR GRAPH FraudGraph {
+  Start = {t};
+  C = SELECT c FROM Start:x -(MADE_BY>)- Card:c;
+  D = SELECT d FROM Start:x -(FROM_DEVICE>)- DeviceProfile:d;
+  CC = SELECT cc FROM Start:x -(INVOLVED_IN>)- ClosedCase:cc;
+  PRINT Start AS txn; PRINT C AS card; PRINT D AS device; PRINT CC AS closed_case;
+}
+
+// ---------------------------------------------------------------------------------------------- card_window
+// Walk NEXT/PREV edges from the centre transaction until we leave the time window (never beyond as_of).
+CREATE OR REPLACE QUERY card_window(VERTEX<Transaction> center, INT hours_before = 48, INT hours_after = 48,
+                                    DATETIME as_of) FOR GRAPH FraudGraph {
+  OrAccum @visited;
+  SumAccum<STRING> @dev;
+  SetAccum<VERTEX<Transaction>> @@out;
+  DATETIME lo = datetime_sub(center.ts, INTERVAL hours_before HOUR);
+  DATETIME hi = datetime_add(center.ts, INTERVAL hours_after HOUR);
+  Start = {center};
+  Start = SELECT s FROM Start:s ACCUM s.@visited = TRUE;
+  @@out += center;
+  WHILE Start.size() > 0 LIMIT 500 DO
+    Start = SELECT n FROM Start:s -((NEXT>|PREV>):e)- Transaction:n
+            WHERE n.@visited == FALSE AND n.ts >= lo AND n.ts <= hi AND n.ts <= as_of
+            ACCUM n.@visited = TRUE
+            POST-ACCUM @@out += n;
+  END;
+  W = {@@out};
+  W2 = SELECT w FROM W:w -(FROM_DEVICE>)- DeviceProfile:d ACCUM w.@dev += d.device_id;
+  W = SELECT w FROM W:w ORDER BY w.ts;
+  PRINT W;
+}
+
+// ---------------------------------------------------------------------------------------------- card_txns (profile / recurring / testing helpers)
+// Every transaction on a card up to as_of, with its device id. Used by card_profile, recurring_match, small_auth_run,
+// card_txns_on_device and customer_fraud_rate reshaping on the client side.
+CREATE OR REPLACE QUERY card_txns(VERTEX<Card> card, DATETIME as_of) FOR GRAPH FraudGraph {
+  SumAccum<STRING> @dev;
+  OrAccum @fraud;
+  Start = {card};
+  T = SELECT t FROM Start:c -(MADE>)- Transaction:t WHERE t.ts <= as_of;
+  D = SELECT t FROM T:t -(FROM_DEVICE>)- DeviceProfile:d ACCUM t.@dev += d.device_id;
+  F = SELECT t FROM T:t -(INVOLVED_IN>)- ClosedCase:cc WHERE cc.outcome == "confirmed_fraud" ACCUM t.@fraud += TRUE;
+  T = SELECT t FROM T:t ORDER BY t.ts;
+  PRINT T;
+}
+
+// ---------------------------------------------------------------------------------------------- device_neighbors
+// Every card that touched the same device profile in the window + closed cases sitting on that device.
+CREATE OR REPLACE QUERY device_neighbors(VERTEX<DeviceProfile> dev, DATETIME start_ts, DATETIME end_ts) FOR GRAPH FraudGraph {
+  MapAccum<STRING, SumAccum<INT>> @@n_by_card;
+  MapAccum<STRING, SumAccum<DOUBLE>> @@usd_by_card;
+  MapAccum<STRING, SumAccum<INT>> @@new_by_card, @@proxy_by_card;
+  MapAccum<STRING, MinAccum<DATETIME>> @@first_by_card;
+  MapAccum<STRING, MaxAccum<DATETIME>> @@last_by_card;
+  MapAccum<STRING, SetAccum<STRING>> @@proxies_by_card, @@txns_by_card;
+  MapAccum<STRING, MaxAccum<STRING>> @@cust_of;
+  SetAccum<STRING> @@all_cards;
+  SumAccum<INT> @@n_all;
+  Start = {dev};
+  T = SELECT t FROM Start:d -(DEVICE_OF>)- Transaction:t ACCUM @@n_all += 1;
+  A = SELECT c FROM T:t -(MADE_BY>)- Card:c ACCUM @@all_cards += c.card_id;
+  Tw = SELECT t FROM T:t WHERE t.ts >= start_ts AND t.ts <= end_ts;
+  C = SELECT c FROM Tw:t -(MADE_BY>)- Card:c
+      ACCUM @@n_by_card += (c.card_id -> 1), @@usd_by_card += (c.card_id -> t.amount),
+            @@first_by_card += (c.card_id -> t.ts), @@last_by_card += (c.card_id -> t.ts),
+            @@txns_by_card += (c.card_id -> t.txn_id), @@cust_of += (c.card_id -> c.customer_id),
+            IF t.device_status == "New" THEN @@new_by_card += (c.card_id -> 1) END,
+            IF t.proxy_type != "" THEN @@proxy_by_card += (c.card_id -> 1), @@proxies_by_card += (c.card_id -> t.proxy_type) END;
+  CC = SELECT cc FROM T:t -(INVOLVED_IN>)- ClosedCase:cc;
+  PRINT @@n_by_card AS n_txns, @@usd_by_card AS total_usd, @@new_by_card AS n_new, @@proxy_by_card AS n_proxy,
+        @@first_by_card AS first_ts, @@last_by_card AS last_ts, @@proxies_by_card AS proxies, @@txns_by_card AS txn_ids,
+        @@cust_of AS customer_of, @@all_cards.size() AS n_cards_all_time, @@n_all AS n_txns_all_time;
+  PRINT CC AS closed_cases_on_device;
+}
+
+// ---------------------------------------------------------------------------------------------- region_history
+CREATE OR REPLACE QUERY region_history(VERTEX<Card> card, STRING region, VERTEX<Transaction> before, DATETIME as_of) FOR GRAPH FraudGraph {
+  SumAccum<INT> @@n_before, @@in_region_next7, @@home_next7, @@in_person_in_region;
+  MapAccum<STRING, SumAccum<INT>> @@region_counts;
+  SetAccum<STRING> @@months;
+  MinAccum<DATETIME> @@first_seen;
+  MaxAccum<INT> @@home_n;
+  SumAccum<STRING> @@home_region;
+  DATETIME hi = datetime_add(before.ts, INTERVAL 7 DAY);
+  Start = {card};
+  T = SELECT t FROM Start:c -(MADE>)- Transaction:t WHERE t.ts <= as_of AND t.region != ""
+      ACCUM IF t.ts < before.ts THEN @@region_counts += (t.region -> 1) END,
+            IF t.ts < before.ts AND t.region == region THEN @@n_before += 1, @@first_seen += t.ts,
+               @@months += to_string(year(t.ts)) + "-" + to_string(month(t.ts)),
+               IF t.channel == "in_person" THEN @@in_person_in_region += 1 END END;
+  FOREACH (r, n) IN @@region_counts DO
+    IF n > @@home_n THEN @@home_n = n; @@home_region = r; END;
+  END;
+  N = SELECT t FROM Start:c -(MADE>)- Transaction:t
+      WHERE t.ts >= before.ts AND t.ts <= hi AND t.ts <= as_of AND t != before
+      ACCUM IF t.region == region THEN @@in_region_next7 += 1 END,
+            IF t.region == @@home_region AND @@home_region != region THEN @@home_next7 += 1 END;
+  PRINT @@n_before AS n_before, @@first_seen AS first_seen_in_region, @@months.size() AS months_active_in_region,
+        @@in_region_next7 AS in_region_next_7d, @@home_next7 AS home_activity_next_7d, @@home_region AS home_region,
+        @@in_person_in_region AS in_person_in_region;
+}
+
+// ---------------------------------------------------------------------------------------------- pattern_peers: sub-$500 burst (R9)
+CREATE OR REPLACE QUERY pattern_peers_sub500(DATETIME start_ts, DATETIME end_ts) FOR GRAPH FraudGraph {
+  MapAccum<STRING, ListAccum<DATETIME>> @@ts_by_card;
+  MapAccum<STRING, ListAccum<STRING>> @@ids_by_card;
+  MapAccum<STRING, ListAccum<DOUBLE>> @@amt_by_card;
+  MapAccum<STRING, MaxAccum<STRING>> @@cust_of;
+  T = {Transaction.*};
+  T = SELECT t FROM T:t WHERE t.channel == "online" AND t.amount >= 400 AND t.amount < 500 AND t.ts >= start_ts AND t.ts <= end_ts;
+  C = SELECT c FROM T:t -(MADE_BY>)- Card:c
+      ACCUM @@ts_by_card += (c.card_id -> t.ts), @@ids_by_card += (c.card_id -> t.txn_id), @@amt_by_card += (c.card_id -> t.amount),
+            @@cust_of += (c.card_id -> c.customer_id);
+  // the 60-minute sliding-window check is finished client-side (needs sorted lists)
+  PRINT @@ts_by_card AS timestamps, @@ids_by_card AS txn_ids, @@amt_by_card AS amounts, @@cust_of AS customer_of;
+}
+
+// ---------------------------------------------------------------------------------------------- pattern_peers: anonymous proxy + New device (R9)
+CREATE OR REPLACE QUERY pattern_peers_anon_proxy(DATETIME start_ts, DATETIME end_ts) FOR GRAPH FraudGraph {
+  MapAccum<STRING, SumAccum<INT>> @@n_by_card;
+  MapAccum<STRING, SumAccum<DOUBLE>> @@usd_by_card;
+  MapAccum<STRING, MinAccum<DATETIME>> @@first_by_card;
+  MapAccum<STRING, SetAccum<STRING>> @@dev_by_card;
+  MapAccum<STRING, MaxAccum<STRING>> @@cust_of;
+  SumAccum<STRING> @dev;
+  T = {Transaction.*};
+  T = SELECT t FROM T:t WHERE t.device_status == "New" AND t.proxy_type == "IP_PROXY:ANONYMOUS" AND t.ts >= start_ts AND t.ts <= end_ts;
+  D = SELECT t FROM T:t -(FROM_DEVICE>)- DeviceProfile:d ACCUM t.@dev += d.device_id;
+  C = SELECT c FROM T:t -(MADE_BY>)- Card:c
+      ACCUM @@n_by_card += (c.card_id -> 1), @@usd_by_card += (c.card_id -> t.amount), @@first_by_card += (c.card_id -> t.ts),
+            @@cust_of += (c.card_id -> c.customer_id), IF t.@dev != "" THEN @@dev_by_card += (c.card_id -> t.@dev) END;
+  PRINT @@n_by_card AS n_by_card, @@usd_by_card AS usd_by_card, @@first_by_card AS first_by_card, @@dev_by_card AS devices_by_card, @@cust_of AS customer_of;
+}
+
+// ---------------------------------------------------------------------------------------------- prior_cases_for_customer
+CREATE OR REPLACE QUERY prior_cases_for_customer(VERTEX<Customer> cust) FOR GRAPH FraudGraph {
+  Start = {cust};
+  CC = SELECT cc FROM Start:c -(OWNS>)- Card:k -(HAS_CLOSED_CASE>)- ClosedCase:cc ORDER BY cc.opened_at;
+  AC = SELECT ac FROM Start:c -(OWNS>)- Card:k -(HAS_AGENT_CASE>)- AgentCase:ac ORDER BY ac.opened_at;
+  PRINT CC; PRINT AC;
+}
+
+// ---------------------------------------------------------------------------------------------- customer_fraud_rate
+CREATE OR REPLACE QUERY customer_fraud_rate(VERTEX<Customer> cust, DATETIME cutoff) FOR GRAPH FraudGraph {
+  SumAccum<INT> @@n, @@n_fraud, @@n_online, @@n_online_fraud, @@n_in_person, @@n_in_person_fraud;
+  Start = {cust};
+  T = SELECT t FROM Start:c -(OWNS>)- Card:k -(MADE>)- Transaction:t WHERE t.ts < cutoff
+      ACCUM @@n += 1, IF t.channel == "online" THEN @@n_online += 1 ELSE @@n_in_person += 1 END;
+  F = SELECT t FROM T:t -(INVOLVED_IN>)- ClosedCase:cc WHERE cc.outcome == "confirmed_fraud"
+      ACCUM @@n_fraud += 1, IF t.channel == "online" THEN @@n_online_fraud += 1 ELSE @@n_in_person_fraud += 1 END;
+  PRINT @@n AS n, @@n_fraud AS n_fraud, @@n_online AS n_online, @@n_online_fraud AS n_online_fraud,
+        @@n_in_person AS n_in_person, @@n_in_person_fraud AS n_in_person_fraud;
+}
+
+// ---------------------------------------------------------------------------------------------- similar_cases / retrieve_policy (TigerVector)
+// Native vectorSearch over the 384-d COSINE indexes (TigerGraph 4.2+). Params must be LIST<FLOAT>; distance maps FLOAT.
+CREATE OR REPLACE QUERY similar_cases(LIST<FLOAT> query_vec, INT k = 5) FOR GRAPH FraudGraph {
+  MapAccum<VERTEX, FLOAT> @@d1, @@d2;
+  R1 = vectorSearch({ClosedCase.embedding}, query_vec, k, {distance_map: @@d1});
+  R2 = vectorSearch({AgentCase.embedding}, query_vec, k, {distance_map: @@d2});
+  PRINT R1 AS closed_cases; PRINT R2 AS agent_cases; PRINT @@d1 AS closed_distance, @@d2 AS agent_distance;
+}
+
+CREATE OR REPLACE QUERY retrieve_policy(LIST<FLOAT> query_vec, INT k = 4) FOR GRAPH FraudGraph {
+  MapAccum<VERTEX, FLOAT> @@d;
+  R = vectorSearch({PolicyChunk.embedding}, query_vec, k, {distance_map: @@d});
+  PRINT R; PRINT @@d AS distance;
+}
+
+CREATE OR REPLACE QUERY set_embedding(STRING vtype, STRING id, LIST<DOUBLE> vec) FOR GRAPH FraudGraph {
+  IF vtype == "ClosedCase" THEN
+    S = {ClosedCase.*}; S = SELECT s FROM S:s WHERE s.case_id == id POST-ACCUM s.embedding = vec;
+  ELSE IF vtype == "PolicyChunk" THEN
+    S = {PolicyChunk.*}; S = SELECT s FROM S:s WHERE s.chunk_id == id POST-ACCUM s.embedding = vec;
+  ELSE
+    S = {AgentCase.*}; S = SELECT s FROM S:s WHERE s.case_id == id POST-ACCUM s.embedding = vec;
+  END;
+  PRINT id;
+}
+
+// ---------------------------------------------------------------------------------------------- write_case (case memory)
+CREATE OR REPLACE QUERY write_case(STRING case_id, STRING customer_id, STRING card_id, DATETIME opened_at, STRING status, STRING verdict,
+                        DOUBLE fraud_probability, STRING pattern, STRING pattern_description, DOUBLE exposure_usd, BOOL sar_filed,
+                        STRING final_actions, STRING summary, SET<STRING> txn_ids, SET<STRING> connected_cards,
+                        SET<STRING> device_ids, SET<STRING> similar_closed) FOR GRAPH FraudGraph {
+  INSERT INTO AgentCase VALUES (case_id, customer_id, card_id, opened_at, status, verdict, fraud_probability, pattern,
+                                pattern_description, exposure_usd, sar_filed, final_actions, summary);
+  INSERT INTO AC_ON_CARD VALUES (case_id, card_id);
+  FOREACH t IN txn_ids DO INSERT INTO AC_INVOLVES VALUES (case_id, t); END;
+  FOREACH c IN connected_cards DO INSERT INTO AC_CONNECTED_TO VALUES (case_id, c); END;
+  FOREACH d IN device_ids DO INSERT INTO AC_USED_DEVICE VALUES (case_id, d); END;
+  FOREACH s IN similar_closed DO INSERT INTO AC_SIMILAR_TO VALUES (case_id, s, 1.0); END;
+  PRINT case_id AS graph_case_id;
+}
+
+// ---------------------------------------------------------------------------------------------- monitoring: alerts in period
+CREATE OR REPLACE QUERY alerts_in_period(DATETIME start_ts, DATETIME end_ts, DOUBLE min_score = 0.85, INT k = 50) FOR GRAPH FraudGraph {
+  T = {Transaction.*};
+  R = SELECT t FROM T:t WHERE t.ts >= start_ts AND t.ts <= end_ts AND t.risk_score >= min_score
+      ORDER BY t.risk_score DESC LIMIT k;
+  PRINT R;
+}
+
+INSTALL QUERY ALL

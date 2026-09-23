@@ -18,7 +18,7 @@
   "channel": "in_person",
   "region": 126.0,
   "country": 87.0,
-  "dist1": 1.0,
+  "dist1": 1,
   "p_email": null,
   "r_email": null,
   "risk_score": 0.48,
@@ -27,22 +27,16 @@
   "proxy": null,
   "device_type": null,
   "match_flags": {
-   "M1": "T",
-   "M2": "T",
-   "M3": "T",
    "M4": "M0",
    "M5": "F",
-   "M6": "F",
-   "M7": "F",
-   "M8": "F",
-   "M9": "T"
+   "M6": "F"
   },
   "counts": {
-   "C1": 5.0,
-   "C13": 51.0,
-   "C14": 4.0
+   "C1": 5,
+   "C13": 51,
+   "C14": 4
   },
-  "days_since_prev": 333.0,
+  "days_since_prev": 333,
   "customer_id": "C02354",
   "card_id": "C02354-K2",
   "card_network": "visa",
@@ -57,7 +51,7 @@
    "channel": "in_person",
    "region": 325.0,
    "country": 87.0,
-   "dist1": 3.0,
+   "dist1": 3,
    "p_email": "yahoo.com",
    "r_email": null,
    "risk_score": 0.1,
@@ -66,22 +60,16 @@
    "proxy": null,
    "device_type": null,
    "match_flags": {
-    "M1": "T",
-    "M2": "T",
-    "M3": "T",
     "M4": "M1",
     "M5": "T",
-    "M6": "T",
-    "M7": null,
-    "M8": null,
-    "M9": null
+    "M6": "T"
    },
    "counts": {
-    "C1": 2.0,
-    "C13": 13.0,
-    "C14": 2.0
+    "C1": 2,
+    "C13": 13,
+    "C14": 2
    },
-   "days_since_prev": 299.0
+   "days_since_prev": 299
   },
   {
    "txn_id": "3486080",
@@ -91,7 +79,7 @@
    "channel": "in_person",
    "region": 126.0,
    "country": 87.0,
-   "dist1": null,
+   "dist1": 0,
    "p_email": "yahoo.com",
    "r_email": null,
    "risk_score": 0.2,
@@ -100,22 +88,16 @@
    "proxy": null,
    "device_type": null,
    "match_flags": {
-    "M1": null,
-    "M2": null,
-    "M3": null,
     "M4": "M1",
     "M5": "T",
-    "M6": "F",
-    "M7": null,
-    "M8": null,
-    "M9": null
+    "M6": "F"
    },
    "counts": {
-    "C1": 3.0,
-    "C13": 8.0,
-    "C14": 3.0
+    "C1": 3,
+    "C13": 8,
+    "C14": 3
    },
-   "days_since_prev": 0.0
+   "days_since_prev": 0
   },
   {
    "txn_id": "3486178",
@@ -125,7 +107,7 @@
    "channel": "in_person",
    "region": 325.0,
    "country": 87.0,
-   "dist1": 3.0,
+   "dist1": 3,
    "p_email": "yahoo.com",
    "r_email": null,
    "risk_score": 0.02,
@@ -134,22 +116,16 @@
    "proxy": null,
    "device_type": null,
    "match_flags": {
-    "M1": "T",
-    "M2": "T",
-    "M3": "T",
     "M4": "M1",
     "M5": "T",
-    "M6": "T",
-    "M7": "F",
-    "M8": "T",
-    "M9": "T"
+    "M6": "T"
    },
    "counts": {
-    "C1": 2.0,
-    "C13": 14.0,
-    "C14": 2.0
+    "C1": 2,
+    "C13": 14,
+    "C14": 2
    },
-   "days_since_prev": 299.0
+   "days_since_prev": 299
   },
   {
    "txn_id": "3486190",
@@ -159,7 +135,7 @@
    "channel": "in_person",
    "region": 325.0,
    "country": 87.0,
-   "dist1": null,
+   "dist1": 0,
    "p_email": "anonymous.com",
    "r_email": null,
    "risk_score": 0.13,
@@ -168,22 +144,16 @@
    "proxy": null,
    "device_type": null,
    "match_flags": {
-    "M1": "T",
-    "M2": "F",
-    "M3": "F",
     "M4": "M1",
     "M5": "F",
-    "M6": "F",
-    "M7": "F",
-    "M8": "F",
-    "M9": "T"
+    "M6": "F"
    },
    "counts": {
-    "C1": 2.0,
-    "C13": 5.0,
-    "C14": 2.0
+    "C1": 2,
+    "C13": 5,
+    "C14": 2
    },
-   "days_since_prev": 0.0
+   "days_since_prev": 0
   },
   {
    "txn_id": "3486192",
@@ -193,7 +163,7 @@
    "channel": "in_person",
    "region": 325.0,
    "country": 87.0,
-   "dist1": null,
+   "dist1": 0,
    "p_email": "aol.com",
    "r_email": null,
    "risk_score": 0.25,
@@ -202,22 +172,16 @@
    "proxy": null,
    "device_type": null,
    "match_flags": {
-    "M1": "T",
-    "M2": "T",
-    "M3": "T",
     "M4": null,
     "M5": null,
-    "M6": "T",
-    "M7": "F",
-    "M8": "F",
-    "M9": "T"
+    "M6": "T"
    },
    "counts": {
-    "C1": 5.0,
-    "C13": 16.0,
-    "C14": 4.0
+    "C1": 5,
+    "C13": 16,
+    "C14": 4
    },
-   "days_since_prev": 482.0
+   "days_since_prev": 482
   },
   {
    "txn_id": "3486266",
@@ -227,7 +191,7 @@
    "channel": "in_person",
    "region": 325.0,
    "country": 87.0,
-   "dist1": null,
+   "dist1": 0,
    "p_email": "gmail.com",
    "r_email": null,
    "risk_score": 0.26,
@@ -236,22 +200,16 @@
    "proxy": null,
    "device_type": null,
    "match_flags": {
-    "M1": "T",
-    "M2": "F",
-    "M3": "F",
     "M4": "M1",
     "M5": "F",
-    "M6": "F",
-    "M7": null,
-    "M8": null,
-    "M9": null
+    "M6": "F"
    },
    "counts": {
-    "C1": 1.0,
-    "C13": 2.0,
-    "C14": 1.0
+    "C1": 1,
+    "C13": 2,
+    "C14": 1
    },
-   "days_since_prev": 26.0
+   "days_since_prev": 26
   },
   {
    "txn_id": "3486341",
@@ -261,7 +219,7 @@
    "channel": "in_person",
    "region": 325.0,
    "country": 87.0,
-   "dist1": 5.0,
+   "dist1": 5,
    "p_email": "hotmail.com",
    "r_email": null,
    "risk_score": 0.35,
@@ -270,22 +228,16 @@
    "proxy": null,
    "device_type": null,
    "match_flags": {
-    "M1": "T",
-    "M2": "T",
-    "M3": "T",
     "M4": "M1",
     "M5": "F",
-    "M6": "T",
-    "M7": "F",
-    "M8": "F",
-    "M9": "T"
+    "M6": "T"
    },
    "counts": {
-    "C1": 2.0,
-    "C13": 11.0,
-    "C14": 2.0
+    "C1": 2,
+    "C13": 11,
+    "C14": 2
    },
-   "days_since_prev": 489.0
+   "days_since_prev": 489
   },
   {
    "txn_id": "3486462",
@@ -295,7 +247,7 @@
    "channel": "in_person",
    "region": 204.0,
    "country": 87.0,
-   "dist1": 961.0,
+   "dist1": 961,
    "p_email": "gmail.com",
    "r_email": null,
    "risk_score": 0.17,
@@ -304,22 +256,16 @@
    "proxy": null,
    "device_type": null,
    "match_flags": {
-    "M1": "T",
-    "M2": "T",
-    "M3": "T",
     "M4": "M0",
     "M5": "F",
-    "M6": "T",
-    "M7": "F",
-    "M8": "F",
-    "M9": "F"
+    "M6": "T"
    },
    "counts": {
-    "C1": 3.0,
-    "C13": 5.0,
-    "C14": 2.0
+    "C1": 3,
+    "C13": 5,
+    "C14": 2
    },
-   "days_since_prev": 88.0
+   "days_since_prev": 88
   },
   {
    "txn_id": "3486507",
@@ -329,7 +275,7 @@
    "channel": "in_person",
    "region": 325.0,
    "country": 87.0,
-   "dist1": null,
+   "dist1": 0,
    "p_email": "aol.com",
    "r_email": null,
    "risk_score": 0.13,
@@ -338,22 +284,16 @@
    "proxy": null,
    "device_type": null,
    "match_flags": {
-    "M1": "T",
-    "M2": "T",
-    "M3": "T",
     "M4": "M0",
     "M5": "T",
-    "M6": "F",
-    "M7": "F",
-    "M8": "F",
-    "M9": "T"
+    "M6": "F"
    },
    "counts": {
-    "C1": 1.0,
-    "C13": 1.0,
-    "C14": 1.0
+    "C1": 1,
+    "C13": 1,
+    "C14": 1
    },
-   "days_since_prev": 0.0
+   "days_since_prev": 0
   },
   {
    "txn_id": "3486559",
@@ -363,7 +303,7 @@
    "channel": "in_person",
    "region": 308.0,
    "country": 87.0,
-   "dist1": 2.0,
+   "dist1": 2,
    "p_email": "gmail.com",
    "r_email": null,
    "risk_score": 0.06,
@@ -372,22 +312,16 @@
    "proxy": null,
    "device_type": null,
    "match_flags": {
-    "M1": "T",
-    "M2": "T",
-    "M3": "T",
     "M4": "M1",
     "M5": "T",
-    "M6": "F",
-    "M7": "F",
-    "M8": "F",
-    "M9": "T"
+    "M6": "F"
    },
    "counts": {
-    "C1": 3.0,
-    "C13": 31.0,
-    "C14": 3.0
+    "C1": 3,
+    "C13": 31,
+    "C14": 3
    },
-   "days_since_prev": 624.0
+   "days_since_prev": 624
   },
   {
    "txn_id": "3486744",
@@ -397,7 +331,7 @@
    "channel": "in_person",
    "region": 325.0,
    "country": 87.0,
-   "dist1": 44.0,
+   "dist1": 44,
    "p_email": null,
    "r_email": null,
    "risk_score": 0.29,
@@ -406,22 +340,16 @@
    "proxy": null,
    "device_type": null,
    "match_flags": {
-    "M1": "T",
-    "M2": "T",
-    "M3": "T",
     "M4": "M0",
     "M5": null,
-    "M6": "F",
-    "M7": "F",
-    "M8": "F",
-    "M9": "T"
+    "M6": "F"
    },
    "counts": {
-    "C1": 2.0,
-    "C13": 1.0,
-    "C14": 1.0
+    "C1": 2,
+    "C13": 1,
+    "C14": 1
    },
-   "days_since_prev": 214.0
+   "days_since_prev": 214
   },
   {
    "txn_id": "3486755",
@@ -431,7 +359,7 @@
    "channel": "in_person",
    "region": 325.0,
    "country": 87.0,
-   "dist1": 5.0,
+   "dist1": 5,
    "p_email": "anonymous.com",
    "r_email": null,
    "risk_score": 0.18,
@@ -440,22 +368,16 @@
    "proxy": null,
    "device_type": null,
    "match_flags": {
-    "M1": "T",
-    "M2": "T",
-    "M3": "T",
     "M4": null,
     "M5": null,
-    "M6": "T",
-    "M7": "F",
-    "M8": "F",
-    "M9": "T"
+    "M6": "T"
    },
    "counts": {
-    "C1": 1.0,
-    "C13": 11.0,
-    "C14": 1.0
+    "C1": 1,
+    "C13": 11,
+    "C14": 1
    },
-   "days_since_prev": 386.0
+   "days_since_prev": 386
   },
   {
    "txn_id": "3486949",
@@ -465,7 +387,7 @@
    "channel": "in_person",
    "region": 126.0,
    "country": 87.0,
-   "dist1": 23.0,
+   "dist1": 23,
    "p_email": "yahoo.com",
    "r_email": null,
    "risk_score": 0.26,
@@ -474,22 +396,16 @@
    "proxy": null,
    "device_type": null,
    "match_flags": {
-    "M1": "T",
-    "M2": "T",
-    "M3": "T",
     "M4": "M1",
     "M5": "T",
-    "M6": "F",
-    "M7": "F",
-    "M8": "F",
-    "M9": "T"
+    "M6": "F"
    },
    "counts": {
-    "C1": 3.0,
-    "C13": 9.0,
-    "C14": 3.0
+    "C1": 3,
+    "C13": 9,
+    "C14": 3
    },
-   "days_since_prev": 0.0
+   "days_since_prev": 0
   },
   {
    "txn_id": "3486963",
@@ -499,7 +415,7 @@
    "channel": "in_person",
    "region": 325.0,
    "country": 87.0,
-   "dist1": null,
+   "dist1": 0,
    "p_email": "hotmail.com",
    "r_email": null,
    "risk_score": 0.02,
@@ -508,22 +424,16 @@
    "proxy": null,
    "device_type": null,
    "match_flags": {
-    "M1": null,
-    "M2": null,
-    "M3": null,
     "M4": "M0",
     "M5": "T",
-    "M6": null,
-    "M7": null,
-    "M8": null,
-    "M9": null
+    "M6": null
    },
    "counts": {
-    "C1": 1.0,
-    "C13": 6.0,
-    "C14": 1.0
+    "C1": 1,
+    "C13": 6,
+    "C14": 1
    },
-   "days_since_prev": 69.0
+   "days_since_prev": 69
   },
   {
    "txn_id": "3486966",
@@ -533,7 +443,7 @@
    "channel": "in_person",
    "region": 126.0,
    "country": 87.0,
-   "dist1": 23.0,
+   "dist1": 23,
    "p_email": "yahoo.com",
    "r_email": null,
    "risk_score": 0.01,
@@ -542,22 +452,16 @@
    "proxy": null,
    "device_type": null,
    "match_flags": {
-    "M1": "T",
-    "M2": "F",
-    "M3": "F",
     "M4": "M1",
     "M5": "T",
-    "M6": "F",
-    "M7": null,
-    "M8": null,
-    "M9": null
+    "M6": "F"
    },
    "counts": {
-    "C1": 3.0,
-    "C13": 8.0,
-    "C14": 3.0
+    "C1": 3,
+    "C13": 8,
+    "C14": 3
    },
-   "days_since_prev": 0.0
+   "days_since_prev": 0
   },
   {
    "txn_id": "3487032",
@@ -567,7 +471,7 @@
    "channel": "in_person",
    "region": 325.0,
    "country": 87.0,
-   "dist1": 5.0,
+   "dist1": 5,
    "p_email": "anonymous.com",
    "r_email": null,
    "risk_score": 0.22,
@@ -576,22 +480,16 @@
    "proxy": null,
    "device_type": null,
    "match_flags": {
-    "M1": "T",
-    "M2": "T",
-    "M3": "T",
     "M4": "M0",
     "M5": "T",
-    "M6": "T",
-    "M7": "F",
-    "M8": "F",
-    "M9": "T"
+    "M6": "T"
    },
    "counts": {
-    "C1": 186.0,
-    "C13": 415.0,
-    "C14": 141.0
+    "C1": 186,
+    "C13": 415,
+    "C14": 141
    },
-   "days_since_prev": 153.0
+   "days_since_prev": 153
   },
   {
    "txn_id": "3487364",
@@ -601,7 +499,7 @@
    "channel": "in_person",
    "region": 325.0,
    "country": 87.0,
-   "dist1": null,
+   "dist1": 0,
    "p_email": null,
    "r_email": null,
    "risk_score": 0.33,
@@ -610,22 +508,16 @@
    "proxy": null,
    "device_type": null,
    "match_flags": {
-    "M1": "T",
-    "M2": "T",
-    "M3": "T",
     "M4": "M0",
     "M5": "F",
-    "M6": "F",
-    "M7": "F",
-    "M8": "F",
-    "M9": "T"
+    "M6": "F"
    },
    "counts": {
-    "C1": 1.0,
-    "C13": 0.0,
-    "C14": 0.0
+    "C1": 1,
+    "C13": 0,
+    "C14": 0
    },
-   "days_since_prev": 0.0
+   "days_since_prev": 0
   },
   {
    "txn_id": "3487401",
@@ -635,7 +527,7 @@
    "channel": "in_person",
    "region": 325.0,
    "country": 87.0,
-   "dist1": null,
+   "dist1": 0,
    "p_email": "gmail.com",
    "r_email": null,
    "risk_score": 0.55,
@@ -644,22 +536,16 @@
    "proxy": null,
    "device_type": null,
    "match_flags": {
-    "M1": "T",
-    "M2": "T",
-    "M3": "T",
     "M4": "M0",
     "M5": "F",
-    "M6": "F",
-    "M7": "F",
-    "M8": "F",
-    "M9": "T"
+    "M6": "F"
    },
    "counts": {
-    "C1": 1.0,
-    "C13": 1.0,
-    "C14": 1.0
+    "C1": 1,
+    "C13": 1,
+    "C14": 1
    },
-   "days_since_prev": 0.0
+   "days_since_prev": 0
   },
   {
    "txn_id": "3487425",
@@ -669,7 +555,7 @@
    "channel": "in_person",
    "region": 126.0,
    "country": 87.0,
-   "dist1": 23.0,
+   "dist1": 23,
    "p_email": "yahoo.com",
    "r_email": null,
    "risk_score": 0.02,
@@ -678,22 +564,16 @@
    "proxy": null,
    "device_type": null,
    "match_flags": {
-    "M1": "T",
-    "M2": "T",
-    "M3": "T",
     "M4": "M1",
     "M5": "T",
-    "M6": "F",
-    "M7": "F",
-    "M8": "F",
-    "M9": "T"
+    "M6": "F"
    },
    "counts": {
-    "C1": 3.0,
-    "C13": 9.0,
-    "C14": 3.0
+    "C1": 3,
+    "C13": 9,
+    "C14": 3
    },
-   "days_since_prev": 0.0
+   "days_since_prev": 0
   },
   {
    "txn_id": "3487444",
@@ -703,7 +583,7 @@
    "channel": "in_person",
    "region": 325.0,
    "country": 87.0,
-   "dist1": 0.0,
+   "dist1": 0,
    "p_email": "anonymous.com",
    "r_email": null,
    "risk_score": 0.02,
@@ -712,22 +592,16 @@
    "proxy": null,
    "device_type": null,
    "match_flags": {
-    "M1": "T",
-    "M2": "T",
-    "M3": "T",
     "M4": "M0",
     "M5": "F",
-    "M6": "T",
-    "M7": "F",
-    "M8": "T",
-    "M9": "T"
+    "M6": "T"
    },
    "counts": {
-    "C1": 1.0,
-    "C13": 3.0,
-    "C14": 1.0
+    "C1": 1,
+    "C13": 3,
+    "C14": 1
    },
-   "days_since_prev": 528.0
+   "days_since_prev": 528
   },
   {
    "txn_id": "3487493",
@@ -737,7 +611,7 @@
    "channel": "in_person",
    "region": 126.0,
    "country": 87.0,
-   "dist1": 23.0,
+   "dist1": 23,
    "p_email": "yahoo.com",
    "r_email": null,
    "risk_score": 0.37,
@@ -746,22 +620,16 @@
    "proxy": null,
    "device_type": null,
    "match_flags": {
-    "M1": "T",
-    "M2": "F",
-    "M3": "F",
     "M4": "M1",
     "M5": "T",
-    "M6": "F",
-    "M7": "F",
-    "M8": "F",
-    "M9": "T"
+    "M6": "F"
    },
    "counts": {
-    "C1": 3.0,
-    "C13": 9.0,
-    "C14": 3.0
+    "C1": 3,
+    "C13": 9,
+    "C14": 3
    },
-   "days_since_prev": 0.0
+   "days_since_prev": 0
   },
   {
    "txn_id": "3487509",
@@ -771,7 +639,7 @@
    "channel": "in_person",
    "region": 126.0,
    "country": 87.0,
-   "dist1": 23.0,
+   "dist1": 23,
    "p_email": "yahoo.com",
    "r_email": null,
    "risk_score": 0.26,
@@ -780,22 +648,16 @@
    "proxy": null,
    "device_type": null,
    "match_flags": {
-    "M1": "T",
-    "M2": "T",
-    "M3": "T",
     "M4": "M1",
     "M5": "T",
-    "M6": "F",
-    "M7": "F",
-    "M8": "F",
-    "M9": "T"
+    "M6": "F"
    },
    "counts": {
-    "C1": 3.0,
-    "C13": 10.0,
-    "C14": 3.0
+    "C1": 3,
+    "C13": 10,
+    "C14": 3
    },
-   "days_since_prev": 0.0
+   "days_since_prev": 0
   },
   {
    "txn_id": "3487549",
@@ -805,7 +667,7 @@
    "channel": "in_person",
    "region": 325.0,
    "country": 87.0,
-   "dist1": null,
+   "dist1": 0,
    "p_email": "gmail.com",
    "r_email": null,
    "risk_score": 0.03,
@@ -814,22 +676,16 @@
    "proxy": null,
    "device_type": null,
    "match_flags": {
-    "M1": "T",
-    "M2": "F",
-    "M3": "F",
     "M4": null,
     "M5": null,
-    "M6": "T",
-    "M7": "F",
-    "M8": "F",
-    "M9": "F"
+    "M6": "T"
    },
    "counts": {
-    "C1": 6.0,
-    "C13": 30.0,
-    "C14": 3.0
+    "C1": 6,
+    "C13": 30,
+    "C14": 3
    },
-   "days_since_prev": 0.0
+   "days_since_prev": 0
   },
   {
    "txn_id": "3487557",
@@ -839,7 +695,7 @@
    "channel": "in_person",
    "region": 126.0,
    "country": 87.0,
-   "dist1": 23.0,
+   "dist1": 23,
    "p_email": "yahoo.com",
    "r_email": null,
    "risk_score": 0.29,
@@ -848,22 +704,16 @@
    "proxy": null,
    "device_type": null,
    "match_flags": {
-    "M1": "T",
-    "M2": "F",
-    "M3": "F",
     "M4": "M1",
     "M5": "T",
-    "M6": "F",
-    "M7": "F",
-    "M8": "F",
-    "M9": "T"
+    "M6": "F"
    },
    "counts": {
-    "C1": 3.0,
-    "C13": 9.0,
-    "C14": 3.0
+    "C1": 3,
+    "C13": 9,
+    "C14": 3
    },
-   "days_since_prev": 0.0
+   "days_since_prev": 0
   },
   {
    "txn_id": "3487573",
@@ -873,7 +723,7 @@
    "channel": "in_person",
    "region": 325.0,
    "country": 87.0,
-   "dist1": null,
+   "dist1": 0,
    "p_email": "anonymous.com",
    "r_email": null,
    "risk_score": 0.16,
@@ -882,22 +732,16 @@
    "proxy": null,
    "device_type": null,
    "match_flags": {
-    "M1": "T",
-    "M2": "T",
-    "M3": "T",
     "M4": null,
     "M5": null,
-    "M6": "F",
-    "M7": "F",
-    "M8": "F",
-    "M9": "T"
+    "M6": "F"
    },
    "counts": {
-    "C1": 1.0,
-    "C13": 1.0,
-    "C14": 1.0
+    "C1": 1,
+    "C13": 1,
+    "C14": 1
    },
-   "days_since_prev": 0.0
+   "days_since_prev": 0
   },
   {
    "txn_id": "3487604",
@@ -907,7 +751,7 @@
    "channel": "in_person",
    "region": 325.0,
    "country": 87.0,
-   "dist1": null,
+   "dist1": 0,
    "p_email": "yahoo.com",
    "r_email": null,
    "risk_score": 0.1,
@@ -916,22 +760,16 @@
    "proxy": null,
    "device_type": null,
    "match_flags": {
-    "M1": "T",
-    "M2": "T",
-    "M3": "T",
     "M4": "M1",
     "M5": "F",
-    "M6": "T",
-    "M7": "F",
-    "M8": "F",
-    "M9": "F"
+    "M6": "T"
    },
    "counts": {
-    "C1": 1.0,
-    "C13": 1.0,
-    "C14": 1.0
+    "C1": 1,
+    "C13": 1,
+    "C14": 1
    },
-   "days_since_prev": 0.0
+   "days_since_prev": 0
   },
   {
    "txn_id": "3487632",
@@ -941,7 +779,7 @@
    "channel": "in_person",
    "region": 325.0,
    "country": 87.0,
-   "dist1": null,
+   "dist1": 0,
    "p_email": "gmail.com",
    "r_email": null,
    "risk_score": 0.05,
@@ -950,22 +788,16 @@
    "proxy": null,
    "device_type": null,
    "match_flags": {
-    "M1": "T",
-    "M2": "F",
-    "M3": "F",
     "M4": null,
     "M5": null,
-    "M6": "T",
-    "M7": "F",
-    "M8": "F",
-    "M9": "F"
+    "M6": "T"
    },
    "counts": {
-    "C1": 6.0,
-    "C13": 30.0,
-    "C14": 3.0
+    "C1": 6,
+    "C13": 30,
+    "C14": 3
    },
-   "days_since_prev": 0.0
+   "days_since_prev": 0
   },
   {
    "txn_id": "3487659",
@@ -975,7 +807,7 @@
    "channel": "online",
    "region": 325.0,
    "country": 87.0,
-   "dist1": null,
+   "dist1": 0,
    "p_email": "gmail.com",
    "r_email": "yahoo.com",
    "risk_score": 0.02,
@@ -984,22 +816,16 @@
    "proxy": null,
    "device_type": "mobile",
    "match_flags": {
-    "M1": null,
-    "M2": null,
-    "M3": null,
     "M4": null,
     "M5": null,
-    "M6": null,
-    "M7": null,
-    "M8": null,
-    "M9": null
+    "M6": null
    },
    "counts": {
-    "C1": 1.0,
-    "C13": 1.0,
-    "C14": 1.0
+    "C1": 1,
+    "C13": 1,
+    "C14": 1
    },
-   "days_since_prev": 0.0
+   "days_since_prev": 0
   },
   {
    "txn_id": "3487685",
@@ -1009,7 +835,7 @@
    "channel": "in_person",
    "region": 325.0,
    "country": 87.0,
-   "dist1": 12.0,
+   "dist1": 12,
    "p_email": "gmail.com",
    "r_email": null,
    "risk_score": 0.09,
@@ -1018,22 +844,16 @@
    "proxy": null,
    "device_type": null,
    "match_flags": {
-    "M1": "T",
-    "M2": "T",
-    "M3": "T",
     "M4": null,
     "M5": null,
-    "M6": "T",
-    "M7": "F",
-    "M8": "F",
-    "M9": "T"
+    "M6": "T"
    },
    "counts": {
-    "C1": 6.0,
-    "C13": 31.0,
-    "C14": 4.0
+    "C1": 6,
+    "C13": 31,
+    "C14": 4
    },
-   "days_since_prev": 0.0
+   "days_since_prev": 0
   },
   {
    "txn_id": "3487694",
@@ -1043,7 +863,7 @@
    "channel": "in_person",
    "region": 325.0,
    "country": 87.0,
-   "dist1": null,
+   "dist1": 0,
    "p_email": "gmail.com",
    "r_email": null,
    "risk_score": 0.21,
@@ -1052,22 +872,16 @@
    "proxy": null,
    "device_type": null,
    "match_flags": {
-    "M1": "T",
-    "M2": "T",
-    "M3": "T",
     "M4": "M0",
     "M5": "T",
-    "M6": "F",
-    "M7": "F",
-    "M8": "F",
-    "M9": "T"
+    "M6": "F"
    },
    "counts": {
-    "C1": 2.0,
-    "C13": 2.0,
-    "C14": 2.0
+    "C1": 2,
+    "C13": 2,
+    "C14": 2
    },
-   "days_since_prev": 0.0
+   "days_since_prev": 0
   },
   {
    "txn_id": "3487810",
@@ -1077,7 +891,7 @@
    "channel": "in_person",
    "region": 325.0,
    "country": 87.0,
-   "dist1": 12.0,
+   "dist1": 12,
    "p_email": "yahoo.com",
    "r_email": null,
    "risk_score": 0.19,
@@ -1086,22 +900,16 @@
    "proxy": null,
    "device_type": null,
    "match_flags": {
-    "M1": "T",
-    "M2": "T",
-    "M3": "T",
     "M4": "M0",
     "M5": "T",
-    "M6": "T",
-    "M7": "F",
-    "M8": "F",
-    "M9": "T"
+    "M6": "T"
    },
    "counts": {
-    "C1": 3.0,
-    "C13": 52.0,
-    "C14": 2.0
+    "C1": 3,
+    "C13": 52,
+    "C14": 2
    },
-   "days_since_prev": 445.0
+   "days_since_prev": 445
   },
   {
    "txn_id": "3487905",
@@ -1111,7 +919,7 @@
    "channel": "in_person",
    "region": 325.0,
    "country": 87.0,
-   "dist1": 78.0,
+   "dist1": 78,
    "p_email": "aol.com",
    "r_email": null,
    "risk_score": 0.11,
@@ -1120,22 +928,16 @@
    "proxy": null,
    "device_type": null,
    "match_flags": {
-    "M1": "T",
-    "M2": "T",
-    "M3": "T",
     "M4": "M1",
     "M5": "F",
-    "M6": "F",
-    "M7": "F",
-    "M8": "F",
-    "M9": "T"
+    "M6": "F"
    },
    "counts": {
-    "C1": 1.0,
-    "C13": 14.0,
-    "C14": 1.0
+    "C1": 1,
+    "C13": 14,
+    "C14": 1
    },
-   "days_since_prev": 585.0
+   "days_since_prev": 585
   },
   {
    "txn_id": "3487973",
@@ -1145,7 +947,7 @@
    "channel": "in_person",
    "region": 325.0,
    "country": 87.0,
-   "dist1": 5.0,
+   "dist1": 5,
    "p_email": "yahoo.com",
    "r_email": null,
    "risk_score": 0.05,
@@ -1154,22 +956,16 @@
    "proxy": null,
    "device_type": null,
    "match_flags": {
-    "M1": "T",
-    "M2": "T",
-    "M3": "T",
     "M4": "M0",
     "M5": null,
-    "M6": "T",
-    "M7": null,
-    "M8": null,
-    "M9": null
+    "M6": "T"
    },
    "counts": {
-    "C1": 117.0,
-    "C13": 495.0,
-    "C14": 104.0
+    "C1": 117,
+    "C13": 495,
+    "C14": 104
    },
-   "days_since_prev": 12.0
+   "days_since_prev": 12
   },
   {
    "txn_id": "3487985",
@@ -1179,7 +975,7 @@
    "channel": "in_person",
    "region": 126.0,
    "country": 87.0,
-   "dist1": 23.0,
+   "dist1": 23,
    "p_email": "yahoo.com",
    "r_email": null,
    "risk_score": 0.06,
@@ -1188,22 +984,16 @@
    "proxy": null,
    "device_type": null,
    "match_flags": {
-    "M1": "T",
-    "M2": "T",
-    "M3": "T",
     "M4": "M1",
     "M5": "T",
-    "M6": "F",
-    "M7": "F",
-    "M8": "F",
-    "M9": "T"
+    "M6": "F"
    },
    "counts": {
-    "C1": 3.0,
-    "C13": 10.0,
-    "C14": 3.0
+    "C1": 3,
+    "C13": 10,
+    "C14": 3
    },
-   "days_since_prev": 1.0
+   "days_since_prev": 1
   },
   {
    "txn_id": "3487994",
@@ -1213,7 +1003,7 @@
    "channel": "in_person",
    "region": 126.0,
    "country": 87.0,
-   "dist1": 23.0,
+   "dist1": 23,
    "p_email": "yahoo.com",
    "r_email": null,
    "risk_score": 0.3,
@@ -1222,22 +1012,16 @@
    "proxy": null,
    "device_type": null,
    "match_flags": {
-    "M1": "T",
-    "M2": "T",
-    "M3": "T",
     "M4": "M1",
     "M5": "T",
-    "M6": "F",
-    "M7": "F",
-    "M8": "F",
-    "M9": "T"
+    "M6": "F"
    },
    "counts": {
-    "C1": 3.0,
-    "C13": 10.0,
-    "C14": 3.0
+    "C1": 3,
+    "C13": 10,
+    "C14": 3
    },
-   "days_since_prev": 1.0
+   "days_since_prev": 1
   },
   {
    "txn_id": "3488000",
@@ -1247,7 +1031,7 @@
    "channel": "in_person",
    "region": 126.0,
    "country": 87.0,
-   "dist1": 23.0,
+   "dist1": 23,
    "p_email": "yahoo.com",
    "r_email": null,
    "risk_score": 0.23,
@@ -1256,22 +1040,16 @@
    "proxy": null,
    "device_type": null,
    "match_flags": {
-    "M1": "T",
-    "M2": "T",
-    "M3": "T",
     "M4": "M1",
     "M5": "T",
-    "M6": "F",
-    "M7": "F",
-    "M8": "F",
-    "M9": "T"
+    "M6": "F"
    },
    "counts": {
-    "C1": 3.0,
-    "C13": 10.0,
-    "C14": 3.0
+    "C1": 3,
+    "C13": 10,
+    "C14": 3
    },
-   "days_since_prev": 1.0
+   "days_since_prev": 1
   },
   {
    "txn_id": "3488006",
@@ -1281,7 +1059,7 @@
    "channel": "in_person",
    "region": 325.0,
    "country": 87.0,
-   "dist1": null,
+   "dist1": 0,
    "p_email": "aol.com",
    "r_email": null,
    "risk_score": 0.12,
@@ -1290,22 +1068,16 @@
    "proxy": null,
    "device_type": null,
    "match_flags": {
-    "M1": null,
-    "M2": null,
-    "M3": null,
     "M4": "M1",
     "M5": "T",
-    "M6": "T",
-    "M7": null,
-    "M8": null,
-    "M9": null
+    "M6": "T"
    },
    "counts": {
-    "C1": 2.0,
-    "C13": 7.0,
-    "C14": 1.0
+    "C1": 2,
+    "C13": 7,
+    "C14": 1
    },
-   "days_since_prev": 363.0
+   "days_since_prev": 363
   },
   {
    "txn_id": "3488015",
@@ -1315,7 +1087,7 @@
    "channel": "in_person",
    "region": 126.0,
    "country": 87.0,
-   "dist1": 23.0,
+   "dist1": 23,
    "p_email": "yahoo.com",
    "r_email": null,
    "risk_score": 0.04,
@@ -1324,22 +1096,16 @@
    "proxy": null,
    "device_type": null,
    "match_flags": {
-    "M1": "T",
-    "M2": "T",
-    "M3": "T",
     "M4": "M1",
     "M5": "T",
-    "M6": "F",
-    "M7": "F",
-    "M8": "F",
-    "M9": "T"
+    "M6": "F"
    },
    "counts": {
-    "C1": 3.0,
-    "C13": 10.0,
-    "C14": 3.0
+    "C1": 3,
+    "C13": 10,
+    "C14": 3
    },
-   "days_since_prev": 1.0
+   "days_since_prev": 1
   },
   {
    "txn_id": "3488023",
@@ -1349,7 +1115,7 @@
    "channel": "in_person",
    "region": 126.0,
    "country": 87.0,
-   "dist1": null,
+   "dist1": 0,
    "p_email": "yahoo.com",
    "r_email": null,
    "risk_score": 0.04,
@@ -1358,22 +1124,16 @@
    "proxy": null,
    "device_type": null,
    "match_flags": {
-    "M1": "T",
-    "M2": "F",
-    "M3": "F",
     "M4": "M1",
     "M5": "T",
-    "M6": "F",
-    "M7": "F",
-    "M8": "F",
-    "M9": "F"
+    "M6": "F"
    },
    "counts": {
-    "C1": 3.0,
-    "C13": 10.0,
-    "C14": 3.0
+    "C1": 3,
+    "C13": 10,
+    "C14": 3
    },
-   "days_since_prev": 1.0
+   "days_since_prev": 1
   },
   {
    "txn_id": "3488044",
@@ -1383,7 +1143,7 @@
    "channel": "in_person",
    "region": 126.0,
    "country": 87.0,
-   "dist1": 23.0,
+   "dist1": 23,
    "p_email": "yahoo.com",
    "r_email": null,
    "risk_score": 0.18,
@@ -1392,22 +1152,16 @@
    "proxy": null,
    "device_type": null,
    "match_flags": {
-    "M1": "T",
-    "M2": "F",
-    "M3": "F",
     "M4": "M1",
     "M5": "T",
-    "M6": "F",
-    "M7": "F",
-    "M8": "F",
-    "M9": "T"
+    "M6": "F"
    },
    "counts": {
-    "C1": 3.0,
-    "C13": 10.0,
-    "C14": 3.0
+    "C1": 3,
+    "C13": 10,
+    "C14": 3
    },
-   "days_since_prev": 1.0
+   "days_since_prev": 1
   },
   {
    "txn_id": "3488056",
@@ -1417,7 +1171,7 @@
    "channel": "in_person",
    "region": 325.0,
    "country": 87.0,
-   "dist1": null,
+   "dist1": 0,
    "p_email": "aol.com",
    "r_email": null,
    "risk_score": 0.21,
@@ -1426,22 +1180,16 @@
    "proxy": null,
    "device_type": null,
    "match_flags": {
-    "M1": null,
-    "M2": null,
-    "M3": null,
     "M4": "M1",
     "M5": "T",
-    "M6": "T",
-    "M7": null,
-    "M8": null,
-    "M9": null
+    "M6": "T"
    },
    "counts": {
-    "C1": 2.0,
-    "C13": 7.0,
-    "C14": 1.0
+    "C1": 2,
+    "C13": 7,
+    "C14": 1
    },
-   "days_since_prev": 363.0
+   "days_since_prev": 363
   },
   {
    "txn_id": "3488061",
@@ -1451,7 +1199,7 @@
    "channel": "in_person",
    "region": 126.0,
    "country": 87.0,
-   "dist1": 23.0,
+   "dist1": 23,
    "p_email": "yahoo.com",
    "r_email": null,
    "risk_score": 0.08,
@@ -1460,22 +1208,16 @@
    "proxy": null,
    "device_type": null,
    "match_flags": {
-    "M1": "T",
-    "M2": "F",
-    "M3": "F",
     "M4": "M1",
     "M5": "T",
-    "M6": "F",
-    "M7": "F",
-    "M8": "F",
-    "M9": "T"
+    "M6": "F"
    },
    "counts": {
-    "C1": 3.0,
-    "C13": 10.0,
-    "C14": 3.0
+    "C1": 3,
+    "C13": 10,
+    "C14": 3
    },
-   "days_since_prev": 1.0
+   "days_since_prev": 1
   },
   {
    "txn_id": "3488103",
@@ -1485,7 +1227,7 @@
    "channel": "in_person",
    "region": 325.0,
    "country": 87.0,
-   "dist1": null,
+   "dist1": 0,
    "p_email": "aol.com",
    "r_email": null,
    "risk_score": 0.01,
@@ -1494,22 +1236,16 @@
    "proxy": null,
    "device_type": null,
    "match_flags": {
-    "M1": "T",
-    "M2": "F",
-    "M3": "F",
     "M4": "M1",
     "M5": "T",
-    "M6": "T",
-    "M7": "F",
-    "M8": "F",
-    "M9": "F"
+    "M6": "T"
    },
    "counts": {
-    "C1": 2.0,
-    "C13": 7.0,
-    "C14": 1.0
+    "C1": 2,
+    "C13": 7,
+    "C14": 1
    },
-   "days_since_prev": 363.0
+   "days_since_prev": 363
   },
   {
    "txn_id": "3488116",
@@ -1519,7 +1255,7 @@
    "channel": "in_person",
    "region": 325.0,
    "country": 87.0,
-   "dist1": null,
+   "dist1": 0,
    "p_email": "aol.com",
    "r_email": null,
    "risk_score": 0.01,
@@ -1528,22 +1264,16 @@
    "proxy": null,
    "device_type": null,
    "match_flags": {
-    "M1": "T",
-    "M2": "F",
-    "M3": "F",
     "M4": "M1",
     "M5": "T",
-    "M6": "T",
-    "M7": "F",
-    "M8": "F",
-    "M9": "F"
+    "M6": "T"
    },
    "counts": {
-    "C1": 2.0,
-    "C13": 7.0,
-    "C14": 1.0
+    "C1": 2,
+    "C13": 7,
+    "C14": 1
    },
-   "days_since_prev": 363.0
+   "days_since_prev": 363
   },
   {
    "txn_id": "3488325",
@@ -1553,7 +1283,7 @@
    "channel": "in_person",
    "region": 325.0,
    "country": 87.0,
-   "dist1": null,
+   "dist1": 0,
    "p_email": "aol.com",
    "r_email": null,
    "risk_score": 0.04,
@@ -1562,22 +1292,16 @@
    "proxy": null,
    "device_type": null,
    "match_flags": {
-    "M1": null,
-    "M2": null,
-    "M3": null,
     "M4": "M1",
     "M5": "T",
-    "M6": "T",
-    "M7": null,
-    "M8": null,
-    "M9": null
+    "M6": "T"
    },
    "counts": {
-    "C1": 2.0,
-    "C13": 7.0,
-    "C14": 1.0
+    "C1": 2,
+    "C13": 7,
+    "C14": 1
    },
-   "days_since_prev": 363.0
+   "days_since_prev": 363
   },
   {
    "txn_id": "3488371",
@@ -1587,7 +1311,7 @@
    "channel": "in_person",
    "region": 325.0,
    "country": 87.0,
-   "dist1": null,
+   "dist1": 0,
    "p_email": "aol.com",
    "r_email": null,
    "risk_score": 0.01,
@@ -1596,22 +1320,16 @@
    "proxy": null,
    "device_type": null,
    "match_flags": {
-    "M1": null,
-    "M2": null,
-    "M3": null,
     "M4": null,
     "M5": null,
-    "M6": "T",
-    "M7": null,
-    "M8": null,
-    "M9": null
+    "M6": "T"
    },
    "counts": {
-    "C1": 1.0,
-    "C13": 3.0,
-    "C14": 1.0
+    "C1": 1,
+    "C13": 3,
+    "C14": 1
    },
-   "days_since_prev": 102.0
+   "days_since_prev": 102
   },
   {
    "txn_id": "3488433",
@@ -1621,7 +1339,7 @@
    "channel": "in_person",
    "region": 325.0,
    "country": 87.0,
-   "dist1": 2426.0,
+   "dist1": 2426,
    "p_email": "gmail.com",
    "r_email": null,
    "risk_score": 0.04,
@@ -1630,22 +1348,16 @@
    "proxy": null,
    "device_type": null,
    "match_flags": {
-    "M1": "T",
-    "M2": "F",
-    "M3": "F",
     "M4": "M0",
     "M5": "T",
-    "M6": "F",
-    "M7": "F",
-    "M8": "F",
-    "M9": "F"
+    "M6": "F"
    },
    "counts": {
-    "C1": 4.0,
-    "C13": 25.0,
-    "C14": 4.0
+    "C1": 4,
+    "C13": 25,
+    "C14": 4
    },
-   "days_since_prev": 548.0
+   "days_since_prev": 548
   },
   {
    "txn_id": "3488476",
@@ -1655,7 +1367,7 @@
    "channel": "in_person",
    "region": 325.0,
    "country": 87.0,
-   "dist1": 1.0,
+   "dist1": 1,
    "p_email": "ymail.com",
    "r_email": null,
    "risk_score": 0.13,
@@ -1664,22 +1376,16 @@
    "proxy": null,
    "device_type": null,
    "match_flags": {
-    "M1": "T",
-    "M2": "F",
-    "M3": "F",
     "M4": "M0",
     "M5": "F",
-    "M6": null,
-    "M7": null,
-    "M8": null,
-    "M9": null
+    "M6": null
    },
    "counts": {
-    "C1": 2.0,
-    "C13": 36.0,
-    "C14": 2.0
+    "C1": 2,
+    "C13": 36,
+    "C14": 2
    },
-   "days_since_prev": 278.0
+   "days_since_prev": 278
   },
   {
    "txn_id": "3488490",
@@ -1689,7 +1395,7 @@
    "channel": "in_person",
    "region": 126.0,
    "country": 87.0,
-   "dist1": null,
+   "dist1": 0,
    "p_email": "gmail.com",
    "r_email": null,
    "risk_score": 0.1,
@@ -1698,22 +1404,16 @@
    "proxy": null,
    "device_type": null,
    "match_flags": {
-    "M1": null,
-    "M2": null,
-    "M3": null,
     "M4": "M0",
     "M5": "F",
-    "M6": "T",
-    "M7": null,
-    "M8": null,
-    "M9": null
+    "M6": "T"
    },
    "counts": {
-    "C1": 1.0,
-    "C13": 21.0,
-    "C14": 1.0
+    "C1": 1,
+    "C13": 21,
+    "C14": 1
    },
-   "days_since_prev": 392.0
+   "days_since_prev": 392
   },
   {
    "txn_id": "3488502",
@@ -1723,7 +1423,7 @@
    "channel": "in_person",
    "region": 325.0,
    "country": 87.0,
-   "dist1": null,
+   "dist1": 0,
    "p_email": "anonymous.com",
    "r_email": null,
    "risk_score": 0.21,
@@ -1732,22 +1432,16 @@
    "proxy": null,
    "device_type": null,
    "match_flags": {
-    "M1": null,
-    "M2": null,
-    "M3": null,
     "M4": "M0",
     "M5": "T",
-    "M6": "T",
-    "M7": null,
-    "M8": null,
-    "M9": null
+    "M6": "T"
    },
    "counts": {
-    "C1": 1.0,
-    "C13": 12.0,
-    "C14": 1.0
+    "C1": 1,
+    "C13": 12,
+    "C14": 1
    },
-   "days_since_prev": 387.0
+   "days_since_prev": 387
   },
   {
    "txn_id": "3488570",
@@ -1757,7 +1451,7 @@
    "channel": "online",
    "region": 126.0,
    "country": 87.0,
-   "dist1": null,
+   "dist1": 0,
    "p_email": "gmail.com",
    "r_email": "aol.com",
    "risk_score": 0.1,
@@ -1766,22 +1460,16 @@
    "proxy": null,
    "device_type": "desktop",
    "match_flags": {
-    "M1": null,
-    "M2": null,
-    "M3": null,
     "M4": null,
     "M5": null,
-    "M6": null,
-    "M7": null,
-    "M8": null,
-    "M9": null
+    "M6": null
    },
    "counts": {
-    "C1": 1.0,
-    "C13": 1.0,
-    "C14": 1.0
+    "C1": 1,
+    "C13": 1,
+    "C14": 1
    },
-   "days_since_prev": 0.0
+   "days_since_prev": 0
   },
   {
    "txn_id": "3488601",
@@ -1791,7 +1479,7 @@
    "channel": "in_person",
    "region": 325.0,
    "country": 87.0,
-   "dist1": null,
+   "dist1": 0,
    "p_email": "aol.com",
    "r_email": null,
    "risk_score": 0.21,
@@ -1800,22 +1488,16 @@
    "proxy": null,
    "device_type": null,
    "match_flags": {
-    "M1": null,
-    "M2": null,
-    "M3": null,
     "M4": "M0",
     "M5": "F",
-    "M6": "T",
-    "M7": null,
-    "M8": null,
-    "M9": null
+    "M6": "T"
    },
    "counts": {
-    "C1": 7.0,
-    "C13": 31.0,
-    "C14": 7.0
+    "C1": 7,
+    "C13": 31,
+    "C14": 7
    },
-   "days_since_prev": 550.0
+   "days_since_prev": 550
   },
   {
    "txn_id": "3488661",
@@ -1825,7 +1507,7 @@
    "channel": "in_person",
    "region": 325.0,
    "country": 87.0,
-   "dist1": null,
+   "dist1": 0,
    "p_email": null,
    "r_email": null,
    "risk_score": 0.02,
@@ -1834,22 +1516,16 @@
    "proxy": null,
    "device_type": null,
    "match_flags": {
-    "M1": null,
-    "M2": null,
-    "M3": null,
     "M4": "M0",
     "M5": "F",
-    "M6": "T",
-    "M7": null,
-    "M8": null,
-    "M9": null
+    "M6": "T"
    },
    "counts": {
-    "C1": 2.0,
-    "C13": 3.0,
-    "C14": 2.0
+    "C1": 2,
+    "C13": 3,
+    "C14": 2
    },
-   "days_since_prev": 573.0
+   "days_since_prev": 573
   },
   {
    "txn_id": "3488749",
@@ -1859,7 +1535,7 @@
    "channel": "in_person",
    "region": 325.0,
    "country": 87.0,
-   "dist1": null,
+   "dist1": 0,
    "p_email": "yahoo.com",
    "r_email": null,
    "risk_score": 0.09,
@@ -1868,22 +1544,16 @@
    "proxy": null,
    "device_type": null,
    "match_flags": {
-    "M1": null,
-    "M2": null,
-    "M3": null,
     "M4": "M0",
     "M5": "F",
-    "M6": "F",
-    "M7": null,
-    "M8": null,
-    "M9": null
+    "M6": "F"
    },
    "counts": {
-    "C1": 8.0,
-    "C13": 36.0,
-    "C14": 7.0
+    "C1": 8,
+    "C13": 36,
+    "C14": 7
    },
-   "days_since_prev": 399.0
+   "days_since_prev": 399
   },
   {
    "txn_id": "3488755",
@@ -1893,7 +1563,7 @@
    "channel": "in_person",
    "region": 126.0,
    "country": 87.0,
-   "dist1": null,
+   "dist1": 0,
    "p_email": "gmail.com",
    "r_email": null,
    "risk_score": 0.1,
@@ -1902,22 +1572,16 @@
    "proxy": null,
    "device_type": null,
    "match_flags": {
-    "M1": null,
-    "M2": null,
-    "M3": null,
     "M4": "M0",
     "M5": "F",
-    "M6": "F",
-    "M7": null,
-    "M8": null,
-    "M9": null
+    "M6": "F"
    },
    "counts": {
-    "C1": 1.0,
-    "C13": 1.0,
-    "C14": 1.0
+    "C1": 1,
+    "C13": 1,
+    "C14": 1
    },
-   "days_since_prev": 0.0
+   "days_since_prev": 0
   },
   {
    "txn_id": "3488852",
@@ -1927,7 +1591,7 @@
    "channel": "in_person",
    "region": 325.0,
    "country": 87.0,
-   "dist1": 13.0,
+   "dist1": 13,
    "p_email": "hotmail.com",
    "r_email": null,
    "risk_score": 0.07,
@@ -1936,22 +1600,16 @@
    "proxy": null,
    "device_type": null,
    "match_flags": {
-    "M1": "T",
-    "M2": "F",
-    "M3": "F",
     "M4": "M0",
     "M5": "F",
-    "M6": null,
-    "M7": null,
-    "M8": null,
-    "M9": null
+    "M6": null
    },
    "counts": {
-    "C1": 2.0,
-    "C13": 34.0,
-    "C14": 2.0
+    "C1": 2,
+    "C13": 34,
+    "C14": 2
    },
-   "days_since_prev": 80.0
+   "days_since_prev": 80
   },
   {
    "txn_id": "3488866",
@@ -1961,7 +1619,7 @@
    "channel": "in_person",
    "region": 325.0,
    "country": 87.0,
-   "dist1": null,
+   "dist1": 0,
    "p_email": "aol.com",
    "r_email": null,
    "risk_score": 0.11,
@@ -1970,22 +1628,16 @@
    "proxy": null,
    "device_type": null,
    "match_flags": {
-    "M1": null,
-    "M2": null,
-    "M3": null,
     "M4": "M0",
     "M5": "F",
-    "M6": "T",
-    "M7": null,
-    "M8": null,
-    "M9": null
+    "M6": "T"
    },
    "counts": {
-    "C1": 2.0,
-    "C13": 2.0,
-    "C14": 2.0
+    "C1": 2,
+    "C13": 2,
+    "C14": 2
    },
-   "days_since_prev": 0.0
+   "days_since_prev": 0
   },
   {
    "txn_id": "3488893",
@@ -1995,7 +1647,7 @@
    "channel": "in_person",
    "region": 325.0,
    "country": 87.0,
-   "dist1": null,
+   "dist1": 0,
    "p_email": "hotmail.com",
    "r_email": null,
    "risk_score": 0.04,
@@ -2004,22 +1656,16 @@
    "proxy": null,
    "device_type": null,
    "match_flags": {
-    "M1": null,
-    "M2": null,
-    "M3": null,
     "M4": "M1",
     "M5": "F",
-    "M6": "F",
-    "M7": null,
-    "M8": null,
-    "M9": null
+    "M6": "F"
    },
    "counts": {
-    "C1": 3.0,
-    "C13": 7.0,
-    "C14": 3.0
+    "C1": 3,
+    "C13": 7,
+    "C14": 3
    },
-   "days_since_prev": 51.0
+   "days_since_prev": 51
   },
   {
    "txn_id": "3488922",
@@ -2029,7 +1675,7 @@
    "channel": "in_person",
    "region": 325.0,
    "country": 87.0,
-   "dist1": null,
+   "dist1": 0,
    "p_email": "ymail.com",
    "r_email": null,
    "risk_score": 0.13,
@@ -2038,22 +1684,16 @@
    "proxy": null,
    "device_type": null,
    "match_flags": {
-    "M1": null,
-    "M2": null,
-    "M3": null,
     "M4": "M1",
     "M5": "F",
-    "M6": "F",
-    "M7": null,
-    "M8": null,
-    "M9": null
+    "M6": "F"
    },
    "counts": {
-    "C1": 1.0,
-    "C13": 1.0,
-    "C14": 1.0
+    "C1": 1,
+    "C13": 1,
+    "C14": 1
    },
-   "days_since_prev": 0.0
+   "days_since_prev": 0
   },
   {
    "txn_id": "3488954",
@@ -2063,7 +1703,7 @@
    "channel": "in_person",
    "region": 325.0,
    "country": 87.0,
-   "dist1": null,
+   "dist1": 0,
    "p_email": "gmail.com",
    "r_email": null,
    "risk_score": 0.25,
@@ -2072,22 +1712,16 @@
    "proxy": null,
    "device_type": null,
    "match_flags": {
-    "M1": null,
-    "M2": null,
-    "M3": null,
     "M4": "M0",
     "M5": "F",
-    "M6": "T",
-    "M7": null,
-    "M8": null,
-    "M9": null
+    "M6": "T"
    },
    "counts": {
-    "C1": 1.0,
-    "C13": 1.0,
-    "C14": 1.0
+    "C1": 1,
+    "C13": 1,
+    "C14": 1
    },
-   "days_since_prev": 0.0
+   "days_since_prev": 0
   },
   {
    "txn_id": "3488967",
@@ -2097,7 +1731,7 @@
    "channel": "in_person",
    "region": 231.0,
    "country": 87.0,
-   "dist1": null,
+   "dist1": 0,
    "p_email": "gmail.com",
    "r_email": null,
    "risk_score": 0.12,
@@ -2106,22 +1740,16 @@
    "proxy": null,
    "device_type": null,
    "match_flags": {
-    "M1": null,
-    "M2": null,
-    "M3": null,
     "M4": "M0",
     "M5": "T",
-    "M6": "T",
-    "M7": null,
-    "M8": null,
-    "M9": null
+    "M6": "T"
    },
    "counts": {
-    "C1": 3.0,
-    "C13": 17.0,
-    "C14": 3.0
+    "C1": 3,
+    "C13": 17,
+    "C14": 3
    },
-   "days_since_prev": 206.0
+   "days_since_prev": 206
   },
   {
    "txn_id": "3488986",
@@ -2131,7 +1759,7 @@
    "channel": "in_person",
    "region": 325.0,
    "country": 87.0,
-   "dist1": null,
+   "dist1": 0,
    "p_email": null,
    "r_email": null,
    "risk_score": 0.1,
@@ -2140,22 +1768,16 @@
    "proxy": null,
    "device_type": null,
    "match_flags": {
-    "M1": null,
-    "M2": null,
-    "M3": null,
     "M4": "M0",
     "M5": "F",
-    "M6": "T",
-    "M7": null,
-    "M8": null,
-    "M9": null
+    "M6": "T"
    },
    "counts": {
-    "C1": 1.0,
-    "C13": 3.0,
-    "C14": 1.0
+    "C1": 1,
+    "C13": 3,
+    "C14": 1
    },
-   "days_since_prev": 89.0
+   "days_since_prev": 89
   },
   {
    "txn_id": "3489157",
@@ -2165,7 +1787,7 @@
    "channel": "in_person",
    "region": 325.0,
    "country": 87.0,
-   "dist1": 8.0,
+   "dist1": 8,
    "p_email": "gmail.com",
    "r_email": null,
    "risk_score": 0.12,
@@ -2174,22 +1796,16 @@
    "proxy": null,
    "device_type": null,
    "match_flags": {
-    "M1": "T",
-    "M2": "T",
-    "M3": "T",
     "M4": "M0",
     "M5": "T",
-    "M6": "T",
-    "M7": "F",
-    "M8": "F",
-    "M9": "T"
+    "M6": "T"
    },
    "counts": {
-    "C1": 2.0,
-    "C13": 6.0,
-    "C14": 2.0
+    "C1": 2,
+    "C13": 6,
+    "C14": 2
    },
-   "days_since_prev": 0.0
+   "days_since_prev": 0
   },
   {
    "txn_id": "3489290",
@@ -2199,7 +1815,7 @@
    "channel": "in_person",
    "region": 325.0,
    "country": 87.0,
-   "dist1": 1.0,
+   "dist1": 1,
    "p_email": "gmail.com",
    "r_email": null,
    "risk_score": 0.07,
@@ -2208,22 +1824,16 @@
    "proxy": null,
    "device_type": null,
    "match_flags": {
-    "M1": "T",
-    "M2": "T",
-    "M3": "T",
     "M4": "M0",
     "M5": "T",
-    "M6": "T",
-    "M7": "F",
-    "M8": "F",
-    "M9": "T"
+    "M6": "T"
    },
    "counts": {
-    "C1": 1.0,
-    "C13": 52.0,
-    "C14": 1.0
+    "C1": 1,
+    "C13": 52,
+    "C14": 1
    },
-   "days_since_prev": 619.0
+   "days_since_prev": 619
   },
   {
    "txn_id": "3489383",
@@ -2233,7 +1843,7 @@
    "channel": "in_person",
    "region": 325.0,
    "country": 87.0,
-   "dist1": 28.0,
+   "dist1": 28,
    "p_email": "gmail.com",
    "r_email": null,
    "risk_score": 0.04,
@@ -2242,22 +1852,16 @@
    "proxy": null,
    "device_type": null,
    "match_flags": {
-    "M1": "T",
-    "M2": "T",
-    "M3": "T",
     "M4": "M0",
     "M5": "F",
-    "M6": "F",
-    "M7": null,
-    "M8": null,
-    "M9": null
+    "M6": "F"
    },
    "counts": {
-    "C1": 6.0,
-    "C13": 15.0,
-    "C14": 6.0
+    "C1": 6,
+    "C13": 15,
+    "C14": 6
    },
-   "days_since_prev": 203.0
+   "days_since_prev": 203
   },
   {
    "txn_id": "3489428",
@@ -2267,7 +1871,7 @@
    "channel": "online",
    "region": 325.0,
    "country": 87.0,
-   "dist1": null,
+   "dist1": 0,
    "p_email": "gmail.com",
    "r_email": "gmail.com",
    "risk_score": 0.06,
@@ -2276,22 +1880,16 @@
    "proxy": null,
    "device_type": "desktop",
    "match_flags": {
-    "M1": null,
-    "M2": null,
-    "M3": null,
     "M4": null,
     "M5": null,
-    "M6": null,
-    "M7": null,
-    "M8": null,
-    "M9": null
+    "M6": null
    },
    "counts": {
-    "C1": 1.0,
-    "C13": 1.0,
-    "C14": 1.0
+    "C1": 1,
+    "C13": 1,
+    "C14": 1
    },
-   "days_since_prev": 0.0
+   "days_since_prev": 0
   },
   {
    "txn_id": "3489497",
@@ -2301,7 +1899,7 @@
    "channel": "in_person",
    "region": 126.0,
    "country": 87.0,
-   "dist1": 23.0,
+   "dist1": 23,
    "p_email": "yahoo.com",
    "r_email": null,
    "risk_score": 0.02,
@@ -2310,22 +1908,16 @@
    "proxy": null,
    "device_type": null,
    "match_flags": {
-    "M1": "T",
-    "M2": "F",
-    "M3": "F",
     "M4": "M1",
     "M5": "T",
-    "M6": "F",
-    "M7": "F",
-    "M8": "F",
-    "M9": "T"
+    "M6": "F"
    },
    "counts": {
-    "C1": 3.0,
-    "C13": 10.0,
-    "C14": 3.0
+    "C1": 3,
+    "C13": 10,
+    "C14": 3
    },
-   "days_since_prev": 1.0
+   "days_since_prev": 1
   },
   {
    "txn_id": "3489509",
@@ -2335,7 +1927,7 @@
    "channel": "in_person",
    "region": 126.0,
    "country": 87.0,
-   "dist1": 23.0,
+   "dist1": 23,
    "p_email": "yahoo.com",
    "r_email": null,
    "risk_score": 0.3,
@@ -2344,22 +1936,16 @@
    "proxy": null,
    "device_type": null,
    "match_flags": {
-    "M1": "T",
-    "M2": "T",
-    "M3": "T",
     "M4": "M1",
     "M5": "T",
-    "M6": "F",
-    "M7": "F",
-    "M8": "F",
-    "M9": "T"
+    "M6": "F"
    },
    "counts": {
-    "C1": 3.0,
-    "C13": 10.0,
-    "C14": 3.0
+    "C1": 3,
+    "C13": 10,
+    "C14": 3
    },
-   "days_since_prev": 1.0
+   "days_since_prev": 1
   },
   {
    "txn_id": "3489515",
@@ -2369,7 +1955,7 @@
    "channel": "in_person",
    "region": 126.0,
    "country": 87.0,
-   "dist1": 23.0,
+   "dist1": 23,
    "p_email": "yahoo.com",
    "r_email": null,
    "risk_score": 0.32,
@@ -2378,22 +1964,16 @@
    "proxy": null,
    "device_type": null,
    "match_flags": {
-    "M1": "T",
-    "M2": "F",
-    "M3": "F",
     "M4": "M1",
     "M5": "T",
-    "M6": "F",
-    "M7": "F",
-    "M8": "F",
-    "M9": "T"
+    "M6": "F"
    },
    "counts": {
-    "C1": 3.0,
-    "C13": 10.0,
-    "C14": 3.0
+    "C1": 3,
+    "C13": 10,
+    "C14": 3
    },
-   "days_since_prev": 1.0
+   "days_since_prev": 1
   },
   {
    "txn_id": "3489676",
@@ -2403,7 +1983,7 @@
    "channel": "in_person",
    "region": 325.0,
    "country": 87.0,
-   "dist1": null,
+   "dist1": 0,
    "p_email": null,
    "r_email": null,
    "risk_score": 0.06,
@@ -2412,22 +1992,16 @@
    "proxy": null,
    "device_type": null,
    "match_flags": {
-    "M1": "T",
-    "M2": "T",
-    "M3": "T",
     "M4": "M0",
     "M5": "F",
-    "M6": "F",
-    "M7": "F",
-    "M8": "F",
-    "M9": "T"
+    "M6": "F"
    },
    "counts": {
-    "C1": 1.0,
-    "C13": 1.0,
-    "C14": 1.0
+    "C1": 1,
+    "C13": 1,
+    "C14": 1
    },
-   "days_since_prev": 2.0
+   "days_since_prev": 2
   },
   {
    "txn_id": "3489691",
@@ -2437,7 +2011,7 @@
    "channel": "in_person",
    "region": 325.0,
    "country": 87.0,
-   "dist1": null,
+   "dist1": 0,
    "p_email": "gmail.com",
    "r_email": null,
    "risk_score": 0.15,
@@ -2446,22 +2020,16 @@
    "proxy": null,
    "device_type": null,
    "match_flags": {
-    "M1": "T",
-    "M2": "T",
-    "M3": "F",
     "M4": "M1",
     "M5": "T",
-    "M6": "F",
-    "M7": "F",
-    "M8": "T",
-    "M9": "T"
+    "M6": "F"
    },
    "counts": {
-    "C1": 1.0,
-    "C13": 1.0,
-    "C14": 1.0
+    "C1": 1,
+    "C13": 1,
+    "C14": 1
    },
-   "days_since_prev": 0.0
+   "days_since_prev": 0
   },
   {
    "txn_id": "3489703",
@@ -2471,7 +2039,7 @@
    "channel": "in_person",
    "region": null,
    "country": null,
-   "dist1": 2.0,
+   "dist1": 2,
    "p_email": "hotmail.com",
    "r_email": null,
    "risk_score": 0.24,
@@ -2480,22 +2048,16 @@
    "proxy": null,
    "device_type": null,
    "match_flags": {
-    "M1": "T",
-    "M2": "T",
-    "M3": "T",
     "M4": null,
     "M5": null,
-    "M6": null,
-    "M7": null,
-    "M8": null,
-    "M9": null
+    "M6": null
    },
    "counts": {
-    "C1": 1.0,
-    "C13": 33.0,
-    "C14": 1.0
+    "C1": 1,
+    "C13": 33,
+    "C14": 1
    },
-   "days_since_prev": 473.0
+   "days_since_prev": 473
   },
   {
    "txn_id": "3489721",
@@ -2505,7 +2067,7 @@
    "channel": "in_person",
    "region": 325.0,
    "country": 87.0,
-   "dist1": 6.0,
+   "dist1": 6,
    "p_email": null,
    "r_email": null,
    "risk_score": 0.17,
@@ -2514,22 +2076,16 @@
    "proxy": null,
    "device_type": null,
    "match_flags": {
-    "M1": "T",
-    "M2": "T",
-    "M3": "T",
     "M4": "M0",
     "M5": "T",
-    "M6": "F",
-    "M7": "F",
-    "M8": "F",
-    "M9": "T"
+    "M6": "F"
    },
    "counts": {
-    "C1": 1.0,
-    "C13": 5.0,
-    "C14": 1.0
+    "C1": 1,
+    "C13": 5,
+    "C14": 1
    },
-   "days_since_prev": 167.0
+   "days_since_prev": 167
   },
   {
    "txn_id": "3489767",
@@ -2539,7 +2095,7 @@
    "channel": "in_person",
    "region": 325.0,
    "country": 87.0,
-   "dist1": 5.0,
+   "dist1": 5,
    "p_email": null,
    "r_email": null,
    "risk_score": 0.01,
@@ -2548,22 +2104,16 @@
    "proxy": null,
    "device_type": null,
    "match_flags": {
-    "M1": "T",
-    "M2": "T",
-    "M3": "T",
     "M4": null,
     "M5": null,
-    "M6": "T",
-    "M7": "F",
-    "M8": "T",
-    "M9": "T"
+    "M6": "T"
    },
    "counts": {
-    "C1": 163.0,
-    "C13": 579.0,
-    "C14": 131.0
+    "C1": 163,
+    "C13": 579,
+    "C14": 131
    },
-   "days_since_prev": 83.0
+   "days_since_prev": 83
   },
   {
    "txn_id": "3489772",
@@ -2573,7 +2123,7 @@
    "channel": "in_person",
    "region": 325.0,
    "country": 87.0,
-   "dist1": null,
+   "dist1": 0,
    "p_email": "gmail.com",
    "r_email": null,
    "risk_score": 0.19,
@@ -2582,22 +2132,16 @@
    "proxy": null,
    "device_type": null,
    "match_flags": {
-    "M1": null,
-    "M2": null,
-    "M3": null,
     "M4": null,
     "M5": null,
-    "M6": "T",
-    "M7": null,
-    "M8": null,
-    "M9": null
+    "M6": "T"
    },
    "counts": {
-    "C1": 1.0,
-    "C13": 1.0,
-    "C14": 1.0
+    "C1": 1,
+    "C13": 1,
+    "C14": 1
    },
-   "days_since_prev": 0.0
+   "days_since_prev": 0
   },
   {
    "txn_id": "3489813",
@@ -2607,7 +2151,7 @@
    "channel": "in_person",
    "region": 325.0,
    "country": 87.0,
-   "dist1": null,
+   "dist1": 0,
    "p_email": "gmail.com",
    "r_email": null,
    "risk_score": 0.02,
@@ -2616,22 +2160,16 @@
    "proxy": null,
    "device_type": null,
    "match_flags": {
-    "M1": "T",
-    "M2": "F",
-    "M3": "F",
     "M4": "M0",
     "M5": "F",
-    "M6": "T",
-    "M7": "T",
-    "M8": "T",
-    "M9": "T"
+    "M6": "T"
    },
    "counts": {
-    "C1": 15.0,
-    "C13": 65.0,
-    "C14": 15.0
+    "C1": 15,
+    "C13": 65,
+    "C14": 15
    },
-   "days_since_prev": 54.0
+   "days_since_prev": 54
   },
   {
    "txn_id": "3489904",
@@ -2641,7 +2179,7 @@
    "channel": "online",
    "region": 325.0,
    "country": 87.0,
-   "dist1": null,
+   "dist1": 0,
    "p_email": "gmail.com",
    "r_email": "gmail.com",
    "risk_score": 0.06,
@@ -2650,22 +2188,16 @@
    "proxy": null,
    "device_type": "desktop",
    "match_flags": {
-    "M1": null,
-    "M2": null,
-    "M3": null,
     "M4": null,
     "M5": null,
-    "M6": null,
-    "M7": null,
-    "M8": null,
-    "M9": null
+    "M6": null
    },
    "counts": {
-    "C1": 1.0,
-    "C13": 1.0,
-    "C14": 1.0
+    "C1": 1,
+    "C13": 1,
+    "C14": 1
    },
-   "days_since_prev": 0.0
+   "days_since_prev": 0
   },
   {
    "txn_id": "3490019",
@@ -2675,7 +2207,7 @@
    "channel": "in_person",
    "region": 325.0,
    "country": 87.0,
-   "dist1": 8.0,
+   "dist1": 8,
    "p_email": "anonymous.com",
    "r_email": null,
    "risk_score": 0.14,
@@ -2684,22 +2216,16 @@
    "proxy": null,
    "device_type": null,
    "match_flags": {
-    "M1": "T",
-    "M2": "T",
-    "M3": "T",
     "M4": "M0",
     "M5": "F",
-    "M6": "T",
-    "M7": "F",
-    "M8": "F",
-    "M9": "T"
+    "M6": "T"
    },
    "counts": {
-    "C1": 1.0,
-    "C13": 2.0,
-    "C14": 1.0
+    "C1": 1,
+    "C13": 2,
+    "C14": 1
    },
-   "days_since_prev": 2.0
+   "days_since_prev": 2
   },
   {
    "txn_id": "3490069",
@@ -2709,7 +2235,7 @@
    "channel": "in_person",
    "region": 325.0,
    "country": 87.0,
-   "dist1": null,
+   "dist1": 0,
    "p_email": "gmail.com",
    "r_email": null,
    "risk_score": 0.23,
@@ -2718,22 +2244,16 @@
    "proxy": null,
    "device_type": null,
    "match_flags": {
-    "M1": "T",
-    "M2": "T",
-    "M3": "T",
     "M4": "M0",
     "M5": "F",
-    "M6": "F",
-    "M7": "F",
-    "M8": "T",
-    "M9": "T"
+    "M6": "F"
    },
    "counts": {
-    "C1": 2.0,
-    "C13": 7.0,
-    "C14": 2.0
+    "C1": 2,
+    "C13": 7,
+    "C14": 2
    },
-   "days_since_prev": 12.0
+   "days_since_prev": 12
   },
   {
    "txn_id": "3490114",
@@ -2743,7 +2263,7 @@
    "channel": "in_person",
    "region": 325.0,
    "country": 87.0,
-   "dist1": null,
+   "dist1": 0,
    "p_email": "icloud.com",
    "r_email": null,
    "risk_score": 0.22,
@@ -2752,22 +2272,16 @@
    "proxy": null,
    "device_type": null,
    "match_flags": {
-    "M1": "T",
-    "M2": "T",
-    "M3": "T",
     "M4": "M1",
     "M5": "T",
-    "M6": "T",
-    "M7": "F",
-    "M8": "T",
-    "M9": "T"
+    "M6": "T"
    },
    "counts": {
-    "C1": 3.0,
-    "C13": 2.0,
-    "C14": 2.0
+    "C1": 3,
+    "C13": 2,
+    "C14": 2
    },
-   "days_since_prev": 0.0
+   "days_since_prev": 0
   },
   {
    "txn_id": "3490180",
@@ -2777,7 +2291,7 @@
    "channel": "in_person",
    "region": 325.0,
    "country": 87.0,
-   "dist1": 5.0,
+   "dist1": 5,
    "p_email": "gmail.com",
    "r_email": null,
    "risk_score": 0.55,
@@ -2786,22 +2300,16 @@
    "proxy": null,
    "device_type": null,
    "match_flags": {
-    "M1": "T",
-    "M2": "T",
-    "M3": "T",
     "M4": "M0",
     "M5": "T",
-    "M6": "F",
-    "M7": null,
-    "M8": null,
-    "M9": null
+    "M6": "F"
    },
    "counts": {
-    "C1": 1.0,
-    "C13": 39.0,
-    "C14": 1.0
+    "C1": 1,
+    "C13": 39,
+    "C14": 1
    },
-   "days_since_prev": 490.0
+   "days_since_prev": 490
   },
   {
    "txn_id": "3490239",
@@ -2811,7 +2319,7 @@
    "channel": "in_person",
    "region": 325.0,
    "country": 87.0,
-   "dist1": null,
+   "dist1": 0,
    "p_email": "gmail.com",
    "r_email": null,
    "risk_score": 0.14,
@@ -2820,22 +2328,16 @@
    "proxy": null,
    "device_type": null,
    "match_flags": {
-    "M1": "T",
-    "M2": "T",
-    "M3": "T",
     "M4": "M0",
     "M5": "F",
-    "M6": "F",
-    "M7": "F",
-    "M8": "F",
-    "M9": "T"
+    "M6": "F"
    },
    "counts": {
-    "C1": 1.0,
-    "C13": 3.0,
-    "C14": 1.0
+    "C1": 1,
+    "C13": 3,
+    "C14": 1
    },
-   "days_since_prev": 160.0
+   "days_since_prev": 160
   },
   {
    "txn_id": "3490305",
@@ -2845,7 +2347,7 @@
    "channel": "in_person",
    "region": 325.0,
    "country": 87.0,
-   "dist1": 2.0,
+   "dist1": 2,
    "p_email": "anonymous.com",
    "r_email": null,
    "risk_score": 0.04,
@@ -2854,22 +2356,16 @@
    "proxy": null,
    "device_type": null,
    "match_flags": {
-    "M1": "T",
-    "M2": "T",
-    "M3": "T",
     "M4": "M0",
     "M5": "T",
-    "M6": "T",
-    "M7": null,
-    "M8": null,
-    "M9": null
+    "M6": "T"
    },
    "counts": {
-    "C1": 3.0,
-    "C13": 20.0,
-    "C14": 3.0
+    "C1": 3,
+    "C13": 20,
+    "C14": 3
    },
-   "days_since_prev": 133.0
+   "days_since_prev": 133
   },
   {
    "txn_id": "3490411",
@@ -2879,7 +2375,7 @@
    "channel": "in_person",
    "region": 325.0,
    "country": 87.0,
-   "dist1": null,
+   "dist1": 0,
    "p_email": "verizon.net",
    "r_email": null,
    "risk_score": 0.08,
@@ -2888,22 +2384,16 @@
    "proxy": null,
    "device_type": null,
    "match_flags": {
-    "M1": "T",
-    "M2": "T",
-    "M3": "T",
     "M4": "M0",
     "M5": "T",
-    "M6": "T",
-    "M7": "F",
-    "M8": "F",
-    "M9": "T"
+    "M6": "T"
    },
    "counts": {
-    "C1": 1.0,
-    "C13": 2.0,
-    "C14": 1.0
+    "C1": 1,
+    "C13": 2,
+    "C14": 1
    },
-   "days_since_prev": 16.0
+   "days_since_prev": 16
   },
   {
    "txn_id": "3490444",
@@ -2913,7 +2403,7 @@
    "channel": "in_person",
    "region": 325.0,
    "country": 87.0,
-   "dist1": null,
+   "dist1": 0,
    "p_email": "aol.com",
    "r_email": null,
    "risk_score": 0.19,
@@ -2922,22 +2412,16 @@
    "proxy": null,
    "device_type": null,
    "match_flags": {
-    "M1": "T",
-    "M2": "T",
-    "M3": "T",
     "M4": "M0",
     "M5": "F",
-    "M6": "T",
-    "M7": "F",
-    "M8": "F",
-    "M9": "T"
+    "M6": "T"
    },
    "counts": {
-    "C1": 1.0,
-    "C13": 0.0,
-    "C14": 0.0
+    "C1": 1,
+    "C13": 0,
+    "C14": 0
    },
-   "days_since_prev": 0.0
+   "days_since_prev": 0
   },
   {
    "txn_id": "3490511",
@@ -2947,7 +2431,7 @@
    "channel": "in_person",
    "region": 325.0,
    "country": 87.0,
-   "dist1": null,
+   "dist1": 0,
    "p_email": "aol.com",
    "r_email": null,
    "risk_score": 0.35,
@@ -2956,22 +2440,16 @@
    "proxy": null,
    "device_type": null,
    "match_flags": {
-    "M1": "T",
-    "M2": "T",
-    "M3": "T",
     "M4": "M0",
     "M5": "F",
-    "M6": "T",
-    "M7": "F",
-    "M8": "F",
-    "M9": "T"
+    "M6": "T"
    },
    "counts": {
-    "C1": 1.0,
-    "C13": 1.0,
-    "C14": 1.0
+    "C1": 1,
+    "C13": 1,
+    "C14": 1
    },
-   "days_since_prev": 0.0
+   "days_since_prev": 0
   },
   {
    "txn_id": "3490585",
@@ -2981,7 +2459,7 @@
    "channel": "in_person",
    "region": 272.0,
    "country": 87.0,
-   "dist1": 31.0,
+   "dist1": 31,
    "p_email": "gmail.com",
    "r_email": null,
    "risk_score": 0.1,
@@ -2990,22 +2468,16 @@
    "proxy": null,
    "device_type": null,
    "match_flags": {
-    "M1": "T",
-    "M2": "T",
-    "M3": "T",
     "M4": "M1",
     "M5": "F",
-    "M6": "F",
-    "M7": "F",
-    "M8": "F",
-    "M9": "T"
+    "M6": "F"
    },
    "counts": {
-    "C1": 2.0,
-    "C13": 2.0,
-    "C14": 1.0
+    "C1": 2,
+    "C13": 2,
+    "C14": 1
    },
-   "days_since_prev": 9.0
+   "days_since_prev": 9
   },
   {
    "txn_id": "3490630",
@@ -3015,7 +2487,7 @@
    "channel": "in_person",
    "region": 325.0,
    "country": 87.0,
-   "dist1": null,
+   "dist1": 0,
    "p_email": "gmail.com",
    "r_email": null,
    "risk_score": 0.05,
@@ -3024,22 +2496,16 @@
    "proxy": null,
    "device_type": null,
    "match_flags": {
-    "M1": "T",
-    "M2": "T",
-    "M3": "T",
     "M4": "M0",
     "M5": "F",
-    "M6": "F",
-    "M7": "F",
-    "M8": "F",
-    "M9": "F"
+    "M6": "F"
    },
    "counts": {
-    "C1": 1.0,
-    "C13": 1.0,
-    "C14": 1.0
+    "C1": 1,
+    "C13": 1,
+    "C14": 1
    },
-   "days_since_prev": 0.0
+   "days_since_prev": 0
   },
   {
    "txn_id": "3490655",
@@ -3049,7 +2515,7 @@
    "channel": "in_person",
    "region": 325.0,
    "country": 87.0,
-   "dist1": 44.0,
+   "dist1": 44,
    "p_email": "aol.com",
    "r_email": null,
    "risk_score": 0.27,
@@ -3058,22 +2524,16 @@
    "proxy": null,
    "device_type": null,
    "match_flags": {
-    "M1": "T",
-    "M2": "T",
-    "M3": "T",
     "M4": null,
     "M5": null,
-    "M6": "T",
-    "M7": null,
-    "M8": null,
-    "M9": null
+    "M6": "T"
    },
    "counts": {
-    "C1": 3.0,
-    "C13": 43.0,
-    "C14": 3.0
+    "C1": 3,
+    "C13": 43,
+    "C14": 3
    },
-   "days_since_prev": 631.0
+   "days_since_prev": 631
   },
   {
    "txn_id": "3490727",
@@ -3083,7 +2543,7 @@
    "channel": "in_person",
    "region": 325.0,
    "country": 87.0,
-   "dist1": 15.0,
+   "dist1": 15,
    "p_email": "gmail.com",
    "r_email": null,
    "risk_score": 0.05,
@@ -3092,22 +2552,16 @@
    "proxy": null,
    "device_type": null,
    "match_flags": {
-    "M1": "T",
-    "M2": "T",
-    "M3": "T",
     "M4": "M0",
     "M5": "F",
-    "M6": "F",
-    "M7": "F",
-    "M8": "F",
-    "M9": "T"
+    "M6": "F"
    },
    "counts": {
-    "C1": 1.0,
-    "C13": 1.0,
-    "C14": 1.0
+    "C1": 1,
+    "C13": 1,
+    "C14": 1
    },
-   "days_since_prev": 2.0
+   "days_since_prev": 2
   },
   {
    "txn_id": "3490961",
@@ -3117,7 +2571,7 @@
    "channel": "in_person",
    "region": 204.0,
    "country": 87.0,
-   "dist1": null,
+   "dist1": 0,
    "p_email": "yahoo.com",
    "r_email": null,
    "risk_score": 0.24,
@@ -3126,22 +2580,16 @@
    "proxy": null,
    "device_type": null,
    "match_flags": {
-    "M1": "T",
-    "M2": "T",
-    "M3": "T",
     "M4": "M1",
     "M5": "F",
-    "M6": "F",
-    "M7": "F",
-    "M8": "F",
-    "M9": "F"
+    "M6": "F"
    },
    "counts": {
-    "C1": 1.0,
-    "C13": 3.0,
-    "C14": 1.0
+    "C1": 1,
+    "C13": 3,
+    "C14": 1
    },
-   "days_since_prev": 391.0
+   "days_since_prev": 391
   },
   {
    "txn_id": "3490982",
@@ -3151,7 +2599,7 @@
    "channel": "in_person",
    "region": 325.0,
    "country": 87.0,
-   "dist1": 7.0,
+   "dist1": 7,
    "p_email": null,
    "r_email": null,
    "risk_score": 0.34,
@@ -3160,22 +2608,16 @@
    "proxy": null,
    "device_type": null,
    "match_flags": {
-    "M1": "T",
-    "M2": "T",
-    "M3": "F",
     "M4": "M2",
     "M5": "T",
-    "M6": "F",
-    "M7": null,
-    "M8": null,
-    "M9": null
+    "M6": "F"
    },
    "counts": {
-    "C1": 3.0,
-    "C13": 23.0,
-    "C14": 2.0
+    "C1": 3,
+    "C13": 23,
+    "C14": 2
    },
-   "days_since_prev": 629.0
+   "days_since_prev": 629
   },
   {
    "txn_id": "3491104",
@@ -3185,7 +2627,7 @@
    "channel": "in_person",
    "region": 325.0,
    "country": 87.0,
-   "dist1": 22.0,
+   "dist1": 22,
    "p_email": null,
    "r_email": null,
    "risk_score": 0.19,
@@ -3194,22 +2636,16 @@
    "proxy": null,
    "device_type": null,
    "match_flags": {
-    "M1": "T",
-    "M2": "T",
-    "M3": "T",
     "M4": null,
     "M5": null,
-    "M6": "T",
-    "M7": "F",
-    "M8": "F",
-    "M9": "T"
+    "M6": "T"
    },
    "counts": {
-    "C1": 1.0,
-    "C13": 18.0,
-    "C14": 1.0
+    "C1": 1,
+    "C13": 18,
+    "C14": 1
    },
-   "days_since_prev": 364.0
+   "days_since_prev": 364
   },
   {
    "txn_id": "3491265",
@@ -3219,7 +2655,7 @@
    "channel": "in_person",
    "region": 325.0,
    "country": 87.0,
-   "dist1": 2.0,
+   "dist1": 2,
    "p_email": null,
    "r_email": null,
    "risk_score": 0.02,
@@ -3228,22 +2664,16 @@
    "proxy": null,
    "device_type": null,
    "match_flags": {
-    "M1": "T",
-    "M2": "T",
-    "M3": "T",
     "M4": "M0",
     "M5": "F",
-    "M6": null,
-    "M7": "F",
-    "M8": "F",
-    "M9": "T"
+    "M6": null
    },
    "counts": {
-    "C1": 2.0,
-    "C13": 8.0,
-    "C14": 2.0
+    "C1": 2,
+    "C13": 8,
+    "C14": 2
    },
-   "days_since_prev": 70.0
+   "days_since_prev": 70
   },
   {
    "txn_id": "3491361",
@@ -3253,7 +2683,7 @@
    "channel": "in_person",
    "region": 126.0,
    "country": 87.0,
-   "dist1": 1.0,
+   "dist1": 1,
    "p_email": null,
    "r_email": null,
    "risk_score": 0.48,
@@ -3262,22 +2692,16 @@
    "proxy": null,
    "device_type": null,
    "match_flags": {
-    "M1": "T",
-    "M2": "T",
-    "M3": "T",
     "M4": "M0",
     "M5": "F",
-    "M6": "F",
-    "M7": "F",
-    "M8": "F",
-    "M9": "T"
+    "M6": "F"
    },
    "counts": {
-    "C1": 5.0,
-    "C13": 51.0,
-    "C14": 4.0
+    "C1": 5,
+    "C13": 51,
+    "C14": 4
    },
-   "days_since_prev": 333.0
+   "days_since_prev": 333
   },
   {
    "txn_id": "3491379",
@@ -3287,7 +2711,7 @@
    "channel": "in_person",
    "region": 325.0,
    "country": 87.0,
-   "dist1": null,
+   "dist1": 0,
    "p_email": "gmail.com",
    "r_email": null,
    "risk_score": 0.06,
@@ -3296,22 +2720,16 @@
    "proxy": null,
    "device_type": null,
    "match_flags": {
-    "M1": "T",
-    "M2": "T",
-    "M3": "T",
     "M4": "M0",
     "M5": "F",
-    "M6": null,
-    "M7": "F",
-    "M8": "F",
-    "M9": "T"
+    "M6": null
    },
    "counts": {
-    "C1": 1.0,
-    "C13": 2.0,
-    "C14": 1.0
+    "C1": 1,
+    "C13": 2,
+    "C14": 1
    },
-   "days_since_prev": 21.0
+   "days_since_prev": 21
   },
   {
    "txn_id": "3491469",
@@ -3321,7 +2739,7 @@
    "channel": "in_person",
    "region": 325.0,
    "country": 87.0,
-   "dist1": null,
+   "dist1": 0,
    "p_email": "anonymous.com",
    "r_email": null,
    "risk_score": 0.02,
@@ -3330,22 +2748,16 @@
    "proxy": null,
    "device_type": null,
    "match_flags": {
-    "M1": "T",
-    "M2": "T",
-    "M3": "T",
     "M4": "M0",
     "M5": "F",
-    "M6": "T",
-    "M7": "F",
-    "M8": "F",
-    "M9": "T"
+    "M6": "T"
    },
    "counts": {
-    "C1": 1.0,
-    "C13": 4.0,
-    "C14": 1.0
+    "C1": 1,
+    "C13": 4,
+    "C14": 1
    },
-   "days_since_prev": 444.0
+   "days_since_prev": 444
   }
  ],
  "profile": {
@@ -3383,9 +2795,9 @@
    "iOS Device | iOS 11.2.1 | mobile safari 11.0 | 2208x1242": 10,
    "Windows | Windows 10 | chrome 63.0 | 1366x768": 9,
    "Windows | Windows 7 | chrome 63.0 | 1920x1080": 8,
-   "Windows | Windows 10 | chrome 63.0 | 1600x900": 7,
    "Trident/7.0 | Windows 7 | ie 11.0 for desktop | 1920x1080": 7,
    "? | ? | mobile safari 11.0 | ?": 7,
+   "Windows | Windows 10 | chrome 63.0 | 1600x900": 7,
    "Windows | Windows 10 | chrome 62.0 | 1366x768": 6
   },
   "new_device_share": 0.515274949083503,
@@ -3483,8 +2895,8 @@
    "args": {
     "txn_id": 3491361
    },
-   "ms": 0.4,
-   "result_preview": "{'txn_id': '3491361', 'ts': '2016-11-27 13:41:26', 'amount': 39.08, 'product': 'W', 'channel': 'in_person', 'region': 126.0, 'country': 87.0, 'dist1': 1.0, 'p_email': None, 'r_email': None, 'risk_score': 0.48, 'device_profile': None, 'devic\u2026"
+   "ms": 74.9,
+   "result_preview": "{'txn_id': '3491361', 'ts': '2016-11-27 13:41:26', 'amount': 39.08, 'product': 'W', 'channel': 'in_person', 'region': 126.0, 'country': 87.0, 'dist1': 1, 'p_email': None, 'r_email': None, 'risk_score': 0.48, 'device_profile': None, 'device_\u2026"
   },
   {
    "step": 2,
@@ -3493,7 +2905,7 @@
     "card_id": "C02354-K2",
     "before_txn_id": 3491361
    },
-   "ms": 7.4,
+   "ms": 419.8,
    "result_preview": "{'card_id': 'C02354-K2', 'customer_id': 'C02354', 'n_txns': 5864, 'first_seen': '2016-07-02 00:39:20', 'n_online': 491, 'n_in_person': 5373, 'products': {'W': 5373, 'H': 336, 'R': 126, 'C': 25, 'S': 4}, 'regions_top': {'325.0': 4789, '126.0\u2026"
   },
   {
@@ -3506,8 +2918,8 @@
     "hours_after": 48,
     "as_of": "2016-11-27 14:41:26"
    },
-   "ms": 13.4,
-   "result_preview": "[{'txn_id': '3486046', 'ts': '2016-11-25 13:54:21', 'amount': 249.98, 'product': 'W', 'channel': 'in_person', 'region': 325.0, 'country': 87.0, 'dist1': 3.0, 'p_email': 'yahoo.com', 'r_email': None, 'risk_score': 0.1, 'device_profile': None\u2026"
+   "ms": 84.2,
+   "result_preview": "[{'txn_id': '3486046', 'ts': '2016-11-25 13:54:21', 'amount': 249.98, 'product': 'W', 'channel': 'in_person', 'region': 325.0, 'country': 87.0, 'dist1': 3, 'p_email': 'yahoo.com', 'r_email': None, 'risk_score': 0.1, 'device_profile': None, \u2026"
   },
   {
    "step": 4,
@@ -3518,8 +2930,8 @@
     "before_txn_id": 3491361,
     "as_of": "2016-11-27 14:41:26"
    },
-   "ms": 7.7,
-   "result_preview": "{'region': 126.0, 'home_region': 325.0, 'n_before': 565, 'first_seen_in_region': '2016-07-02 14:10:52', 'months_active_in_region': 5, 'in_region_next_7d': 1, 'home_activity_next_7d': 2, 'in_person_share_in_region': 0.8761061946902655}"
+   "ms": 96.7,
+   "result_preview": "{'card_id': 'C02354-K2', 'region': 126.0, 'n_before': 565, 'home_region': 325.0, 'first_seen_in_region': '2016-07-02 14:10:52', 'months_active_in_region': 5, 'in_region_next_7d': 0, 'home_activity_next_7d': 2, 'in_person_share_in_region': 0\u2026"
   },
   {
    "step": 5,
@@ -3529,7 +2941,7 @@
     "txn_id": 3491361,
     "as_of": "2016-11-27 14:41:26"
    },
-   "ms": 4.6,
+   "ms": 231.2,
    "result_preview": "{'amount': 39.08, 'product': 'W', 'n_matches': 145, 'months_with_match': ['2016-07', '2016-08', '2016-09', '2016-10', '2016-11'], 'n_months': 5, 'n_same_region': 18, 'share_of_card_txns': 0.0247, 'n_same_amount_within_1h': 1, 'same_amount_b\u2026"
   },
   {
@@ -3539,8 +2951,8 @@
     "customer_id": "C02354",
     "as_of": "2016-11-27 14:41:26"
    },
-   "ms": 8.3,
-   "result_preview": "{'customer_id': 'C02354', 'n': 4873, 'fraud_rate': 0.022, 'global_rate': 0.0337, 'fraud_rate_in_person': 0.0222, 'n_in_person': 4423, 'fraud_rate_online': 0.02, 'n_online': 450}"
+   "ms": 82.7,
+   "result_preview": "{'customer_id': 'C02354', 'n': 5867, 'fraud_rate': 0.018237600136355888, 'global_rate': 0.0337, 'fraud_rate_in_person': 0.018229166666666668, 'n_in_person': 5376, 'fraud_rate_online': 0.018329938900203666, 'n_online': 491}"
   },
   {
    "step": 7,
@@ -3548,8 +2960,8 @@
    "args": {
     "customer_id": "C02354"
    },
-   "ms": 2.3,
-   "result_preview": "[{'case_id': 'CC-0255', 'outcome': 'confirmed_fraud', 'pattern': 'account_takeover', 'opened_at': '2016-07-09 00:09:53', 'exposure_usd': 1167.08, 'report_filed': 'Yes', 'notes': 'Case CC-0255: cardholder C02354 reported unrecognized activit\u2026"
+   "ms": 76.0,
+   "result_preview": "[{'case_id': 'CC-0255', 'opened_at': '2016-07-09 00:09:53', 'outcome': 'confirmed_fraud', 'pattern': 'account_takeover', 'exposure_usd': 1167.08, 'report_filed': 'Yes', 'notes': 'Case CC-0255: cardholder C02354 reported unrecognized activit\u2026"
   },
   {
    "step": 8,
@@ -3560,8 +2972,8 @@
     "customer_id": "C02354",
     "k": 5
    },
-   "ms": 7.4,
-   "result_preview": "[{'case_id': 'HHG-009', 'kind': 'agent_case', 'score': 0.204, 'customer_id': 'C08299', 'card_id': 'C08299-K1', 'opened_at': '2016-12-28 17:10:53', 'status': 'closed_legitimate', 'verdict': 'legitimate', 'fraud_probability': 0.05, 'pattern':\u2026"
+   "ms": 76.0,
+   "result_preview": "[{'case_id': 'CC-2875', 'kind': 'closed_case', 'score': 0.453, 'customer_id': 'C01400', 'card_id': 'C01400-K1', 'outcome': 'confirmed_fraud', 'status': None, 'verdict': None, 'pattern': 'out_of_region_use', 'exposure_usd': 97, 'opened_at': \u2026"
   },
   {
    "step": 9,
@@ -3570,8 +2982,8 @@
     "query_text": "out_of_region_use account_takeover customer_report verify block report shared device",
     "k": 4
    },
-   "ms": 6.7,
-   "result_preview": "[{'doc_id': 'policy:R1', 'title': 'Fraud Policy R1 \u2013 verify before you block on a weak signal', 'score': 0.209, 'text': 'R1. Verify before you block on a weak signal. If the case rests on a single signal (including a risk score alone) and t\u2026"
+   "ms": 75.9,
+   "result_preview": "[{'doc_id': 'fincen:ato', 'title': 'FinCEN Advisory FIN-2011-A016 \u2013 account takeover red flags', 'score': 0.335, 'text': \"Account takeover indicators include access from unfamiliar devices or IP addresses, use of anonymizing proxies, change\u2026"
   },
   {
    "step": 10,
@@ -3609,17 +3021,17 @@
      ],
      "summary": "Assessed as legitimate (probability 0.05, no fraud pattern). Flagged in-person W transaction 3491361 of $39.08 on card C02354-K2 at 2016-11-27 13:41:26. Customer response: Customer, shown the history of identical monthly charges on their own card, recognises the merchant and confirms the charge; asks for a reminder next cycle. Same product and amount ($39.08 W) recurs 145 times across 5 months on this card \u2014 matches the cardholder's own recurring pattern. Billing region 126 already appears 565 times on this card across 5 month(s). Evidence requested (customer validation); assumed response: Customer, shown the history of identical monthly charges on their own card, recognises the merchant and confirms the charge; asks for a reminder next cycle. Final actions: CREATE_CASE, WARN_CUSTOMER, CLOSE_NO_FRAUD.",
      "similar_prior_cases": [
-      "HHG-009",
-      "HHG-003",
-      "HHG-011",
-      "HHG-001",
-      "HHG-012"
+      "CC-2875",
+      "CC-2861",
+      "CC-5565",
+      "CC-1152",
+      "CC-1177"
      ],
-     "graph_case_id": "CASE-2016-1018"
+     "graph_case_id": "CASE-2016-018"
     }
    },
-   "ms": 756.9,
-   "result_preview": "CASE-2016-1018"
+   "ms": 182.1,
+   "result_preview": "CASE-2016-018"
   },
   {
    "step": 12,

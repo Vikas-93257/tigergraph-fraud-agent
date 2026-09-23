@@ -65,32 +65,32 @@
         "entity_ids": []
       },
       {
-        "claim": "Similar cases retrieved from case memory: CC-5111 (confirmed_fraud, card_not_present_new_device); CC-3368 (confirmed_fraud, card_not_present_new_device); CC-2910 (confirmed_fraud, card_not_present_new_device)",
+        "claim": "Similar cases retrieved from case memory: CC-2910 (confirmed_fraud, card_not_present_new_device); CC-4943 (confirmed_fraud, card_not_present_new_device); CC-3423 (confirmed_fraud, card_not_present_new_device)",
         "source": "graph",
         "ref": "query:similar_cases",
         "entity_ids": [
-          "CC-5111",
-          "CC-3368",
-          "CC-2910"
+          "CC-2910",
+          "CC-4943",
+          "CC-3423"
         ]
       },
       {
-        "claim": "Policy sections applied: Fraud Policy R1 \u2013 verify before you block on a weak signal, Fraud Policy 3a \u2013 a case is not a report, Fraud Policy R2 \u2013 customer denies the transaction",
+        "claim": "Policy sections applied: Known pattern 3 \u2013 card-not-present from a new device, Fraud Policy R2 \u2013 customer denies the transaction, Fraud Policy R4 \u2013 no reply within 24 hours",
         "source": "document",
-        "ref": "policy:R1, policy:3a, policy:R2",
+        "ref": "typology:cnp_new_device, policy:R2, policy:R4",
         "entity_ids": []
       }
     ],
     "similar_prior_cases": [
-      "CC-5111",
-      "CC-3368",
       "CC-2910",
       "CC-4943",
-      "CC-2989"
+      "CC-3423",
+      "CC-2636",
+      "CC-2079"
     ],
     "summary": "Assessed as fraud (probability 0.95, card not present new device). Flagged online R transaction 3464869 of $599.94 on card C03042-K1 at 2016-11-17 14:03:36. Customer response: Customer states they did not make this purchase and still has the card. $599.94 exceeds every prior amount on this card (previous max $550.03, median $99.96). 3 purchases above the card's 95th percentile ($444.96) within 48 hours ($550.03, $550.01, $599.94; in-person and online) \u2014 the card normally shows one such amount every 20 purchases. Evidence requested (customer validation); assumed response: Customer states they did not make this purchase and still has the card. Exposure $1,699.98 across 3 transaction(s). Final actions: CREATE_CASE, BLOCK_CARD, FILE_REPORT.",
     "written_to_graph": true,
-    "graph_case_id": "CASE-2016-1015"
+    "graph_case_id": "CASE-2016-015"
   },
   "evidence_requests": [
     {
@@ -158,5 +158,5 @@
   "stop_reason": "Verification response settled the question (customer denied); probability 0.95. Further graph queries would not change the actions.",
   "tool_calls": 15,
   "tokens": 0,
-  "latency_s": 0.82
+  "latency_s": 0.94
 }

@@ -18,7 +18,7 @@
   "channel": "online",
   "region": null,
   "country": null,
-  "dist1": null,
+  "dist1": 0,
   "p_email": "gmail.com",
   "r_email": "gmail.com",
   "risk_score": 0.39,
@@ -27,22 +27,16 @@
   "proxy": null,
   "device_type": "mobile",
   "match_flags": {
-   "M1": null,
-   "M2": null,
-   "M3": null,
    "M4": "M2",
    "M5": null,
-   "M6": null,
-   "M7": null,
-   "M8": null,
-   "M9": null
+   "M6": null
   },
   "counts": {
-   "C1": 1.0,
-   "C13": 0.0,
-   "C14": 0.0
+   "C1": 1,
+   "C13": 0,
+   "C14": 0
   },
-  "days_since_prev": 0.0,
+  "days_since_prev": 0,
   "customer_id": "C11923",
   "card_id": "C11923-K2",
   "card_network": "visa",
@@ -57,7 +51,7 @@
    "channel": "online",
    "region": null,
    "country": null,
-   "dist1": null,
+   "dist1": 0,
    "p_email": "hotmail.com",
    "r_email": "hotmail.com",
    "risk_score": 0.14,
@@ -66,22 +60,16 @@
    "proxy": null,
    "device_type": "mobile",
    "match_flags": {
-    "M1": null,
-    "M2": null,
-    "M3": null,
     "M4": "M2",
     "M5": null,
-    "M6": null,
-    "M7": null,
-    "M8": null,
-    "M9": null
+    "M6": null
    },
    "counts": {
-    "C1": 2.0,
-    "C13": 1.0,
-    "C14": 1.0
+    "C1": 2,
+    "C13": 1,
+    "C14": 1
    },
-   "days_since_prev": 0.0
+   "days_since_prev": 0
   },
   {
    "txn_id": "3578451",
@@ -91,7 +79,7 @@
    "channel": "online",
    "region": null,
    "country": null,
-   "dist1": null,
+   "dist1": 0,
    "p_email": "hotmail.com",
    "r_email": "hotmail.com",
    "risk_score": 0.13,
@@ -100,22 +88,16 @@
    "proxy": null,
    "device_type": "mobile",
    "match_flags": {
-    "M1": null,
-    "M2": null,
-    "M3": null,
     "M4": "M2",
     "M5": null,
-    "M6": null,
-    "M7": null,
-    "M8": null,
-    "M9": null
+    "M6": null
    },
    "counts": {
-    "C1": 2.0,
-    "C13": 3.0,
-    "C14": 2.0
+    "C1": 2,
+    "C13": 3,
+    "C14": 2
    },
-   "days_since_prev": 50.0
+   "days_since_prev": 50
   },
   {
    "txn_id": "3578471",
@@ -125,7 +107,7 @@
    "channel": "online",
    "region": null,
    "country": null,
-   "dist1": null,
+   "dist1": 0,
    "p_email": "gmail.com",
    "r_email": "gmail.com",
    "risk_score": 0.14,
@@ -134,22 +116,16 @@
    "proxy": null,
    "device_type": "mobile",
    "match_flags": {
-    "M1": null,
-    "M2": null,
-    "M3": null,
     "M4": "M2",
     "M5": null,
-    "M6": null,
-    "M7": null,
-    "M8": null,
-    "M9": null
+    "M6": null
    },
    "counts": {
-    "C1": 1.0,
-    "C13": 1.0,
-    "C14": 1.0
+    "C1": 1,
+    "C13": 1,
+    "C14": 1
    },
-   "days_since_prev": 4.0
+   "days_since_prev": 4
   },
   {
    "txn_id": "3578475",
@@ -159,7 +135,7 @@
    "channel": "online",
    "region": null,
    "country": null,
-   "dist1": null,
+   "dist1": 0,
    "p_email": "gmail.com",
    "r_email": "gmail.com",
    "risk_score": 0.06,
@@ -168,22 +144,16 @@
    "proxy": null,
    "device_type": "mobile",
    "match_flags": {
-    "M1": null,
-    "M2": null,
-    "M3": null,
     "M4": "M2",
     "M5": null,
-    "M6": null,
-    "M7": null,
-    "M8": null,
-    "M9": null
+    "M6": null
    },
    "counts": {
-    "C1": 1.0,
-    "C13": 1.0,
-    "C14": 1.0
+    "C1": 1,
+    "C13": 1,
+    "C14": 1
    },
-   "days_since_prev": 4.0
+   "days_since_prev": 4
   },
   {
    "txn_id": "3578483",
@@ -193,7 +163,7 @@
    "channel": "online",
    "region": null,
    "country": null,
-   "dist1": null,
+   "dist1": 0,
    "p_email": "gmail.com",
    "r_email": "gmail.com",
    "risk_score": 0.07,
@@ -202,22 +172,16 @@
    "proxy": null,
    "device_type": "mobile",
    "match_flags": {
-    "M1": null,
-    "M2": null,
-    "M3": null,
     "M4": "M2",
     "M5": null,
-    "M6": null,
-    "M7": null,
-    "M8": null,
-    "M9": null
+    "M6": null
    },
    "counts": {
-    "C1": 1.0,
-    "C13": 1.0,
-    "C14": 1.0
+    "C1": 1,
+    "C13": 1,
+    "C14": 1
    },
-   "days_since_prev": 4.0
+   "days_since_prev": 4
   },
   {
    "txn_id": "3578486",
@@ -227,7 +191,7 @@
    "channel": "online",
    "region": null,
    "country": null,
-   "dist1": null,
+   "dist1": 0,
    "p_email": "gmail.com",
    "r_email": "gmail.com",
    "risk_score": 0.04,
@@ -236,22 +200,16 @@
    "proxy": null,
    "device_type": "mobile",
    "match_flags": {
-    "M1": null,
-    "M2": null,
-    "M3": null,
     "M4": "M2",
     "M5": null,
-    "M6": null,
-    "M7": null,
-    "M8": null,
-    "M9": null
+    "M6": null
    },
    "counts": {
-    "C1": 1.0,
-    "C13": 1.0,
-    "C14": 1.0
+    "C1": 1,
+    "C13": 1,
+    "C14": 1
    },
-   "days_since_prev": 4.0
+   "days_since_prev": 4
   },
   {
    "txn_id": "3578491",
@@ -261,7 +219,7 @@
    "channel": "online",
    "region": null,
    "country": null,
-   "dist1": null,
+   "dist1": 0,
    "p_email": "gmail.com",
    "r_email": "gmail.com",
    "risk_score": 0.23,
@@ -270,22 +228,16 @@
    "proxy": null,
    "device_type": "desktop",
    "match_flags": {
-    "M1": null,
-    "M2": null,
-    "M3": null,
     "M4": "M2",
     "M5": null,
-    "M6": null,
-    "M7": null,
-    "M8": null,
-    "M9": null
+    "M6": null
    },
    "counts": {
-    "C1": 16.0,
-    "C13": 0.0,
-    "C14": 0.0
+    "C1": 16,
+    "C13": 0,
+    "C14": 0
    },
-   "days_since_prev": 0.0
+   "days_since_prev": 0
   },
   {
    "txn_id": "3578496",
@@ -295,7 +247,7 @@
    "channel": "online",
    "region": null,
    "country": null,
-   "dist1": null,
+   "dist1": 0,
    "p_email": "gmail.com",
    "r_email": "gmail.com",
    "risk_score": 0.03,
@@ -304,22 +256,16 @@
    "proxy": null,
    "device_type": "desktop",
    "match_flags": {
-    "M1": null,
-    "M2": null,
-    "M3": null,
     "M4": "M2",
     "M5": null,
-    "M6": null,
-    "M7": null,
-    "M8": null,
-    "M9": null
+    "M6": null
    },
    "counts": {
-    "C1": 16.0,
-    "C13": 0.0,
-    "C14": 0.0
+    "C1": 16,
+    "C13": 0,
+    "C14": 0
    },
-   "days_since_prev": 0.0
+   "days_since_prev": 0
   },
   {
    "txn_id": "3578506",
@@ -329,7 +275,7 @@
    "channel": "online",
    "region": null,
    "country": null,
-   "dist1": null,
+   "dist1": 0,
    "p_email": "gmail.com",
    "r_email": "gmail.com",
    "risk_score": 0.06,
@@ -338,22 +284,16 @@
    "proxy": null,
    "device_type": "mobile",
    "match_flags": {
-    "M1": null,
-    "M2": null,
-    "M3": null,
     "M4": "M2",
     "M5": null,
-    "M6": null,
-    "M7": null,
-    "M8": null,
-    "M9": null
+    "M6": null
    },
    "counts": {
-    "C1": 1.0,
-    "C13": 1.0,
-    "C14": 1.0
+    "C1": 1,
+    "C13": 1,
+    "C14": 1
    },
-   "days_since_prev": 4.0
+   "days_since_prev": 4
   },
   {
    "txn_id": "3578817",
@@ -363,7 +303,7 @@
    "channel": "online",
    "region": null,
    "country": null,
-   "dist1": null,
+   "dist1": 0,
    "p_email": "hotmail.com",
    "r_email": "hotmail.com",
    "risk_score": 0.01,
@@ -372,22 +312,16 @@
    "proxy": null,
    "device_type": "desktop",
    "match_flags": {
-    "M1": null,
-    "M2": null,
-    "M3": null,
     "M4": "M2",
     "M5": null,
-    "M6": null,
-    "M7": null,
-    "M8": null,
-    "M9": null
+    "M6": null
    },
    "counts": {
-    "C1": 1.0,
-    "C13": 1.0,
-    "C14": 1.0
+    "C1": 1,
+    "C13": 1,
+    "C14": 1
    },
-   "days_since_prev": 0.0
+   "days_since_prev": 0
   },
   {
    "txn_id": "3578995",
@@ -397,7 +331,7 @@
    "channel": "online",
    "region": null,
    "country": null,
-   "dist1": null,
+   "dist1": 0,
    "p_email": "anonymous.com",
    "r_email": "anonymous.com",
    "risk_score": 0.01,
@@ -406,22 +340,16 @@
    "proxy": null,
    "device_type": "desktop",
    "match_flags": {
-    "M1": null,
-    "M2": null,
-    "M3": null,
     "M4": "M0",
     "M5": null,
-    "M6": null,
-    "M7": null,
-    "M8": null,
-    "M9": null
+    "M6": null
    },
    "counts": {
-    "C1": 1.0,
-    "C13": 2.0,
-    "C14": 1.0
+    "C1": 1,
+    "C13": 2,
+    "C14": 1
    },
-   "days_since_prev": 4.0
+   "days_since_prev": 4
   },
   {
    "txn_id": "3578997",
@@ -431,7 +359,7 @@
    "channel": "online",
    "region": null,
    "country": null,
-   "dist1": null,
+   "dist1": 0,
    "p_email": "gmail.com",
    "r_email": "gmail.com",
    "risk_score": 0.28,
@@ -440,22 +368,16 @@
    "proxy": null,
    "device_type": null,
    "match_flags": {
-    "M1": null,
-    "M2": null,
-    "M3": null,
     "M4": "M2",
     "M5": null,
-    "M6": null,
-    "M7": null,
-    "M8": null,
-    "M9": null
+    "M6": null
    },
    "counts": {
-    "C1": 1.0,
-    "C13": 1.0,
-    "C14": 1.0
+    "C1": 1,
+    "C13": 1,
+    "C14": 1
    },
-   "days_since_prev": 0.0
+   "days_since_prev": 0
   },
   {
    "txn_id": "3579400",
@@ -465,7 +387,7 @@
    "channel": "online",
    "region": null,
    "country": null,
-   "dist1": null,
+   "dist1": 0,
    "p_email": "gmail.com",
    "r_email": "gmail.com",
    "risk_score": 0.03,
@@ -474,22 +396,16 @@
    "proxy": null,
    "device_type": "desktop",
    "match_flags": {
-    "M1": null,
-    "M2": null,
-    "M3": null,
     "M4": "M2",
     "M5": null,
-    "M6": null,
-    "M7": null,
-    "M8": null,
-    "M9": null
+    "M6": null
    },
    "counts": {
-    "C1": 2.0,
-    "C13": 0.0,
-    "C14": 0.0
+    "C1": 2,
+    "C13": 0,
+    "C14": 0
    },
-   "days_since_prev": 0.0
+   "days_since_prev": 0
   },
   {
    "txn_id": "3579407",
@@ -499,7 +415,7 @@
    "channel": "online",
    "region": null,
    "country": null,
-   "dist1": null,
+   "dist1": 0,
    "p_email": "gmail.com",
    "r_email": "gmail.com",
    "risk_score": 0.14,
@@ -508,22 +424,16 @@
    "proxy": null,
    "device_type": "desktop",
    "match_flags": {
-    "M1": null,
-    "M2": null,
-    "M3": null,
     "M4": "M2",
     "M5": null,
-    "M6": null,
-    "M7": null,
-    "M8": null,
-    "M9": null
+    "M6": null
    },
    "counts": {
-    "C1": 2.0,
-    "C13": 0.0,
-    "C14": 0.0
+    "C1": 2,
+    "C13": 0,
+    "C14": 0
    },
-   "days_since_prev": 0.0
+   "days_since_prev": 0
   },
   {
    "txn_id": "3579576",
@@ -533,7 +443,7 @@
    "channel": "online",
    "region": null,
    "country": null,
-   "dist1": null,
+   "dist1": 0,
    "p_email": "hotmail.com",
    "r_email": "hotmail.com",
    "risk_score": 0.13,
@@ -542,22 +452,16 @@
    "proxy": null,
    "device_type": "desktop",
    "match_flags": {
-    "M1": null,
-    "M2": null,
-    "M3": null,
     "M4": "M2",
     "M5": null,
-    "M6": null,
-    "M7": null,
-    "M8": null,
-    "M9": null
+    "M6": null
    },
    "counts": {
-    "C1": 1.0,
-    "C13": 1.0,
-    "C14": 1.0
+    "C1": 1,
+    "C13": 1,
+    "C14": 1
    },
-   "days_since_prev": 0.0
+   "days_since_prev": 0
   },
   {
    "txn_id": "3579597",
@@ -567,7 +471,7 @@
    "channel": "online",
    "region": null,
    "country": null,
-   "dist1": null,
+   "dist1": 0,
    "p_email": "yahoo.com.mx",
    "r_email": "yahoo.com.mx",
    "risk_score": 0.08,
@@ -576,22 +480,16 @@
    "proxy": null,
    "device_type": "desktop",
    "match_flags": {
-    "M1": null,
-    "M2": null,
-    "M3": null,
     "M4": "M2",
     "M5": null,
-    "M6": null,
-    "M7": null,
-    "M8": null,
-    "M9": null
+    "M6": null
    },
    "counts": {
-    "C1": 1.0,
-    "C13": 1.0,
-    "C14": 1.0
+    "C1": 1,
+    "C13": 1,
+    "C14": 1
    },
-   "days_since_prev": 0.0
+   "days_since_prev": 0
   },
   {
    "txn_id": "3580137",
@@ -601,7 +499,7 @@
    "channel": "online",
    "region": null,
    "country": null,
-   "dist1": null,
+   "dist1": 0,
    "p_email": "gmail.com",
    "r_email": "gmail.com",
    "risk_score": 0.01,
@@ -610,22 +508,16 @@
    "proxy": null,
    "device_type": "mobile",
    "match_flags": {
-    "M1": null,
-    "M2": null,
-    "M3": null,
     "M4": "M2",
     "M5": null,
-    "M6": null,
-    "M7": null,
-    "M8": null,
-    "M9": null
+    "M6": null
    },
    "counts": {
-    "C1": 1.0,
-    "C13": 1.0,
-    "C14": 1.0
+    "C1": 1,
+    "C13": 1,
+    "C14": 1
    },
-   "days_since_prev": 2.0
+   "days_since_prev": 2
   },
   {
    "txn_id": "3580202",
@@ -635,7 +527,7 @@
    "channel": "online",
    "region": null,
    "country": null,
-   "dist1": null,
+   "dist1": 0,
    "p_email": "gmail.com",
    "r_email": "gmail.com",
    "risk_score": 0.09,
@@ -644,22 +536,16 @@
    "proxy": null,
    "device_type": "mobile",
    "match_flags": {
-    "M1": null,
-    "M2": null,
-    "M3": null,
     "M4": "M2",
     "M5": null,
-    "M6": null,
-    "M7": null,
-    "M8": null,
-    "M9": null
+    "M6": null
    },
    "counts": {
-    "C1": 1.0,
-    "C13": 1.0,
-    "C14": 1.0
+    "C1": 1,
+    "C13": 1,
+    "C14": 1
    },
-   "days_since_prev": 2.0
+   "days_since_prev": 2
   },
   {
    "txn_id": "3580219",
@@ -669,7 +555,7 @@
    "channel": "online",
    "region": null,
    "country": null,
-   "dist1": null,
+   "dist1": 0,
    "p_email": "gmail.com",
    "r_email": "gmail.com",
    "risk_score": 0.01,
@@ -678,22 +564,16 @@
    "proxy": null,
    "device_type": "mobile",
    "match_flags": {
-    "M1": null,
-    "M2": null,
-    "M3": null,
     "M4": "M2",
     "M5": null,
-    "M6": null,
-    "M7": null,
-    "M8": null,
-    "M9": null
+    "M6": null
    },
    "counts": {
-    "C1": 2.0,
-    "C13": 1.0,
-    "C14": 1.0
+    "C1": 2,
+    "C13": 1,
+    "C14": 1
    },
-   "days_since_prev": 0.0
+   "days_since_prev": 0
   },
   {
    "txn_id": "3580232",
@@ -703,7 +583,7 @@
    "channel": "online",
    "region": null,
    "country": null,
-   "dist1": null,
+   "dist1": 0,
    "p_email": "gmail.com",
    "r_email": "gmail.com",
    "risk_score": 0.25,
@@ -712,22 +592,16 @@
    "proxy": null,
    "device_type": "mobile",
    "match_flags": {
-    "M1": null,
-    "M2": null,
-    "M3": null,
     "M4": "M2",
     "M5": null,
-    "M6": null,
-    "M7": null,
-    "M8": null,
-    "M9": null
+    "M6": null
    },
    "counts": {
-    "C1": 1.0,
-    "C13": 1.0,
-    "C14": 1.0
+    "C1": 1,
+    "C13": 1,
+    "C14": 1
    },
-   "days_since_prev": 2.0
+   "days_since_prev": 2
   },
   {
    "txn_id": "3580348",
@@ -737,7 +611,7 @@
    "channel": "online",
    "region": null,
    "country": null,
-   "dist1": null,
+   "dist1": 0,
    "p_email": "gmail.com",
    "r_email": "gmail.com",
    "risk_score": 0.11,
@@ -746,22 +620,16 @@
    "proxy": null,
    "device_type": "mobile",
    "match_flags": {
-    "M1": null,
-    "M2": null,
-    "M3": null,
     "M4": "M2",
     "M5": null,
-    "M6": null,
-    "M7": null,
-    "M8": null,
-    "M9": null
+    "M6": null
    },
    "counts": {
-    "C1": 1.0,
-    "C13": 2.0,
-    "C14": 1.0
+    "C1": 1,
+    "C13": 2,
+    "C14": 1
    },
-   "days_since_prev": 9.0
+   "days_since_prev": 9
   },
   {
    "txn_id": "3580380",
@@ -771,7 +639,7 @@
    "channel": "online",
    "region": null,
    "country": null,
-   "dist1": null,
+   "dist1": 0,
    "p_email": "hotmail.com",
    "r_email": "hotmail.com",
    "risk_score": 0.12,
@@ -780,22 +648,16 @@
    "proxy": null,
    "device_type": "mobile",
    "match_flags": {
-    "M1": null,
-    "M2": null,
-    "M3": null,
     "M4": "M2",
     "M5": null,
-    "M6": null,
-    "M7": null,
-    "M8": null,
-    "M9": null
+    "M6": null
    },
    "counts": {
-    "C1": 6.0,
-    "C13": 4.0,
-    "C14": 2.0
+    "C1": 6,
+    "C13": 4,
+    "C14": 2
    },
-   "days_since_prev": 48.0
+   "days_since_prev": 48
   },
   {
    "txn_id": "3580403",
@@ -805,7 +667,7 @@
    "channel": "online",
    "region": null,
    "country": null,
-   "dist1": null,
+   "dist1": 0,
    "p_email": "hotmail.com",
    "r_email": "hotmail.com",
    "risk_score": 0.36,
@@ -814,22 +676,16 @@
    "proxy": null,
    "device_type": "desktop",
    "match_flags": {
-    "M1": null,
-    "M2": null,
-    "M3": null,
     "M4": "M2",
     "M5": null,
-    "M6": null,
-    "M7": null,
-    "M8": null,
-    "M9": null
+    "M6": null
    },
    "counts": {
-    "C1": 7.0,
-    "C13": 4.0,
-    "C14": 2.0
+    "C1": 7,
+    "C13": 4,
+    "C14": 2
    },
-   "days_since_prev": 48.0
+   "days_since_prev": 48
   },
   {
    "txn_id": "3580417",
@@ -839,7 +695,7 @@
    "channel": "online",
    "region": null,
    "country": null,
-   "dist1": null,
+   "dist1": 0,
    "p_email": "hotmail.com",
    "r_email": "hotmail.com",
    "risk_score": 0.16,
@@ -848,22 +704,16 @@
    "proxy": null,
    "device_type": "desktop",
    "match_flags": {
-    "M1": null,
-    "M2": null,
-    "M3": null,
     "M4": "M2",
     "M5": null,
-    "M6": null,
-    "M7": null,
-    "M8": null,
-    "M9": null
+    "M6": null
    },
    "counts": {
-    "C1": 7.0,
-    "C13": 4.0,
-    "C14": 2.0
+    "C1": 7,
+    "C13": 4,
+    "C14": 2
    },
-   "days_since_prev": 48.0
+   "days_since_prev": 48
   },
   {
    "txn_id": "3580427",
@@ -873,7 +723,7 @@
    "channel": "online",
    "region": null,
    "country": null,
-   "dist1": null,
+   "dist1": 0,
    "p_email": "yahoo.com",
    "r_email": "yahoo.com",
    "risk_score": 0.02,
@@ -882,22 +732,16 @@
    "proxy": null,
    "device_type": "desktop",
    "match_flags": {
-    "M1": null,
-    "M2": null,
-    "M3": null,
     "M4": "M2",
     "M5": null,
-    "M6": null,
-    "M7": null,
-    "M8": null,
-    "M9": null
+    "M6": null
    },
    "counts": {
-    "C1": 1.0,
-    "C13": 1.0,
-    "C14": 1.0
+    "C1": 1,
+    "C13": 1,
+    "C14": 1
    },
-   "days_since_prev": 0.0
+   "days_since_prev": 0
   },
   {
    "txn_id": "3580478",
@@ -907,7 +751,7 @@
    "channel": "online",
    "region": null,
    "country": null,
-   "dist1": null,
+   "dist1": 0,
    "p_email": "gmail.com",
    "r_email": "gmail.com",
    "risk_score": 0.32,
@@ -916,22 +760,16 @@
    "proxy": null,
    "device_type": "mobile",
    "match_flags": {
-    "M1": null,
-    "M2": null,
-    "M3": null,
     "M4": "M2",
     "M5": null,
-    "M6": null,
-    "M7": null,
-    "M8": null,
-    "M9": null
+    "M6": null
    },
    "counts": {
-    "C1": 1.0,
-    "C13": 1.0,
-    "C14": 1.0
+    "C1": 1,
+    "C13": 1,
+    "C14": 1
    },
-   "days_since_prev": 0.0
+   "days_since_prev": 0
   },
   {
    "txn_id": "3580544",
@@ -941,7 +779,7 @@
    "channel": "online",
    "region": null,
    "country": null,
-   "dist1": null,
+   "dist1": 0,
    "p_email": "hotmail.com",
    "r_email": "hotmail.com",
    "risk_score": 0.68,
@@ -950,22 +788,16 @@
    "proxy": null,
    "device_type": "mobile",
    "match_flags": {
-    "M1": null,
-    "M2": null,
-    "M3": null,
     "M4": "M2",
     "M5": null,
-    "M6": null,
-    "M7": null,
-    "M8": null,
-    "M9": null
+    "M6": null
    },
    "counts": {
-    "C1": 1.0,
-    "C13": 1.0,
-    "C14": 1.0
+    "C1": 1,
+    "C13": 1,
+    "C14": 1
    },
-   "days_since_prev": 0.0
+   "days_since_prev": 0
   },
   {
    "txn_id": "3580712",
@@ -975,7 +807,7 @@
    "channel": "online",
    "region": null,
    "country": null,
-   "dist1": null,
+   "dist1": 0,
    "p_email": "anonymous.com",
    "r_email": "anonymous.com",
    "risk_score": 0.2,
@@ -984,22 +816,16 @@
    "proxy": null,
    "device_type": "desktop",
    "match_flags": {
-    "M1": null,
-    "M2": null,
-    "M3": null,
     "M4": "M2",
     "M5": null,
-    "M6": null,
-    "M7": null,
-    "M8": null,
-    "M9": null
+    "M6": null
    },
    "counts": {
-    "C1": 1.0,
-    "C13": 1.0,
-    "C14": 1.0
+    "C1": 1,
+    "C13": 1,
+    "C14": 1
    },
-   "days_since_prev": 0.0
+   "days_since_prev": 0
   },
   {
    "txn_id": "3580765",
@@ -1009,7 +835,7 @@
    "channel": "online",
    "region": null,
    "country": null,
-   "dist1": null,
+   "dist1": 0,
    "p_email": "gmail.com",
    "r_email": "gmail.com",
    "risk_score": 0.63,
@@ -1018,22 +844,16 @@
    "proxy": null,
    "device_type": "desktop",
    "match_flags": {
-    "M1": null,
-    "M2": null,
-    "M3": null,
     "M4": "M2",
     "M5": null,
-    "M6": null,
-    "M7": null,
-    "M8": null,
-    "M9": null
+    "M6": null
    },
    "counts": {
-    "C1": 1.0,
-    "C13": 1.0,
-    "C14": 1.0
+    "C1": 1,
+    "C13": 1,
+    "C14": 1
    },
-   "days_since_prev": 0.0
+   "days_since_prev": 0
   },
   {
    "txn_id": "3580776",
@@ -1043,7 +863,7 @@
    "channel": "online",
    "region": null,
    "country": null,
-   "dist1": null,
+   "dist1": 0,
    "p_email": "gmail.com",
    "r_email": "gmail.com",
    "risk_score": 0.4,
@@ -1052,22 +872,16 @@
    "proxy": null,
    "device_type": "desktop",
    "match_flags": {
-    "M1": null,
-    "M2": null,
-    "M3": null,
     "M4": "M2",
     "M5": null,
-    "M6": null,
-    "M7": null,
-    "M8": null,
-    "M9": null
+    "M6": null
    },
    "counts": {
-    "C1": 1.0,
-    "C13": 1.0,
-    "C14": 1.0
+    "C1": 1,
+    "C13": 1,
+    "C14": 1
    },
-   "days_since_prev": 0.0
+   "days_since_prev": 0
   },
   {
    "txn_id": "3580815",
@@ -1077,7 +891,7 @@
    "channel": "online",
    "region": null,
    "country": null,
-   "dist1": null,
+   "dist1": 0,
    "p_email": "hotmail.com",
    "r_email": "hotmail.com",
    "risk_score": 0.84,
@@ -1086,22 +900,16 @@
    "proxy": null,
    "device_type": "desktop",
    "match_flags": {
-    "M1": null,
-    "M2": null,
-    "M3": null,
     "M4": "M2",
     "M5": null,
-    "M6": null,
-    "M7": null,
-    "M8": null,
-    "M9": null
+    "M6": null
    },
    "counts": {
-    "C1": 5.0,
-    "C13": 2.0,
-    "C14": 1.0
+    "C1": 5,
+    "C13": 2,
+    "C14": 1
    },
-   "days_since_prev": 0.0
+   "days_since_prev": 0
   },
   {
    "txn_id": "3580821",
@@ -1111,7 +919,7 @@
    "channel": "online",
    "region": null,
    "country": null,
-   "dist1": null,
+   "dist1": 0,
    "p_email": "hotmail.com",
    "r_email": "hotmail.com",
    "risk_score": 0.01,
@@ -1120,22 +928,16 @@
    "proxy": null,
    "device_type": "desktop",
    "match_flags": {
-    "M1": null,
-    "M2": null,
-    "M3": null,
     "M4": "M2",
     "M5": null,
-    "M6": null,
-    "M7": null,
-    "M8": null,
-    "M9": null
+    "M6": null
    },
    "counts": {
-    "C1": 5.0,
-    "C13": 2.0,
-    "C14": 1.0
+    "C1": 5,
+    "C13": 2,
+    "C14": 1
    },
-   "days_since_prev": 0.0
+   "days_since_prev": 0
   },
   {
    "txn_id": "3580907",
@@ -1145,7 +947,7 @@
    "channel": "online",
    "region": null,
    "country": null,
-   "dist1": null,
+   "dist1": 0,
    "p_email": "gmail.com",
    "r_email": "gmail.com",
    "risk_score": 0.09,
@@ -1154,22 +956,16 @@
    "proxy": null,
    "device_type": "mobile",
    "match_flags": {
-    "M1": null,
-    "M2": null,
-    "M3": null,
     "M4": "M2",
     "M5": null,
-    "M6": null,
-    "M7": null,
-    "M8": null,
-    "M9": null
+    "M6": null
    },
    "counts": {
-    "C1": 1.0,
-    "C13": 1.0,
-    "C14": 1.0
+    "C1": 1,
+    "C13": 1,
+    "C14": 1
    },
-   "days_since_prev": 0.0
+   "days_since_prev": 0
   },
   {
    "txn_id": "3580933",
@@ -1179,7 +975,7 @@
    "channel": "online",
    "region": null,
    "country": null,
-   "dist1": null,
+   "dist1": 0,
    "p_email": "gmail.com",
    "r_email": "gmail.com",
    "risk_score": 0.09,
@@ -1188,22 +984,16 @@
    "proxy": null,
    "device_type": "mobile",
    "match_flags": {
-    "M1": null,
-    "M2": null,
-    "M3": null,
     "M4": "M2",
     "M5": null,
-    "M6": null,
-    "M7": null,
-    "M8": null,
-    "M9": null
+    "M6": null
    },
    "counts": {
-    "C1": 1.0,
-    "C13": 1.0,
-    "C14": 1.0
+    "C1": 1,
+    "C13": 1,
+    "C14": 1
    },
-   "days_since_prev": 0.0
+   "days_since_prev": 0
   },
   {
    "txn_id": "3580951",
@@ -1213,7 +1003,7 @@
    "channel": "online",
    "region": null,
    "country": null,
-   "dist1": null,
+   "dist1": 0,
    "p_email": "hotmail.com",
    "r_email": "hotmail.com",
    "risk_score": 0.05,
@@ -1222,22 +1012,16 @@
    "proxy": null,
    "device_type": "desktop",
    "match_flags": {
-    "M1": null,
-    "M2": null,
-    "M3": null,
     "M4": "M0",
     "M5": null,
-    "M6": null,
-    "M7": null,
-    "M8": null,
-    "M9": null
+    "M6": null
    },
    "counts": {
-    "C1": 2.0,
-    "C13": 4.0,
-    "C14": 2.0
+    "C1": 2,
+    "C13": 4,
+    "C14": 2
    },
-   "days_since_prev": 0.0
+   "days_since_prev": 0
   },
   {
    "txn_id": "3580992",
@@ -1247,7 +1031,7 @@
    "channel": "online",
    "region": null,
    "country": null,
-   "dist1": null,
+   "dist1": 0,
    "p_email": "gmail.com",
    "r_email": "gmail.com",
    "risk_score": 0.12,
@@ -1256,22 +1040,16 @@
    "proxy": null,
    "device_type": "desktop",
    "match_flags": {
-    "M1": null,
-    "M2": null,
-    "M3": null,
     "M4": "M2",
     "M5": null,
-    "M6": null,
-    "M7": null,
-    "M8": null,
-    "M9": null
+    "M6": null
    },
    "counts": {
-    "C1": 3.0,
-    "C13": 3.0,
-    "C14": 2.0
+    "C1": 3,
+    "C13": 3,
+    "C14": 2
    },
-   "days_since_prev": 0.0
+   "days_since_prev": 0
   },
   {
    "txn_id": "3581048",
@@ -1281,7 +1059,7 @@
    "channel": "online",
    "region": null,
    "country": null,
-   "dist1": null,
+   "dist1": 0,
    "p_email": "hotmail.com",
    "r_email": "hotmail.com",
    "risk_score": 0.23,
@@ -1290,22 +1068,16 @@
    "proxy": null,
    "device_type": "mobile",
    "match_flags": {
-    "M1": null,
-    "M2": null,
-    "M3": null,
     "M4": "M2",
     "M5": null,
-    "M6": null,
-    "M7": null,
-    "M8": null,
-    "M9": null
+    "M6": null
    },
    "counts": {
-    "C1": 1.0,
-    "C13": 0.0,
-    "C14": 0.0
+    "C1": 1,
+    "C13": 0,
+    "C14": 0
    },
-   "days_since_prev": 0.0
+   "days_since_prev": 0
   },
   {
    "txn_id": "3581345",
@@ -1315,7 +1087,7 @@
    "channel": "online",
    "region": null,
    "country": null,
-   "dist1": null,
+   "dist1": 0,
    "p_email": "gmail.com",
    "r_email": "gmail.com",
    "risk_score": 0.06,
@@ -1324,22 +1096,16 @@
    "proxy": null,
    "device_type": "desktop",
    "match_flags": {
-    "M1": null,
-    "M2": null,
-    "M3": null,
     "M4": "M2",
     "M5": null,
-    "M6": null,
-    "M7": null,
-    "M8": null,
-    "M9": null
+    "M6": null
    },
    "counts": {
-    "C1": 2.0,
-    "C13": 0.0,
-    "C14": 0.0
+    "C1": 2,
+    "C13": 0,
+    "C14": 0
    },
-   "days_since_prev": 30.0
+   "days_since_prev": 30
   },
   {
    "txn_id": "3582082",
@@ -1349,7 +1115,7 @@
    "channel": "online",
    "region": null,
    "country": null,
-   "dist1": null,
+   "dist1": 0,
    "p_email": "anonymous.com",
    "r_email": "anonymous.com",
    "risk_score": 0.04,
@@ -1358,22 +1124,16 @@
    "proxy": null,
    "device_type": "desktop",
    "match_flags": {
-    "M1": null,
-    "M2": null,
-    "M3": null,
     "M4": "M0",
     "M5": null,
-    "M6": null,
-    "M7": null,
-    "M8": null,
-    "M9": null
+    "M6": null
    },
    "counts": {
-    "C1": 1.0,
-    "C13": 1.0,
-    "C14": 1.0
+    "C1": 1,
+    "C13": 1,
+    "C14": 1
    },
-   "days_since_prev": 0.0
+   "days_since_prev": 0
   },
   {
    "txn_id": "3582107",
@@ -1383,7 +1143,7 @@
    "channel": "online",
    "region": null,
    "country": null,
-   "dist1": null,
+   "dist1": 0,
    "p_email": "anonymous.com",
    "r_email": "anonymous.com",
    "risk_score": 0.21,
@@ -1392,22 +1152,16 @@
    "proxy": null,
    "device_type": null,
    "match_flags": {
-    "M1": null,
-    "M2": null,
-    "M3": null,
     "M4": "M2",
     "M5": null,
-    "M6": null,
-    "M7": null,
-    "M8": null,
-    "M9": null
+    "M6": null
    },
    "counts": {
-    "C1": 1.0,
-    "C13": 0.0,
-    "C14": 0.0
+    "C1": 1,
+    "C13": 0,
+    "C14": 0
    },
-   "days_since_prev": 0.0
+   "days_since_prev": 0
   },
   {
    "txn_id": "3582142",
@@ -1417,7 +1171,7 @@
    "channel": "online",
    "region": null,
    "country": null,
-   "dist1": null,
+   "dist1": 0,
    "p_email": "hotmail.com",
    "r_email": "hotmail.com",
    "risk_score": 0.03,
@@ -1426,22 +1180,16 @@
    "proxy": null,
    "device_type": "desktop",
    "match_flags": {
-    "M1": null,
-    "M2": null,
-    "M3": null,
     "M4": "M2",
     "M5": null,
-    "M6": null,
-    "M7": null,
-    "M8": null,
-    "M9": null
+    "M6": null
    },
    "counts": {
-    "C1": 7.0,
-    "C13": 4.0,
-    "C14": 2.0
+    "C1": 7,
+    "C13": 4,
+    "C14": 2
    },
-   "days_since_prev": 49.0
+   "days_since_prev": 49
   },
   {
    "txn_id": "3582175",
@@ -1451,7 +1199,7 @@
    "channel": "online",
    "region": null,
    "country": null,
-   "dist1": null,
+   "dist1": 0,
    "p_email": "hotmail.com",
    "r_email": "hotmail.com",
    "risk_score": 0.12,
@@ -1460,22 +1208,16 @@
    "proxy": null,
    "device_type": "desktop",
    "match_flags": {
-    "M1": null,
-    "M2": null,
-    "M3": null,
     "M4": "M0",
     "M5": null,
-    "M6": null,
-    "M7": null,
-    "M8": null,
-    "M9": null
+    "M6": null
    },
    "counts": {
-    "C1": 7.0,
-    "C13": 4.0,
-    "C14": 2.0
+    "C1": 7,
+    "C13": 4,
+    "C14": 2
    },
-   "days_since_prev": 49.0
+   "days_since_prev": 49
   },
   {
    "txn_id": "3582178",
@@ -1485,7 +1227,7 @@
    "channel": "online",
    "region": null,
    "country": null,
-   "dist1": null,
+   "dist1": 0,
    "p_email": "live.com",
    "r_email": "live.com",
    "risk_score": 0.14,
@@ -1494,22 +1236,16 @@
    "proxy": null,
    "device_type": "desktop",
    "match_flags": {
-    "M1": null,
-    "M2": null,
-    "M3": null,
     "M4": "M2",
     "M5": null,
-    "M6": null,
-    "M7": null,
-    "M8": null,
-    "M9": null
+    "M6": null
    },
    "counts": {
-    "C1": 1.0,
-    "C13": 1.0,
-    "C14": 1.0
+    "C1": 1,
+    "C13": 1,
+    "C14": 1
    },
-   "days_since_prev": 0.0
+   "days_since_prev": 0
   },
   {
    "txn_id": "3582327",
@@ -1519,7 +1255,7 @@
    "channel": "online",
    "region": null,
    "country": null,
-   "dist1": null,
+   "dist1": 0,
    "p_email": "gmail.com",
    "r_email": "gmail.com",
    "risk_score": 0.11,
@@ -1528,22 +1264,16 @@
    "proxy": null,
    "device_type": "desktop",
    "match_flags": {
-    "M1": null,
-    "M2": null,
-    "M3": null,
     "M4": "M2",
     "M5": null,
-    "M6": null,
-    "M7": null,
-    "M8": null,
-    "M9": null
+    "M6": null
    },
    "counts": {
-    "C1": 2.0,
-    "C13": 0.0,
-    "C14": 0.0
+    "C1": 2,
+    "C13": 0,
+    "C14": 0
    },
-   "days_since_prev": 255.0
+   "days_since_prev": 255
   },
   {
    "txn_id": "3582338",
@@ -1553,7 +1283,7 @@
    "channel": "online",
    "region": null,
    "country": null,
-   "dist1": null,
+   "dist1": 0,
    "p_email": "gmail.com",
    "r_email": "gmail.com",
    "risk_score": 0.05,
@@ -1562,22 +1292,16 @@
    "proxy": null,
    "device_type": "desktop",
    "match_flags": {
-    "M1": null,
-    "M2": null,
-    "M3": null,
     "M4": "M0",
     "M5": null,
-    "M6": null,
-    "M7": null,
-    "M8": null,
-    "M9": null
+    "M6": null
    },
    "counts": {
-    "C1": 1.0,
-    "C13": 1.0,
-    "C14": 1.0
+    "C1": 1,
+    "C13": 1,
+    "C14": 1
    },
-   "days_since_prev": 0.0
+   "days_since_prev": 0
   },
   {
    "txn_id": "3582375",
@@ -1587,7 +1311,7 @@
    "channel": "online",
    "region": null,
    "country": null,
-   "dist1": null,
+   "dist1": 0,
    "p_email": "gmail.com",
    "r_email": "gmail.com",
    "risk_score": 0.07,
@@ -1596,22 +1320,16 @@
    "proxy": null,
    "device_type": "desktop",
    "match_flags": {
-    "M1": null,
-    "M2": null,
-    "M3": null,
     "M4": "M0",
     "M5": null,
-    "M6": null,
-    "M7": null,
-    "M8": null,
-    "M9": null
+    "M6": null
    },
    "counts": {
-    "C1": 1.0,
-    "C13": 1.0,
-    "C14": 1.0
+    "C1": 1,
+    "C13": 1,
+    "C14": 1
    },
-   "days_since_prev": 0.0
+   "days_since_prev": 0
   },
   {
    "txn_id": "3582413",
@@ -1621,7 +1339,7 @@
    "channel": "online",
    "region": null,
    "country": null,
-   "dist1": null,
+   "dist1": 0,
    "p_email": "hotmail.com",
    "r_email": "hotmail.com",
    "risk_score": 0.39,
@@ -1630,22 +1348,16 @@
    "proxy": null,
    "device_type": "mobile",
    "match_flags": {
-    "M1": null,
-    "M2": null,
-    "M3": null,
     "M4": "M2",
     "M5": null,
-    "M6": null,
-    "M7": null,
-    "M8": null,
-    "M9": null
+    "M6": null
    },
    "counts": {
-    "C1": 1.0,
-    "C13": 1.0,
-    "C14": 1.0
+    "C1": 1,
+    "C13": 1,
+    "C14": 1
    },
-   "days_since_prev": 0.0
+   "days_since_prev": 0
   },
   {
    "txn_id": "3582602",
@@ -1655,7 +1367,7 @@
    "channel": "online",
    "region": null,
    "country": null,
-   "dist1": null,
+   "dist1": 0,
    "p_email": "hotmail.com",
    "r_email": "hotmail.com",
    "risk_score": 0.14,
@@ -1664,22 +1376,16 @@
    "proxy": null,
    "device_type": "desktop",
    "match_flags": {
-    "M1": null,
-    "M2": null,
-    "M3": null,
     "M4": "M2",
     "M5": null,
-    "M6": null,
-    "M7": null,
-    "M8": null,
-    "M9": null
+    "M6": null
    },
    "counts": {
-    "C1": 10.0,
-    "C13": 25.0,
-    "C14": 9.0
+    "C1": 10,
+    "C13": 25,
+    "C14": 9
    },
-   "days_since_prev": 466.0
+   "days_since_prev": 466
   },
   {
    "txn_id": "3582624",
@@ -1689,7 +1395,7 @@
    "channel": "online",
    "region": null,
    "country": null,
-   "dist1": null,
+   "dist1": 0,
    "p_email": "hotmail.com",
    "r_email": "hotmail.com",
    "risk_score": 0.15,
@@ -1698,22 +1404,16 @@
    "proxy": null,
    "device_type": "mobile",
    "match_flags": {
-    "M1": null,
-    "M2": null,
-    "M3": null,
     "M4": "M2",
     "M5": null,
-    "M6": null,
-    "M7": null,
-    "M8": null,
-    "M9": null
+    "M6": null
    },
    "counts": {
-    "C1": 7.0,
-    "C13": 4.0,
-    "C14": 2.0
+    "C1": 7,
+    "C13": 4,
+    "C14": 2
    },
-   "days_since_prev": 49.0
+   "days_since_prev": 49
   },
   {
    "txn_id": "3582671",
@@ -1723,7 +1423,7 @@
    "channel": "online",
    "region": null,
    "country": null,
-   "dist1": null,
+   "dist1": 0,
    "p_email": "gmail.com",
    "r_email": "gmail.com",
    "risk_score": 0.26,
@@ -1732,22 +1432,16 @@
    "proxy": null,
    "device_type": "desktop",
    "match_flags": {
-    "M1": null,
-    "M2": null,
-    "M3": null,
     "M4": "M0",
     "M5": null,
-    "M6": null,
-    "M7": null,
-    "M8": null,
-    "M9": null
+    "M6": null
    },
    "counts": {
-    "C1": 2.0,
-    "C13": 1.0,
-    "C14": 1.0
+    "C1": 2,
+    "C13": 1,
+    "C14": 1
    },
-   "days_since_prev": 0.0
+   "days_since_prev": 0
   },
   {
    "txn_id": "3582738",
@@ -1757,7 +1451,7 @@
    "channel": "online",
    "region": null,
    "country": null,
-   "dist1": null,
+   "dist1": 0,
    "p_email": "anonymous.com",
    "r_email": "anonymous.com",
    "risk_score": 0.06,
@@ -1766,22 +1460,16 @@
    "proxy": null,
    "device_type": "desktop",
    "match_flags": {
-    "M1": null,
-    "M2": null,
-    "M3": null,
     "M4": "M0",
     "M5": null,
-    "M6": null,
-    "M7": null,
-    "M8": null,
-    "M9": null
+    "M6": null
    },
    "counts": {
-    "C1": 1.0,
-    "C13": 1.0,
-    "C14": 1.0
+    "C1": 1,
+    "C13": 1,
+    "C14": 1
    },
-   "days_since_prev": 0.0
+   "days_since_prev": 0
   },
   {
    "txn_id": "3582868",
@@ -1791,7 +1479,7 @@
    "channel": "online",
    "region": null,
    "country": null,
-   "dist1": null,
+   "dist1": 0,
    "p_email": "hotmail.com",
    "r_email": "hotmail.com",
    "risk_score": 0.24,
@@ -1800,22 +1488,16 @@
    "proxy": null,
    "device_type": "desktop",
    "match_flags": {
-    "M1": null,
-    "M2": null,
-    "M3": null,
     "M4": "M2",
     "M5": null,
-    "M6": null,
-    "M7": null,
-    "M8": null,
-    "M9": null
+    "M6": null
    },
    "counts": {
-    "C1": 1.0,
-    "C13": 0.0,
-    "C14": 0.0
+    "C1": 1,
+    "C13": 0,
+    "C14": 0
    },
-   "days_since_prev": 0.0
+   "days_since_prev": 0
   },
   {
    "txn_id": "3582897",
@@ -1825,7 +1507,7 @@
    "channel": "online",
    "region": null,
    "country": null,
-   "dist1": null,
+   "dist1": 0,
    "p_email": "gmail.com",
    "r_email": "gmail.com",
    "risk_score": 0.03,
@@ -1834,22 +1516,16 @@
    "proxy": null,
    "device_type": "desktop",
    "match_flags": {
-    "M1": null,
-    "M2": null,
-    "M3": null,
     "M4": "M2",
     "M5": null,
-    "M6": null,
-    "M7": null,
-    "M8": null,
-    "M9": null
+    "M6": null
    },
    "counts": {
-    "C1": 1.0,
-    "C13": 1.0,
-    "C14": 1.0
+    "C1": 1,
+    "C13": 1,
+    "C14": 1
    },
-   "days_since_prev": 0.0
+   "days_since_prev": 0
   },
   {
    "txn_id": "3583101",
@@ -1859,7 +1535,7 @@
    "channel": "online",
    "region": null,
    "country": null,
-   "dist1": null,
+   "dist1": 0,
    "p_email": "outlook.es",
    "r_email": "outlook.es",
    "risk_score": 0.13,
@@ -1868,22 +1544,16 @@
    "proxy": null,
    "device_type": "desktop",
    "match_flags": {
-    "M1": null,
-    "M2": null,
-    "M3": null,
     "M4": "M2",
     "M5": null,
-    "M6": null,
-    "M7": null,
-    "M8": null,
-    "M9": null
+    "M6": null
    },
    "counts": {
-    "C1": 1.0,
-    "C13": 1.0,
-    "C14": 1.0
+    "C1": 1,
+    "C13": 1,
+    "C14": 1
    },
-   "days_since_prev": 0.0
+   "days_since_prev": 0
   },
   {
    "txn_id": "3583140",
@@ -1893,7 +1563,7 @@
    "channel": "online",
    "region": null,
    "country": null,
-   "dist1": null,
+   "dist1": 0,
    "p_email": "gmail.com",
    "r_email": "gmail.com",
    "risk_score": 0.14,
@@ -1902,22 +1572,16 @@
    "proxy": null,
    "device_type": "mobile",
    "match_flags": {
-    "M1": null,
-    "M2": null,
-    "M3": null,
     "M4": "M2",
     "M5": null,
-    "M6": null,
-    "M7": null,
-    "M8": null,
-    "M9": null
+    "M6": null
    },
    "counts": {
-    "C1": 2.0,
-    "C13": 2.0,
-    "C14": 2.0
+    "C1": 2,
+    "C13": 2,
+    "C14": 2
    },
-   "days_since_prev": 16.0
+   "days_since_prev": 16
   },
   {
    "txn_id": "3583199",
@@ -1927,7 +1591,7 @@
    "channel": "online",
    "region": null,
    "country": null,
-   "dist1": null,
+   "dist1": 0,
    "p_email": "yahoo.com.mx",
    "r_email": "yahoo.com.mx",
    "risk_score": 0.1,
@@ -1936,22 +1600,16 @@
    "proxy": null,
    "device_type": "desktop",
    "match_flags": {
-    "M1": null,
-    "M2": null,
-    "M3": null,
     "M4": "M0",
     "M5": null,
-    "M6": null,
-    "M7": null,
-    "M8": null,
-    "M9": null
+    "M6": null
    },
    "counts": {
-    "C1": 3.0,
-    "C13": 3.0,
-    "C14": 3.0
+    "C1": 3,
+    "C13": 3,
+    "C14": 3
    },
-   "days_since_prev": 0.0
+   "days_since_prev": 0
   },
   {
    "txn_id": "3583229",
@@ -1961,7 +1619,7 @@
    "channel": "online",
    "region": null,
    "country": null,
-   "dist1": null,
+   "dist1": 0,
    "p_email": "gmail.com",
    "r_email": "gmail.com",
    "risk_score": 0.15,
@@ -1970,22 +1628,16 @@
    "proxy": null,
    "device_type": "mobile",
    "match_flags": {
-    "M1": null,
-    "M2": null,
-    "M3": null,
     "M4": "M2",
     "M5": null,
-    "M6": null,
-    "M7": null,
-    "M8": null,
-    "M9": null
+    "M6": null
    },
    "counts": {
-    "C1": 1.0,
-    "C13": 1.0,
-    "C14": 1.0
+    "C1": 1,
+    "C13": 1,
+    "C14": 1
    },
-   "days_since_prev": 0.0
+   "days_since_prev": 0
   },
   {
    "txn_id": "3583348",
@@ -1995,7 +1647,7 @@
    "channel": "online",
    "region": null,
    "country": null,
-   "dist1": null,
+   "dist1": 0,
    "p_email": "yahoo.com.mx",
    "r_email": "yahoo.com.mx",
    "risk_score": 0.16,
@@ -2004,22 +1656,16 @@
    "proxy": null,
    "device_type": "desktop",
    "match_flags": {
-    "M1": null,
-    "M2": null,
-    "M3": null,
     "M4": "M2",
     "M5": null,
-    "M6": null,
-    "M7": null,
-    "M8": null,
-    "M9": null
+    "M6": null
    },
    "counts": {
-    "C1": 1.0,
-    "C13": 2.0,
-    "C14": 1.0
+    "C1": 1,
+    "C13": 2,
+    "C14": 1
    },
-   "days_since_prev": 20.0
+   "days_since_prev": 20
   },
   {
    "txn_id": "3583368",
@@ -2029,7 +1675,7 @@
    "channel": "online",
    "region": null,
    "country": null,
-   "dist1": null,
+   "dist1": 0,
    "p_email": "gmail.com",
    "r_email": "gmail.com",
    "risk_score": 0.39,
@@ -2038,22 +1684,16 @@
    "proxy": null,
    "device_type": "mobile",
    "match_flags": {
-    "M1": null,
-    "M2": null,
-    "M3": null,
     "M4": "M2",
     "M5": null,
-    "M6": null,
-    "M7": null,
-    "M8": null,
-    "M9": null
+    "M6": null
    },
    "counts": {
-    "C1": 1.0,
-    "C13": 0.0,
-    "C14": 0.0
+    "C1": 1,
+    "C13": 0,
+    "C14": 0
    },
-   "days_since_prev": 0.0
+   "days_since_prev": 0
   },
   {
    "txn_id": "3583406",
@@ -2063,7 +1703,7 @@
    "channel": "online",
    "region": null,
    "country": null,
-   "dist1": null,
+   "dist1": 0,
    "p_email": "gmail.com",
    "r_email": "gmail.com",
    "risk_score": 0.1,
@@ -2072,22 +1712,16 @@
    "proxy": null,
    "device_type": "mobile",
    "match_flags": {
-    "M1": null,
-    "M2": null,
-    "M3": null,
     "M4": "M2",
     "M5": null,
-    "M6": null,
-    "M7": null,
-    "M8": null,
-    "M9": null
+    "M6": null
    },
    "counts": {
-    "C1": 1.0,
-    "C13": 1.0,
-    "C14": 1.0
+    "C1": 1,
+    "C13": 1,
+    "C14": 1
    },
-   "days_since_prev": 0.0
+   "days_since_prev": 0
   },
   {
    "txn_id": "3583411",
@@ -2097,7 +1731,7 @@
    "channel": "online",
    "region": null,
    "country": null,
-   "dist1": null,
+   "dist1": 0,
    "p_email": "hotmail.com",
    "r_email": "hotmail.com",
    "risk_score": 0.01,
@@ -2106,22 +1740,16 @@
    "proxy": null,
    "device_type": "mobile",
    "match_flags": {
-    "M1": null,
-    "M2": null,
-    "M3": null,
     "M4": "M2",
     "M5": null,
-    "M6": null,
-    "M7": null,
-    "M8": null,
-    "M9": null
+    "M6": null
    },
    "counts": {
-    "C1": 7.0,
-    "C13": 4.0,
-    "C14": 2.0
+    "C1": 7,
+    "C13": 4,
+    "C14": 2
    },
-   "days_since_prev": 50.0
+   "days_since_prev": 50
   },
   {
    "txn_id": "3583415",
@@ -2131,7 +1759,7 @@
    "channel": "online",
    "region": null,
    "country": null,
-   "dist1": null,
+   "dist1": 0,
    "p_email": "hotmail.com",
    "r_email": "hotmail.com",
    "risk_score": 0.01,
@@ -2140,22 +1768,16 @@
    "proxy": null,
    "device_type": "mobile",
    "match_flags": {
-    "M1": null,
-    "M2": null,
-    "M3": null,
     "M4": "M2",
     "M5": null,
-    "M6": null,
-    "M7": null,
-    "M8": null,
-    "M9": null
+    "M6": null
    },
    "counts": {
-    "C1": 7.0,
-    "C13": 4.0,
-    "C14": 2.0
+    "C1": 7,
+    "C13": 4,
+    "C14": 2
    },
-   "days_since_prev": 50.0
+   "days_since_prev": 50
   },
   {
    "txn_id": "3583417",
@@ -2165,7 +1787,7 @@
    "channel": "online",
    "region": null,
    "country": null,
-   "dist1": null,
+   "dist1": 0,
    "p_email": "hotmail.com",
    "r_email": "hotmail.com",
    "risk_score": 0.07,
@@ -2174,22 +1796,16 @@
    "proxy": null,
    "device_type": "mobile",
    "match_flags": {
-    "M1": null,
-    "M2": null,
-    "M3": null,
     "M4": "M2",
     "M5": null,
-    "M6": null,
-    "M7": null,
-    "M8": null,
-    "M9": null
+    "M6": null
    },
    "counts": {
-    "C1": 7.0,
-    "C13": 4.0,
-    "C14": 2.0
+    "C1": 7,
+    "C13": 4,
+    "C14": 2
    },
-   "days_since_prev": 50.0
+   "days_since_prev": 50
   },
   {
    "txn_id": "3583435",
@@ -2199,7 +1815,7 @@
    "channel": "online",
    "region": null,
    "country": null,
-   "dist1": null,
+   "dist1": 0,
    "p_email": "hotmail.com",
    "r_email": "hotmail.com",
    "risk_score": 0.18,
@@ -2208,22 +1824,16 @@
    "proxy": null,
    "device_type": "mobile",
    "match_flags": {
-    "M1": null,
-    "M2": null,
-    "M3": null,
     "M4": "M2",
     "M5": null,
-    "M6": null,
-    "M7": null,
-    "M8": null,
-    "M9": null
+    "M6": null
    },
    "counts": {
-    "C1": 2.0,
-    "C13": 2.0,
-    "C14": 2.0
+    "C1": 2,
+    "C13": 2,
+    "C14": 2
    },
-   "days_since_prev": 0.0
+   "days_since_prev": 0
   }
  ],
  "profile": {
@@ -2244,8 +1854,8 @@
    "161.0": 51,
    "511.0": 34,
    "148.0": 16,
-   "167.0": 14,
-   "242.0": 14
+   "242.0": 14,
+   "167.0": 14
   },
   "n_regions": 32,
   "amount_median": 28.58,
@@ -2274,7 +1884,7 @@
   "proxy_history": 59,
   "flagged": {
    "amount_percentile": 0.9673923560716013,
-   "amount_z": 2.5537413148111883,
+   "amount_z": 2.553741314811188,
    "product_seen_before": 10334,
    "region_seen_before": null,
    "device_seen_before": 0,
@@ -2412,8 +2022,8 @@
    "args": {
     "txn_id": 3583368
    },
-   "ms": 0.3,
-   "result_preview": "{'txn_id': '3583368', 'ts': '2016-12-29 03:27:44', 'amount': 131.3, 'product': 'C', 'channel': 'online', 'region': None, 'country': None, 'dist1': None, 'p_email': 'gmail.com', 'r_email': 'gmail.com', 'risk_score': 0.39, 'device_profile': '\u2026"
+   "ms": 77.1,
+   "result_preview": "{'txn_id': '3583368', 'ts': '2016-12-29 03:27:44', 'amount': 131.3, 'product': 'C', 'channel': 'online', 'region': None, 'country': None, 'dist1': 0, 'p_email': 'gmail.com', 'r_email': 'gmail.com', 'risk_score': 0.39, 'device_profile': 'SM-\u2026"
   },
   {
    "step": 2,
@@ -2422,7 +2032,7 @@
     "card_id": "C11923-K2",
     "before_txn_id": 3583368
    },
-   "ms": 18.0,
+   "ms": 728.1,
    "result_preview": "{'card_id': 'C11923-K2', 'customer_id': 'C11923', 'n_txns': 10335, 'first_seen': '2016-07-02 00:06:21', 'n_online': 10335, 'n_in_person': 0, 'products': {'C': 10334, 'R': 1}, 'regions_top': {'284.0': 95, '465.0': 71, '130.0': 54, '161.0': 5\u2026"
   },
   {
@@ -2435,8 +2045,8 @@
     "hours_after": 48,
     "as_of": "2016-12-29 06:27:44"
    },
-   "ms": 9.5,
-   "result_preview": "[{'txn_id': '3578405', 'ts': '2016-12-27 03:33:30', 'amount': 61.67, 'product': 'C', 'channel': 'online', 'region': None, 'country': None, 'dist1': None, 'p_email': 'hotmail.com', 'r_email': 'hotmail.com', 'risk_score': 0.14, 'device_profil\u2026"
+   "ms": 82.0,
+   "result_preview": "[{'txn_id': '3578405', 'ts': '2016-12-27 03:33:30', 'amount': 61.67, 'product': 'C', 'channel': 'online', 'region': None, 'country': None, 'dist1': 0, 'p_email': 'hotmail.com', 'r_email': 'hotmail.com', 'risk_score': 0.14, 'device_profile':\u2026"
   },
   {
    "step": 4,
@@ -2446,7 +2056,7 @@
     "start": "2016-11-29 03:27:44",
     "end": "2016-12-29 06:27:44"
    },
-   "ms": 33.1,
+   "ms": 76.4,
    "result_preview": "{'device_profile': 'SM-G610F Build/NRD90M | ? | chrome 66.0 for android | ?', 'window': ['2016-11-29 03:27:44', '2016-12-29 06:27:44'], 'n_cards': 3, 'cards': [{'card_id': 'C03938-K1', 'customer_id': 'C03938', 'n_txns': 1, 'total_usd': 125.\u2026"
   },
   {
@@ -2457,7 +2067,7 @@
     "txn_id": 3583368,
     "as_of": "2016-12-29 06:27:44"
    },
-   "ms": 6.3,
+   "ms": 1289.4,
    "result_preview": "{'amount': 131.3, 'product': 'C', 'n_matches': 6, 'months_with_match': ['2016-07', '2016-08', '2016-10', '2016-12'], 'n_months': 4, 'n_same_region': 0, 'share_of_card_txns': 0.0006, 'n_same_amount_within_1h': 1, 'same_amount_burst_ids': [],\u2026"
   },
   {
@@ -2468,7 +2078,7 @@
     "txn_id": 3583368,
     "as_of": "2016-12-29 06:27:44"
    },
-   "ms": 5.7,
+   "ms": 32.9,
    "result_preview": "{'n_small_auths': 0, 'small_txn_ids': [], 'larger_after': [], 'testing_sequence': False, 'cleared_over_100': False}"
   },
   {
@@ -2478,8 +2088,8 @@
     "customer_id": "C11923",
     "as_of": "2016-12-29 06:27:44"
    },
-   "ms": 12.7,
-   "result_preview": "{'customer_id': 'C11923', 'n': 7736, 'fraud_rate': 0.0292, 'global_rate': 0.0337, 'fraud_rate_online': 0.0292, 'n_online': 7736}"
+   "ms": 89.0,
+   "result_preview": "{'customer_id': 'C11923', 'n': 10341, 'fraud_rate': 0.021854752925249007, 'global_rate': 0.0337, 'fraud_rate_in_person': None, 'n_in_person': 0, 'fraud_rate_online': 0.021854752925249007, 'n_online': 10341}"
   },
   {
    "step": 8,
@@ -2487,8 +2097,8 @@
    "args": {
     "customer_id": "C11923"
    },
-   "ms": 1.7,
-   "result_preview": "[{'case_id': 'CC-0031', 'outcome': 'confirmed_fraud', 'pattern': 'card_not_present_new_device', 'opened_at': '2016-07-04 01:23:36', 'exposure_usd': 20.36, 'report_filed': 'No', 'notes': \"Case CC-0031: cardholder C11923 reported unrecognized\u2026"
+   "ms": 76.4,
+   "result_preview": "[{'case_id': 'CC-0031', 'opened_at': '2016-07-04 01:23:36', 'outcome': 'confirmed_fraud', 'pattern': 'card_not_present_new_device', 'exposure_usd': 20.36, 'report_filed': 'No', 'notes': \"Case CC-0031: cardholder C11923 reported unrecognized\u2026"
   },
   {
    "step": 9,
@@ -2499,8 +2109,8 @@
     "customer_id": "C11923",
     "k": 5
    },
-   "ms": 7.1,
-   "result_preview": "[{'case_id': 'HHG-009', 'kind': 'agent_case', 'score': 0.158, 'customer_id': 'C08299', 'card_id': 'C08299-K1', 'opened_at': '2016-12-28 17:10:53', 'status': 'closed_legitimate', 'verdict': 'legitimate', 'fraud_probability': 0.05, 'pattern':\u2026"
+   "ms": 77.1,
+   "result_preview": "[{'case_id': 'CC-1504', 'kind': 'closed_case', 'score': 0.525, 'customer_id': 'C05307', 'card_id': 'C05307-K2', 'outcome': 'confirmed_fraud', 'status': None, 'verdict': None, 'pattern': 'card_not_present_new_device', 'exposure_usd': 81.25, \u2026"
   },
   {
    "step": 10,
@@ -2509,8 +2119,8 @@
     "query_text": "card_not_present_new_device customer_report verify block report shared device",
     "k": 4
    },
-   "ms": 6.0,
-   "result_preview": "[{'doc_id': 'policy:R1', 'title': 'Fraud Policy R1 \u2013 verify before you block on a weak signal', 'score': 0.21, 'text': 'R1. Verify before you block on a weak signal. If the case rests on a single signal (including a risk score alone) and th\u2026"
+   "ms": 75.7,
+   "result_preview": "[{'doc_id': 'typology:cnp_new_device', 'title': 'Known pattern 3 \u2013 card-not-present from a new device', 'score': 0.417, 'text': 'Card-not-present fraud from a new device. Same as card-not-present, with the identity record marking the device\u2026"
   },
   {
    "step": 11,
@@ -2548,17 +2158,17 @@
      ],
      "summary": "Assessed as legitimate (probability 0.07, no fraud pattern). Flagged online C transaction 3583368 of $131.30 on card C11923-K2 at 2016-12-29 03:27:44. Customer response: Customer, shown the history of identical monthly charges on their own card, recognises the merchant and confirms the charge; asks for a reminder next cycle. Same product and amount ($131.30 C) recurs 6 times across 4 months on this card \u2014 matches the cardholder's own recurring pattern. $131.30 is above the card's 95th percentile ($107.72; median $28.58). Evidence requested (customer validation); assumed response: Customer, shown the history of identical monthly charges on their own card, recognises the merchant and confirms the charge; asks for a reminder next cycle. Final actions: CREATE_CASE, WARN_CUSTOMER, CLOSE_NO_FRAUD.",
      "similar_prior_cases": [
-      "HHG-009",
-      "CC-0324",
-      "CC-1413",
-      "CC-4546",
-      "CC-0334"
+      "CC-1504",
+      "CC-3550",
+      "CC-5197",
+      "CC-1691",
+      "CC-1273"
      ],
-     "graph_case_id": "CASE-2016-1011"
+     "graph_case_id": "CASE-2016-011"
     }
    },
-   "ms": 752.7,
-   "result_preview": "CASE-2016-1011"
+   "ms": 305.2,
+   "result_preview": "CASE-2016-011"
   },
   {
    "step": 13,
