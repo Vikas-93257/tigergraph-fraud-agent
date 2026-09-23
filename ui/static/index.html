@@ -1,0 +1,155 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Fraud Investigation Agent · TigerGraph</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+  :root { --bg:#0b1020; --panel:#121a2f; --panel2:#182240; --line:#243157; --text:#e6ecff; --muted:#8b97b8;
+          --fraud:#ff5c7a; --legit:#3ddc97; --warn:#ffb454; --accent:#5b8cff; --mono:ui-monospace,SFMono-Regular,Menlo,monospace; }
+  * { box-sizing:border-box; }
+  body { margin:0; font:14px/1.45 -apple-system,Segoe UI,Inter,Roboto,sans-serif; background:var(--bg); color:var(--text); }
+  header { display:flex; align-items:center; gap:16px; padding:12px 20px; border-bottom:1px solid var(--line); background:var(--panel); }
+  header h1 { font-size:16px; margin:0; font-weight:600; letter-spacing:.2px; }
+  header .store { margin-left:auto; color:var(--muted); font-family:var(--mono); font-size:12px; }
+  .badge { display:inline-block; padding:2px 8px; border-radius:999px; font-size:11px; font-weight:600; letter-spacing:.3px; text-transform:uppercase; }
+  .b-fraud { background:rgba(255,92,122,.18); color:var(--fraud); } .b-legit { background:rgba(61,220,151,.18); color:var(--legit); }
+  .b-unc { background:rgba(255,180,84,.18); color:var(--warn); } .b-sar { background:rgba(91,140,255,.2); color:#9db8ff; }
+  main { display:grid; grid-template-columns:330px 1fr; height:calc(100vh - 53px); }
+  aside { border-right:1px solid var(--line); overflow:auto; background:var(--panel); }
+  aside .row { padding:10px 14px; border-bottom:1px solid var(--line); cursor:pointer; display:grid; grid-template-columns:1fr auto; gap:2px 8px; }
+  aside .row:hover, aside .row.active { background:var(--panel2); }
+  aside .row .id { font-family:var(--mono); font-weight:600; } aside .row .trig { color:var(--muted); font-size:12px; grid-column:1/-1; white-space:nowrap; overflow:hidden; text-overflow:ellipsis; }
+  aside .row .p { font-family:var(--mono); font-size:12px; text-align:right; }
+  section#detail { overflow:auto; padding:18px 22px; }
+  .top { display:grid; grid-template-columns:1fr 1fr; gap:14px; margin-bottom:14px; }
+  .card { background:var(--panel); border:1px solid var(--line); border-radius:10px; padding:14px 16px; }
+  .card h3 { margin:0 0 10px; font-size:12px; text-transform:uppercase; letter-spacing:.6px; color:var(--muted); font-weight:600; }
+  .verdict { font-size:26px; font-weight:700; display:flex; align-items:baseline; gap:12px; }
+  .verdict small { font-size:13px; color:var(--muted); font-weight:400; }
+  .kv { display:grid; grid-template-columns:auto 1fr; gap:4px 12px; font-size:13px; } .kv b { color:var(--muted); font-weight:500; }
+  .mono { font-family:var(--mono); font-size:12px; }
+  .summary { white-space:pre-wrap; font-size:13px; color:#d5ddf5; }
+  table { width:100%; border-collapse:collapse; font-size:13px; } th, td { text-align:left; padding:6px 8px; border-bottom:1px solid var(--line); vertical-align:top; }
+  th { color:var(--muted); font-weight:500; font-size:11px; text-transform:uppercase; letter-spacing:.5px; }
+  .ev .w { font-family:var(--mono); text-align:right; white-space:nowrap; } .pos { color:var(--fraud); } .neg { color:var(--legit); }
+  .ref { font-family:var(--mono); font-size:11px; color:#9db8ff; }
+  .actions { display:grid; grid-template-columns:1fr 1fr; gap:14px; }
+  .act { display:flex; gap:8px; align-items:flex-start; padding:6px 0; border-bottom:1px solid var(--line); font-size:13px; }
+  .act .a { font-family:var(--mono); font-weight:600; min-width:200px; } .route { font-size:11px; padding:1px 6px; border-radius:4px; background:var(--panel2); color:var(--muted); }
+  .route.L1 { color:var(--warn); } .route.L2 { color:var(--fraud); } .route.auto { color:var(--legit); }
+  .changed { margin-top:8px; color:var(--warn); font-size:13px; }
+  svg { width:100%; height:420px; background:radial-gradient(ellipse at center, #10182e 0%, var(--bg) 100%); border-radius:8px; }
+  .lbl { font-size:10px; fill:#c9d4f5; pointer-events:none; }
+  .tools { font-family:var(--mono); font-size:12px; } .tools div { padding:3px 0; border-bottom:1px dashed var(--line); color:#c9d4f5; }
+  .tools span { color:var(--muted); }
+  button { background:var(--accent); color:white; border:0; border-radius:6px; padding:7px 12px; font-weight:600; cursor:pointer; }
+  button.ghost { background:transparent; border:1px solid var(--line); color:var(--text); }
+  .toolbar { display:flex; gap:8px; align-items:center; margin-bottom:12px; } .toolbar input { background:var(--panel); border:1px solid var(--line); color:var(--text); padding:7px 10px; border-radius:6px; width:180px; font-family:var(--mono); }
+  .legend { display:flex; gap:14px; font-size:11px; color:var(--muted); margin-top:6px; } .legend i { display:inline-block; width:10px; height:10px; border-radius:50%; margin-right:4px; vertical-align:middle; }
+  .empty { color:var(--muted); padding:60px; text-align:center; }
+  .sar { border-left:3px solid var(--accent); padding-left:12px; }
+</style>
+</head>
+<body>
+<header>
+  <h1>🕵️ Fraud Investigation Agent</h1>
+  <span class="badge b-sar">TigerGraph · GSQL · GraphRAG · MCP</span>
+  <span class="store" id="store">connecting…</span>
+</header>
+<main>
+  <aside id="list"></aside>
+  <section id="detail"><div class="empty">Select a case</div></section>
+</main>
+<script>
+const $ = s => document.querySelector(s);
+const fmt = n => '$' + Number(n||0).toLocaleString(undefined,{minimumFractionDigits:2,maximumFractionDigits:2});
+const vb = v => v==='fraud' ? 'b-fraud' : v==='legitimate' ? 'b-legit' : 'b-unc';
+let cases = [], current = null;
+
+async function loadStore(){ try{ const s = await (await fetch('/api/store')).json();
+  $('#store').textContent = `${s.backend} · ${s.graph||'local'} · ${(s.transactions||0).toLocaleString()} txns · vectors:${s.vector_index?'on':'tf-idf'}`; }catch(e){ $('#store').textContent='store offline'; } }
+
+async function loadList(){
+  cases = await (await fetch('/api/cases')).json();
+  $('#list').innerHTML = cases.map(c => `
+    <div class="row ${current===c.case_id?'active':''}" onclick="open('${c.case_id}')">
+      <span class="id">${c.case_id}</span>
+      <span class="p">${c.verdict ? `<span class="badge ${vb(c.verdict)}">${c.verdict}</span> ${c.fraud_probability.toFixed(2)}` : '—'}</span>
+      <span class="trig">${c.trigger_type.replace('_',' ')} · ${c.trigger_text}</span>
+    </div>`).join('');
+}
+
+async function open(cid){
+  current = cid; loadList();
+  const r = await fetch('/api/cases/'+cid); if(!r.ok){ $('#detail').innerHTML = `<div class="empty">Not investigated yet. <button onclick="run('${cid}')">Investigate</button></div>`; return; }
+  render(await r.json());
+}
+async function run(cid){ $('#detail').innerHTML = '<div class="empty">Agent running against the graph…</div>'; const r = await fetch('/api/cases/'+cid+'/investigate',{method:'POST'}); render(await r.json()); loadList(); }
+async function adhoc(){ const id = $('#adhoc').value.trim(); if(!id) return; $('#detail').innerHTML='<div class="empty">Investigating '+id+'…</div>';
+  const r = await fetch('/api/adhoc/'+id,{method:'POST'}); if(!r.ok){ $('#detail').innerHTML='<div class="empty">unknown transaction</div>'; return;} current='ADHOC-'+id; render(await r.json()); }
+
+function render(d){
+  const a = d.answer, c = a.case, t = d.trace || {}, sig = t.signals || [];
+  const acts = (xs) => xs.map(x => `<div class="act"><span class="a">${x.action}</span><span class="route ${x.route}">${x.route}</span><span>${x.reason||''}</span></div>`).join('');
+  const evs = sig.length ? sig : c.evidence.map(e => ({...e, weight:0}));
+  $('#detail').innerHTML = `
+    <div class="toolbar">
+      <button class="ghost" onclick="run('${a.case_id}')">↻ Re-run live</button>
+      <span style="margin-left:auto;color:var(--muted)">ad-hoc txn</span><input id="adhoc" placeholder="e.g. 3502436"><button onclick="adhoc()">Investigate</button>
+    </div>
+    <div class="top">
+      <div class="card">
+        <h3>${a.case_id} · ${c.status}</h3>
+        <div class="verdict"><span class="badge ${vb(c.verdict)}" style="font-size:16px;padding:4px 12px">${c.verdict}</span> ${c.fraud_probability.toFixed(2)} <small>fraud probability</small> ${a.sar.file?'<span class="badge b-sar">SAR</span>':''}</div>
+        <div class="kv" style="margin-top:10px">
+          <b>pattern</b><span>${c.pattern}<span style="color:var(--muted)"> — ${c.pattern_description||''}</span></span>
+          <b>exposure</b><span>${fmt(c.exposure_usd)} over ${c.affected_txn_ids.length} txn(s)</span>
+          <b>first suspicious</b><span class="mono">${c.first_suspicious_txn_id||'—'}</span>
+          <b>connected cards</b><span class="mono">${c.connected_card_ids.length ? c.connected_card_ids.join(', ') : 'none'}</span>
+          <b>devices</b><span class="mono">${c.connected_device_profiles.join('; ')||'—'}</span>
+          <b>similar cases</b><span class="mono">${c.similar_prior_cases.join(', ')||'—'}</span>
+          <b>memory</b><span class="mono">${c.written_to_graph?'written → '+c.graph_case_id:'not written'}</span>
+          <b>run</b><span class="mono">${a.tool_calls} tool calls · ${a.latency_s}s · stop: ${a.stop_reason}</span>
+        </div>
+      </div>
+      <div class="card"><h3>Summary</h3><div class="summary">${c.summary}</div></div>
+    </div>
+    <div class="card" style="margin-bottom:14px"><h3>Graph neighbourhood</h3><svg id="g"></svg>
+      <div class="legend"><span><i style="background:#5b8cff"></i>customer</span><span><i style="background:#9db8ff"></i>card</span><span><i style="background:#c9d4f5"></i>transaction</span><span><i style="background:#ff5c7a"></i>flagged / affected</span><span><i style="background:#ffb454"></i>device</span><span><i style="background:#3ddc97"></i>case</span></div></div>
+    <div class="card" style="margin-bottom:14px"><h3>Evidence (each claim cites the query that produced it)</h3>
+      <table class="ev"><tr><th>claim</th><th>source · ref</th><th>weight</th></tr>
+      ${evs.map(e=>`<tr><td>${e.claim}</td><td class="ref">${e.source}<br>${e.ref}</td><td class="w ${e.weight>0?'pos':e.weight<0?'neg':''}">${e.weight?(e.weight>0?'+':'')+e.weight.toFixed(2):''}</td></tr>`).join('')}</table></div>
+    <div class="actions" style="margin-bottom:14px">
+      <div class="card"><h3>Next-best-actions · initial ${t.initial_prob!=null?'(p='+t.initial_prob.toFixed(2)+')':''}</h3>${acts(a.next_best_actions.initial)}</div>
+      <div class="card"><h3>Next-best-actions · final (p=${c.fraud_probability.toFixed(2)})</h3>${acts(a.next_best_actions.final)}
+        <div class="changed">what changed: ${a.next_best_actions.what_changed}</div>
+        ${a.evidence_requests.length?`<div style="margin-top:8px;font-size:13px"><b style="color:var(--muted)">evidence requested:</b> ${a.evidence_requests.map(e=>`${e.type} after step ${e.asked_after_step} → <i>${e.assumed_response}</i>`).join('; ')}</div>`:''}</div>
+    </div>
+    ${a.sar.file?`<div class="card sar" style="margin-bottom:14px"><h3>Suspicious Activity Report</h3><div class="kv"><b>reason</b><span>${a.sar.reason}</span><b>amount</b><span>${fmt(a.sar.total_amount_usd)}</span><b>dates</b><span class="mono">${(a.sar.activity_dates||[]).join(' → ')}</span><b>subjects</b><span class="mono">${a.sar.subjects.join(', ')}</span></div><div class="summary" style="margin-top:8px">${a.sar.narrative}</div></div>`:''}
+    <div class="card"><h3>Tool log (${(t.tool_log||[]).length} GSQL calls)</h3><div class="tools">${(t.tool_log||[]).map(x=>`<div>${String(x.step).padStart(2,'0')} <b>${x.tool}</b>(${Object.entries(x.args||{}).map(([k,v])=>k+'='+JSON.stringify(v)).join(', ').slice(0,110)}) <span>${x.ms} ms</span></div>`).join('')}</div></div>`;
+  drawGraph(a.case_id);
+}
+
+async function drawGraph(cid){
+  const r = await fetch('/api/graph/'+cid); if(!r.ok) return; const g = await r.json();
+  const svg = $('#g'), W = svg.clientWidth || 900, H = 420;
+  const col = n => n.kind==='customer'?'#5b8cff': n.kind==='card'?(n.other?'#6f83b8':'#9db8ff') : n.kind==='txn'?(n.flagged||n.affected?'#ff5c7a':'#c9d4f5') : n.kind==='device'?'#ffb454' : n.kind==='signature'?'#ff9ab0' : n.kind==='agentcase'?'#3ddc97':'#2aa876';
+  const rad = n => n.kind==='customer'?14 : n.kind==='device'?12 : n.kind==='agentcase'?12 : n.kind==='txn'?(n.flagged?9:6) : 8;
+  const nodes = g.nodes.map(n => ({...n, x: W/2 + (Math.random()-.5)*W*.6, y: H/2 + (Math.random()-.5)*H*.6, vx:0, vy:0}));
+  const byId = Object.fromEntries(nodes.map(n=>[n.id,n]));
+  const edges = g.edges.filter(e=>byId[e.source]&&byId[e.target]);
+  for(let it=0; it<260; it++){
+    for(const a of nodes){ for(const b of nodes){ if(a===b) continue; let dx=a.x-b.x, dy=a.y-b.y, d2=dx*dx+dy*dy+0.01, f=1800/d2; a.vx+=dx*f; a.vy+=dy*f; } }
+    for(const e of edges){ const a=byId[e.source], b=byId[e.target]; let dx=b.x-a.x, dy=b.y-a.y, d=Math.sqrt(dx*dx+dy*dy)+.01, f=(d-60)*.02; a.vx+=dx/d*f; a.vy+=dy/d*f; b.vx-=dx/d*f; b.vy-=dy/d*f; }
+    for(const n of nodes){ n.vx+=(W/2-n.x)*.002; n.vy+=(H/2-n.y)*.002; n.x+=n.vx*.5; n.y+=n.vy*.5; n.vx*=.6; n.vy*=.6; n.x=Math.max(20,Math.min(W-20,n.x)); n.y=Math.max(20,Math.min(H-20,n.y)); }
+  }
+  svg.setAttribute('viewBox',`0 0 ${W} ${H}`);
+  svg.innerHTML = edges.map(e=>{const a=byId[e.source],b=byId[e.target]; return `<line x1="${a.x}" y1="${a.y}" x2="${b.x}" y2="${b.y}" stroke="#2c3a66" stroke-width="1.2"/>`;}).join('') +
+    nodes.map(n=>`<g><title>${n.kind}: ${n.full||n.label}${n.ts?' · '+n.ts:''}${n.outcome?' · '+n.outcome+' / '+n.pattern:''}</title><circle cx="${n.x}" cy="${n.y}" r="${rad(n)}" fill="${col(n)}" stroke="${n.flagged?'#fff':'#0b1020'}" stroke-width="${n.flagged?2:1}"/><text class="lbl" x="${n.x}" y="${n.y+rad(n)+11}" text-anchor="middle">${n.label}</text></g>`).join('');
+}
+
+loadStore(); loadList().then(()=>{ if(cases.length) open(cases[0].case_id); });
+</script>
+</body>
+</html>
