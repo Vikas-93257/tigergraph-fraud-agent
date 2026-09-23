@@ -206,4 +206,25 @@ CREATE OR REPLACE QUERY alerts_in_period(DATETIME start_ts, DATETIME end_ts, DOU
   PRINT R;
 }
 
+
+
+// ---------------------------------------------------------------------------------------------- demo_device_ring (GraphStudio-friendly: string dates, defaults set for the HHG-014 ring)
+CREATE OR REPLACE QUERY demo_device_ring(STRING device_id = "SM-G935F Build/NRD90M | Android 7.0 | chrome 62.0 for android | 1920x1080", STRING start_date = "2016-10-23", STRING end_date = "2016-11-23") FOR GRAPH FraudGraph {
+  MapAccum<STRING, SumAccum<INT>> @@n_by_card;
+  MapAccum<STRING, SumAccum<DOUBLE>> @@usd_by_card;
+  MapAccum<STRING, SetAccum<STRING>> @@proxies_by_card;
+  SumAccum<INT> @@n_txns;
+  DATETIME lo = to_datetime(start_date + " 00:00:00");
+  DATETIME hi = to_datetime(end_date + " 00:00:00");
+  D = {DeviceProfile.*};
+  D = SELECT d FROM D:d WHERE d.device_id == device_id;
+  T = SELECT t FROM D:d -(DEVICE_OF>)- Transaction:t WHERE t.ts >= lo AND t.ts <= hi ACCUM @@n_txns += 1;
+  C = SELECT c FROM T:t -(MADE_BY>)- Card:c
+      ACCUM @@n_by_card += (c.card_id -> 1), @@usd_by_card += (c.card_id -> t.amount),
+            IF t.proxy_type != "" THEN @@proxies_by_card += (c.card_id -> t.proxy_type) END;
+  CC = SELECT cc FROM D:d -(DEVICE_OF>)- Transaction:t -(INVOLVED_IN>)- ClosedCase:cc;
+  PRINT @@n_txns AS txns_in_window, C.size() AS distinct_cards, @@n_by_card AS txns_per_card, @@usd_by_card AS usd_per_card, @@proxies_by_card AS proxies;
+  PRINT D AS device; PRINT C AS cards; PRINT CC AS closed_cases_on_device; PRINT T AS transactions;
+}
+INSTALL QUERY demo_device_ring
 INSTALL QUERY ALL

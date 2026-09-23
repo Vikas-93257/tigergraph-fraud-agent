@@ -1046,7 +1046,7 @@
    "args": {
     "txn_id": 3478561
    },
-   "ms": 75.7,
+   "ms": 77.8,
    "result_preview": "{'txn_id': '3478561', 'ts': '2016-11-22 16:11:00', 'amount': 74.96, 'product': 'C', 'channel': 'online', 'region': 191.0, 'country': 87.0, 'dist1': 0, 'p_email': 'yahoo.com', 'r_email': 'gmail.com', 'risk_score': 0.05, 'device_profile': 'SM\u2026"
   },
   {
@@ -1056,7 +1056,7 @@
     "card_id": "C13487-K1",
     "before_txn_id": 3478561
    },
-   "ms": 154.0,
+   "ms": 216.9,
    "result_preview": "{'card_id': 'C13487-K1', 'customer_id': 'C13487', 'n_txns': 71, 'first_seen': '2016-07-04 19:14:19', 'n_online': 2, 'n_in_person': 69, 'products': {'W': 69, 'R': 1, 'C': 1}, 'regions_top': {'191.0': 36, '272.0': 35}, 'n_regions': 2, 'amount\u2026"
   },
   {
@@ -1069,7 +1069,7 @@
     "hours_after": 48,
     "as_of": "2016-11-22 20:11:00"
    },
-   "ms": 75.6,
+   "ms": 77.3,
    "result_preview": "[{'txn_id': '3477218', 'ts': '2016-11-21 23:39:05', 'amount': 36.04, 'product': 'W', 'channel': 'in_person', 'region': 191.0, 'country': 87.0, 'dist1': 0, 'p_email': None, 'r_email': None, 'risk_score': 0.06, 'device_profile': None, 'device\u2026"
   },
   {
@@ -1080,7 +1080,7 @@
     "start": "2016-10-23 16:11:00",
     "end": "2016-11-22 20:11:00"
    },
-   "ms": 81.9,
+   "ms": 73.4,
    "result_preview": "{'device_profile': 'SM-G935F Build/NRD90M | Android 7.0 | chrome 62.0 for android | 1920x1080', 'window': ['2016-10-23 16:11:00', '2016-11-22 20:11:00'], 'n_cards': 20, 'cards': [{'card_id': 'C01289-K1', 'customer_id': 'C01289', 'n_txns': 1\u2026"
   },
   {
@@ -1091,7 +1091,7 @@
     "txn_id": 3478561,
     "as_of": "2016-11-22 20:11:00"
    },
-   "ms": 78.4,
+   "ms": 74.7,
    "result_preview": "{'amount': 74.96, 'product': 'C', 'n_matches': 1, 'months_with_match': ['2016-11'], 'n_months': 1, 'n_same_region': 1, 'share_of_card_txns': 0.0137, 'n_same_amount_within_1h': 1, 'same_amount_burst_ids': [], 'is_recurring': False, 'sample_t\u2026"
   },
   {
@@ -1112,7 +1112,7 @@
     "customer_id": "C13487",
     "as_of": "2016-11-22 20:11:00"
    },
-   "ms": 75.0,
+   "ms": 76.0,
    "result_preview": "{'customer_id': 'C13487', 'n': 73, 'fraud_rate': 0.0, 'global_rate': 0.0337, 'fraud_rate_in_person': 0.0, 'n_in_person': 70, 'fraud_rate_online': 0.0, 'n_online': 3}"
   },
   {
@@ -1121,8 +1121,8 @@
    "args": {
     "customer_id": "C13487"
    },
-   "ms": 74.3,
-   "result_preview": "[]"
+   "ms": 76.4,
+   "result_preview": "[{'case_id': 'CASE-2016-014', 'opened_at': '2016-11-22 20:11:00', 'outcome': 'escalated', 'pattern': 'undocumented', 'exposure_usd': 187.33, 'report_filed': True, 'notes': \"Assessed as fraud (probability 0.90, undocumented). Flagged online \u2026"
   },
   {
    "step": 9,
@@ -1133,8 +1133,8 @@
     "customer_id": "C13487",
     "k": 5
    },
-   "ms": 82.3,
-   "result_preview": "[{'case_id': 'CC-2971', 'kind': 'closed_case', 'score': 0.492, 'customer_id': 'C09998', 'card_id': 'C09998-K1', 'outcome': 'confirmed_fraud', 'status': None, 'verdict': None, 'pattern': 'undocumented', 'exposure_usd': 108.36, 'opened_at': '\u2026"
+   "ms": 73.0,
+   "result_preview": "[{'case_id': 'CASE-2016-014', 'kind': 'agent_case', 'score': 0.662, 'customer_id': 'C13487', 'card_id': 'C13487-K1', 'outcome': 'escalated', 'status': 'escalated', 'verdict': 'fraud', 'pattern': 'undocumented', 'exposure_usd': 187.33, 'open\u2026"
   },
   {
    "step": 10,
@@ -1143,7 +1143,7 @@
     "query_text": "card_not_present_new_device analyst_request verify block report shared device",
     "k": 4
    },
-   "ms": 75.9,
+   "ms": 71.8,
    "result_preview": "[{'doc_id': 'typology:cnp_new_device', 'title': 'Known pattern 3 \u2013 card-not-present from a new device', 'score': 0.381, 'text': 'Card-not-present fraud from a new device. Same as card-not-present, with the identity record marking the device\u2026"
   },
   {
@@ -1154,7 +1154,7 @@
     "device_id": "SM-G935F Build/NRD90M | Android 7.0 | chrome 62.0 for android | 1920x1080",
     "as_of": "2016-11-22 20:11:00"
    },
-   "ms": 0.1,
+   "ms": 0.0,
    "result_preview": "[{'txn_id': '3460634', 'ts': '2016-11-15 20:30:00', 'amount': 112.37, 'product': 'C', 'channel': 'online', 'region': 191.0, 'country': 87.0, 'dist1': 0, 'p_email': 'yahoo.com', 'r_email': 'gmail.com', 'risk_score': 0.1, 'device_profile': 'S\u2026"
   },
   {
@@ -1166,7 +1166,7 @@
     "end": "2016-11-22 20:11:00",
     "exclude_customer": "C13487"
    },
-   "ms": 147.2,
+   "ms": 156.6,
    "result_preview": "{'kind': 'anon_proxy_new_device', 'window': ['2016-10-23', '2016-11-22 20:11:00'], 'n_peers': 73, 'peers': [{'card_id': 'C00294-K2', 'customer_id': 'C00294', 'n': 2, 'total_usd': 114.41, 'first': '2016-10-30 16:32:21', 'devices': ['? | ? | \u2026"
   },
   {
@@ -1221,16 +1221,16 @@
      ],
      "summary": "Assessed as fraud (probability 0.90, undocumented). Flagged online C transaction 3478561 of $74.96 on card C13487-K1 at 2016-11-22 16:11:00. Device profile 'SM-G935F Build/NRD90M | Android 7.0 | chrome 62.0 for android | 1920x1080' was used by 20 different cards in the window, 100% behind a proxy and 100% marked New for the account; 4 closed fraud case(s) already sit on this device. Connection came through an anonymising proxy (IP_PROXY:ANONYMOUS); card has 1 prior proxied transactions. Device profile 'SM-G935F Build/NRD90M | Android 7.0 | chrome 62.0 for android | 1920x1080' was already used 1 time(s) on this account before the alert. Exposure $187.33 across 2 transaction(s). Final actions: CREATE_CASE, BLOCK_CARD, MONITOR_CONNECTED_CARDS, FILE_REPORT, ESCALATE_TO_ANALYST.",
      "similar_prior_cases": [
+      "CASE-2016-014",
+      "CASE-2016-020",
       "CC-2971",
       "CC-3035",
-      "CC-2649",
-      "CC-1775",
-      "CC-0334"
+      "CC-2649"
      ],
      "graph_case_id": "CASE-2016-014"
     }
    },
-   "ms": 488.4,
+   "ms": 178.6,
    "result_preview": "CASE-2016-014"
   },
   {
