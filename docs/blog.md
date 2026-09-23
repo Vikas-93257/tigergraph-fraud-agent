@@ -116,13 +116,24 @@ Every tool is a named GSQL query. That gave us three things for free:
    the LangGraph agent, Claude Desktop and the UI all call the same functions.
 2. **Interchangeability with the official TigerGraph MCP** — `tigergraph_mcp_client.py` runs the identical query names
    through `tigergraph-mcp`'s generic query execution tool.
-3. **A local backend** with the same contract (pandas + TF-IDF standing in for TigerVector) so the twenty-case benchmark,
-   the tests and the UI run in 25 seconds on a laptop, and the GSQL has a reference implementation to be checked against.
+3. **A local backend** with the same contract (pandas + TF-IDF) so the tests and UI run on a laptop without a cluster, and
+   the GSQL has a reference implementation to be checked against.
+
+## Running it on TigerGraph Savanna
+
+The submitted answers come from the TigerGraph backend. On a Savanna 4.2.5 workspace we loaded 590,743 `Transaction`
+vertices, 13.5k customers and cards, 9.7k device profiles, 5,566 closed cases and 24 policy chunks (577k `NEXT` edges), and
+installed twelve GSQL queries from `graph/queries/investigation.gsql`. `similar_cases` and `retrieve_policy` are native
+`vectorSearch` calls over 384-d COSINE indexes on `ClosedCase`, `AgentCase` and `PolicyChunk`; `write_case` inserts the
+`AgentCase` vertex with `AC_INVOLVES`, `AC_CONNECTED_TO`, `AC_USED_DEVICE` and `AC_SIMILAR_TO` edges. The whole 20-case
+pack takes 26 seconds against the cluster, and the verdicts, probabilities, exposures, actions and SARs are identical to the
+local run — only the ranking of similar prior cases differs (cosine vs. TF-IDF). Things that cost us time on 4.2.5:
+`proxy` is a reserved attribute name; vector attributes must be added with `ALTER VERTEX … ADD VECTOR ATTRIBUTE` in a
+schema-change job; `vectorSearch` insists on `LIST<FLOAT>` parameters and a `MapAccum<VERTEX, FLOAT>` distance map.
 
 ## What we'd do next
 
-Real evidence channels instead of the simulation rule; TigerVector embeddings from a sentence-transformer instead of the
-hashed fallback; a scheduled monitoring sweep (the `monitoring/` track already investigates the top alerts of a period
+Real evidence channels instead of the simulation rule; sentence-transformer embeddings instead of the hashed fallback for TigerVector; a scheduled monitoring sweep (the `monitoring/` track already investigates the top alerts of a period
 and writes a summary — on 1 Dec 2016 it reviewed eight, auto-closed five, and flagged one $1,650 account takeover for a
 SAR); and feedback edges from L1/L2 decisions back onto `AgentCase` so the weights can be recalibrated from outcomes.
 

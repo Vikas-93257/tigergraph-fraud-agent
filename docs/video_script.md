@@ -6,7 +6,9 @@ Record with the UI running (`uvicorn ui.app:app --port 8000`) and a terminal. Ta
 |---|---|---|
 | 0:00 | title slide / README header | "Twenty fraud alerts, one policy, one graph. This is an agent that investigates — it doesn't just score." |
 | 0:20 | `graph/schema.gsql` scrolled slowly, then diagram | "Customer, Card, Transaction, DeviceProfile as a vertex, NEXT edges per card, closed cases and policy text with embeddings. AgentCase is what the agent writes back." |
-| 0:45 | terminal: `python run_cases.py` | "All twenty cases in about 25 seconds, fourteen GSQL queries each. Ten fraud, ten legitimate, four SARs." (show the table) |
+| 0:35 | Savanna GraphStudio / Admin: FraudGraph schema + vertex counts | "Loaded into TigerGraph Savanna: 590 thousand transactions, 5,500 closed cases, policy chunks — with TigerVector indexes." |
+| 0:50 | `graph/queries/investigation.gsql` (scroll device_neighbors + similar_cases) | "Twelve installed GSQL queries are the agent's only tools. Similar cases and policy come from native vectorSearch." |
+| 1:00 | terminal: `GRAPH_BACKEND=tigergraph python run_cases.py` | "All twenty cases in 26 seconds against the cluster, fourteen GSQL calls each. Ten fraud, ten legitimate, four SARs." (show the table) |
 | 1:10 | UI → HHG-014 | "An analyst asks about one $75 purchase. `device_neighbors` shows the same Samsung profile behind an anonymous proxy on 20 cards this month and on four closed cases. Pattern: undocumented → block (L1), monitor connected cards, SAR (L2), escalate. Every evidence line shows its query and its weight." Hover the graph: the hub device with the fan of cards. |
 | 1:55 | UI → HHG-006 | "A customer disputes $482. The 48-hour window turns it into four purchases just under $500 in thirty minutes — and `pattern_peers` finds six other cards with the same signature. Exposure $1,906, SAR narrative in FinCEN's five elements." |
 | 2:30 | UI → HHG-003 | "Another dispute — $49. `recurring_match`: the same amount, 56 times over six months on the customer's own card. Policy R7: verify, warn, close — don't block. Watch the initial plan turn into the final plan after the evidence request." |
