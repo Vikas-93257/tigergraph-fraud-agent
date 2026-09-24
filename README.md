@@ -18,7 +18,7 @@ trigger ──► gather (GSQL) ──► memory (GraphRAG) ──► assess ─
 | Accuracy | `cases/HHG-0xx.json` — 20 answers, 10 fraud / 10 legitimate, validated by `answer_schema.py` |
 | Next-best-actions | `fraud_agent/policy.py`, `agent.py::n_initial_decision / n_final_decision`; every action has a route + policy reason |
 | Agentic design | LangGraph state machine with conditional evidence loop, budgeted stopping, tool log per case (`traces/`) |
-| Innovation | signature-level peer search across customers (`pattern_peers`), case memory that later cases retrieve, backend-agnostic query contract |
+| Innovation | supporting/contradicting/missing evidence with policy-gated evidence requests, initial-vs-final counterfactual plans, signature-level peer search across customers (`pattern_peers`), case memory later cases retrieve via TigerVector |
 | Explainability | every evidence item = `{claim, source, ref: "query:<gsql_name>(...)", entity_ids}` + log-odds weight in the UI |
 | Demo | `ui/` investigator console, `docs/video_script.md` |
 
@@ -75,10 +75,78 @@ python graph/load.py embed      # TigerVector embeddings (optional; TF-IDF fallb
 GRAPH_BACKEND=tigergraph python run_cases.py
 ```
 
+### MCP setup (Claude Desktop / Cursor)
+
+```json
+{
+  "mcpServers": {
+    "fraud-investigator": {
+      "command": "python",
+      "args": ["-m", "mcp_server.server"],
+      "cwd": "/path/to/tigergraph-fraud-agent",
+      "env": {"GRAPH_BACKEND": "tigergraph", "TG_HOST": "https://<workspace>.i.tgcloud.io", "TG_SECRET": "<secret>"}
+    }
+  }
+}
+```
+
+Tools exposed: the 15 graph tools (`get_transaction`, `card_window`, `device_neighbors`, `pattern_peers`,
+`similar_cases`, `retrieve_policy`, `write_case`, …) plus `investigate_case(case_id)` and `investigate_transaction(txn_id)`.
+`mcp_server/tigergraph_mcp_client.py` runs the same query names through the official
+[tigergraph-mcp](https://github.com/tigergraph/tigergraph-mcp) server instead.
+
 The agent code does not change between backends: `GraphStore` is the contract, `evidence.ref` strings are the GSQL
 query names, and `TigerGraphStore` reshapes REST++ results into the same dicts `LocalGraphStore` returns. Vector
 retrieval (`similar_cases`, `retrieve_policy`) uses TigerVector indexes on `ClosedCase/AgentCase/PolicyChunk.embedding`
 when they exist and falls back to TF-IDF over the same vertices otherwise.
+
+## Architecture
+
+```
+                 ┌──────────────────────────────────────────────────────────────┐
+                 │  Analyst UI (FastAPI + static)   ·   MCP clients (Claude, Cursor) │
+                 └───────────────┬──────────────────────────────┬───────────────┘
+                                 │ REST                         │ MCP (stdio / http)
+                    ┌────────────▼────────────┐    ┌────────────▼────────────┐
+                    │  run_cases / monitoring │    │   mcp_server/server.py  │
+                    └────────────┬────────────┘    └────────────┬────────────┘
+                                 └──────────────┬───────────────┘
+                                   ┌────────────▼────────────┐
+                                   │   LangGraph agent       │  trigger → gather → memory → assess
+                                   │   fraud_agent/agent.py  │  → initial NBA → evidence loop → final NBA
+                                   └────────────┬────────────┘  → explain → memorize
+                     signals.py ◄── evidence ────┤──── policy.py (final authority, routes auto/L1/L2)
+                                   ┌────────────▼────────────┐
+                                   │ GraphStore contract     │  15 named tools = GSQL query names
+                                   │ store/base.py           │
+                                   └──────┬───────────┬──────┘
+                          TigerGraphStore │           │ LocalGraphStore (pandas, tests)
+                                   ┌──────▼───────────▼──────┐
+                                   │ TigerGraph Savanna 4.2.5│  FraudGraph: 9 vertex / 29 edge types
+                                   │ 13 installed GSQL       │  TigerVector: ClosedCase · AgentCase · PolicyChunk
+                                   │ tigergraph-mcp (official)│  AgentCase written back = case memory
+                                   └─────────────────────────┘
+```
+
+## Evidence intelligence and control (what makes it an agent, not a scorer)
+
+* **Supporting / contradicting / missing evidence.** Every signal is an evidence row with a signed log-odds weight:
+  positive rows support the fraud hypothesis, negative rows contradict it (shown green in the UI — e.g. a known device,
+  a home-region in-person purchase, a 56-month recurring charge). Missing evidence becomes an explicit
+  `evidence_request` rather than a guess.
+* **Evidence acquisition is policy-gated.** The agent may only ask for evidence through controlled actions
+  (`VERIFY_WITH_CUSTOMER`, `STEP_UP_AUTH`) and only when policy R1/R2 says the current evidence is insufficient
+  (single weak signal, or probability inside the uncertainty band). It records what it asked, after which step, and what
+  it assumed — so the initial plan and the final plan are both auditable.
+* **Counterfactual plan.** `next_best_actions.initial` is the plan *before* the evidence arrives, `final` is after, and
+  `what_changed` states the delta (e.g. HHG-015: step-up → block + report once the customer denies the purchases).
+* **Policy has the last word.** `policy.py` decides which actions are allowed, which route they take (auto / L1 / L2)
+  and when a SAR is mandatory. No block or report ever executes without a human route; an LLM, if configured, only writes
+  prose and cannot change an action.
+* **Graph XAI.** Each claim carries `ref: query:<gsql_name>(args)` and `entity_ids`, so an analyst can click from the
+  recommendation to the evidence to the exact graph path (device → 20 cards → 4 closed cases). No SHAP needed.
+* **Case memory.** Verdicts are written back as `AgentCase` vertices with SIMILAR_TO / CONNECTED_TO / USED_DEVICE edges
+  and a TigerVector embedding; later investigations retrieve them (HHG-005 cites HHG-003).
 
 ## How a case is investigated
 
